@@ -1,23 +1,26 @@
 # yara sources
-SOURCES = en-language-nsfw.yara ar-language-nsfw.yara
-OUTPUT_DIR = dist
+SOURCEDIR = src
+SOURCES =  $(shell cd $(SOURCEDIR) && ls *-language-nsfw.yara)
+DESTDIR = dist
 
 all: deps
-	$(foreach source,$(SOURCES),yarac src/$(source) $(OUTPUT_DIR)/$(source).db;)
+	$(foreach source,$(SOURCES),yarac $(SOURCEDIR)/$(source) $(DESTDIR)/$(source).db;)
 
 deps:
-	mkdir -p $(OUTPUT_DIR)
+	mkdir -p $(DESTDIR)
 
 clean:
-	rm -rf $(OUTPUT_DIR)
+	rm -rf $(DESTDIR)
 
 # extracts string content from a text file into yara-like format
+# also removes any words in our general whitelist
 extract:
-	cat $(filter-out $@,$(MAKECMDGOALS)) | awk '{print "$$s"NR," = ", "\""$$0"\"", " fullword wide ascii nocase"}'
+	cat $(filter-out $@,$(MAKECMDGOALS)) | sort | uniq -u | grep -v -x -f src/whitelist.txt | awk '{print "$$"," = ", "\""$$0"\"", " fullword wide ascii nocase"}'
+	@echo "extraction completed"
 
 # dumps the yara rule as plain-text
 dumps:
-	cat $(filter-out $@,$(MAKECMDGOALS)) | grep '$$s' | awk '{print $$3 }' |  tr -d '"'
+	cat $(filter-out $@,$(MAKECMDGOALS)) | grep '$ =' | awk '{print $$3 }' |  tr -d '"'
 
-bundle:
-	yarac src/safe-language.yara $(OUTPUT_DIR)/safe-language.db
+bundle: all
+	yarac src/language-nsfw.yara $(DESTDIR)/language-nsfw.db
