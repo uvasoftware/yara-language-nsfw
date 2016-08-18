@@ -109,7 +109,6 @@ rule content_ru_language_nsfw {
       $  =  "хуиня"  fullword wide ascii nocase
       $  =  "хуёво"  fullword wide ascii nocase
       $  =  "ёбарь"  fullword wide ascii nocase
-      $  =  "какая разница"  fullword wide ascii nocase
       $  =  "ебать-копать"  fullword wide ascii nocase
       $  =  "бардак"  fullword wide ascii nocase
       $  =  "блядки"  fullword wide ascii nocase
