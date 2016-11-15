@@ -229,8 +229,6 @@ rule content_en_language_nsfw {
     $  =  "nipple"  fullword wide ascii nocase
     $  =  "nipples"  fullword wide ascii nocase
     $  =  "nsfw images"  fullword wide ascii nocase
-    $  =  "nude"  fullword wide ascii nocase
-    $  =  "nudity"  fullword wide ascii nocase
     $  =  "nympho"  fullword wide ascii nocase
     $  =  "nymphomania"  fullword wide ascii nocase
     $  =  "octopussy"  fullword wide ascii nocase

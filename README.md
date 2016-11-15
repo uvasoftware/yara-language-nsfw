@@ -30,21 +30,9 @@ Makefile rules are provided to make it easy for you to convert to and from plain
 ```
 $ make dumps src/ja-language-nsfw.yara 
 cat src/ja-language-nsfw.yara | grep '=' | awk '{print $3 }' |  tr -d '"'
-3p
-g
-s
-sm
-sm女王
-xx
-卍
-糞
-膣
-裸
-お尻
-なめ
-グロ
-デブ
-ホモ
+bad
+words
+redacted
 ```
 
 #### Converting from plain text to YARA
