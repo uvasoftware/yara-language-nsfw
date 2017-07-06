@@ -366,8 +366,6 @@ rule content_en_language_nsfw {
     $  =  "white power"  fullword wide ascii nocase
     $  =  "wrapping men"  fullword wide ascii nocase
     $  =  "wrinkled starfish"  fullword wide ascii nocase
-    $  =  "xx"  fullword wide ascii nocase
-    $  =  "xxx"  fullword wide ascii nocase
     $  =  "yaoi"  fullword wide ascii nocase
     $  =  "yellow showers"  fullword wide ascii nocase
     $  =  "yiffy"  fullword wide ascii nocase

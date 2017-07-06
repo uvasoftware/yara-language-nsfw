@@ -1,11 +1,10 @@
-rule content_jp_language_nsfw {
+rule content_ja_language_nsfw {
   strings:
       $  =  "3p"  fullword wide ascii nocase
       $  =  "g スポット"  fullword wide ascii nocase
       $  =  "s ＆ m"  fullword wide ascii nocase
       $  =  "sm"  fullword wide ascii nocase
       $  =  "sm女王"  fullword wide ascii nocase
-      $  =  "xx"  fullword wide ascii nocase
       $  =  "卍"  fullword wide ascii nocase
       $  =  "糞"  fullword wide ascii nocase
       $  =  "膣"  fullword wide ascii nocase
