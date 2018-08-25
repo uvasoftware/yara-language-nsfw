@@ -1,376 +1,985 @@
-rule content_en_language_nsfw {
+// Vulgar or otherwise not suitable for work words in english
+
+rule content_en_language_nsfw_1
+{
   strings:
-    $  =  "2 girls 1 cup"  fullword wide ascii nocase
-    $  =  "2g1c"  fullword wide ascii nocase
-    $  =  "acrotomophilia"  fullword wide ascii nocase
-    $  =  "alabama hot pocket"  fullword wide ascii nocase
-    $  =  "alaskan pipeline"  fullword wide ascii nocase
-    $  =  "anal"  fullword wide ascii nocase
-    $  =  "anilingus"  fullword wide ascii nocase
-    $  =  "anus"  fullword wide ascii nocase
-    $  =  "apeshit"  fullword wide ascii nocase
-    $  =  "arsehole"  fullword wide ascii nocase
-    $  =  "ass"  fullword wide ascii nocase
-    $  =  "asshole"  fullword wide ascii nocase
-    $  =  "assmunch"  fullword wide ascii nocase
-    $  =  "auto erotic"  fullword wide ascii nocase
-    $  =  "autoerotic"  fullword wide ascii nocase
-    $  =  "babeland"  fullword wide ascii nocase
-    $  =  "baby batter"  fullword wide ascii nocase
-    $  =  "baby juice"  fullword wide ascii nocase
-    $  =  "ball gag"  fullword wide ascii nocase
-    $  =  "ball gravy"  fullword wide ascii nocase
-    $  =  "ball kicking"  fullword wide ascii nocase
-    $  =  "ball licking"  fullword wide ascii nocase
-    $  =  "ball sack"  fullword wide ascii nocase
-    $  =  "ball sucking"  fullword wide ascii nocase
-    $  =  "bangbros"  fullword wide ascii nocase
-    $  =  "bareback"  fullword wide ascii nocase
-    $  =  "barely legal"  fullword wide ascii nocase
-    $  =  "barenaked"  fullword wide ascii nocase
-    $  =  "bastard"  fullword wide ascii nocase
-    $  =  "bastardo"  fullword wide ascii nocase
-    $  =  "bastinado"  fullword wide ascii nocase
-    $  =  "bbw"  fullword wide ascii nocase
-    $  =  "bdsm"  fullword wide ascii nocase
-    $  =  "beaner"  fullword wide ascii nocase
-    $  =  "beaners"  fullword wide ascii nocase
-    $  =  "beaver cleaver"  fullword wide ascii nocase
-    $  =  "beaver lips"  fullword wide ascii nocase
-    $  =  "bestiality"  fullword wide ascii nocase
-    $  =  "big black"  fullword wide ascii nocase
-    $  =  "big breasts"  fullword wide ascii nocase
-    $  =  "big knockers"  fullword wide ascii nocase
-    $  =  "big tits"  fullword wide ascii nocase
-    $  =  "bimbos"  fullword wide ascii nocase
-    $  =  "birdlock"  fullword wide ascii nocase
-    $  =  "bitch"  fullword wide ascii nocase
-    $  =  "bitches"  fullword wide ascii nocase
-    $  =  "black cock"  fullword wide ascii nocase
-    $  =  "blonde action"  fullword wide ascii nocase
-    $  =  "blonde on blonde action"  fullword wide ascii nocase
-    $  =  "blow job"  fullword wide ascii nocase
-    $  =  "blow your load"  fullword wide ascii nocase
-    $  =  "blowjob"  fullword wide ascii nocase
-    $  =  "blue waffle"  fullword wide ascii nocase
-    $  =  "blumpkin"  fullword wide ascii nocase
-    $  =  "bollocks"  fullword wide ascii nocase
-    $  =  "bondage"  fullword wide ascii nocase
-    $  =  "boner"  fullword wide ascii nocase
-    $  =  "boob"  fullword wide ascii nocase
-    $  =  "boobs"  fullword wide ascii nocase
-    $  =  "booty call"  fullword wide ascii nocase
-    $  =  "brown showers"  fullword wide ascii nocase
-    $  =  "brunette action"  fullword wide ascii nocase
-    $  =  "bukkake"  fullword wide ascii nocase
-    $  =  "bulldyke"  fullword wide ascii nocase
-    $  =  "bullet vibe"  fullword wide ascii nocase
-    $  =  "bullshit"  fullword wide ascii nocase
-    $  =  "bung hole"  fullword wide ascii nocase
-    $  =  "bunghole"  fullword wide ascii nocase
-    $  =  "busty"  fullword wide ascii nocase
-    $  =  "butt"  fullword wide ascii nocase
-    $  =  "buttcheeks"  fullword wide ascii nocase
-    $  =  "butthole"  fullword wide ascii nocase
-    $  =  "camel toe"  fullword wide ascii nocase
-    $  =  "camgirl"  fullword wide ascii nocase
-    $  =  "camslut"  fullword wide ascii nocase
-    $  =  "camwhore"  fullword wide ascii nocase
-    $  =  "carpet muncher"  fullword wide ascii nocase
-    $  =  "carpetmuncher"  fullword wide ascii nocase
-    $  =  "chocolate rosebuds"  fullword wide ascii nocase
-    $  =  "circlejerk"  fullword wide ascii nocase
-    $  =  "cleveland steamer"  fullword wide ascii nocase
-    $  =  "clit"  fullword wide ascii nocase
-    $  =  "clitoris"  fullword wide ascii nocase
-    $  =  "clover clamps"  fullword wide ascii nocase
-    $  =  "clusterfuck"  fullword wide ascii nocase
-    $  =  "cock"  fullword wide ascii nocase
-    $  =  "cocks"  fullword wide ascii nocase
-    $  =  "coon"  fullword wide ascii nocase
-    $  =  "coons"  fullword wide ascii nocase
-    $  =  "coprolagnia"  fullword wide ascii nocase
-    $  =  "coprophilia"  fullword wide ascii nocase
-    $  =  "cornhole"  fullword wide ascii nocase
-    $  =  "creampie"  fullword wide ascii nocase
-    $  =  "cum"  fullword wide ascii nocase
-    $  =  "cumming"  fullword wide ascii nocase
-    $  =  "cunnilingus"  fullword wide ascii nocase
-    $  =  "cunt"  fullword wide ascii nocase
-    $  =  "darkie"  fullword wide ascii nocase
-    $  =  "date rape"  fullword wide ascii nocase
-    $  =  "daterape"  fullword wide ascii nocase
-    $  =  "deep throat"  fullword wide ascii nocase
-    $  =  "deepthroat"  fullword wide ascii nocase
-    $  =  "dendrophilia"  fullword wide ascii nocase
-    $  =  "dick"  fullword wide ascii nocase
-    $  =  "dildo"  fullword wide ascii nocase
-    $  =  "dingleberries"  fullword wide ascii nocase
-    $  =  "dingleberry"  fullword wide ascii nocase
-    $  =  "dirty pillows"  fullword wide ascii nocase
-    $  =  "dirty sanchez"  fullword wide ascii nocase
-    $  =  "dog style"  fullword wide ascii nocase
-    $  =  "doggie style"  fullword wide ascii nocase
-    $  =  "doggiestyle"  fullword wide ascii nocase
-    $  =  "doggy style"  fullword wide ascii nocase
-    $  =  "doggystyle"  fullword wide ascii nocase
-    $  =  "dolcett"  fullword wide ascii nocase
-    $  =  "domination"  fullword wide ascii nocase
-    $  =  "dominatrix"  fullword wide ascii nocase
-    $  =  "dommes"  fullword wide ascii nocase
-    $  =  "donkey punch"  fullword wide ascii nocase
-    $  =  "double dong"  fullword wide ascii nocase
-    $  =  "double penetration"  fullword wide ascii nocase
-    $  =  "dp action"  fullword wide ascii nocase
-    $  =  "dry hump"  fullword wide ascii nocase
-    $  =  "dvda"  fullword wide ascii nocase
-    $  =  "eat my ass"  fullword wide ascii nocase
-    $  =  "ecchi"  fullword wide ascii nocase
-    $  =  "ejaculation"  fullword wide ascii nocase
-    $  =  "erotic"  fullword wide ascii nocase
-    $  =  "erotism"  fullword wide ascii nocase
-    $  =  "escort"  fullword wide ascii nocase
-    $  =  "eunuch"  fullword wide ascii nocase
-    $  =  "faggot"  fullword wide ascii nocase
-    $  =  "fecal"  fullword wide ascii nocase
-    $  =  "felch"  fullword wide ascii nocase
-    $  =  "fellatio"  fullword wide ascii nocase
-    $  =  "feltch"  fullword wide ascii nocase
-    $  =  "female squirting"  fullword wide ascii nocase
-    $  =  "femdom"  fullword wide ascii nocase
-    $  =  "figging"  fullword wide ascii nocase
-    $  =  "fingerbang"  fullword wide ascii nocase
-    $  =  "fingering"  fullword wide ascii nocase
-    $  =  "fisting"  fullword wide ascii nocase
-    $  =  "foot fetish"  fullword wide ascii nocase
-    $  =  "footjob"  fullword wide ascii nocase
-    $  =  "frotting"  fullword wide ascii nocase
-    $  =  "fuck"  fullword wide ascii nocase
-    $  =  "fuck buttons"  fullword wide ascii nocase
-    $  =  "fuckin"  fullword wide ascii nocase
-    $  =  "fucking"  fullword wide ascii nocase
-    $  =  "fucktards"  fullword wide ascii nocase
-    $  =  "fudge packer"  fullword wide ascii nocase
-    $  =  "fudgepacker"  fullword wide ascii nocase
-    $  =  "futanari"  fullword wide ascii nocase
-    $  =  "g-spot"  fullword wide ascii nocase
-    $  =  "gang bang"  fullword wide ascii nocase
-    $  =  "gay sex"  fullword wide ascii nocase
-    $  =  "genitals"  fullword wide ascii nocase
-    $  =  "giant cock"  fullword wide ascii nocase
-    $  =  "girl on"  fullword wide ascii nocase
-    $  =  "girl on top"  fullword wide ascii nocase
-    $  =  "girls gone wild"  fullword wide ascii nocase
-    $  =  "goatcx"  fullword wide ascii nocase
-    $  =  "goatse"  fullword wide ascii nocase
-    $  =  "god damn"  fullword wide ascii nocase
-    $  =  "gokkun"  fullword wide ascii nocase
-    $  =  "golden shower"  fullword wide ascii nocase
-    $  =  "goo girl"  fullword wide ascii nocase
-    $  =  "goodpoop"  fullword wide ascii nocase
-    $  =  "goregasm"  fullword wide ascii nocase
-    $  =  "grope"  fullword wide ascii nocase
-    $  =  "group sex"  fullword wide ascii nocase
-    $  =  "guro"  fullword wide ascii nocase
-    $  =  "hand job"  fullword wide ascii nocase
-    $  =  "handjob"  fullword wide ascii nocase
-    $  =  "hard core"  fullword wide ascii nocase
-    $  =  "hardcore"  fullword wide ascii nocase
-    $  =  "hentai"  fullword wide ascii nocase
-    $  =  "homoerotic"  fullword wide ascii nocase
-    $  =  "honkey"  fullword wide ascii nocase
-    $  =  "hooker"  fullword wide ascii nocase
-    $  =  "hot carl"  fullword wide ascii nocase
-    $  =  "hot chick"  fullword wide ascii nocase
-    $  =  "how to kill"  fullword wide ascii nocase
-    $  =  "how to murder"  fullword wide ascii nocase
-    $  =  "huge fat"  fullword wide ascii nocase
-    $  =  "humping"  fullword wide ascii nocase
-    $  =  "incest"  fullword wide ascii nocase
-    $  =  "jack off"  fullword wide ascii nocase
-    $  =  "jail bait"  fullword wide ascii nocase
-    $  =  "jailbait"  fullword wide ascii nocase
-    $  =  "jelly donut"  fullword wide ascii nocase
-    $  =  "jerk off"  fullword wide ascii nocase
-    $  =  "jigaboo"  fullword wide ascii nocase
-    $  =  "jiggaboo"  fullword wide ascii nocase
-    $  =  "jiggerboo"  fullword wide ascii nocase
-    $  =  "jizz"  fullword wide ascii nocase
-    $  =  "juggs"  fullword wide ascii nocase
-    $  =  "kike"  fullword wide ascii nocase
-    $  =  "kinbaku"  fullword wide ascii nocase
-    $  =  "kinkster"  fullword wide ascii nocase
-    $  =  "kinky"  fullword wide ascii nocase
-    $  =  "knobbing"  fullword wide ascii nocase
-    $  =  "leather restraint"  fullword wide ascii nocase
-    $  =  "leather straight jacket"  fullword wide ascii nocase
-    $  =  "lemon party"  fullword wide ascii nocase
-    $  =  "lolita"  fullword wide ascii nocase
-    $  =  "lovemaking"  fullword wide ascii nocase
-    $  =  "make me come"  fullword wide ascii nocase
-    $  =  "male squirting"  fullword wide ascii nocase
-    $  =  "masturbate"  fullword wide ascii nocase
-    $  =  "menage a trois"  fullword wide ascii nocase
-    $  =  "milf"  fullword wide ascii nocase
-    $  =  "missionary position"  fullword wide ascii nocase
-    $  =  "motherfucker"  fullword wide ascii nocase
-    $  =  "mound of venus"  fullword wide ascii nocase
-    $  =  "mr hands"  fullword wide ascii nocase
-    $  =  "muff diver"  fullword wide ascii nocase
-    $  =  "muffdiving"  fullword wide ascii nocase
-    $  =  "nambla"  fullword wide ascii nocase
-    $  =  "nawashi"  fullword wide ascii nocase
-    $  =  "negro"  fullword wide ascii nocase
-    $  =  "neonazi"  fullword wide ascii nocase
-    $  =  "nig nog"  fullword wide ascii nocase
-    $  =  "nigga"  fullword wide ascii nocase
-    $  =  "nigger"  fullword wide ascii nocase
-    $  =  "nimphomania"  fullword wide ascii nocase
-    $  =  "nipple"  fullword wide ascii nocase
-    $  =  "nipples"  fullword wide ascii nocase
-    $  =  "nsfw images"  fullword wide ascii nocase
-    $  =  "nympho"  fullword wide ascii nocase
-    $  =  "nymphomania"  fullword wide ascii nocase
-    $  =  "octopussy"  fullword wide ascii nocase
-    $  =  "omorashi"  fullword wide ascii nocase
-    $  =  "one cup two girls"  fullword wide ascii nocase
-    $  =  "one guy one jar"  fullword wide ascii nocase
-    $  =  "orgasm"  fullword wide ascii nocase
-    $  =  "orgy"  fullword wide ascii nocase
-    $  =  "paedophile"  fullword wide ascii nocase
-    $  =  "paki"  fullword wide ascii nocase
-    $  =  "panties"  fullword wide ascii nocase
-    $  =  "panty"  fullword wide ascii nocase
-    $  =  "pedobear"  fullword wide ascii nocase
-    $  =  "pedophile"  fullword wide ascii nocase
-    $  =  "pegging"  fullword wide ascii nocase
-    $  =  "penis"  fullword wide ascii nocase
-    $  =  "phone sex"  fullword wide ascii nocase
-    $  =  "piece of shit"  fullword wide ascii nocase
-    $  =  "piss pig"  fullword wide ascii nocase
-    $  =  "pissing"  fullword wide ascii nocase
-    $  =  "pisspig"  fullword wide ascii nocase
-    $  =  "playboy"  fullword wide ascii nocase
-    $  =  "pleasure chest"  fullword wide ascii nocase
-    $  =  "pole smoker"  fullword wide ascii nocase
-    $  =  "ponyplay"  fullword wide ascii nocase
-    $  =  "poof"  fullword wide ascii nocase
-    $  =  "poon"  fullword wide ascii nocase
-    $  =  "poontang"  fullword wide ascii nocase
-    $  =  "poop chute"  fullword wide ascii nocase
-    $  =  "poopchute"  fullword wide ascii nocase
-    $  =  "porn"  fullword wide ascii nocase
-    $  =  "porno"  fullword wide ascii nocase
-    $  =  "pornography"  fullword wide ascii nocase
-    $  =  "prince albert piercing"  fullword wide ascii nocase
-    $  =  "pthc"  fullword wide ascii nocase
-    $  =  "pubes"  fullword wide ascii nocase
-    $  =  "punany"  fullword wide ascii nocase
-    $  =  "pussy"  fullword wide ascii nocase
-    $  =  "queaf"  fullword wide ascii nocase
-    $  =  "queef"  fullword wide ascii nocase
-    $  =  "quim"  fullword wide ascii nocase
-    $  =  "raghead"  fullword wide ascii nocase
-    $  =  "raging boner"  fullword wide ascii nocase
-    $  =  "rape"  fullword wide ascii nocase
-    $  =  "raping"  fullword wide ascii nocase
-    $  =  "rapist"  fullword wide ascii nocase
-    $  =  "rectum"  fullword wide ascii nocase
-    $  =  "reverse cowgirl"  fullword wide ascii nocase
-    $  =  "rimjob"  fullword wide ascii nocase
-    $  =  "rimming"  fullword wide ascii nocase
-    $  =  "rosy palm"  fullword wide ascii nocase
-    $  =  "rosy palm and her 5 sisters"  fullword wide ascii nocase
-    $  =  "rusty trombone"  fullword wide ascii nocase
-    $  =  "s&m"  fullword wide ascii nocase
-    $  =  "sadism"  fullword wide ascii nocase
-    $  =  "santorum"  fullword wide ascii nocase
-    $  =  "scat"  fullword wide ascii nocase
-    $  =  "schlong"  fullword wide ascii nocase
-    $  =  "scissoring"  fullword wide ascii nocase
-    $  =  "semen"  fullword wide ascii nocase
-    $  =  "sex"  fullword wide ascii nocase
-    $  =  "sexo"  fullword wide ascii nocase
-    $  =  "sexy"  fullword wide ascii nocase
-    $  =  "shaved beaver"  fullword wide ascii nocase
-    $  =  "shaved pussy"  fullword wide ascii nocase
-    $  =  "shemale"  fullword wide ascii nocase
-    $  =  "shibari"  fullword wide ascii nocase
-    $  =  "shit"  fullword wide ascii nocase
-    $  =  "shitblimp"  fullword wide ascii nocase
-    $  =  "shitty"  fullword wide ascii nocase
-    $  =  "shota"  fullword wide ascii nocase
-    $  =  "shrimping"  fullword wide ascii nocase
-    $  =  "skeet"  fullword wide ascii nocase
-    $  =  "slanteye"  fullword wide ascii nocase
-    $  =  "slut"  fullword wide ascii nocase
-    $  =  "smut"  fullword wide ascii nocase
-    $  =  "snatch"  fullword wide ascii nocase
-    $  =  "snowballing"  fullword wide ascii nocase
-    $  =  "sodomize"  fullword wide ascii nocase
-    $  =  "sodomy"  fullword wide ascii nocase
-    $  =  "spic"  fullword wide ascii nocase
-    $  =  "splooge"  fullword wide ascii nocase
-    $  =  "splooge moose"  fullword wide ascii nocase
-    $  =  "spooge"  fullword wide ascii nocase
-    $  =  "spread legs"  fullword wide ascii nocase
-    $  =  "spunk"  fullword wide ascii nocase
-    $  =  "strap on"  fullword wide ascii nocase
-    $  =  "strapon"  fullword wide ascii nocase
-    $  =  "strappado"  fullword wide ascii nocase
-    $  =  "strip club"  fullword wide ascii nocase
-    $  =  "style doggy"  fullword wide ascii nocase
-    $  =  "suck"  fullword wide ascii nocase
-    $  =  "sucks"  fullword wide ascii nocase
-    $  =  "suicide girls"  fullword wide ascii nocase
-    $  =  "sultry women"  fullword wide ascii nocase
-    $  =  "swastika"  fullword wide ascii nocase
-    $  =  "swinger"  fullword wide ascii nocase
-    $  =  "tainted love"  fullword wide ascii nocase
-    $  =  "taste my"  fullword wide ascii nocase
-    $  =  "tea bagging"  fullword wide ascii nocase
-    $  =  "threesome"  fullword wide ascii nocase
-    $  =  "throating"  fullword wide ascii nocase
-    $  =  "tied up"  fullword wide ascii nocase
-    $  =  "tight white"  fullword wide ascii nocase
-    $  =  "tit"  fullword wide ascii nocase
-    $  =  "tits"  fullword wide ascii nocase
-    $  =  "titties"  fullword wide ascii nocase
-    $  =  "titty"  fullword wide ascii nocase
-    $  =  "tongue in a"  fullword wide ascii nocase
-    $  =  "topless"  fullword wide ascii nocase
-    $  =  "tosser"  fullword wide ascii nocase
-    $  =  "towelhead"  fullword wide ascii nocase
-    $  =  "tranny"  fullword wide ascii nocase
-    $  =  "tribadism"  fullword wide ascii nocase
-    $  =  "tub girl"  fullword wide ascii nocase
-    $  =  "tubgirl"  fullword wide ascii nocase
-    $  =  "tushy"  fullword wide ascii nocase
-    $  =  "twat"  fullword wide ascii nocase
-    $  =  "twink"  fullword wide ascii nocase
-    $  =  "twinkie"  fullword wide ascii nocase
-    $  =  "two girls one cup"  fullword wide ascii nocase
-    $  =  "upskirt"  fullword wide ascii nocase
-    $  =  "urethra play"  fullword wide ascii nocase
-    $  =  "urophilia"  fullword wide ascii nocase
-    $  =  "vagina"  fullword wide ascii nocase
-    $  =  "venus mound"  fullword wide ascii nocase
-    $  =  "vibrator"  fullword wide ascii nocase
-    $  =  "violet wand"  fullword wide ascii nocase
-    $  =  "vorarephilia"  fullword wide ascii nocase
-    $  =  "voyeur"  fullword wide ascii nocase
-    $  =  "vulva"  fullword wide ascii nocase
-    $  =  "wank"  fullword wide ascii nocase
-    $  =  "wet dream"  fullword wide ascii nocase
-    $  =  "wetback"  fullword wide ascii nocase
-    $  =  "white power"  fullword wide ascii nocase
-    $  =  "wrapping men"  fullword wide ascii nocase
-    $  =  "wrinkled starfish"  fullword wide ascii nocase
-    $  =  "yaoi"  fullword wide ascii nocase
-    $  =  "yellow showers"  fullword wide ascii nocase
-    $  =  "yiffy"  fullword wide ascii nocase
-    $  =  "zoophilia"  fullword wide ascii nocase
-    $  =  "🖕"  fullword wide ascii nocase
+    $ =  "2 girls 1 cup"  fullword wide ascii nocase
+    $ =  "2g1c"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_2 
+{
+  strings:
+    $ =  "apeshit"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_3 {
+  strings:
+    $ =  "arsehole"  fullword wide ascii nocase
+    $ =  "asshole"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_4 {
+  strings:
+    $ =  "assmunch"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_5 {
+  strings:
+    $ =  "baby juice"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_6 {
+  strings:
+    $ =  "ball gag"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_7 {
+  strings:
+    $ =  "ball sack"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_8 {
+  strings:
+    $ =  "bangbros"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_9 {
+  strings:
+    $ =  "bareback"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_10 {
+  strings:
+    $ =  "barely legal"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_11 {
+  strings:
+    $ =  "bbw"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_12 {
+  strings:
+    $ =  "bdsm"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_15 {
+  strings:
+    $ =  "tits"  fullword wide ascii nocase
+    $ =  "tit"  fullword wide ascii nocase
+    $ =  "titties"  fullword wide ascii nocase
+    $ =  "titty"  fullword wide ascii nocase    
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_16 {
+  strings:
+    $ =  "bitch"  fullword wide ascii nocase
+    $ =  "bitches"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_17 {
+  strings:
+    $ =  "cock"  fullword wide ascii nocase
+    $ =  "cocks"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_18 {
+  strings:
+    $ =  "blowjob"  fullword wide ascii nocase
+    $ =  "blowjobs"  fullword wide ascii nocase
+    $ =  "blow job"  fullword wide ascii nocase
+    $ =  "blow jobs"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_19 {
+  strings:
+    $ =  "blumpkin"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_20 {
+  strings:
+    $ =  "bollocks"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_21 {
+  strings:
+    $ =  "boner"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_22 {
+  strings:
+    $ =  "boob"  fullword wide ascii nocase
+    $ =  "boobs"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_23 {
+  strings:
+    $ =  "booty call"  fullword wide ascii nocase
+    $ =  "bootycall"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_24 {
+  strings:
+    $ =  "brown showers"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_25 {
+  strings:
+    $ =  "bukkake"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_26 {
+  strings:
+    $ =  "bulldyke"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_27 {
+  strings:
+    $ =  "bullshit"  fullword wide ascii nocase
+    $ =  "bull shit"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_28 {
+  strings:
+    $ =  "bung hole"  fullword wide ascii nocase
+    $ =  "bunghole"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_29 {
+  strings:
+    $ =  "busty"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_30 {
+  strings:
+    $ =  "butt"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_31 {
+  strings:
+    $ =  "buttcheeks"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_32 {
+  strings:
+    $ =  "butthole"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_33 {
+  strings:
+    $ =  "camel toe"  fullword wide ascii nocase
+    $ =  "cameltoe"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_34 {
+  strings:
+    $ =  "camgirl"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_35 {
+  strings:
+    $ =  "camslut"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_36 {
+  strings:
+    $ =  "camwhore"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_37 {
+  strings:
+    $ =  "carpet muncher"  fullword wide ascii nocase
+    $ =  "carpetmuncher"  fullword wide ascii nocase
+    $ =  "carpetmunchers"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_38 {
+  strings:
+    $ =  "circlejerk"  fullword wide ascii nocase
+    $ =  "circlejerks"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_39 {
+  strings:
+    $ =  "cleveland steamer"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_40 {
+  strings:
+    $ =  "clit"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_41 {
+  strings:
+    $ =  "clusterfuck"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_42 {
+  strings:
+    $ =  "cock"  fullword wide ascii nocase
+    $ =  "cocks"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_43 {
+  strings:
+    $ =  "coon"  fullword wide ascii nocase
+    $ =  "coons"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_44 {
+  strings:
+    $ =  "coprolagnia"  fullword wide ascii nocase
+    $ =  "coprophilia"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_45 {
+  strings:
+    $ =  "creampie"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_46 {
+  strings:
+    $ =  "cum"  fullword wide ascii nocase
+    $ =  "cums"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_47 {
+  strings:
+    $ =  "cumming"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_48 {
+  strings:
+    $ =  "cunnilingus"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_49 {
+  strings:
+    $ =  "cunt"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_50 {
+  strings:
+    $ =  "darkie"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_51 {
+  strings:
+    $ =  "dildo"  fullword wide ascii nocase
+    $ =  "dildos"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_52 {
+  strings:
+    $ =  "dingleberries"  fullword wide ascii nocase
+    $ =  "dingleberry"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_53 {
+  strings:
+    $ =  "dirty sanchez"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_54 {
+  strings:
+    $ =  "dog style"  fullword wide ascii nocase
+    $ =  "doggie style"  fullword wide ascii nocase
+    $ =  "doggystyle"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_55 {
+  strings:
+    $ =  "dog style"  fullword wide ascii nocase
+    $ =  "doggie style"  fullword wide ascii nocase
+    $ =  "doggystyle"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_56 {
+  strings:
+    $ =  "ass"  fullword wide ascii nocase
+    $ =  "asses"  fullword wide ascii nocase
+  condition:
+    1 of them
+} 
+rule content_en_language_nsfw_57 {
+  strings:
+    $ =  "eunuch"  fullword wide ascii nocase
+  condition:
+    1 of them
+}  
+rule content_en_language_nsfw_58 {
+  strings:
+    $ =  "faggot"  fullword wide ascii nocase
+    $ =  "faggots"  fullword wide ascii nocase
+    $ =  "fagot"  fullword wide ascii nocase
+    $ =  "fagots"  fullword wide ascii nocase
+  condition:
+    1 of them
+} 
+rule content_en_language_nsfw_59 {
+  strings:
+    $ =  "figging"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_60 {
+  strings:
+    $ =  "fingerbang"  fullword wide ascii nocase
+  condition:
+    1 of them
+}  
+rule content_en_language_nsfw_61 {
+  strings:
+    $ =  "fingering"  fullword wide ascii nocase
+  condition:
+    1 of them
+} 
+rule content_en_language_nsfw_62 {
+  strings:
+    $ =  "fisting"  fullword wide ascii nocase
+  condition:
+    1 of them
+} 
+rule content_en_language_nsfw_63 {
+  strings:
+    $ =  "footjob"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_64 {
+  strings:
+    $ =  "frotting"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_65 {
+  strings:
+    $ =  "fuck"  fullword wide ascii nocase
+    $ =  "fucks"  fullword wide ascii nocase
+    $ =  "f***"  fullword wide ascii nocase
+    $ =  "f****"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_66 {
+  strings:
+    $ =  "fuckin"  fullword wide ascii nocase
+    $ =  "fucking"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_67 {
+  strings:
+    $ =  "fucktard"  fullword wide ascii nocase
+    $ =  "fucktards"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_68 {
+  strings:
+    $ =  "fudge packer"  fullword wide ascii nocase
+    $ =  "fudgepacker"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_69 {
+  strings:
+    $ =  "futanari"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_70 {
+  strings:
+    $ =  "g-spot"  fullword wide ascii nocase
+  condition:
+    1 of them
+}  
+rule content_en_language_nsfw_71 {
+  strings:
+    $ =  "gang bang"  fullword wide ascii nocase
+    $ =  "gangbang"  fullword wide ascii nocase
+  condition:
+    1 of them
+} 
+rule content_en_language_nsfw_72 {
+  strings:
+    $ =  "cock"  fullword wide ascii nocase
+    $ =  "cocks"  fullword wide ascii nocase
+  condition:
+    1 of them
+} 
+rule content_en_language_nsfw_73 {
+  strings:
+    $ =  "god damn"  fullword wide ascii nocase
+    $ =  "goddamn"  fullword wide ascii nocase
+    $ =  "goddamns"  fullword wide ascii nocase
+  condition:
+    1 of them
+} 
+rule content_en_language_nsfw_74 {
+  strings:
+    $ =  "gokkun"  fullword wide ascii nocase
+  condition:
+    1 of them
+} 
+rule content_en_language_nsfw_75 {
+  strings:
+    $ =  "golden shower"  fullword wide ascii nocase
+    $ =  "golden showers"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_76 {
+  strings:
+    $ =  "goodpoop"  fullword wide ascii nocase
+    $ =  "goodpoops"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_77 {
+  strings:
+    $ =  "hand job"  fullword wide ascii nocase
+    $ =  "hand jobs"  fullword wide ascii nocase
+    $ =  "handjob"  fullword wide ascii nocase
+    $ =  "handjobs"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_78 {
+  strings:
+    $ =  "honkey"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_79 {
+  strings:
+    $ =  "hot chick"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_80 {
+  strings:
+    $ =  "huge fat"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_81 {
+  strings:
+    $ =  "humping"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_82 {
+  strings:
+    $ =  "jack off"  fullword wide ascii nocase
+    $ =  "jackoff"  fullword wide ascii nocase
+    $ =  "jacking off"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_83 {
+  strings:
+    $ =  "jail bait"  fullword wide ascii nocase
+    $ =  "jailbait"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_84 {
+  strings:
+    $ =  "jerk off"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_85 {
+  strings:
+    $ =  "jigaboo"  fullword wide ascii nocase
+    $ =  "jiggaboo"  fullword wide ascii nocase
+    $ =  "jiggerboo"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_86 {
+  strings:
+    $ =  "jizz"  fullword wide ascii nocase
+    $ =  "jism"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_87 {
+  strings:
+    $ =  "kinbaku"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_88 {
+  strings:
+    $ =  "kinkster"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_89 {
+  strings:
+    $ =  "kinky"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_90 {
+  strings:
+    $ =  "knobbing"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_91 {
+  strings:
+    $ =  "make me come"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_92 {
+  strings:
+    $ =  "menage a trois"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_93 {
+  strings:
+    $ =  "milf"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_94 {
+  strings:
+    $ =  "motherfucker"  fullword wide ascii nocase
+    $ =  "motherfuckers"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_95 {
+  strings:
+    $ =  "mound of venus"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_96 {
+  strings:
+    $ =  "muff diver"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_97 {
+  strings:
+    $ =  "muffdiving"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_98 {
+  strings:
+    $ =  "nawashi"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_99 {
+  strings:
+    $ =  "octopussy"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_100 {
+  strings:
+    $ =  "omorashi"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_101 {
+  strings:
+    $ =  "one cup two girls"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_102 {
+  strings:
+    $ =  "one guy one jar"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_103 {
+  strings:
+    $ =  "piece of shit"  fullword wide ascii nocase
+    $ =  "pieces of shit"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_104 {
+  strings:
+    $ =  "piss pig"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_105 {
+  strings:
+    $ =  "pole smoker"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_106 {
+  strings:
+    $ =  "ponyplay"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_107 {
+  strings:
+    $ =  "poon"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_108 {
+  strings:
+    $ =  "poontang"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_109 {
+  strings:
+    $ =  "poop chute"  fullword wide ascii nocase
+    $ =  "poopchute"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_110 {
+  strings:
+    $ =  "prince albert piercing"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_111 {
+  strings:
+    $ =  "pthc"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_112 {
+  strings:
+    $ =  "punany"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_113 {
+  strings:
+    $ =  "pussy"  fullword wide ascii nocase
+    $ =  "pussies"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_114 {
+  strings:
+    $ =  "queaf"  fullword wide ascii nocase
+    $ =  "queef"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_115 {
+  strings:
+    $ =  "quim"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_116 {
+  strings:
+    $ =  "raging boner"  fullword wide ascii nocase
+    $ =  "raging boners"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_117 {
+  strings:
+    $ =  "reverse cowgirl"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_118 {
+  strings:
+    $ =  "rimjob"  fullword wide ascii nocase
+    $ =  "rimming"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_119 {
+  strings:
+    $ =  "rirosy palmm"  fullword wide ascii nocase
+    $ =  "rosy palm and her 5 sisters"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_120 {
+  strings:
+    $ =  "rusty trombone"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_121 {
+  strings:
+    $ =  "schlong"  fullword wide ascii nocase
+    $ =  "schlongs"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_122 {
+  strings:
+    $ =  "shaved beaver"  fullword wide ascii nocase
+    $ =  "shaved beavers"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_123 {
+  strings:
+    $ =  "shemale"  fullword wide ascii nocase
+    $ =  "shemales"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_124 {
+  strings:
+    $ =  "shibari"  fullword wide ascii nocase
+    $ =  "shibaris"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_125 {
+  strings:
+    $ =  "shit"  fullword wide ascii nocase
+    $ =  "shits"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_126 {
+  strings:
+    $ =  "shota"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_127 {
+  strings:
+    $ =  "slut"  fullword wide ascii nocase
+    $ =  "sluts"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_128 {
+  strings:
+    $ =  "smut"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_129 {
+  strings:
+    $ =  "snatch"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_130 {
+  strings:
+    $ =  "splooge"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_131 {
+  strings:
+    $ =  "spooge"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_132 {
+  strings:
+    $ =  "spread legs"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_133 {
+  strings:
+    $ =  "spunk"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_134 {
+  strings:
+    $ =  "strapon"  fullword wide ascii nocase
+    $ =  "strap on"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_135 {
+  strings:
+    $ =  "strappado"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_136 {
+  strings:
+    $ =  "tea bagging"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_137 {
+  strings:
+    $ =  "threesome"  fullword wide ascii nocase
+    $ =  "threesomes"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_138 {
+  strings:
+    $ =  "tranny"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_139 {
+  strings:
+    $ =  "tub girl"  fullword wide ascii nocase
+    $ =  "tubgirl"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_140 {
+  strings:
+    $ =  "tushy"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_141 {
+  strings:
+    $ =  "twat"  fullword wide ascii nocase
+    $ =  "twats"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_142 {
+  strings:
+    $ =  "upskirt"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_143 {
+  strings:
+    $ =  "vibrator"  fullword wide ascii nocase
+    $ =  "vibrators"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_144 {
+  strings:
+    $ =  "wank"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_145 {
+  strings:
+    $ =  "yaoi"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_146 {
+  strings:
+    $ =  "yiffy"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_147 {
+  strings:
+    $ =  "wrinkled starfish"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_148 {
+  strings:
+    $ =  "yellow showers"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_149 {
+  strings:
+    $ =  "donkey punch"  fullword wide ascii nocase
+    $ =  "donkey punches"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_150 {
+  strings:
+    $ =  "goregasm"  fullword wide ascii nocase
+    $ =  "goregasms"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_151{
+  strings:
+    $ =  "hot carl"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_152 {
+  strings:
+    $ =  "🖕"  fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_153 {
+  strings:
+    $ =  "wet dream"  fullword wide ascii nocase
+    $ =  "wet dreams"  fullword wide ascii nocase
   condition:
     1 of them
 }
