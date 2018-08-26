@@ -16,4 +16,4 @@ bundle: all
 	yarac src/language-nsfw.yara $(DESTDIR)/language-nsfw.db
 
 test: bundle
-	yara -c dist/en-language-nsfw.yara.db src
+	yara dist/en-language-nsfw.yara.db src
