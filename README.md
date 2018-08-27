@@ -23,28 +23,6 @@ yarac src/language-nsfw.yara dist/language-nsfw.db
 
 this will create a single langauge-nsfw.db compiled yara rule with all the individual languages
 
-#### Converting from YARA to plain text
-
-Makefile rules are provided to make it easy for you to convert to and from plain text files
-
-```
-$ make dumps src/ja-language-nsfw.yara 
-cat src/ja-language-nsfw.yara | grep '=' | awk '{print $3 }' |  tr -d '"'
-bad
-words
-redacted
-```
-
-#### Converting from plain text to YARA
-
-```
-$ make extract /tmp/list.txt 
-cat /tmp/list.txt | sort | uniq -u | grep -v -x -f src/whitelist.txt | awk '{print "$"," = ", "\""$0"\"", " fullword wide ascii nocase"}'
-$  =  "hello"  fullword wide ascii nocase
-$  =  "world"  fullword wide ascii nocase
-extraction completed
-```
-
 #### Using signature database
 
 ```
