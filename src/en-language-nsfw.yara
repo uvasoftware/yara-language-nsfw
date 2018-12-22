@@ -281,13 +281,14 @@ rule content_en_language_nsfw_45 {
   condition:
     1 of them
 }
-rule content_en_language_nsfw_46 {
-  strings:
-    $ =  "cum"  fullword wide ascii nocase
-    $ =  "cums"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
+// disabled due to too many false positives 
+//  rule content_en_language_nsfw_46 {
+//   strings:
+//     $ =  "cum"  fullword wide ascii nocase
+//     $ =  "cums"  fullword wide ascii nocase
+//   condition:
+//     1 of them
+// }
 rule content_en_language_nsfw_47 {
   strings:
     $ =  "cumming"  fullword wide ascii nocase
@@ -333,14 +334,6 @@ rule content_en_language_nsfw_53 {
     1 of them
 }
 rule content_en_language_nsfw_54 {
-  strings:
-    $ =  "dog style"  fullword wide ascii nocase
-    $ =  "doggie style"  fullword wide ascii nocase
-    $ =  "doggystyle"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_55 {
   strings:
     $ =  "dog style"  fullword wide ascii nocase
     $ =  "doggie style"  fullword wide ascii nocase
