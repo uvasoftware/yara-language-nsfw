@@ -92,13 +92,6 @@ rule content_en_language_nsfw_16 {
   condition:
     1 of them
 }
-rule content_en_language_nsfw_17 {
-  strings:
-    $ =  "cock"  fullword wide ascii nocase
-    $ =  "cocks"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
 rule content_en_language_nsfw_18 {
   strings:
     $ =  "blowjob"  fullword wide ascii nocase
@@ -447,14 +440,8 @@ rule content_en_language_nsfw_71 {
     $ =  "gangbang"  fullword wide ascii nocase
   condition:
     1 of them
-} 
-rule content_en_language_nsfw_72 {
-  strings:
-    $ =  "cock"  fullword wide ascii nocase
-    $ =  "cocks"  fullword wide ascii nocase
-  condition:
-    1 of them
-} 
+}
+
 rule content_en_language_nsfw_73 {
   strings:
     $ =  "god damn"  fullword wide ascii nocase
