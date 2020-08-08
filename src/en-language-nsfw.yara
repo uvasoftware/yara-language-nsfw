@@ -963,3 +963,57 @@ rule content_en_language_nsfw_153 {
   condition:
     1 of them
 }
+rule content_en_language_nsfw_154 {
+  strings:
+    $ = "F@cking" fullword wide ascii nocase
+  condition:
+    1 of them
+}
+rule content_en_language_nsfw_155 {
+  strings:
+    $ = "c0ck" fullword wide ascii nocase
+  condition:
+    1 of them
+}
+
+rule content_en_language_nsfw_156 {
+  strings:
+    $ = "pu$$y" fullword wide ascii nocase
+  condition:
+    1 of them
+}
+
+rule content_en_language_nsfw_157 {
+  strings:
+    $ = "$luts" fullword wide ascii nocase
+  condition:
+    1 of them
+}
+
+rule content_en_language_nsfw_158 {
+  strings:
+    $ = "h00kers" fullword wide ascii nocase
+  condition:
+    1 of them
+}
+
+rule content_en_language_nsfw_159 {
+  strings:
+    $ = "cre@mpied" fullword wide ascii nocase
+  condition:
+    1 of them
+}
+
+rule content_en_language_nsfw_160 {
+  strings:
+    $ = "f@cials" fullword wide ascii nocase
+  condition:
+    1 of them
+}
+
+rule content_en_language_nsfw_161 {
+  strings:
+    $ = "b00bs" fullword wide ascii nocase
+  condition:
+    1 of them
+}
