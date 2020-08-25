@@ -76,15 +76,15 @@ rule content_en_language_nsfw_12 {
   condition:
     1 of them
 }
-rule content_en_language_nsfw_15 {
-  strings:
-    $ =  "tits"  fullword wide ascii nocase
-    $ =  "tit"  fullword wide ascii nocase
-    $ =  "titties"  fullword wide ascii nocase
-    $ =  "titty"  fullword wide ascii nocase    
-  condition:
-    1 of them
-}
+// rule content_en_language_nsfw_15 {
+//   strings:
+//     $ =  "tits"  fullword wide ascii nocase
+//     $ =  "tit"  fullword wide ascii nocase
+//     $ =  "titties"  fullword wide ascii nocase
+//     $ =  "titty"  fullword wide ascii nocase    
+//   condition:
+//     1 of them
+// }
 rule content_en_language_nsfw_16 {
   strings:
     $ =  "bitch"  fullword wide ascii nocase
@@ -171,12 +171,12 @@ rule content_en_language_nsfw_29 {
   condition:
     1 of them
 }
-rule content_en_language_nsfw_30 {
-  strings:
-    $ =  "butt"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
+// rule content_en_language_nsfw_30 {
+//   strings:
+//     $ =  "butt"  fullword wide ascii nocase
+//   condition:
+//     1 of them
+// }
 rule content_en_language_nsfw_31 {
   strings:
     $ =  "buttcheeks"  fullword wide ascii nocase
@@ -254,13 +254,13 @@ rule content_en_language_nsfw_42 {
   condition:
     1 of them
 }
-rule content_en_language_nsfw_43 {
-  strings:
-    $ =  "coon"  fullword wide ascii nocase
-    $ =  "coons"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
+// rule content_en_language_nsfw_43 {
+//   strings:
+//     $ =  "coon"  fullword wide ascii nocase
+//     $ =  "coons"  fullword wide ascii nocase
+//   condition:
+//     1 of them
+// }
 rule content_en_language_nsfw_44 {
   strings:
     $ =  "coprolagnia"  fullword wide ascii nocase
@@ -585,6 +585,8 @@ rule content_en_language_nsfw_94 {
   strings:
     $ =  "motherfucker"  fullword wide ascii nocase
     $ =  "motherfuckers"  fullword wide ascii nocase
+    $ =  "mother fucker"  fullword wide ascii nocase
+    $ =  "mother fuckers"  fullword wide ascii nocase
   condition:
     1 of them
 }
