@@ -2,7 +2,7 @@ on: pull_request
 
 jobs:
   test:
-    name: Terraform Plan
+    name: Build & Test
     runs-on: ubuntu-latest
     container:
       image: debian:9
