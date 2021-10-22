@@ -5,10 +5,21 @@ jobs:
     name: Build & Test
     runs-on: ubuntu-latest
     container:
-      image: debian:9
+      image: debian:11-slim
     steps:
       - uses: actions/checkout@v2
       - name: Install dependencies
-        run: apt-get update -qq && apt-get install -qqy git unzip ssh ca-certificates tar gzip yara make
+        run: |
+          apt-get update && apt-get install -y wget awscli make gcc autoconf libtool openssl && \
+          cd /tmp && wget -q https://github.com/VirusTotal/yara/archive/v${YARA_VERSION}.tar.gz && \
+          tar -zxvf v${YARA_VERSION}.tar.gz && \
+          cd yara-${YARA_VERSION} && \
+          chmod +x build.sh && \
+          ./build.sh && make install && \
+          ldconfig && \
+          rm -rf /tmp/* && \
+          /usr/local/bin/yara --version
+        env:
+          YARA_VERSION: "3.5.0"
       - name: Testing
         run: make test
