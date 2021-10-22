@@ -90,12 +90,13 @@ rule content_nl_language_nsfw_13 {
     1 of them
 }
 
-rule content_nl_language_nsfw_14 {
-  strings:
-    $ = "aso" ascii wide nocase fullword
-  condition:
-    1 of them
-}
+// too many FPs
+// rule content_nl_language_nsfw_14 {
+//   strings:
+//     $ = "aso" ascii wide nocase fullword
+//   condition:
+//     1 of them
+// }
 
 rule content_nl_language_nsfw_15 {
   strings:
