@@ -1,244 +1,315 @@
-rule content_pt_language_nsfw_1
-{
+
+rule content_pt_language_nsfw_1 {
   strings:
-    $ =  "bicha"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_pt_language_nsfw_2
-{
-  strings:
-    $ =  "balalao"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_pt_language_nsfw_3
-{
-  strings:
-    $ =  "bastardo"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_pt_language_nsfw_4
-{
-  strings:
-    $ =  "biscate"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_pt_language_nsfw_5
-{
-  strings:
-    $ =  "boceta"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_pt_language_nsfw_6
-{
-  strings:
-    $ =  "bosta"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_pt_language_nsfw_7
-{
-  strings:
-    $ =  "braulio de borracha"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_pt_language_nsfw_8
-{
-  strings:
-    $ =  "bumbum"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_pt_language_nsfw_9
-{
-  strings:
-    $ =  "cacete"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_pt_language_nsfw_10
-{
-  strings:
-    $ =  "chochota"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_pt_language_nsfw_11
-{
-  strings:
-    $ =  "corno"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_pt_language_nsfw_12
-{
-  strings:
-    $ =  "cú"  fullword wide ascii nocase
-    $ =  "cu"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_pt_language_nsfw_13
-{
-  strings:
-    $ =  "dar o rabo"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_pt_language_nsfw_14
-{
-  strings:
-    $ =  "filho da puta"  fullword wide ascii nocase
-    $ =  "filhos da puta"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_pt_language_nsfw_15
-{
-  strings:
-    $ =  "foda"  fullword wide ascii nocase
-    $ =  "foda-se"  fullword wide ascii nocase
-    $ =  "foder"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_pt_language_nsfw_16
-{
-  strings:
-    $ =  "gozar"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_pt_language_nsfw_17
-{
-  strings:
-    $ =  "merda"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_pt_language_nsfw_18
-{
-  strings:
-    $ =  "peidar"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_pt_language_nsfw_19
-{
-  strings:
-    $ =  "porra"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_pt_language_nsfw_20
-{
-  strings:
-    $ =  "puta"  fullword wide ascii nocase
-    $ =  "putinha"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_pt_language_nsfw_21
- {
-   strings:
-     $ =  "puta que pariu"  fullword wide ascii nocase
-     $ =  "puta que te pariu"  fullword wide ascii nocase
-   condition:
-     1 of them
- }
-rule content_pt_language_nsfw_22
- {
-   strings:
-     $ =  "sacanagem"  fullword wide ascii nocase
-   condition:
-     1 of them
- }
-rule content_pt_language_nsfw_23
-{
-  strings:
-    $ =  "transar"  fullword wide ascii nocase
+    $ = "bicha" ascii wide nocase fullword
   condition:
     1 of them
 }
 
-rule content_pt_language_nsfw_24
-{
+rule content_pt_language_nsfw_2 {
   strings:
-    $ =  "transar"  fullword wide ascii nocase
+    $ = "balalao" ascii wide nocase fullword
   condition:
     1 of them
 }
-rule content_pt_language_nsfw_25
-{
+
+rule content_pt_language_nsfw_3 {
   strings:
-    $ =  "veado"  fullword wide ascii nocase
-    $ =  "viado"  fullword wide ascii nocase
-    $ =  "viadão"  fullword wide ascii nocase
+    $ = "bastardo" ascii wide nocase fullword
   condition:
     1 of them
 }
-rule content_pt_language_nsfw_26
-{
+
+rule content_pt_language_nsfw_4 {
   strings:
-    $ =  "caralho"  fullword wide ascii nocase
+    $ = "biscate" ascii wide nocase fullword
   condition:
     1 of them
 }
-rule content_pt_language_nsfw_27
-{
+
+rule content_pt_language_nsfw_5 {
   strings:
-    $ =  "Otario"  fullword wide ascii nocase
+    $ = "boceta" ascii wide nocase fullword
   condition:
     1 of them
 }
-rule content_pt_language_nsfw_28
-{
+
+rule content_pt_language_nsfw_6 {
   strings:
-    $ =  "Punheta"  fullword wide ascii nocase
-    $ =  "Punhetão"  fullword wide ascii nocase
+    $ = "bosta" ascii wide nocase fullword
   condition:
     1 of them
 }
-rule content_pt_language_nsfw_29
-{
+
+rule content_pt_language_nsfw_7 {
   strings:
-    $ =  "Xochota"  fullword wide ascii nocase
-    $ =  "Xota"  fullword wide ascii nocase
-    $ =  "Xoxota"  fullword wide ascii nocase
+    $ = "braulio de borracha" ascii wide nocase fullword
   condition:
     1 of them
 }
-rule content_pt_language_nsfw_30
-{
+
+rule content_pt_language_nsfw_8 {
   strings:
-    $ =  "Buceta"  fullword wide ascii nocase
-    $ =  "Busseta"  fullword wide ascii nocase
+    $ = "bumbum" ascii wide nocase fullword
   condition:
     1 of them
 }
-rule content_pt_language_nsfw_31
-{
+
+rule content_pt_language_nsfw_9 {
   strings:
-    $ =  "Bunda"  fullword wide ascii nocase
+    $ = "cacete" ascii wide nocase fullword
   condition:
     1 of them
 }
-rule content_pt_language_nsfw_32
-{
+
+rule content_pt_language_nsfw_10 {
   strings:
-    $ =  "Boiola"  fullword wide ascii nocase
+    $ = "chochota" ascii wide nocase fullword
   condition:
     1 of them
 }
-rule content_pt_language_nsfw_33
-{
+
+rule content_pt_language_nsfw_11 {
   strings:
-    $ =  "Chereca"  fullword wide ascii nocase
+    $ = "corno" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_pt_language_nsfw_12 {
+  strings:
+    $ = "cú" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_pt_language_nsfw_13 {
+  strings:
+    $ = "cu" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_pt_language_nsfw_14 {
+  strings:
+    $ = "dar o rabo" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_pt_language_nsfw_15 {
+  strings:
+    $ = "filho da puta" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_pt_language_nsfw_16 {
+  strings:
+    $ = "filhos da puta" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_pt_language_nsfw_17 {
+  strings:
+    $ = "foda" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_pt_language_nsfw_18 {
+  strings:
+    $ = "foda-se" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_pt_language_nsfw_19 {
+  strings:
+    $ = "foder" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_pt_language_nsfw_20 {
+  strings:
+    $ = "gozar" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_pt_language_nsfw_21 {
+  strings:
+    $ = "merda" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_pt_language_nsfw_22 {
+  strings:
+    $ = "peidar" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_pt_language_nsfw_23 {
+  strings:
+    $ = "porra" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_pt_language_nsfw_24 {
+  strings:
+    $ = "puta" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_pt_language_nsfw_25 {
+  strings:
+    $ = "putinha" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_pt_language_nsfw_26 {
+  strings:
+    $ = "puta que pariu" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_pt_language_nsfw_27 {
+  strings:
+    $ = "puta que te pariu" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_pt_language_nsfw_28 {
+  strings:
+    $ = "sacanagem" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_pt_language_nsfw_29 {
+  strings:
+    $ = "transar" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_pt_language_nsfw_30 {
+  strings:
+    $ = "transar" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_pt_language_nsfw_31 {
+  strings:
+    $ = "veado" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_pt_language_nsfw_32 {
+  strings:
+    $ = "viado" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_pt_language_nsfw_33 {
+  strings:
+    $ = "viadão" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_pt_language_nsfw_34 {
+  strings:
+    $ = "caralho" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_pt_language_nsfw_35 {
+  strings:
+    $ = "Otario" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_pt_language_nsfw_36 {
+  strings:
+    $ = "Punheta" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_pt_language_nsfw_37 {
+  strings:
+    $ = "Punhetão" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_pt_language_nsfw_38 {
+  strings:
+    $ = "Xochota" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_pt_language_nsfw_39 {
+  strings:
+    $ = "Xota" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_pt_language_nsfw_40 {
+  strings:
+    $ = "Xoxota" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_pt_language_nsfw_41 {
+  strings:
+    $ = "Buceta" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_pt_language_nsfw_42 {
+  strings:
+    $ = "Busseta" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_pt_language_nsfw_43 {
+  strings:
+    $ = "Bunda" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_pt_language_nsfw_44 {
+  strings:
+    $ = "Boiola" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_pt_language_nsfw_45 {
+  strings:
+    $ = "Chereca" ascii wide nocase fullword
   condition:
     1 of them
 }

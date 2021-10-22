@@ -1,42 +1,259 @@
-rule content_eo_language_nsfw {
+
+rule content_eo_language_nsfw_1 {
   strings:
-    $  =  "bugren"  fullword wide ascii nocase
-    $  =  "bugri"  fullword wide ascii nocase
-    $  =  "bugru"  fullword wide ascii nocase
-    $  =  "diofek"  fullword wide ascii nocase
-    $  =  "diofeka"  fullword wide ascii nocase
-    $  =  "fek"  fullword wide ascii nocase
-    $  =  "feken"  fullword wide ascii nocase
-    $  =  "fekfikanto"  fullword wide ascii nocase
-    $  =  "feklekulo"  fullword wide ascii nocase
-    $  =  "fekulo"  fullword wide ascii nocase
-    $  =  "fik"  fullword wide ascii nocase
-    $  =  "fikado"  fullword wide ascii nocase
-    $  =  "fikema"  fullword wide ascii nocase
-    $  =  "fikfek"  fullword wide ascii nocase
-    $  =  "fiki"  fullword wide ascii nocase
-    $  =  "fikilo"  fullword wide ascii nocase
-    $  =  "fikiĝi"  fullword wide ascii nocase
-    $  =  "fikiĝu"  fullword wide ascii nocase
-    $  =  "fikklaŭno"  fullword wide ascii nocase
-    $  =  "fikota"  fullword wide ascii nocase
-    $  =  "fiku"  fullword wide ascii nocase
-    $  =  "forfiki"  fullword wide ascii nocase
-    $  =  "forfikiĝu"  fullword wide ascii nocase
-    $  =  "forfiku"  fullword wide ascii nocase
-    $  =  "forfurzu"  fullword wide ascii nocase
-    $  =  "forpisi"  fullword wide ascii nocase
-    $  =  "forpisu"  fullword wide ascii nocase
-    $  =  "furzulo"  fullword wide ascii nocase
-    $  =  "kacen"  fullword wide ascii nocase
-    $  =  "kaco"  fullword wide ascii nocase
-    $  =  "kacsuĉulo"  fullword wide ascii nocase
-    $  =  "kojono"  fullword wide ascii nocase
-    $  =  "piĉen"  fullword wide ascii nocase
-    $  =  "piĉo"  fullword wide ascii nocase
-    $  =  "zamenfek"  fullword wide ascii nocase
-    $  =  "ĉiesulino"  fullword wide ascii nocase
-    $  =  "ĉiesulo"  fullword wide ascii nocase
+    $ = "bugren" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_eo_language_nsfw_2 {
+  strings:
+    $ = "bugri" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_eo_language_nsfw_3 {
+  strings:
+    $ = "bugru" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_eo_language_nsfw_4 {
+  strings:
+    $ = "diofek" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_eo_language_nsfw_5 {
+  strings:
+    $ = "diofeka" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_eo_language_nsfw_6 {
+  strings:
+    $ = "fek" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_eo_language_nsfw_7 {
+  strings:
+    $ = "feken" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_eo_language_nsfw_8 {
+  strings:
+    $ = "fekfikanto" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_eo_language_nsfw_9 {
+  strings:
+    $ = "feklekulo" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_eo_language_nsfw_10 {
+  strings:
+    $ = "fekulo" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_eo_language_nsfw_11 {
+  strings:
+    $ = "fik" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_eo_language_nsfw_12 {
+  strings:
+    $ = "fikado" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_eo_language_nsfw_13 {
+  strings:
+    $ = "fikema" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_eo_language_nsfw_14 {
+  strings:
+    $ = "fikfek" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_eo_language_nsfw_15 {
+  strings:
+    $ = "fiki" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_eo_language_nsfw_16 {
+  strings:
+    $ = "fikilo" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_eo_language_nsfw_17 {
+  strings:
+    $ = "fikiĝi" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_eo_language_nsfw_18 {
+  strings:
+    $ = "fikiĝu" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_eo_language_nsfw_19 {
+  strings:
+    $ = "fikklaŭno" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_eo_language_nsfw_20 {
+  strings:
+    $ = "fikota" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_eo_language_nsfw_21 {
+  strings:
+    $ = "fiku" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_eo_language_nsfw_22 {
+  strings:
+    $ = "forfiki" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_eo_language_nsfw_23 {
+  strings:
+    $ = "forfikiĝu" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_eo_language_nsfw_24 {
+  strings:
+    $ = "forfiku" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_eo_language_nsfw_25 {
+  strings:
+    $ = "forfurzu" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_eo_language_nsfw_26 {
+  strings:
+    $ = "forpisi" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_eo_language_nsfw_27 {
+  strings:
+    $ = "forpisu" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_eo_language_nsfw_28 {
+  strings:
+    $ = "furzulo" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_eo_language_nsfw_29 {
+  strings:
+    $ = "kacen" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_eo_language_nsfw_30 {
+  strings:
+    $ = "kaco" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_eo_language_nsfw_31 {
+  strings:
+    $ = "kacsuĉulo" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_eo_language_nsfw_32 {
+  strings:
+    $ = "kojono" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_eo_language_nsfw_33 {
+  strings:
+    $ = "piĉen" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_eo_language_nsfw_34 {
+  strings:
+    $ = "piĉo" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_eo_language_nsfw_35 {
+  strings:
+    $ = "zamenfek" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_eo_language_nsfw_36 {
+  strings:
+    $ = "ĉiesulino" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_eo_language_nsfw_37 {
+  strings:
+    $ = "ĉiesulo" ascii wide nocase fullword
   condition:
     1 of them
 }
