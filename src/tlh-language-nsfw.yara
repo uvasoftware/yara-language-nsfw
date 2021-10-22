@@ -1,8 +1,21 @@
-rule content_tlh_language_nsfw {
+
+rule content_tlh_language_nsfw_1 {
   strings:
-      $  =  "QI'yaH"  fullword wide ascii nocase
-      $  =  "Qu'vatlh"  fullword wide ascii nocase
-      $  =  "ghuy'cha'"  fullword wide ascii nocase
+    $ = "QI'yaH" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_tlh_language_nsfw_2 {
+  strings:
+    $ = "Qu'vatlh" ascii wide nocase fullword
+  condition:
+    1 of them
+}
+
+rule content_tlh_language_nsfw_3 {
+  strings:
+    $ = "ghuy'cha'" ascii wide nocase fullword
   condition:
     1 of them
 }
