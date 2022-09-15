@@ -1,0 +1,16 @@
+on:
+  push:
+    branches:
+      - main
+jobs:
+  tag-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Releasing
+        run: |
+          export VERSION="$(date +"%y").$(date +"%m").${GITHUB_RUN_NUMBER}"
+          echo "releasing version v${VERSION}"
+          gh release create --generate-notes v"${VERSION}"
+        env: 
+          GITHUB_TOKEN: ${{ github.token }}        
