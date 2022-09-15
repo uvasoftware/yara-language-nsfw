@@ -76,15 +76,6 @@ rule content_en_language_nsfw_12 {
   condition:
     1 of them
 }
-// rule content_en_language_nsfw_15 {
-//   strings:
-//     $ =  "tits"  fullword wide ascii nocase
-//     $ =  "tit"  fullword wide ascii nocase
-//     $ =  "titties"  fullword wide ascii nocase
-//     $ =  "titty"  fullword wide ascii nocase    
-//   condition:
-//     1 of them
-// }
 rule content_en_language_nsfw_16 {
   strings:
     $ =  "bitch"  fullword wide ascii nocase
@@ -952,12 +943,7 @@ rule content_en_language_nsfw_151{
   condition:
     1 of them
 }
-rule content_en_language_nsfw_152 {
-  strings:
-    $ =  "🖕"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
+
 rule content_en_language_nsfw_153 {
   strings:
     $ =  "wet dream"  fullword wide ascii nocase

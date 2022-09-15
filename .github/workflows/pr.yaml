@@ -1,11 +1,10 @@
 on: pull_request
 
 jobs:
-  test:
-    name: Build & Test
+  test-v3:
     runs-on: ubuntu-latest
     container:
-      image: debian:11-slim
+      image: debian:11
     steps:
       - uses: actions/checkout@v2
       - name: Install dependencies
@@ -20,6 +19,25 @@ jobs:
           rm -rf /tmp/* && \
           /usr/local/bin/yara --version
         env:
-          YARA_VERSION: "3.5.0"
+          YARA_VERSION: 3.5.0
+      - name: Testing
+        run: make test
+
+  test-v4:
+    runs-on: ubuntu-latest
+    container:
+      image: debian:11
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: |
+          apt-get update -qq && apt-get install -qqy git libssl-dev pkg-config flex bison libmagic-dev locales procps clang make automake libtool openssl>/dev/null
+          cd /tmp && git clone --depth=1 --branch v${YARA_VERSION} https://github.com/VirusTotal/yara.git && \
+          cd yara && \
+          ./bootstrap.sh && ./configure --enable-magic && make && make install &&\
+          ldconfig && rm -rf /tmp/* && \
+          /usr/local/bin/yara --version
+        env:
+          YARA_VERSION: 4.2.3
       - name: Testing
         run: make test
