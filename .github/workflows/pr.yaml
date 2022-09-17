@@ -1,25 +1,21 @@
 on: pull_request
 
 jobs:
-  test:
-    name: Build & Test
+  yara-v4:
     runs-on: ubuntu-latest
     container:
-      image: debian:11-slim
+      image: debian:11
     steps:
       - uses: actions/checkout@v2
       - name: Install dependencies
         run: |
-          apt-get update && apt-get install -y wget awscli make gcc autoconf libtool openssl && \
-          cd /tmp && wget -q https://github.com/VirusTotal/yara/archive/v${YARA_VERSION}.tar.gz && \
-          tar -zxvf v${YARA_VERSION}.tar.gz && \
-          cd yara-${YARA_VERSION} && \
-          chmod +x build.sh && \
-          ./build.sh && make install && \
-          ldconfig && \
-          rm -rf /tmp/* && \
+          apt-get update -qq && apt-get install -qqy git libssl-dev pkg-config flex bison libmagic-dev locales procps clang make automake libtool openssl>/dev/null
+          cd /tmp && git clone --depth=1 --branch v${YARA_VERSION} https://github.com/VirusTotal/yara.git && \
+          cd yara && \
+          ./bootstrap.sh && ./configure --enable-magic && make && make install &&\
+          ldconfig && rm -rf /tmp/* && \
           /usr/local/bin/yara --version
         env:
-          YARA_VERSION: "3.5.0"
+          YARA_VERSION: 4.2.3
       - name: Testing
         run: make test
