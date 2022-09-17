@@ -3,10 +3,9 @@ SOURCEDIR = src
 SOURCES =  $(shell cd $(SOURCEDIR) && ls *-language-nsfw.yara)
 DESTDIR = ./dist
 
-
 build:
 	mkdir -p $(DESTDIR)
-	yarac src/language-nsfw.yara $(DESTDIR)/language-nsfw.db
+	yarac src/entrypoint.yara $(DESTDIR)/language-nsfw.db
 
 test: build
 	yara -C dist/language-nsfw.db src

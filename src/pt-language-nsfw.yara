@@ -202,13 +202,6 @@ rule content_pt_language_nsfw_29 {
     1 of them
 }
 
-rule content_pt_language_nsfw_30 {
-  strings:
-    $ = "transar" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_pt_language_nsfw_31 {
   strings:
     $ = "veado" ascii wide nocase fullword
