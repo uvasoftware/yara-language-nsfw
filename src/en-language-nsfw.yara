@@ -217,20 +217,6 @@ rule content_en_language_nsfw_41 {
   condition:
     1 of them
 }
-rule content_en_language_nsfw_42 {
-  strings:
-    $ =  "cock"  fullword wide ascii nocase
-    $ =  "cocks"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-// rule content_en_language_nsfw_43 {
-//   strings:
-//     $ =  "coon"  fullword wide ascii nocase
-//     $ =  "coons"  fullword wide ascii nocase
-//   condition:
-//     1 of them
-// }
 rule content_en_language_nsfw_44 {
   strings:
     $ =  "coprolagnia"  fullword wide ascii nocase
@@ -293,19 +279,6 @@ rule content_en_language_nsfw_54 {
     $ =  "dog style"  fullword wide ascii nocase
     $ =  "doggie style"  fullword wide ascii nocase
     $ =  "doggystyle"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_56 {
-  strings:
-    $ =  "ass"  fullword wide ascii nocase
-    $ =  "asses"  fullword wide ascii nocase
-  condition:
-    1 of them
-} 
-rule content_en_language_nsfw_57 {
-  strings:
-    $ =  "eunuch"  fullword wide ascii nocase
   condition:
     1 of them
 }  
