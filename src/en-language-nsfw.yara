@@ -230,13 +230,13 @@ rule content_en_language_nsfw_45 {
   condition:
     1 of them
 }
-# high false positive rate: 
-# rule content_en_language_nsfw_47 {
-#  strings:
-#    $ =  "cumming"  fullword wide ascii nocase
-#  condition:
-#    1 of them
-#}
+// high false positive rate: 
+// rule content_en_language_nsfw_47 {
+//  strings:
+//    $ =  "cumming"  fullword wide ascii nocase
+//  condition:
+//    1 of them
+//}
 rule content_en_language_nsfw_48 {
   strings:
     $ =  "cunnilingus"  fullword wide ascii nocase
