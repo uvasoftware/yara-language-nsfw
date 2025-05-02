@@ -2,6 +2,7 @@ on:
   push:
     branches:
       - main
+permissions: write-all
 jobs:
   tag-and-release:
     runs-on: ubuntu-latest
