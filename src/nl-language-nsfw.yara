@@ -41,13 +41,6 @@ rule content_nl_language_nsfw_6 {
     1 of them
 }
 
-rule content_nl_language_nsfw_7 {
-  strings:
-    $ = "aftrekken" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_nl_language_nsfw_8 {
   strings:
     $ = "afwerkplaats" ascii wide nocase fullword
@@ -76,27 +69,12 @@ rule content_nl_language_nsfw_11 {
     1 of them
 }
 
-rule content_nl_language_nsfw_12 {
-  strings:
-    $ = "anita" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_nl_language_nsfw_13 {
   strings:
     $ = "asbak" ascii wide nocase fullword
   condition:
     1 of them
 }
-
-// too many FPs
-// rule content_nl_language_nsfw_14 {
-//   strings:
-//     $ = "aso" ascii wide nocase fullword
-//   condition:
-//     1 of them
-// }
 
 rule content_nl_language_nsfw_15 {
   strings:
@@ -133,13 +111,6 @@ rule content_nl_language_nsfw_19 {
     1 of them
 }
 
-rule content_nl_language_nsfw_20 {
-  strings:
-    $ = "bekken" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_nl_language_nsfw_21 {
   strings:
     $ = "belazeren" ascii wide nocase fullword
@@ -160,14 +131,6 @@ rule content_nl_language_nsfw_23 {
   condition:
     1 of them
 }
-
-rule content_nl_language_nsfw_24 {
-  strings:
-    $ = "beurt" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_nl_language_nsfw_25 {
   strings:
     $ = "boemelen" ascii wide nocase fullword
@@ -252,23 +215,9 @@ rule content_nl_language_nsfw_36 {
     1 of them
 }
 
-rule content_nl_language_nsfw_37 {
-  strings:
-    $ = "de hond uitlaten" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_nl_language_nsfw_38 {
   strings:
     $ = "de koffer induiken" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_nl_language_nsfw_39 {
-  strings:
-    $ = "de pijp aan maarten geven" ascii wide nocase fullword
   condition:
     1 of them
 }
@@ -325,13 +274,6 @@ rule content_nl_language_nsfw_46 {
 rule content_nl_language_nsfw_47 {
   strings:
     $ = "droogkloot" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_nl_language_nsfw_48 {
-  strings:
-    $ = "een beurt geven" ascii wide nocase fullword
   condition:
     1 of them
 }
@@ -398,21 +340,6 @@ rule content_nl_language_nsfw_57 {
   condition:
     1 of them
 }
-
-rule content_nl_language_nsfw_58 {
-  strings:
-    $ = "gat" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_nl_language_nsfw_59 {
-  strings:
-    $ = "gedoogzone" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_nl_language_nsfw_60 {
   strings:
     $ = "geilneef" ascii wide nocase fullword
@@ -521,13 +448,6 @@ rule content_nl_language_nsfw_74 {
 rule content_nl_language_nsfw_75 {
   strings:
     $ = "huisdealer" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_nl_language_nsfw_76 {
-  strings:
-    $ = "johny" ascii wide nocase fullword
   condition:
     1 of them
 }
@@ -833,13 +753,6 @@ rule content_nl_language_nsfw_119 {
     1 of them
 }
 
-rule content_nl_language_nsfw_120 {
-  strings:
-    $ = "paal" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_nl_language_nsfw_121 {
   strings:
     $ = "paardelul" ascii wide nocase fullword
@@ -1119,14 +1032,6 @@ rule content_nl_language_nsfw_160 {
   condition:
     1 of them
 }
-
-rule content_nl_language_nsfw_161 {
-  strings:
-    $ = "stootje" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_nl_language_nsfw_162 {
   strings:
     $ = "strontg" ascii wide nocase fullword
@@ -1200,13 +1105,6 @@ rule content_nl_language_nsfw_171 {
 rule content_nl_language_nsfw_172 {
   strings:
     $ = "trottoirteef" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_nl_language_nsfw_173 {
-  strings:
-    $ = "vergallen" ascii wide nocase fullword
   condition:
     1 of them
 }
@@ -1295,13 +1193,6 @@ rule content_nl_language_nsfw_185 {
     1 of them
 }
 
-rule content_nl_language_nsfw_186 {
-  strings:
-    $ = "zaadje" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_nl_language_nsfw_187 {
   strings:
     $ = "zakkenwasser" ascii wide nocase fullword
@@ -1322,14 +1213,6 @@ rule content_nl_language_nsfw_189 {
   condition:
     1 of them
 }
-
-rule content_nl_language_nsfw_190 {
-  strings:
-    $ = "zuigen" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_nl_language_nsfw_191 {
   strings:
     $ = "zuiplap" ascii wide nocase fullword
