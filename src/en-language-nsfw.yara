@@ -83,19 +83,6 @@ rule content_en_language_nsfw_20 {
   condition:
     1 of them
 }
-rule content_en_language_nsfw_21 {
-  strings:
-    $ =  "boner"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_22 {
-  strings:
-    $ =  "boob"  fullword wide ascii nocase
-    $ =  "boobs"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
 rule content_en_language_nsfw_23 {
   strings:
     $ =  "booty call"  fullword wide ascii nocase
@@ -132,12 +119,6 @@ rule content_en_language_nsfw_28 {
   strings:
     $ =  "bung hole"  fullword wide ascii nocase
     $ =  "bunghole"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_29 {
-  strings:
-    $ =  "busty"  fullword wide ascii nocase
   condition:
     1 of them
 }
@@ -304,12 +285,7 @@ rule content_en_language_nsfw_60 {
   condition:
     1 of them
 }  
-rule content_en_language_nsfw_61 {
-  strings:
-    $ =  "fingering"  fullword wide ascii nocase
-  condition:
-    1 of them
-} 
+ 
 rule content_en_language_nsfw_62 {
   strings:
     $ =  "fisting"  fullword wide ascii nocase
@@ -360,12 +336,7 @@ rule content_en_language_nsfw_69 {
   condition:
     1 of them
 }
-rule content_en_language_nsfw_70 {
-  strings:
-    $ =  "g-spot"  fullword wide ascii nocase
-  condition:
-    1 of them
-}  
+  
 rule content_en_language_nsfw_71 {
   strings:
     $ =  "gang bang"  fullword wide ascii nocase
@@ -468,12 +439,6 @@ rule content_en_language_nsfw_87 {
 rule content_en_language_nsfw_88 {
   strings:
     $ =  "kinkster"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_89 {
-  strings:
-    $ =  "kinky"  fullword wide ascii nocase
   condition:
     1 of them
 }
@@ -715,12 +680,6 @@ rule content_en_language_nsfw_127 {
   condition:
     1 of them
 }
-rule content_en_language_nsfw_128 {
-  strings:
-    $ =  "smut"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
 
 rule content_en_language_nsfw_130 {
   strings:
@@ -731,12 +690,6 @@ rule content_en_language_nsfw_130 {
 rule content_en_language_nsfw_131 {
   strings:
     $ =  "spooge"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_133 {
-  strings:
-    $ =  "spunk"  fullword wide ascii nocase
   condition:
     1 of them
 }
@@ -756,13 +709,6 @@ rule content_en_language_nsfw_135 {
 rule content_en_language_nsfw_136 {
   strings:
     $ =  "tea bagging"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_137 {
-  strings:
-    $ =  "threesome"  fullword wide ascii nocase
-    $ =  "threesomes"  fullword wide ascii nocase
   condition:
     1 of them
 }
@@ -795,13 +741,6 @@ rule content_en_language_nsfw_141 {
 rule content_en_language_nsfw_142 {
   strings:
     $ =  "upskirt"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_143 {
-  strings:
-    $ =  "vibrator"  fullword wide ascii nocase
-    $ =  "vibrators"  fullword wide ascii nocase
   condition:
     1 of them
 }

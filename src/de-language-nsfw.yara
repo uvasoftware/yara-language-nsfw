@@ -48,13 +48,6 @@ rule content_de_language_nsfw_7 {
     1 of them
 }
 
-rule content_de_language_nsfw_8 {
-  strings:
-    $ = "bonze" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_de_language_nsfw_9 {
   strings:
     $ = "bratze" ascii wide nocase fullword
@@ -100,13 +93,6 @@ rule content_de_language_nsfw_14 {
 rule content_de_language_nsfw_15 {
   strings:
     $ = "fotze" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_de_language_nsfw_16 {
-  strings:
-    $ = "fratze" ascii wide nocase fullword
   condition:
     1 of them
 }
@@ -181,30 +167,9 @@ rule content_de_language_nsfw_26 {
     1 of them
 }
 
-rule content_de_language_nsfw_27 {
-  strings:
-    $ = "kimme" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_de_language_nsfw_28 {
-  strings:
-    $ = "lümmel" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_de_language_nsfw_29 {
   strings:
     $ = "morgenlatte" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_de_language_nsfw_30 {
-  strings:
-    $ = "mufti" ascii wide nocase fullword
   condition:
     1 of them
 }
@@ -226,13 +191,6 @@ rule content_de_language_nsfw_32 {
 rule content_de_language_nsfw_33 {
   strings:
     $ = "möse" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_de_language_nsfw_34 {
-  strings:
-    $ = "nackt" ascii wide nocase fullword
   condition:
     1 of them
 }
@@ -314,13 +272,6 @@ rule content_de_language_nsfw_45 {
     1 of them
 }
 
-rule content_de_language_nsfw_46 {
-  strings:
-    $ = "popel" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_de_language_nsfw_47 {
   strings:
     $ = "poppen" ascii wide nocase fullword
@@ -342,20 +293,6 @@ rule content_de_language_nsfw_49 {
     1 of them
 }
 
-rule content_de_language_nsfw_50 {
-  strings:
-    $ = "rosette" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_de_language_nsfw_51 {
-  strings:
-    $ = "schabracke" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_de_language_nsfw_52 {
   strings:
     $ = "scheisser" ascii wide nocase fullword
@@ -366,13 +303,6 @@ rule content_de_language_nsfw_52 {
 rule content_de_language_nsfw_53 {
   strings:
     $ = "scheiße" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_de_language_nsfw_54 {
-  strings:
-    $ = "schiesser" ascii wide nocase fullword
   condition:
     1 of them
 }

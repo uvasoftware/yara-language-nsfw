@@ -34,13 +34,6 @@ rule content_ja_language_nsfw_5 {
     1 of them
 }
 
-rule content_ja_language_nsfw_6 {
-  strings:
-    $ = "卍" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_ja_language_nsfw_7 {
   strings:
     $ = "糞" ascii wide nocase fullword
@@ -188,13 +181,6 @@ rule content_ja_language_nsfw_27 {
     1 of them
 }
 
-rule content_ja_language_nsfw_28 {
-  strings:
-    $ = "嫌い" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_ja_language_nsfw_29 {
   strings:
     $ = "宦官" ascii wide nocase fullword
@@ -219,13 +205,6 @@ rule content_ja_language_nsfw_31 {
 rule content_ja_language_nsfw_32 {
   strings:
     $ = "巨根" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_ja_language_nsfw_33 {
-  strings:
-    $ = "幼児" ascii wide nocase fullword
   condition:
     1 of them
 }
@@ -496,13 +475,6 @@ rule content_ja_language_nsfw_71 {
     1 of them
 }
 
-rule content_ja_language_nsfw_72 {
-  strings:
-    $ = "女の子" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_ja_language_nsfw_73 {
   strings:
     $ = "女王様" ascii wide nocase fullword
@@ -748,13 +720,6 @@ rule content_ja_language_nsfw_107 {
     1 of them
 }
 
-rule content_ja_language_nsfw_108 {
-  strings:
-    $ = "ユダヤ人" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_ja_language_nsfw_109 {
   strings:
     $ = "ロリータ" ascii wide nocase fullword
@@ -972,13 +937,6 @@ rule content_ja_language_nsfw_139 {
     1 of them
 }
 
-rule content_ja_language_nsfw_140 {
-  strings:
-    $ = "ラティーナ" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_ja_language_nsfw_141 {
   strings:
     $ = "レズビアン" ascii wide nocase fullword
@@ -1056,13 +1014,6 @@ rule content_ja_language_nsfw_151 {
     1 of them
 }
 
-rule content_ja_language_nsfw_152 {
-  strings:
-    $ = "ウェブカメラ" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_ja_language_nsfw_153 {
   strings:
     $ = "エクスタシー" ascii wide nocase fullword
@@ -1101,13 +1052,6 @@ rule content_ja_language_nsfw_157 {
 rule content_ja_language_nsfw_158 {
   strings:
     $ = "デートレイプ" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_ja_language_nsfw_159 {
-  strings:
-    $ = "ファンタジー" ascii wide nocase fullword
   condition:
     1 of them
 }

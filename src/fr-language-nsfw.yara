@@ -6,20 +6,6 @@ rule content_fr_language_nsfw_1 {
     1 of them
 }
 
-rule content_fr_language_nsfw_2 {
-  strings:
-    $ = "baiser" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_fr_language_nsfw_3 {
-  strings:
-    $ = "bander" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_fr_language_nsfw_4 {
   strings:
     $ = "bigornette" ascii wide nocase fullword
@@ -51,27 +37,6 @@ rule content_fr_language_nsfw_7 {
 rule content_fr_language_nsfw_8 {
   strings:
     $ = "bordel" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_fr_language_nsfw_9 {
-  strings:
-    $ = "bosser" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_fr_language_nsfw_10 {
-  strings:
-    $ = "bourré" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_fr_language_nsfw_11 {
-  strings:
-    $ = "bourrée" ascii wide nocase fullword
   condition:
     1 of them
 }
@@ -121,27 +86,6 @@ rule content_fr_language_nsfw_17 {
 rule content_fr_language_nsfw_18 {
   strings:
     $ = "brouter le cresson" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_fr_language_nsfw_19 {
-  strings:
-    $ = "caca" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_fr_language_nsfw_20 {
-  strings:
-    $ = "cailler" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_fr_language_nsfw_21 {
-  strings:
-    $ = "chatte" ascii wide nocase fullword
   condition:
     1 of them
 }
@@ -226,13 +170,6 @@ rule content_fr_language_nsfw_32 {
 rule content_fr_language_nsfw_33 {
   strings:
     $ = "cul" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_fr_language_nsfw_34 {
-  strings:
-    $ = "drague" ascii wide nocase fullword
   condition:
     1 of them
 }
@@ -335,30 +272,9 @@ rule content_fr_language_nsfw_48 {
     1 of them
 }
 
-rule content_fr_language_nsfw_49 {
-  strings:
-    $ = "folle" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_fr_language_nsfw_50 {
   strings:
     $ = "foutre" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_fr_language_nsfw_51 {
-  strings:
-    $ = "gerbe" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_fr_language_nsfw_52 {
-  strings:
-    $ = "gerber" ascii wide nocase fullword
   condition:
     1 of them
 }
@@ -380,20 +296,6 @@ rule content_fr_language_nsfw_54 {
 rule content_fr_language_nsfw_55 {
   strings:
     $ = "grogniasse" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_fr_language_nsfw_56 {
-  strings:
-    $ = "gueule" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_fr_language_nsfw_57 {
-  strings:
-    $ = "jouir" ascii wide nocase fullword
   condition:
     1 of them
 }
@@ -422,13 +324,6 @@ rule content_fr_language_nsfw_60 {
 rule content_fr_language_nsfw_61 {
   strings:
     $ = "merdeux" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_fr_language_nsfw_62 {
-  strings:
-    $ = "meuf" ascii wide nocase fullword
   condition:
     1 of them
 }
@@ -468,13 +363,6 @@ rule content_fr_language_nsfw_67 {
     1 of them
 }
 
-rule content_fr_language_nsfw_68 {
-  strings:
-    $ = "pipi" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_fr_language_nsfw_69 {
   strings:
     $ = "pisser" ascii wide nocase fullword
@@ -510,13 +398,6 @@ rule content_fr_language_nsfw_73 {
     1 of them
 }
 
-rule content_fr_language_nsfw_74 {
-  strings:
-    $ = "pédale" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_fr_language_nsfw_75 {
   strings:
     $ = "pédé" ascii wide nocase fullword
@@ -527,13 +408,6 @@ rule content_fr_language_nsfw_75 {
 rule content_fr_language_nsfw_76 {
   strings:
     $ = "péter" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_fr_language_nsfw_77 {
-  strings:
-    $ = "ramoner" ascii wide nocase fullword
   condition:
     1 of them
 }
@@ -566,30 +440,9 @@ rule content_fr_language_nsfw_81 {
     1 of them
 }
 
-rule content_fr_language_nsfw_82 {
-  strings:
-    $ = "tapette" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_fr_language_nsfw_83 {
-  strings:
-    $ = "teuf" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_fr_language_nsfw_84 {
   strings:
     $ = "tringler" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_fr_language_nsfw_85 {
-  strings:
-    $ = "trique" ascii wide nocase fullword
   condition:
     1 of them
 }
@@ -608,23 +461,9 @@ rule content_fr_language_nsfw_87 {
     1 of them
 }
 
-rule content_fr_language_nsfw_88 {
-  strings:
-    $ = "veuve" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_fr_language_nsfw_89 {
   strings:
     $ = "zigounette" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_fr_language_nsfw_90 {
-  strings:
-    $ = "zizi" ascii wide nocase fullword
   condition:
     1 of them
 }

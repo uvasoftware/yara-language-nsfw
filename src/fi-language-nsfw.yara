@@ -132,13 +132,6 @@ rule content_fi_language_nsfw_19 {
     1 of them
 }
 
-rule content_fi_language_nsfw_20 {
-  strings:
-    $ = "jätkä" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_fi_language_nsfw_21 {
   strings:
     $ = "kananpaska" ascii wide nocase fullword
@@ -314,13 +307,6 @@ rule content_fi_language_nsfw_45 {
     1 of them
 }
 
-rule content_fi_language_nsfw_46 {
-  strings:
-    $ = "muna" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_fi_language_nsfw_47 {
   strings:
     $ = "munapää" ascii wide nocase fullword
@@ -443,13 +429,6 @@ rule content_fi_language_nsfw_63 {
 rule content_fi_language_nsfw_64 {
   strings:
     $ = "panettaa" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_fi_language_nsfw_65 {
-  strings:
-    $ = "panna" ascii wide nocase fullword
   condition:
     1 of them
 }
@@ -650,13 +629,6 @@ rule content_fi_language_nsfw_93 {
     1 of them
 }
 
-rule content_fi_language_nsfw_94 {
-  strings:
-    $ = "pipari" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_fi_language_nsfw_95 {
   strings:
     $ = "piru" ascii wide nocase fullword
@@ -674,13 +646,6 @@ rule content_fi_language_nsfw_96 {
 rule content_fi_language_nsfw_97 {
   strings:
     $ = "pyllyvako" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_fi_language_nsfw_98 {
-  strings:
-    $ = "reikä" ascii wide nocase fullword
   condition:
     1 of them
 }
@@ -755,13 +720,6 @@ rule content_fi_language_nsfw_108 {
     1 of them
 }
 
-rule content_fi_language_nsfw_109 {
-  strings:
-    $ = "tavara" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_fi_language_nsfw_110 {
   strings:
     $ = "toosa" ascii wide nocase fullword
@@ -821,13 +779,6 @@ rule content_fi_language_nsfw_117 {
 rule content_fi_language_nsfw_118 {
   strings:
     $ = "vetää käteen" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_fi_language_nsfw_119 {
-  strings:
-    $ = "viiksi" ascii wide nocase fullword
   condition:
     1 of them
 }

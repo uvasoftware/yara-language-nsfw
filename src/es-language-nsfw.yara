@@ -1,11 +1,4 @@
 
-rule content_es_language_nsfw_1 {
-  strings:
-    $ = "Asesinato" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_es_language_nsfw_2 {
   strings:
     $ = "Bollera" ascii wide nocase fullword
@@ -23,13 +16,6 @@ rule content_es_language_nsfw_3 {
 rule content_es_language_nsfw_4 {
   strings:
     $ = "Cabrón" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_es_language_nsfw_5 {
-  strings:
-    $ = "Caca" ascii wide nocase fullword
   condition:
     1 of them
 }
@@ -79,13 +65,6 @@ rule content_es_language_nsfw_11 {
 rule content_es_language_nsfw_12 {
   strings:
     $ = "Culo" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_es_language_nsfw_13 {
-  strings:
-    $ = "Drogas" ascii wide nocase fullword
   condition:
     1 of them
 }
@@ -146,13 +125,6 @@ rule content_es_language_nsfw_21 {
     1 of them
 }
 
-rule content_es_language_nsfw_22 {
-  strings:
-    $ = "Heroína" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_es_language_nsfw_23 {
   strings:
     $ = "Hija de puta" ascii wide nocase fullword
@@ -177,20 +149,6 @@ rule content_es_language_nsfw_25 {
 rule content_es_language_nsfw_26 {
   strings:
     $ = "Hijoputa" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_es_language_nsfw_27 {
-  strings:
-    $ = "Idiota" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_es_language_nsfw_28 {
-  strings:
-    $ = "Imbécil" ascii wide nocase fullword
   condition:
     1 of them
 }
@@ -265,27 +223,6 @@ rule content_es_language_nsfw_38 {
     1 of them
 }
 
-rule content_es_language_nsfw_39 {
-  strings:
-    $ = "Nazi" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_es_language_nsfw_40 {
-  strings:
-    $ = "Orina" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_es_language_nsfw_41 {
-  strings:
-    $ = "Pedo" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_es_language_nsfw_42 {
   strings:
     $ = "Pervertido" ascii wide nocase fullword
@@ -307,13 +244,6 @@ rule content_es_language_nsfw_44 {
     1 of them
 }
 
-rule content_es_language_nsfw_45 {
-  strings:
-    $ = "Pis" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_es_language_nsfw_46 {
   strings:
     $ = "Prostituta" ascii wide nocase fullword
@@ -328,13 +258,6 @@ rule content_es_language_nsfw_47 {
     1 of them
 }
 
-rule content_es_language_nsfw_48 {
-  strings:
-    $ = "Racista" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_es_language_nsfw_49 {
   strings:
     $ = "Ramera" ascii wide nocase fullword
@@ -345,13 +268,6 @@ rule content_es_language_nsfw_49 {
 rule content_es_language_nsfw_50 {
   strings:
     $ = "Semen" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_es_language_nsfw_51 {
-  strings:
-    $ = "Sexo" ascii wide nocase fullword
   condition:
     1 of them
 }
@@ -398,13 +314,6 @@ rule content_es_language_nsfw_57 {
     1 of them
 }
 
-rule content_es_language_nsfw_58 {
-  strings:
-    $ = "Trio" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_es_language_nsfw_59 {
   strings:
     $ = "Tía buena" ascii wide nocase fullword
@@ -426,44 +335,9 @@ rule content_es_language_nsfw_61 {
     1 of them
 }
 
-rule content_es_language_nsfw_62 {
-  strings:
-    $ = "asno" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_es_language_nsfw_63 {
-  strings:
-    $ = "bastardo" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_es_language_nsfw_64 {
-  strings:
-    $ = "concha" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_es_language_nsfw_65 {
-  strings:
-    $ = "infierno" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_es_language_nsfw_66 {
   strings:
     $ = "maldito" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_es_language_nsfw_67 {
-  strings:
-    $ = "martillo" ascii wide nocase fullword
   condition:
     1 of them
 }

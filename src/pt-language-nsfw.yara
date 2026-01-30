@@ -1,21 +1,7 @@
 
-rule content_pt_language_nsfw_1 {
-  strings:
-    $ = "bicha" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_pt_language_nsfw_2 {
   strings:
     $ = "balalao" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_pt_language_nsfw_3 {
-  strings:
-    $ = "bastardo" ascii wide nocase fullword
   condition:
     1 of them
 }
@@ -48,13 +34,6 @@ rule content_pt_language_nsfw_7 {
     1 of them
 }
 
-rule content_pt_language_nsfw_8 {
-  strings:
-    $ = "bumbum" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_pt_language_nsfw_9 {
   strings:
     $ = "cacete" ascii wide nocase fullword
@@ -65,13 +44,6 @@ rule content_pt_language_nsfw_9 {
 rule content_pt_language_nsfw_10 {
   strings:
     $ = "chochota" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_pt_language_nsfw_11 {
-  strings:
-    $ = "corno" ascii wide nocase fullword
   condition:
     1 of them
 }
@@ -132,23 +104,9 @@ rule content_pt_language_nsfw_19 {
     1 of them
 }
 
-rule content_pt_language_nsfw_20 {
-  strings:
-    $ = "gozar" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_pt_language_nsfw_21 {
   strings:
     $ = "merda" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_pt_language_nsfw_22 {
-  strings:
-    $ = "peidar" ascii wide nocase fullword
   condition:
     1 of them
 }
@@ -198,13 +156,6 @@ rule content_pt_language_nsfw_28 {
 rule content_pt_language_nsfw_29 {
   strings:
     $ = "transar" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_pt_language_nsfw_31 {
-  strings:
-    $ = "veado" ascii wide nocase fullword
   condition:
     1 of them
 }

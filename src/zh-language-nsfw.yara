@@ -6,27 +6,6 @@ rule content_zh_language_nsfw_1 {
     1 of them
 }
 
-rule content_zh_language_nsfw_2 {
-  strings:
-    $ = "乳" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_zh_language_nsfw_3 {
-  strings:
-    $ = "卵" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_zh_language_nsfw_4 {
-  strings:
-    $ = "奶" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_zh_language_nsfw_5 {
   strings:
     $ = "奸" ascii wide nocase fullword
@@ -65,13 +44,6 @@ rule content_zh_language_nsfw_9 {
 rule content_zh_language_nsfw_10 {
   strings:
     $ = "幹" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_zh_language_nsfw_11 {
-  strings:
-    $ = "性" ascii wide nocase fullword
   condition:
     1 of them
 }
@@ -317,13 +289,6 @@ rule content_zh_language_nsfw_45 {
 rule content_zh_language_nsfw_46 {
   strings:
     $ = "卖淫" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_zh_language_nsfw_47 {
-  strings:
-    $ = "卵子" ascii wide nocase fullword
   condition:
     1 of them
 }
@@ -580,13 +545,6 @@ rule content_zh_language_nsfw_83 {
     1 of them
 }
 
-rule content_zh_language_nsfw_84 {
-  strings:
-    $ = "成人" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_zh_language_nsfw_85 {
   strings:
     $ = "扒光" ascii wide nocase fullword
@@ -762,13 +720,6 @@ rule content_zh_language_nsfw_109 {
     1 of them
 }
 
-rule content_zh_language_nsfw_110 {
-  strings:
-    $ = "激情" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_zh_language_nsfw_111 {
   strings:
     $ = "烂货" ascii wide nocase fullword
@@ -821,41 +772,6 @@ rule content_zh_language_nsfw_117 {
 rule content_zh_language_nsfw_118 {
   strings:
     $ = "白烂" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_zh_language_nsfw_119 {
-  strings:
-    $ = "白痴" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_zh_language_nsfw_120 {
-  strings:
-    $ = "白癡" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_zh_language_nsfw_121 {
-  strings:
-    $ = "祖宗" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_zh_language_nsfw_122 {
-  strings:
-    $ = "私服" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_zh_language_nsfw_123 {
-  strings:
-    $ = "笨蛋" ascii wide nocase fullword
   condition:
     1 of them
 }

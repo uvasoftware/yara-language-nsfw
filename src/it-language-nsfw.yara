@@ -62,30 +62,9 @@ rule content_it_language_nsfw_9 {
     1 of them
 }
 
-rule content_it_language_nsfw_10 {
-  strings:
-    $ = "bagnarsi" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_it_language_nsfw_11 {
   strings:
     $ = "baldracca" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_12 {
-  strings:
-    $ = "balle" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_13 {
-  strings:
-    $ = "battere" ascii wide nocase fullword
   condition:
     1 of them
 }
@@ -100,13 +79,6 @@ rule content_it_language_nsfw_14 {
 rule content_it_language_nsfw_15 {
   strings:
     $ = "belino" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_16 {
-  strings:
-    $ = "biga" ascii wide nocase fullword
   condition:
     1 of them
 }
@@ -181,13 +153,6 @@ rule content_it_language_nsfw_26 {
     1 of them
 }
 
-rule content_it_language_nsfw_27 {
-  strings:
-    $ = "cacca" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_it_language_nsfw_28 {
   strings:
     $ = "caccati in mano e prenditi a schiaffi" ascii wide nocase fullword
@@ -202,13 +167,6 @@ rule content_it_language_nsfw_29 {
     1 of them
 }
 
-rule content_it_language_nsfw_30 {
-  strings:
-    $ = "cadavere" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_it_language_nsfw_31 {
   strings:
     $ = "cagare" ascii wide nocase fullword
@@ -219,41 +177,6 @@ rule content_it_language_nsfw_31 {
 rule content_it_language_nsfw_32 {
   strings:
     $ = "cagata" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_33 {
-  strings:
-    $ = "cagna" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_34 {
-  strings:
-    $ = "cammello" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_35 {
-  strings:
-    $ = "cappella" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_36 {
-  strings:
-    $ = "carciofo" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_37 {
-  strings:
-    $ = "carità" ascii wide nocase fullword
   condition:
     1 of them
 }
@@ -391,23 +314,9 @@ rule content_it_language_nsfw_56 {
     1 of them
 }
 
-rule content_it_language_nsfw_57 {
-  strings:
-    $ = "duro" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_it_language_nsfw_58 {
   strings:
     $ = "fare unaŠ" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_59 {
-  strings:
-    $ = "fava" ascii wide nocase fullword
   condition:
     1 of them
 }
@@ -450,13 +359,6 @@ rule content_it_language_nsfw_64 {
 rule content_it_language_nsfw_65 {
   strings:
     $ = "figone" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_66 {
-  strings:
-    $ = "finocchio" ascii wide nocase fullword
   condition:
     1 of them
 }
@@ -513,20 +415,6 @@ rule content_it_language_nsfw_73 {
 rule content_it_language_nsfw_74 {
   strings:
     $ = "goldone" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_75 {
-  strings:
-    $ = "grilletto" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_76 {
-  strings:
-    $ = "guanto" ascii wide nocase fullword
   condition:
     1 of them
 }
@@ -601,20 +489,6 @@ rule content_it_language_nsfw_86 {
     1 of them
 }
 
-rule content_it_language_nsfw_87 {
-  strings:
-    $ = "lumaca" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_88 {
-  strings:
-    $ = "manico" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_it_language_nsfw_89 {
   strings:
     $ = "mannaggia" ascii wide nocase fullword
@@ -671,20 +545,6 @@ rule content_it_language_nsfw_96 {
     1 of them
 }
 
-rule content_it_language_nsfw_97 {
-  strings:
-    $ = "monta" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_98 {
-  strings:
-    $ = "montare" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_it_language_nsfw_99 {
   strings:
     $ = "mussa" ascii wide nocase fullword
@@ -706,23 +566,9 @@ rule content_it_language_nsfw_101 {
     1 of them
 }
 
-rule content_it_language_nsfw_102 {
-  strings:
-    $ = "nudo" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_it_language_nsfw_103 {
   strings:
     $ = "padulo" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_104 {
-  strings:
-    $ = "palle" ascii wide nocase fullword
   condition:
     1 of them
 }
@@ -755,13 +601,6 @@ rule content_it_language_nsfw_108 {
     1 of them
 }
 
-rule content_it_language_nsfw_109 {
-  strings:
-    $ = "pesce" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_it_language_nsfw_110 {
   strings:
     $ = "picio" ascii wide nocase fullword
@@ -776,23 +615,9 @@ rule content_it_language_nsfw_111 {
     1 of them
 }
 
-rule content_it_language_nsfw_112 {
-  strings:
-    $ = "pipa" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_it_language_nsfw_113 {
   strings:
     $ = "pippone" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_114 {
-  strings:
-    $ = "pipì" ascii wide nocase fullword
   condition:
     1 of them
 }
@@ -818,20 +643,6 @@ rule content_it_language_nsfw_117 {
     1 of them
 }
 
-rule content_it_language_nsfw_118 {
-  strings:
-    $ = "pisello" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_119 {
-  strings:
-    $ = "pistola" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_it_language_nsfw_120 {
   strings:
     $ = "pistolotto" ascii wide nocase fullword
@@ -846,23 +657,9 @@ rule content_it_language_nsfw_121 {
     1 of them
 }
 
-rule content_it_language_nsfw_122 {
-  strings:
-    $ = "pompa" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_it_language_nsfw_123 {
   strings:
     $ = "pompino" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_124 {
-  strings:
-    $ = "porca" ascii wide nocase fullword
   condition:
     1 of them
 }
@@ -923,23 +720,9 @@ rule content_it_language_nsfw_132 {
     1 of them
 }
 
-rule content_it_language_nsfw_133 {
-  strings:
-    $ = "quaglia" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_it_language_nsfw_134 {
   strings:
     $ = "recchione" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_135 {
-  strings:
-    $ = "regina" ascii wide nocase fullword
   condition:
     1 of them
 }
@@ -968,20 +751,6 @@ rule content_it_language_nsfw_138 {
 rule content_it_language_nsfw_139 {
   strings:
     $ = "ruffiano" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_140 {
-  strings:
-    $ = "sbattere" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_141 {
-  strings:
-    $ = "sbattersi" ascii wide nocase fullword
   condition:
     1 of them
 }
@@ -1035,13 +804,6 @@ rule content_it_language_nsfw_148 {
     1 of them
 }
 
-rule content_it_language_nsfw_149 {
-  strings:
-    $ = "sega" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_it_language_nsfw_150 {
   strings:
     $ = "slinguare" ascii wide nocase fullword
@@ -1080,13 +842,6 @@ rule content_it_language_nsfw_154 {
 rule content_it_language_nsfw_155 {
   strings:
     $ = "sorca" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_156 {
-  strings:
-    $ = "spagnola" ascii wide nocase fullword
   condition:
     1 of them
 }
@@ -1175,23 +930,9 @@ rule content_it_language_nsfw_168 {
     1 of them
 }
 
-rule content_it_language_nsfw_169 {
-  strings:
-    $ = "tirare" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_it_language_nsfw_170 {
   strings:
     $ = "topa" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_171 {
-  strings:
-    $ = "troia" ascii wide nocase fullword
   condition:
     1 of them
 }
@@ -1203,37 +944,9 @@ rule content_it_language_nsfw_172 {
     1 of them
 }
 
-rule content_it_language_nsfw_173 {
-  strings:
-    $ = "uccello" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_174 {
-  strings:
-    $ = "vacca" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_it_language_nsfw_175 {
   strings:
     $ = "vaffanculo" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_176 {
-  strings:
-    $ = "vangare" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_177 {
-  strings:
-    $ = "venire" ascii wide nocase fullword
   condition:
     1 of them
 }

@@ -1,11 +1,4 @@
 
-rule content_cs_language_nsfw_1 {
-  strings:
-    $ = "bordel" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_cs_language_nsfw_2 {
   strings:
     $ = "buzna" ascii wide nocase fullword
@@ -23,13 +16,6 @@ rule content_cs_language_nsfw_3 {
 rule content_cs_language_nsfw_4 {
   strings:
     $ = "chuj" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_cs_language_nsfw_5 {
-  strings:
-    $ = "debil" ascii wide nocase fullword
   condition:
     1 of them
 }
@@ -258,23 +244,9 @@ rule content_cs_language_nsfw_37 {
     1 of them
 }
 
-rule content_cs_language_nsfw_38 {
-  strings:
-    $ = "žrát" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_cs_language_nsfw_39 {
   strings:
     $ = "šulin" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_cs_language_nsfw_40 {
-  strings:
-    $ = "čumět" ascii wide nocase fullword
   condition:
     1 of them
 }
