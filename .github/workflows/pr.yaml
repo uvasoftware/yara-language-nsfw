@@ -4,17 +4,12 @@ jobs:
   yara-v4:
     runs-on: ubuntu-latest
     container:
-      image: debian:11
+      image: debian:13
     steps:
       - uses: actions/checkout@v2
       - name: Install dependencies
         run: |
-          apt-get update -qq && apt-get install -qqy git libssl-dev pkg-config flex bison libmagic-dev locales procps clang make automake libtool openssl>/dev/null
-          cd /tmp && git clone --depth=1 --branch v${YARA_VERSION} https://github.com/VirusTotal/yara.git && \
-          cd yara && \
-          ./bootstrap.sh && ./configure --enable-magic && make && make install &&\
-          ldconfig && rm -rf /tmp/* && \
-          /usr/local/bin/yara --version
+          apt-get update -qq && apt-get install -qqy yara
         env:
           YARA_VERSION: 4.2.3
       - name: Testing
