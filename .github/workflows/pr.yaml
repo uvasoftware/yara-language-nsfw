@@ -3,13 +3,11 @@ on: pull_request
 jobs:
   yara-v4:
     runs-on: ubuntu-latest
-    container:
-      image: debian:13
     steps:
       - uses: actions/checkout@v2
       - name: Install dependencies
         run: |
-          apt-get update -qq && apt-get install -qqy yara
+          sudo apt-get update -qq && sudo apt-get install -qqy make yara
         env:
           YARA_VERSION: 4.2.3
       - name: Testing

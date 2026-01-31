@@ -5,7 +5,7 @@ rule content_zh_language_nsfw_1 {
   strings:
     $utf8 = "\x31\x33\xe7\x82\xb9" nocase
     $gbk = "\x31\x33\xb5\xe3" nocase
-    $wide = "\x31\x00\x33\x00\x70b9\x00" nocase
+    $wide = "\x31\x00\x33\x00\xb9\x70\x00" nocase
   condition:
     any of them
 }
@@ -16,7 +16,7 @@ rule content_zh_language_nsfw_5 {
   strings:
     $utf8 = "\xe5\xa5\xb8" nocase
     $gbk = "\xbc\xe9" nocase
-    $wide = "\x5978\x00" nocase
+    $wide = "\x78\x59\x00" nocase
   condition:
     any of them
 }
@@ -27,7 +27,7 @@ rule content_zh_language_nsfw_6 {
   strings:
     $utf8 = "\xe5\xa6\x93" nocase
     $gbk = "\xbc\xcb" nocase
-    $wide = "\x5993\x00" nocase
+    $wide = "\x93\x59\x00" nocase
   condition:
     any of them
 }
@@ -38,7 +38,7 @@ rule content_zh_language_nsfw_7 {
   strings:
     $utf8 = "\xe5\xa7\xa6" nocase
     $gbk = "\x8a\xa6" nocase
-    $wide = "\x59e6\x00" nocase
+    $wide = "\xe6\x59\x00" nocase
   condition:
     any of them
 }
@@ -49,7 +49,7 @@ rule content_zh_language_nsfw_8 {
   strings:
     $utf8 = "\xe5\xb1\x84" nocase
     $gbk = "\x8c\xc2" nocase
-    $wide = "\x5c44\x00" nocase
+    $wide = "\x44\x5c\x00" nocase
   condition:
     any of them
 }
@@ -60,7 +60,7 @@ rule content_zh_language_nsfw_9 {
   strings:
     $utf8 = "\xe5\xb1\x8c" nocase
     $gbk = "\x8c\xc5" nocase
-    $wide = "\x5c4c\x00" nocase
+    $wide = "\x4c\x5c\x00" nocase
   condition:
     any of them
 }
@@ -71,7 +71,7 @@ rule content_zh_language_nsfw_10 {
   strings:
     $utf8 = "\xe5\xb9\xb9" nocase
     $gbk = "\x8e\xd6" nocase
-    $wide = "\x5e79\x00" nocase
+    $wide = "\x79\x5e\x00" nocase
   condition:
     any of them
 }
@@ -82,7 +82,7 @@ rule content_zh_language_nsfw_12 {
   strings:
     $utf8 = "\xe6\xb7\xab" nocase
     $gbk = "\xd2\xf9" nocase
-    $wide = "\x6deb\x00" nocase
+    $wide = "\xeb\x6d\x00" nocase
   condition:
     any of them
 }
@@ -93,7 +93,7 @@ rule content_zh_language_nsfw_13 {
   strings:
     $utf8 = "\xe7\x88\x9b" nocase
     $gbk = "\xa0\x80" nocase
-    $wide = "\x721b\x00" nocase
+    $wide = "\x1b\x72\x00" nocase
   condition:
     any of them
 }
@@ -104,7 +104,7 @@ rule content_zh_language_nsfw_14 {
   strings:
     $utf8 = "\xe8\x82\x8f" nocase
     $gbk = "\xc3\x48" nocase
-    $wide = "\x808f\x00" nocase
+    $wide = "\x8f\x80\x00" nocase
   condition:
     any of them
 }
@@ -115,7 +115,7 @@ rule content_zh_language_nsfw_15 {
   strings:
     $utf8 = "\xe8\xb3\xa4" nocase
     $gbk = "\xd9\x76" nocase
-    $wide = "\x8ce4\x00" nocase
+    $wide = "\xe4\x8c\x00" nocase
   condition:
     any of them
 }
@@ -126,7 +126,7 @@ rule content_zh_language_nsfw_16 {
   strings:
     $utf8 = "\xe9\x80\xbc" nocase
     $gbk = "\xb1\xc6" nocase
-    $wide = "\x903c\x00" nocase
+    $wide = "\x3c\x90\x00" nocase
   condition:
     any of them
 }
@@ -137,7 +137,7 @@ rule content_zh_language_nsfw_17 {
   strings:
     $utf8 = "\xe6\x87\x92\x38" nocase
     $gbk = "\xc0\xc1\x38" nocase
-    $wide = "\x61d2\x00\x38\x00" nocase
+    $wide = "\xd2\x61\x00\x38\x00" nocase
   condition:
     any of them
 }
@@ -148,7 +148,7 @@ rule content_zh_language_nsfw_18 {
   strings:
     $utf8 = "\xe9\xb8\xa1\x38" nocase
     $gbk = "\xbc\xa6\x38" nocase
-    $wide = "\x9e21\x00\x38\x00" nocase
+    $wide = "\x21\x9e\x00\x38\x00" nocase
   condition:
     any of them
 }
@@ -159,7 +159,7 @@ rule content_zh_language_nsfw_19 {
   strings:
     $utf8 = "\xe5\x8d\x96\x42" nocase
     $gbk = "\xc2\xf4\x42" nocase
-    $wide = "\x5356\x00\x42\x00" nocase
+    $wide = "\x56\x53\x00\x42\x00" nocase
   condition:
     any of them
 }
@@ -170,7 +170,7 @@ rule content_zh_language_nsfw_20 {
   strings:
     $utf8 = "\xe5\xa6\x88\x42" nocase
     $gbk = "\xc2\xe8\x42" nocase
-    $wide = "\x5988\x00\x42\x00" nocase
+    $wide = "\x88\x59\x00\x42\x00" nocase
   condition:
     any of them
 }
@@ -181,7 +181,7 @@ rule content_zh_language_nsfw_21 {
   strings:
     $utf8 = "\xe8\xb4\xb1\x42" nocase
     $gbk = "\xbc\xfa\x42" nocase
-    $wide = "\x8d31\x00\x42\x00" nocase
+    $wide = "\x31\x8d\x00\x42\x00" nocase
   condition:
     any of them
 }
@@ -192,7 +192,7 @@ rule content_zh_language_nsfw_22 {
   strings:
     $utf8 = "\xe5\xb9\xb2\x78\xe5\xa8\x98" nocase
     $gbk = "\xb8\xc9\x78\xc4\xef" nocase
-    $wide = "\x5e72\x00\x78\x00\x5a18\x00" nocase
+    $wide = "\x72\x5e\x00\x78\x00\x18\x5a\x00" nocase
   condition:
     any of them
 }
@@ -203,7 +203,7 @@ rule content_zh_language_nsfw_23 {
   strings:
     $utf8 = "\xe4\xb8\x8b\xe8\xb4\xb1" nocase
     $gbk = "\xcf\xc2\xbc\xfa" nocase
-    $wide = "\x4e0b\x00\x8d31\x00" nocase
+    $wide = "\x0b\x4e\x00\x31\x8d\x00" nocase
   condition:
     any of them
 }
@@ -214,7 +214,7 @@ rule content_zh_language_nsfw_24 {
   strings:
     $utf8 = "\xe4\xb9\x9d\xe6\xb8\xb8" nocase
     $gbk = "\xbe\xc5\xd3\xce" nocase
-    $wide = "\x4e5d\x00\x6e38\x00" nocase
+    $wide = "\x5d\x4e\x00\x38\x6e\x00" nocase
   condition:
     any of them
 }
@@ -225,7 +225,7 @@ rule content_zh_language_nsfw_25 {
   strings:
     $utf8 = "\xe4\xb9\xb3\xe4\xba\xa4" nocase
     $gbk = "\xc8\xe9\xbd\xbb" nocase
-    $wide = "\x4e73\x00\x4ea4\x00" nocase
+    $wide = "\x73\x4e\x00\xa4\x4e\x00" nocase
   condition:
     any of them
 }
@@ -236,7 +236,7 @@ rule content_zh_language_nsfw_26 {
   strings:
     $utf8 = "\xe4\xb9\xb3\xe5\xa4\xb4" nocase
     $gbk = "\xc8\xe9\xcd\xb7" nocase
-    $wide = "\x4e73\x00\x5934\x00" nocase
+    $wide = "\x73\x4e\x00\x34\x59\x00" nocase
   condition:
     any of them
 }
@@ -247,7 +247,7 @@ rule content_zh_language_nsfw_27 {
   strings:
     $utf8 = "\xe4\xb9\xb3\xe6\x88\xbf" nocase
     $gbk = "\xc8\xe9\xb7\xbf" nocase
-    $wide = "\x4e73\x00\x623f\x00" nocase
+    $wide = "\x73\x4e\x00\x3f\x62\x00" nocase
   condition:
     any of them
 }
@@ -258,7 +258,7 @@ rule content_zh_language_nsfw_28 {
   strings:
     $utf8 = "\xe4\xba\xa4\xe9\x85\x8d" nocase
     $gbk = "\xbd\xbb\xc5\xe4" nocase
-    $wide = "\x4ea4\x00\x914d\x00" nocase
+    $wide = "\xa4\x4e\x00\x4d\x91\x00" nocase
   condition:
     any of them
 }
@@ -269,7 +269,7 @@ rule content_zh_language_nsfw_29 {
   strings:
     $utf8 = "\xe4\xbb\x86\xe8\xa1\x97" nocase
     $gbk = "\xc6\xcd\xbd\xd6" nocase
-    $wide = "\x4ec6\x00\x8857\x00" nocase
+    $wide = "\xc6\x4e\x00\x57\x88\x00" nocase
   condition:
     any of them
 }
@@ -280,7 +280,7 @@ rule content_zh_language_nsfw_30 {
   strings:
     $utf8 = "\xe4\xbb\x96\xe5\xa6\x88" nocase
     $gbk = "\xcb\xfb\xc2\xe8" nocase
-    $wide = "\x4ed6\x00\x5988\x00" nocase
+    $wide = "\xd6\x4e\x00\x88\x59\x00" nocase
   condition:
     any of them
 }
@@ -291,7 +291,7 @@ rule content_zh_language_nsfw_31 {
   strings:
     $utf8 = "\xe4\xbb\x96\xe5\xa8\x98" nocase
     $gbk = "\xcb\xfb\xc4\xef" nocase
-    $wide = "\x4ed6\x00\x5a18\x00" nocase
+    $wide = "\xd6\x4e\x00\x18\x5a\x00" nocase
   condition:
     any of them
 }
@@ -302,7 +302,7 @@ rule content_zh_language_nsfw_32 {
   strings:
     $utf8 = "\xe4\xbd\xa0\xe5\xa6\x88" nocase
     $gbk = "\xc4\xe3\xc2\xe8" nocase
-    $wide = "\x4f60\x00\x5988\x00" nocase
+    $wide = "\x60\x4f\x00\x88\x59\x00" nocase
   condition:
     any of them
 }
@@ -313,7 +313,7 @@ rule content_zh_language_nsfw_33 {
   strings:
     $utf8 = "\xe4\xbd\xa0\xe5\xa8\x98" nocase
     $gbk = "\xc4\xe3\xc4\xef" nocase
-    $wide = "\x4f60\x00\x5a18\x00" nocase
+    $wide = "\x60\x4f\x00\x18\x5a\x00" nocase
   condition:
     any of them
 }
@@ -324,7 +324,7 @@ rule content_zh_language_nsfw_34 {
   strings:
     $utf8 = "\xe5\x81\x9a\xe7\x88\xb1" nocase
     $gbk = "\xd7\xf6\xb0\xae" nocase
-    $wide = "\x505a\x00\x7231\x00" nocase
+    $wide = "\x5a\x50\x00\x31\x72\x00" nocase
   condition:
     any of them
 }
@@ -335,7 +335,7 @@ rule content_zh_language_nsfw_35 {
   strings:
     $utf8 = "\xe5\x82\xbb\xe6\xaf\x94" nocase
     $gbk = "\xc9\xb5\xb1\xc8" nocase
-    $wide = "\x50bb\x00\x6bd4\x00" nocase
+    $wide = "\xbb\x50\x00\xd4\x6b\x00" nocase
   condition:
     any of them
 }
@@ -346,7 +346,7 @@ rule content_zh_language_nsfw_36 {
   strings:
     $utf8 = "\xe5\x82\xbb\xe9\x80\xbc" nocase
     $gbk = "\xc9\xb5\xb1\xc6" nocase
-    $wide = "\x50bb\x00\x903c\x00" nocase
+    $wide = "\xbb\x50\x00\x3c\x90\x00" nocase
   condition:
     any of them
 }
@@ -357,7 +357,7 @@ rule content_zh_language_nsfw_37 {
   strings:
     $utf8 = "\xe5\x86\x8c\xe9\x82\xa3" nocase
     $gbk = "\xb2\xe1\xc4\xc7" nocase
-    $wide = "\x518c\x00\x90a3\x00" nocase
+    $wide = "\x8c\x51\x00\xa3\x90\x00" nocase
   condition:
     any of them
 }
@@ -368,7 +368,7 @@ rule content_zh_language_nsfw_38 {
   strings:
     $utf8 = "\xe5\x86\x9b\xe5\xa6\x93" nocase
     $gbk = "\xbe\xfc\xbc\xcb" nocase
-    $wide = "\x519b\x00\x5993\x00" nocase
+    $wide = "\x9b\x51\x00\x93\x59\x00" nocase
   condition:
     any of them
 }
@@ -379,7 +379,7 @@ rule content_zh_language_nsfw_39 {
   strings:
     $utf8 = "\xe5\x87\xa0\xe5\x85\xab" nocase
     $gbk = "\xbc\xb8\xb0\xcb" nocase
-    $wide = "\x51e0\x00\x516b\x00" nocase
+    $wide = "\xe0\x51\x00\x6b\x51\x00" nocase
   condition:
     any of them
 }
@@ -390,7 +390,7 @@ rule content_zh_language_nsfw_40 {
   strings:
     $utf8 = "\xe5\x87\xa0\xe5\x8f\xad" nocase
     $gbk = "\xbc\xb8\xb0\xc8" nocase
-    $wide = "\x51e0\x00\x53ed\x00" nocase
+    $wide = "\xe0\x51\x00\xed\x53\x00" nocase
   condition:
     any of them
 }
@@ -401,7 +401,7 @@ rule content_zh_language_nsfw_41 {
   strings:
     $utf8 = "\xe5\x87\xa0\xe5\xb7\xb4" nocase
     $gbk = "\xbc\xb8\xb0\xcd" nocase
-    $wide = "\x51e0\x00\x5df4\x00" nocase
+    $wide = "\xe0\x51\x00\xf4\x5d\x00" nocase
   condition:
     any of them
 }
@@ -412,7 +412,7 @@ rule content_zh_language_nsfw_42 {
   strings:
     $utf8 = "\xe5\x87\xa0\xe8\x8a\xad" nocase
     $gbk = "\xbc\xb8\xb0\xc5" nocase
-    $wide = "\x51e0\x00\x82ad\x00" nocase
+    $wide = "\xe0\x51\x00\xad\x82\x00" nocase
   condition:
     any of them
 }
@@ -423,7 +423,7 @@ rule content_zh_language_nsfw_43 {
   strings:
     $utf8 = "\xe5\x88\x9a\xe5\xba\xa6" nocase
     $gbk = "\xb8\xd5\xb6\xc8" nocase
-    $wide = "\x521a\x00\x5ea6\x00" nocase
+    $wide = "\x1a\x52\x00\xa6\x5e\x00" nocase
   condition:
     any of them
 }
@@ -434,7 +434,7 @@ rule content_zh_language_nsfw_44 {
   strings:
     $utf8 = "\xe5\x8c\x85\xe7\x9a\xae" nocase
     $gbk = "\xb0\xfc\xc6\xa4" nocase
-    $wide = "\x5305\x00\x76ae\x00" nocase
+    $wide = "\x05\x53\x00\xae\x76\x00" nocase
   condition:
     any of them
 }
@@ -445,7 +445,7 @@ rule content_zh_language_nsfw_45 {
   strings:
     $utf8 = "\xe5\x8d\x96\xe6\xaf\x94" nocase
     $gbk = "\xc2\xf4\xb1\xc8" nocase
-    $wide = "\x5356\x00\x6bd4\x00" nocase
+    $wide = "\x56\x53\x00\xd4\x6b\x00" nocase
   condition:
     any of them
 }
@@ -456,7 +456,7 @@ rule content_zh_language_nsfw_46 {
   strings:
     $utf8 = "\xe5\x8d\x96\xe6\xb7\xab" nocase
     $gbk = "\xc2\xf4\xd2\xf9" nocase
-    $wide = "\x5356\x00\x6deb\x00" nocase
+    $wide = "\x56\x53\x00\xeb\x6d\x00" nocase
   condition:
     any of them
 }
@@ -467,7 +467,7 @@ rule content_zh_language_nsfw_48 {
   strings:
     $utf8 = "\xe5\x8f\xa3\xe4\xba\xa4" nocase
     $gbk = "\xbf\xda\xbd\xbb" nocase
-    $wide = "\x53e3\x00\x4ea4\x00" nocase
+    $wide = "\xe3\x53\x00\xa4\x4e\x00" nocase
   condition:
     any of them
 }
@@ -478,7 +478,7 @@ rule content_zh_language_nsfw_49 {
   strings:
     $utf8 = "\xe5\x8f\xa3\xe8\x82\xaf" nocase
     $gbk = "\xbf\xda\xbf\xcf" nocase
-    $wide = "\x53e3\x00\x80af\x00" nocase
+    $wide = "\xe3\x53\x00\xaf\x80\x00" nocase
   condition:
     any of them
 }
@@ -489,7 +489,7 @@ rule content_zh_language_nsfw_50 {
   strings:
     $utf8 = "\xe5\x8f\xab\xe5\xba\x8a" nocase
     $gbk = "\xbd\xd0\xb4\xb2" nocase
-    $wide = "\x53eb\x00\x5e8a\x00" nocase
+    $wide = "\xeb\x53\x00\x8a\x5e\x00" nocase
   condition:
     any of them
 }
@@ -500,7 +500,7 @@ rule content_zh_language_nsfw_51 {
   strings:
     $utf8 = "\xe5\x90\x83\xe5\xb1\x8e" nocase
     $gbk = "\xb3\xd4\xca\xba" nocase
-    $wide = "\x5403\x00\x5c4e\x00" nocase
+    $wide = "\x03\x54\x00\x4e\x5c\x00" nocase
   condition:
     any of them
 }
@@ -511,7 +511,7 @@ rule content_zh_language_nsfw_52 {
   strings:
     $utf8 = "\xe5\x90\x8e\xe5\xba\xad" nocase
     $gbk = "\xba\xf3\xcd\xa5" nocase
-    $wide = "\x540e\x00\x5ead\x00" nocase
+    $wide = "\x0e\x54\x00\xad\x5e\x00" nocase
   condition:
     any of them
 }
@@ -522,7 +522,7 @@ rule content_zh_language_nsfw_53 {
   strings:
     $utf8 = "\xe5\x90\xb9\xe7\xae\xab" nocase
     $gbk = "\xb4\xb5\xf3\xef" nocase
-    $wide = "\x5439\x00\x7bab\x00" nocase
+    $wide = "\x39\x54\x00\xab\x7b\x00" nocase
   condition:
     any of them
 }
@@ -533,7 +533,7 @@ rule content_zh_language_nsfw_54 {
   strings:
     $utf8 = "\xe5\xa4\x84\xe5\xa5\xb3" nocase
     $gbk = "\xb4\xa6\xc5\xae" nocase
-    $wide = "\x5904\x00\x5973\x00" nocase
+    $wide = "\x04\x59\x00\x73\x59\x00" nocase
   condition:
     any of them
 }
@@ -544,7 +544,7 @@ rule content_zh_language_nsfw_55 {
   strings:
     $utf8 = "\xe5\xa4\x96\xe9\x98\xb4" nocase
     $gbk = "\xcd\xe2\xd2\xf5" nocase
-    $wide = "\x5916\x00\x9634\x00" nocase
+    $wide = "\x16\x59\x00\x34\x96\x00" nocase
   condition:
     any of them
 }
@@ -555,7 +555,7 @@ rule content_zh_language_nsfw_56 {
   strings:
     $utf8 = "\xe5\xa5\xb6\xe5\xad\x90" nocase
     $gbk = "\xc4\xcc\xd7\xd3" nocase
-    $wide = "\x5976\x00\x5b50\x00" nocase
+    $wide = "\x76\x59\x00\x50\x5b\x00" nocase
   condition:
     any of them
 }
@@ -566,7 +566,7 @@ rule content_zh_language_nsfw_57 {
   strings:
     $utf8 = "\xe5\xa5\xb8\xe4\xbd\xa0" nocase
     $gbk = "\xbc\xe9\xc4\xe3" nocase
-    $wide = "\x5978\x00\x4f60\x00" nocase
+    $wide = "\x78\x59\x00\x60\x4f\x00" nocase
   condition:
     any of them
 }
@@ -577,7 +577,7 @@ rule content_zh_language_nsfw_58 {
   strings:
     $utf8 = "\xe5\xa6\x88\xe6\xaf\x94" nocase
     $gbk = "\xc2\xe8\xb1\xc8" nocase
-    $wide = "\x5988\x00\x6bd4\x00" nocase
+    $wide = "\x88\x59\x00\xd4\x6b\x00" nocase
   condition:
     any of them
 }
@@ -588,7 +588,7 @@ rule content_zh_language_nsfw_59 {
   strings:
     $utf8 = "\xe5\xa6\x88\xe7\x9a\x84" nocase
     $gbk = "\xc2\xe8\xb5\xc4" nocase
-    $wide = "\x5988\x00\x7684\x00" nocase
+    $wide = "\x88\x59\x00\x84\x76\x00" nocase
   condition:
     any of them
 }
@@ -599,7 +599,7 @@ rule content_zh_language_nsfw_60 {
   strings:
     $utf8 = "\xe5\xa6\x88\xe9\x80\xbc" nocase
     $gbk = "\xc2\xe8\xb1\xc6" nocase
-    $wide = "\x5988\x00\x903c\x00" nocase
+    $wide = "\x88\x59\x00\x3c\x90\x00" nocase
   condition:
     any of them
 }
@@ -610,7 +610,7 @@ rule content_zh_language_nsfw_61 {
   strings:
     $utf8 = "\xe5\xa6\x93\xe5\xa5\xb3" nocase
     $gbk = "\xbc\xcb\xc5\xae" nocase
-    $wide = "\x5993\x00\x5973\x00" nocase
+    $wide = "\x93\x59\x00\x73\x59\x00" nocase
   condition:
     any of them
 }
@@ -621,7 +621,7 @@ rule content_zh_language_nsfw_62 {
   strings:
     $utf8 = "\xe5\xa6\x93\xe9\x99\xa2" nocase
     $gbk = "\xbc\xcb\xd4\xba" nocase
-    $wide = "\x5993\x00\x9662\x00" nocase
+    $wide = "\x93\x59\x00\x62\x96\x00" nocase
   condition:
     any of them
 }
@@ -632,7 +632,7 @@ rule content_zh_language_nsfw_63 {
   strings:
     $utf8 = "\xe5\xa7\x98\xe5\xa4\xb4" nocase
     $gbk = "\xe6\xb0\xcd\xb7" nocase
-    $wide = "\x59d8\x00\x5934\x00" nocase
+    $wide = "\xd8\x59\x00\x34\x59\x00" nocase
   condition:
     any of them
 }
@@ -643,7 +643,7 @@ rule content_zh_language_nsfw_64 {
   strings:
     $utf8 = "\xe5\xa7\xa3\xe8\xa5\xbf" nocase
     $gbk = "\xe6\xaf\xce\xf7" nocase
-    $wide = "\x59e3\x00\x897f\x00" nocase
+    $wide = "\xe3\x59\x00\x7f\x89\x00" nocase
   condition:
     any of them
 }
@@ -654,7 +654,7 @@ rule content_zh_language_nsfw_65 {
   strings:
     $utf8 = "\xe5\xa8\x98\xe7\x9a\x84" nocase
     $gbk = "\xc4\xef\xb5\xc4" nocase
-    $wide = "\x5a18\x00\x7684\x00" nocase
+    $wide = "\x18\x5a\x00\x84\x76\x00" nocase
   condition:
     any of them
 }
@@ -665,7 +665,7 @@ rule content_zh_language_nsfw_66 {
   strings:
     $utf8 = "\xe5\xa9\x8a\xe5\xad\x90" nocase
     $gbk = "\xe6\xbb\xd7\xd3" nocase
-    $wide = "\x5a4a\x00\x5b50\x00" nocase
+    $wide = "\x4a\x5a\x00\x50\x5b\x00" nocase
   condition:
     any of them
 }
@@ -676,7 +676,7 @@ rule content_zh_language_nsfw_67 {
   strings:
     $utf8 = "\xe5\xab\x96\xe5\xa8\xbc" nocase
     $gbk = "\xe6\xce\xe6\xbd" nocase
-    $wide = "\x5ad6\x00\x5a3c\x00" nocase
+    $wide = "\xd6\x5a\x00\x3c\x5a\x00" nocase
   condition:
     any of them
 }
@@ -687,7 +687,7 @@ rule content_zh_language_nsfw_68 {
   strings:
     $utf8 = "\xe5\xab\x96\xe5\xae\xa2" nocase
     $gbk = "\xe6\xce\xbf\xcd" nocase
-    $wide = "\x5ad6\x00\x5ba2\x00" nocase
+    $wide = "\xd6\x5a\x00\xa2\x5b\x00" nocase
   condition:
     any of them
 }
@@ -698,7 +698,7 @@ rule content_zh_language_nsfw_69 {
   strings:
     $utf8 = "\xe5\xaf\x86\xe6\xb4\x9e" nocase
     $gbk = "\xc3\xdc\xb6\xb4" nocase
-    $wide = "\x5bc6\x00\x6d1e\x00" nocase
+    $wide = "\xc6\x5b\x00\x1e\x6d\x00" nocase
   condition:
     any of them
 }
@@ -709,7 +709,7 @@ rule content_zh_language_nsfw_70 {
   strings:
     $utf8 = "\xe5\xb0\x84\xe4\xbd\xa0" nocase
     $gbk = "\xc9\xe4\xc4\xe3" nocase
-    $wide = "\x5c04\x00\x4f60\x00" nocase
+    $wide = "\x04\x5c\x00\x60\x4f\x00" nocase
   condition:
     any of them
 }
@@ -720,7 +720,7 @@ rule content_zh_language_nsfw_71 {
   strings:
     $utf8 = "\xe5\xb0\x84\xe7\xb2\xbe" nocase
     $gbk = "\xc9\xe4\xbe\xab" nocase
-    $wide = "\x5c04\x00\x7cbe\x00" nocase
+    $wide = "\x04\x5c\x00\xbe\x7c\x00" nocase
   condition:
     any of them
 }
@@ -731,7 +731,7 @@ rule content_zh_language_nsfw_72 {
   strings:
     $utf8 = "\xe5\xb1\x81\xe7\x9c\xbc" nocase
     $gbk = "\xc6\xa8\xd1\xdb" nocase
-    $wide = "\x5c41\x00\x773c\x00" nocase
+    $wide = "\x41\x5c\x00\x3c\x77\x00" nocase
   condition:
     any of them
 }
@@ -742,7 +742,7 @@ rule content_zh_language_nsfw_73 {
   strings:
     $utf8 = "\xe5\xb1\x81\xe8\x82\xa1" nocase
     $gbk = "\xc6\xa8\xb9\xc9" nocase
-    $wide = "\x5c41\x00\x80a1\x00" nocase
+    $wide = "\x41\x5c\x00\xa1\x80\x00" nocase
   condition:
     any of them
 }
@@ -753,7 +753,7 @@ rule content_zh_language_nsfw_74 {
   strings:
     $utf8 = "\xe5\xb7\xa8\xe4\xb9\xb3" nocase
     $gbk = "\xbe\xde\xc8\xe9" nocase
-    $wide = "\x5de8\x00\x4e73\x00" nocase
+    $wide = "\xe8\x5d\x00\x73\x4e\x00" nocase
   condition:
     any of them
 }
@@ -764,7 +764,7 @@ rule content_zh_language_nsfw_75 {
   strings:
     $utf8 = "\xe5\xb9\xb2\xe4\xbd\xa0" nocase
     $gbk = "\xb8\xc9\xc4\xe3" nocase
-    $wide = "\x5e72\x00\x4f60\x00" nocase
+    $wide = "\x72\x5e\x00\x60\x4f\x00" nocase
   condition:
     any of them
 }
@@ -775,7 +775,7 @@ rule content_zh_language_nsfw_76 {
   strings:
     $utf8 = "\xe5\xbc\xba\xe5\xa5\xb8" nocase
     $gbk = "\xc7\xbf\xbc\xe9" nocase
-    $wide = "\x5f3a\x00\x5978\x00" nocase
+    $wide = "\x3a\x5f\x00\x78\x59\x00" nocase
   condition:
     any of them
 }
@@ -786,7 +786,7 @@ rule content_zh_language_nsfw_77 {
   strings:
     $utf8 = "\xe6\x80\xa7\xe4\xba\xa4" nocase
     $gbk = "\xd0\xd4\xbd\xbb" nocase
-    $wide = "\x6027\x00\x4ea4\x00" nocase
+    $wide = "\x27\x60\x00\xa4\x4e\x00" nocase
   condition:
     any of them
 }
@@ -797,7 +797,7 @@ rule content_zh_language_nsfw_78 {
   strings:
     $utf8 = "\xe6\x80\xa7\xe5\x99\xa8" nocase
     $gbk = "\xd0\xd4\xc6\xf7" nocase
-    $wide = "\x6027\x00\x5668\x00" nocase
+    $wide = "\x27\x60\x00\x68\x56\x00" nocase
   condition:
     any of them
 }
@@ -808,7 +808,7 @@ rule content_zh_language_nsfw_79 {
   strings:
     $utf8 = "\xe6\x80\xa7\xe7\x88\xb1" nocase
     $gbk = "\xd0\xd4\xb0\xae" nocase
-    $wide = "\x6027\x00\x7231\x00" nocase
+    $wide = "\x27\x60\x00\x31\x72\x00" nocase
   condition:
     any of them
 }
@@ -819,7 +819,7 @@ rule content_zh_language_nsfw_80 {
   strings:
     $utf8 = "\xe6\x83\x85\xe8\x89\xb2" nocase
     $gbk = "\xc7\xe9\xc9\xab" nocase
-    $wide = "\x60c5\x00\x8272\x00" nocase
+    $wide = "\xc5\x60\x00\x72\x82\x00" nocase
   condition:
     any of them
 }
@@ -830,7 +830,7 @@ rule content_zh_language_nsfw_81 {
   strings:
     $utf8 = "\xe6\x87\x92\xe5\x85\xab" nocase
     $gbk = "\xc0\xc1\xb0\xcb" nocase
-    $wide = "\x61d2\x00\x516b\x00" nocase
+    $wide = "\xd2\x61\x00\x6b\x51\x00" nocase
   condition:
     any of them
 }
@@ -841,7 +841,7 @@ rule content_zh_language_nsfw_82 {
   strings:
     $utf8 = "\xe6\x87\x92\xe5\x8f\xab" nocase
     $gbk = "\xc0\xc1\xbd\xd0" nocase
-    $wide = "\x61d2\x00\x53eb\x00" nocase
+    $wide = "\xd2\x61\x00\xeb\x53\x00" nocase
   condition:
     any of them
 }
@@ -852,7 +852,7 @@ rule content_zh_language_nsfw_83 {
   strings:
     $utf8 = "\xe6\x87\x92\xe6\x95\x99" nocase
     $gbk = "\xc0\xc1\xbd\xcc" nocase
-    $wide = "\x61d2\x00\x6559\x00" nocase
+    $wide = "\xd2\x61\x00\x59\x65\x00" nocase
   condition:
     any of them
 }
@@ -863,7 +863,7 @@ rule content_zh_language_nsfw_85 {
   strings:
     $utf8 = "\xe6\x89\x92\xe5\x85\x89" nocase
     $gbk = "\xb0\xc7\xb9\xe2" nocase
-    $wide = "\x6252\x00\x5149\x00" nocase
+    $wide = "\x52\x62\x00\x49\x51\x00" nocase
   condition:
     any of them
 }
@@ -874,7 +874,7 @@ rule content_zh_language_nsfw_86 {
   strings:
     $utf8 = "\xe6\x89\x93\xe7\x82\xae" nocase
     $gbk = "\xb4\xf2\xc5\xda" nocase
-    $wide = "\x6253\x00\x70ae\x00" nocase
+    $wide = "\x53\x62\x00\xae\x70\x00" nocase
   condition:
     any of them
 }
@@ -885,7 +885,7 @@ rule content_zh_language_nsfw_87 {
   strings:
     $utf8 = "\xe6\x8a\xbd\xe6\x8f\x92" nocase
     $gbk = "\xb3\xe9\xb2\xe5" nocase
-    $wide = "\x62bd\x00\x63d2\x00" nocase
+    $wide = "\xbd\x62\x00\xd2\x63\x00" nocase
   condition:
     any of them
 }
@@ -896,7 +896,7 @@ rule content_zh_language_nsfw_88 {
   strings:
     $utf8 = "\xe6\x8b\x9b\xe5\xa6\x93" nocase
     $gbk = "\xd5\xd0\xbc\xcb" nocase
-    $wide = "\x62db\x00\x5993\x00" nocase
+    $wide = "\xdb\x62\x00\x93\x59\x00" nocase
   condition:
     any of them
 }
@@ -907,7 +907,7 @@ rule content_zh_language_nsfw_89 {
   strings:
     $utf8 = "\xe6\x8f\x92\xe4\xbd\xa0" nocase
     $gbk = "\xb2\xe5\xc4\xe3" nocase
-    $wide = "\x63d2\x00\x4f60\x00" nocase
+    $wide = "\xd2\x63\x00\x60\x4f\x00" nocase
   condition:
     any of them
 }
@@ -918,7 +918,7 @@ rule content_zh_language_nsfw_90 {
   strings:
     $utf8 = "\xe6\x92\x92\xe5\xb0\xbf" nocase
     $gbk = "\xc8\xf6\xc4\xf2" nocase
-    $wide = "\x6492\x00\x5c3f\x00" nocase
+    $wide = "\x92\x64\x00\x3f\x5c\x00" nocase
   condition:
     any of them
 }
@@ -929,7 +929,7 @@ rule content_zh_language_nsfw_91 {
   strings:
     $utf8 = "\xe6\x93\x8d\xe4\xbd\xa0" nocase
     $gbk = "\xb2\xd9\xc4\xe3" nocase
-    $wide = "\x64cd\x00\x4f60\x00" nocase
+    $wide = "\xcd\x64\x00\x60\x4f\x00" nocase
   condition:
     any of them
 }
@@ -940,7 +940,7 @@ rule content_zh_language_nsfw_92 {
   strings:
     $utf8 = "\xe6\x93\x8d\xe5\xa6\xb3" nocase
     $gbk = "\xb2\xd9\x8a\x85" nocase
-    $wide = "\x64cd\x00\x59b3\x00" nocase
+    $wide = "\xcd\x64\x00\xb3\x59\x00" nocase
   condition:
     any of them
 }
@@ -951,7 +951,7 @@ rule content_zh_language_nsfw_93 {
   strings:
     $utf8 = "\xe6\x93\x8d\xe6\xaf\x94" nocase
     $gbk = "\xb2\xd9\xb1\xc8" nocase
-    $wide = "\x64cd\x00\x6bd4\x00" nocase
+    $wide = "\xcd\x64\x00\xd4\x6b\x00" nocase
   condition:
     any of them
 }
@@ -962,7 +962,7 @@ rule content_zh_language_nsfw_94 {
   strings:
     $utf8 = "\xe6\x93\x8d\xe9\x80\xbc" nocase
     $gbk = "\xb2\xd9\xb1\xc6" nocase
-    $wide = "\x64cd\x00\x903c\x00" nocase
+    $wide = "\xcd\x64\x00\x3c\x90\x00" nocase
   condition:
     any of them
 }
@@ -973,7 +973,7 @@ rule content_zh_language_nsfw_95 {
   strings:
     $utf8 = "\xe6\x94\xbe\xe8\x8d\xa1" nocase
     $gbk = "\xb7\xc5\xb5\xb4" nocase
-    $wide = "\x653e\x00\x8361\x00" nocase
+    $wide = "\x3e\x65\x00\x61\x83\x00" nocase
   condition:
     any of them
 }
@@ -984,7 +984,7 @@ rule content_zh_language_nsfw_96 {
   strings:
     $utf8 = "\xe6\x97\xa5\xe4\xbd\xa0" nocase
     $gbk = "\xc8\xd5\xc4\xe3" nocase
-    $wide = "\x65e5\x00\x4f60\x00" nocase
+    $wide = "\xe5\x65\x00\x60\x4f\x00" nocase
   condition:
     any of them
 }
@@ -995,7 +995,7 @@ rule content_zh_language_nsfw_97 {
   strings:
     $utf8 = "\xe6\x97\xa5\xe6\x89\xb9" nocase
     $gbk = "\xc8\xd5\xc5\xfa" nocase
-    $wide = "\x65e5\x00\x6279\x00" nocase
+    $wide = "\xe5\x65\x00\x79\x62\x00" nocase
   condition:
     any of them
 }
@@ -1006,7 +1006,7 @@ rule content_zh_language_nsfw_98 {
   strings:
     $utf8 = "\xe6\x9c\x88\xe7\xbb\x8f" nocase
     $gbk = "\xd4\xc2\xbe\xad" nocase
-    $wide = "\x6708\x00\x7ecf\x00" nocase
+    $wide = "\x08\x67\x00\xcf\x7e\x00" nocase
   condition:
     any of them
 }
@@ -1017,7 +1017,7 @@ rule content_zh_language_nsfw_99 {
   strings:
     $utf8 = "\xe6\x9c\xba\xe5\x85\xab" nocase
     $gbk = "\xbb\xfa\xb0\xcb" nocase
-    $wide = "\x673a\x00\x516b\x00" nocase
+    $wide = "\x3a\x67\x00\x6b\x51\x00" nocase
   condition:
     any of them
 }
@@ -1028,7 +1028,7 @@ rule content_zh_language_nsfw_100 {
   strings:
     $utf8 = "\xe6\x9c\xba\xe5\xb7\xb4" nocase
     $gbk = "\xbb\xfa\xb0\xcd" nocase
-    $wide = "\x673a\x00\x5df4\x00" nocase
+    $wide = "\x3a\x67\x00\xf4\x5d\x00" nocase
   condition:
     any of them
 }
@@ -1039,7 +1039,7 @@ rule content_zh_language_nsfw_101 {
   strings:
     $utf8 = "\xe6\x9d\x82\xe7\xa7\x8d" nocase
     $gbk = "\xd4\xd3\xd6\xd6" nocase
-    $wide = "\x6742\x00\x79cd\x00" nocase
+    $wide = "\x42\x67\x00\xcd\x79\x00" nocase
   condition:
     any of them
 }
@@ -1050,7 +1050,7 @@ rule content_zh_language_nsfw_102 {
   strings:
     $utf8 = "\xe6\xb5\xaa\xe5\x8f\xab" nocase
     $gbk = "\xc0\xcb\xbd\xd0" nocase
-    $wide = "\x6d6a\x00\x53eb\x00" nocase
+    $wide = "\x6a\x6d\x00\xeb\x53\x00" nocase
   condition:
     any of them
 }
@@ -1061,7 +1061,7 @@ rule content_zh_language_nsfw_103 {
   strings:
     $utf8 = "\xe6\xb7\xab\xe4\xb9\xb1" nocase
     $gbk = "\xd2\xf9\xc2\xd2" nocase
-    $wide = "\x6deb\x00\x4e71\x00" nocase
+    $wide = "\xeb\x6d\x00\x71\x4e\x00" nocase
   condition:
     any of them
 }
@@ -1072,7 +1072,7 @@ rule content_zh_language_nsfw_104 {
   strings:
     $utf8 = "\xe6\xb7\xab\xe5\xa6\x87" nocase
     $gbk = "\xd2\xf9\xb8\xbe" nocase
-    $wide = "\x6deb\x00\x5987\x00" nocase
+    $wide = "\xeb\x6d\x00\x87\x59\x00" nocase
   condition:
     any of them
 }
@@ -1083,7 +1083,7 @@ rule content_zh_language_nsfw_105 {
   strings:
     $utf8 = "\xe6\xb7\xab\xe6\xa3\x8d" nocase
     $gbk = "\xd2\xf9\xb9\xf7" nocase
-    $wide = "\x6deb\x00\x68cd\x00" nocase
+    $wide = "\xeb\x6d\x00\xcd\x68\x00" nocase
   condition:
     any of them
 }
@@ -1094,7 +1094,7 @@ rule content_zh_language_nsfw_106 {
   strings:
     $utf8 = "\xe6\xb7\xab\xe6\xb0\xb4" nocase
     $gbk = "\xd2\xf9\xcb\xae" nocase
-    $wide = "\x6deb\x00\x6c34\x00" nocase
+    $wide = "\xeb\x6d\x00\x34\x6c\x00" nocase
   condition:
     any of them
 }
@@ -1105,7 +1105,7 @@ rule content_zh_language_nsfw_107 {
   strings:
     $utf8 = "\xe6\xb7\xab\xe7\xa7\xbd" nocase
     $gbk = "\xd2\xf9\xbb\xe0" nocase
-    $wide = "\x6deb\x00\x79fd\x00" nocase
+    $wide = "\xeb\x6d\x00\xfd\x79\x00" nocase
   condition:
     any of them
 }
@@ -1116,7 +1116,7 @@ rule content_zh_language_nsfw_108 {
   strings:
     $utf8 = "\xe6\xb7\xab\xe8\x8d\xa1" nocase
     $gbk = "\xd2\xf9\xb5\xb4" nocase
-    $wide = "\x6deb\x00\x8361\x00" nocase
+    $wide = "\xeb\x6d\x00\x61\x83\x00" nocase
   condition:
     any of them
 }
@@ -1127,7 +1127,7 @@ rule content_zh_language_nsfw_109 {
   strings:
     $utf8 = "\xe6\xb7\xab\xe8\xa5\xbf" nocase
     $gbk = "\xd2\xf9\xce\xf7" nocase
-    $wide = "\x6deb\x00\x897f\x00" nocase
+    $wide = "\xeb\x6d\x00\x7f\x89\x00" nocase
   condition:
     any of them
 }
@@ -1138,7 +1138,7 @@ rule content_zh_language_nsfw_111 {
   strings:
     $utf8 = "\xe7\x83\x82\xe8\xb4\xa7" nocase
     $gbk = "\xc0\xc3\xbb\xf5" nocase
-    $wide = "\x70c2\x00\x8d27\x00" nocase
+    $wide = "\xc2\x70\x00\x27\x8d\x00" nocase
   condition:
     any of them
 }
@@ -1149,7 +1149,7 @@ rule content_zh_language_nsfw_112 {
   strings:
     $utf8 = "\xe7\x83\x82\xe9\x80\xbc" nocase
     $gbk = "\xc0\xc3\xb1\xc6" nocase
-    $wide = "\x70c2\x00\x903c\x00" nocase
+    $wide = "\xc2\x70\x00\x3c\x90\x00" nocase
   condition:
     any of them
 }
@@ -1160,7 +1160,7 @@ rule content_zh_language_nsfw_113 {
   strings:
     $utf8 = "\xe7\x8b\x97\xe5\xb1\x81" nocase
     $gbk = "\xb9\xb7\xc6\xa8" nocase
-    $wide = "\x72d7\x00\x5c41\x00" nocase
+    $wide = "\xd7\x72\x00\x41\x5c\x00" nocase
   condition:
     any of them
 }
@@ -1171,7 +1171,7 @@ rule content_zh_language_nsfw_114 {
   strings:
     $utf8 = "\xe7\x8b\x97\xe6\x97\xa5" nocase
     $gbk = "\xb9\xb7\xc8\xd5" nocase
-    $wide = "\x72d7\x00\x65e5\x00" nocase
+    $wide = "\xd7\x72\x00\xe5\x65\x00" nocase
   condition:
     any of them
 }
@@ -1182,7 +1182,7 @@ rule content_zh_language_nsfw_115 {
   strings:
     $utf8 = "\xe7\x8e\x89\xe6\x9d\xb5" nocase
     $gbk = "\xd3\xf1\xe8\xc6" nocase
-    $wide = "\x7389\x00\x6775\x00" nocase
+    $wide = "\x89\x73\x00\x75\x67\x00" nocase
   condition:
     any of them
 }
@@ -1193,7 +1193,7 @@ rule content_zh_language_nsfw_116 {
   strings:
     $utf8 = "\xe7\x93\x9c\xe6\x89\xb9" nocase
     $gbk = "\xb9\xcf\xc5\xfa" nocase
-    $wide = "\x74dc\x00\x6279\x00" nocase
+    $wide = "\xdc\x74\x00\x79\x62\x00" nocase
   condition:
     any of them
 }
@@ -1204,7 +1204,7 @@ rule content_zh_language_nsfw_117 {
   strings:
     $utf8 = "\xe7\x98\xaa\xe4\xb8\x89" nocase
     $gbk = "\xb1\xf1\xc8\xfd" nocase
-    $wide = "\x762a\x00\x4e09\x00" nocase
+    $wide = "\x2a\x76\x00\x09\x4e\x00" nocase
   condition:
     any of them
 }
@@ -1215,7 +1215,7 @@ rule content_zh_language_nsfw_118 {
   strings:
     $utf8 = "\xe7\x99\xbd\xe7\x83\x82" nocase
     $gbk = "\xb0\xd7\xc0\xc3" nocase
-    $wide = "\x767d\x00\x70c2\x00" nocase
+    $wide = "\x7d\x76\x00\xc2\x70\x00" nocase
   condition:
     any of them
 }
@@ -1226,7 +1226,7 @@ rule content_zh_language_nsfw_124 {
   strings:
     $utf8 = "\xe7\xb2\xbe\xe5\xad\x90" nocase
     $gbk = "\xbe\xab\xd7\xd3" nocase
-    $wide = "\x7cbe\x00\x5b50\x00" nocase
+    $wide = "\xbe\x7c\x00\x50\x5b\x00" nocase
   condition:
     any of them
 }
@@ -1237,7 +1237,7 @@ rule content_zh_language_nsfw_125 {
   strings:
     $utf8 = "\xe8\x80\x81\xe4\xba\x8c" nocase
     $gbk = "\xc0\xcf\xb6\xfe" nocase
-    $wide = "\x8001\x00\x4e8c\x00" nocase
+    $wide = "\x01\x80\x00\x8c\x4e\x00" nocase
   condition:
     any of them
 }
@@ -1248,7 +1248,7 @@ rule content_zh_language_nsfw_126 {
   strings:
     $utf8 = "\xe8\x80\x81\xe5\x91\xb3" nocase
     $gbk = "\xc0\xcf\xce\xb6" nocase
-    $wide = "\x8001\x00\x5473\x00" nocase
+    $wide = "\x01\x80\x00\x73\x54\x00" nocase
   condition:
     any of them
 }
@@ -1259,7 +1259,7 @@ rule content_zh_language_nsfw_127 {
   strings:
     $utf8 = "\xe8\x80\x81\xe6\xaf\x8d" nocase
     $gbk = "\xc0\xcf\xc4\xb8" nocase
-    $wide = "\x8001\x00\x6bcd\x00" nocase
+    $wide = "\x01\x80\x00\xcd\x6b\x00" nocase
   condition:
     any of them
 }
@@ -1270,7 +1270,7 @@ rule content_zh_language_nsfw_128 {
   strings:
     $utf8 = "\xe8\x82\x89\xe5\xa3\x81" nocase
     $gbk = "\xc8\xe2\xb1\xda" nocase
-    $wide = "\x8089\x00\x58c1\x00" nocase
+    $wide = "\x89\x80\x00\xc1\x58\x00" nocase
   condition:
     any of them
 }
@@ -1281,7 +1281,7 @@ rule content_zh_language_nsfw_129 {
   strings:
     $utf8 = "\xe8\x82\x89\xe6\xa3\x92" nocase
     $gbk = "\xc8\xe2\xb0\xf4" nocase
-    $wide = "\x8089\x00\x68d2\x00" nocase
+    $wide = "\x89\x80\x00\xd2\x68\x00" nocase
   condition:
     any of them
 }
@@ -1292,7 +1292,7 @@ rule content_zh_language_nsfw_130 {
   strings:
     $utf8 = "\xe8\x82\x89\xe7\xbc\x9d" nocase
     $gbk = "\xc8\xe2\xb7\xec" nocase
-    $wide = "\x8089\x00\x7f1d\x00" nocase
+    $wide = "\x89\x80\x00\x1d\x7f\x00" nocase
   condition:
     any of them
 }
@@ -1303,7 +1303,7 @@ rule content_zh_language_nsfw_131 {
   strings:
     $utf8 = "\xe8\x82\x9b\xe4\xba\xa4" nocase
     $gbk = "\xb8\xd8\xbd\xbb" nocase
-    $wide = "\x809b\x00\x4ea4\x00" nocase
+    $wide = "\x9b\x80\x00\xa4\x4e\x00" nocase
   condition:
     any of them
 }
@@ -1314,7 +1314,7 @@ rule content_zh_language_nsfw_132 {
   strings:
     $utf8 = "\xe8\x82\xa5\xe8\xa5\xbf" nocase
     $gbk = "\xb7\xca\xce\xf7" nocase
-    $wide = "\x80a5\x00\x897f\x00" nocase
+    $wide = "\xa5\x80\x00\x7f\x89\x00" nocase
   condition:
     any of them
 }
@@ -1325,7 +1325,7 @@ rule content_zh_language_nsfw_133 {
   strings:
     $utf8 = "\xe8\x89\xb2\xe6\x83\x85" nocase
     $gbk = "\xc9\xab\xc7\xe9" nocase
-    $wide = "\x8272\x00\x60c5\x00" nocase
+    $wide = "\x72\x82\x00\xc5\x60\x00" nocase
   condition:
     any of them
 }
@@ -1336,7 +1336,7 @@ rule content_zh_language_nsfw_134 {
   strings:
     $utf8 = "\xe8\x8a\xb1\xe6\x9f\xb3" nocase
     $gbk = "\xbb\xa8\xc1\xf8" nocase
-    $wide = "\x82b1\x00\x67f3\x00" nocase
+    $wide = "\xb1\x82\x00\xf3\x67\x00" nocase
   condition:
     any of them
 }
@@ -1347,7 +1347,7 @@ rule content_zh_language_nsfw_135 {
   strings:
     $utf8 = "\xe8\x8d\xa1\xe5\xa6\x87" nocase
     $gbk = "\xb5\xb4\xb8\xbe" nocase
-    $wide = "\x8361\x00\x5987\x00" nocase
+    $wide = "\x61\x83\x00\x87\x59\x00" nocase
   condition:
     any of them
 }
@@ -1358,7 +1358,7 @@ rule content_zh_language_nsfw_136 {
   strings:
     $utf8 = "\xe8\xb4\x9d\xe8\x82\x89" nocase
     $gbk = "\xb1\xb4\xc8\xe2" nocase
-    $wide = "\x8d1d\x00\x8089\x00" nocase
+    $wide = "\x1d\x8d\x00\x89\x80\x00" nocase
   condition:
     any of them
 }
@@ -1369,7 +1369,7 @@ rule content_zh_language_nsfw_137 {
   strings:
     $utf8 = "\xe8\xb4\xb1\xe4\xba\xba" nocase
     $gbk = "\xbc\xfa\xc8\xcb" nocase
-    $wide = "\x8d31\x00\x4eba\x00" nocase
+    $wide = "\x31\x8d\x00\xba\x4e\x00" nocase
   condition:
     any of them
 }
@@ -1380,7 +1380,7 @@ rule content_zh_language_nsfw_138 {
   strings:
     $utf8 = "\xe8\xb4\xb1\xe8\xb4\xa7" nocase
     $gbk = "\xbc\xfa\xbb\xf5" nocase
-    $wide = "\x8d31\x00\x8d27\x00" nocase
+    $wide = "\x31\x8d\x00\x27\x8d\x00" nocase
   condition:
     any of them
 }
@@ -1391,7 +1391,7 @@ rule content_zh_language_nsfw_139 {
   strings:
     $utf8 = "\xe8\xbd\xae\xe5\xa5\xb8" nocase
     $gbk = "\xc2\xd6\xbc\xe9" nocase
-    $wide = "\x8f6e\x00\x5978\x00" nocase
+    $wide = "\x6e\x8f\x00\x78\x59\x00" nocase
   condition:
     any of them
 }
@@ -1402,7 +1402,7 @@ rule content_zh_language_nsfw_140 {
   strings:
     $utf8 = "\xe8\xbf\xb7\xe8\x8d\xaf" nocase
     $gbk = "\xc3\xd4\xd2\xa9" nocase
-    $wide = "\x8ff7\x00\x836f\x00" nocase
+    $wide = "\xf7\x8f\x00\x6f\x83\x00" nocase
   condition:
     any of them
 }
@@ -1413,7 +1413,7 @@ rule content_zh_language_nsfw_141 {
   strings:
     $utf8 = "\xe9\x80\xbc\xe6\xa0\xb7" nocase
     $gbk = "\xb1\xc6\xd1\xf9" nocase
-    $wide = "\x903c\x00\x6837\x00" nocase
+    $wide = "\x3c\x90\x00\x37\x68\x00" nocase
   condition:
     any of them
 }
@@ -1424,7 +1424,7 @@ rule content_zh_language_nsfw_142 {
   strings:
     $utf8 = "\xe9\x87\x8e\xe9\xb8\xa1" nocase
     $gbk = "\xd2\xb0\xbc\xa6" nocase
-    $wide = "\x91ce\x00\x9e21\x00" nocase
+    $wide = "\xce\x91\x00\x21\x9e\x00" nocase
   condition:
     any of them
 }
@@ -1435,7 +1435,7 @@ rule content_zh_language_nsfw_143 {
   strings:
     $utf8 = "\xe9\x98\xb3\xe5\x85\xb7" nocase
     $gbk = "\xd1\xf4\xbe\xdf" nocase
-    $wide = "\x9633\x00\x5177\x00" nocase
+    $wide = "\x33\x96\x00\x77\x51\x00" nocase
   condition:
     any of them
 }
@@ -1446,7 +1446,7 @@ rule content_zh_language_nsfw_144 {
   strings:
     $utf8 = "\xe9\x98\xb3\xe8\x90\x8e" nocase
     $gbk = "\xd1\xf4\xce\xae" nocase
-    $wide = "\x9633\x00\x840e\x00" nocase
+    $wide = "\x33\x96\x00\x0e\x84\x00" nocase
   condition:
     any of them
 }
@@ -1457,7 +1457,7 @@ rule content_zh_language_nsfw_145 {
   strings:
     $utf8 = "\xe9\x98\xb4\xe5\x94\x87" nocase
     $gbk = "\xd2\xf5\xb4\xbd" nocase
-    $wide = "\x9634\x00\x5507\x00" nocase
+    $wide = "\x34\x96\x00\x07\x55\x00" nocase
   condition:
     any of them
 }
@@ -1468,7 +1468,7 @@ rule content_zh_language_nsfw_146 {
   strings:
     $utf8 = "\xe9\x98\xb4\xe6\x88\xb7" nocase
     $gbk = "\xd2\xf5\xbb\xa7" nocase
-    $wide = "\x9634\x00\x6237\x00" nocase
+    $wide = "\x34\x96\x00\x37\x62\x00" nocase
   condition:
     any of them
 }
@@ -1479,7 +1479,7 @@ rule content_zh_language_nsfw_147 {
   strings:
     $utf8 = "\xe9\x98\xb4\xe6\xa0\xb8" nocase
     $gbk = "\xd2\xf5\xba\xcb" nocase
-    $wide = "\x9634\x00\x6838\x00" nocase
+    $wide = "\x34\x96\x00\x38\x68\x00" nocase
   condition:
     any of them
 }
@@ -1490,7 +1490,7 @@ rule content_zh_language_nsfw_148 {
   strings:
     $utf8 = "\xe9\x98\xb4\xe6\xaf\x9b" nocase
     $gbk = "\xd2\xf5\xc3\xab" nocase
-    $wide = "\x9634\x00\x6bdb\x00" nocase
+    $wide = "\x34\x96\x00\xdb\x6b\x00" nocase
   condition:
     any of them
 }
@@ -1501,7 +1501,7 @@ rule content_zh_language_nsfw_149 {
   strings:
     $utf8 = "\xe9\x98\xb4\xe8\x8c\x8e" nocase
     $gbk = "\xd2\xf5\xbe\xa5" nocase
-    $wide = "\x9634\x00\x830e\x00" nocase
+    $wide = "\x34\x96\x00\x0e\x83\x00" nocase
   condition:
     any of them
 }
@@ -1512,7 +1512,7 @@ rule content_zh_language_nsfw_150 {
   strings:
     $utf8 = "\xe9\x98\xb4\xe9\x81\x93" nocase
     $gbk = "\xd2\xf5\xb5\xc0" nocase
-    $wide = "\x9634\x00\x9053\x00" nocase
+    $wide = "\x34\x96\x00\x53\x90\x00" nocase
   condition:
     any of them
 }
@@ -1523,7 +1523,7 @@ rule content_zh_language_nsfw_151 {
   strings:
     $utf8 = "\xe9\x98\xb4\xe9\x83\xa8" nocase
     $gbk = "\xd2\xf5\xb2\xbf" nocase
-    $wide = "\x9634\x00\x90e8\x00" nocase
+    $wide = "\x34\x96\x00\xe8\x90\x00" nocase
   condition:
     any of them
 }
@@ -1534,7 +1534,7 @@ rule content_zh_language_nsfw_152 {
   strings:
     $utf8 = "\xe9\x9b\x9e\xe5\xb7\xb4" nocase
     $gbk = "\xeb\x75\xb0\xcd" nocase
-    $wide = "\x96de\x00\x5df4\x00" nocase
+    $wide = "\xde\x96\x00\xf4\x5d\x00" nocase
   condition:
     any of them
 }
@@ -1545,7 +1545,7 @@ rule content_zh_language_nsfw_153 {
   strings:
     $utf8 = "\xe9\x9d\xa0\xe5\x8c\x97" nocase
     $gbk = "\xbf\xbf\xb1\xb1" nocase
-    $wide = "\x9760\x00\x5317\x00" nocase
+    $wide = "\x60\x97\x00\x17\x53\x00" nocase
   condition:
     any of them
 }
@@ -1556,7 +1556,7 @@ rule content_zh_language_nsfw_154 {
   strings:
     $utf8 = "\xe9\x9d\xa0\xe6\xaf\x8d" nocase
     $gbk = "\xbf\xbf\xc4\xb8" nocase
-    $wide = "\x9760\x00\x6bcd\x00" nocase
+    $wide = "\x60\x97\x00\xcd\x6b\x00" nocase
   condition:
     any of them
 }
@@ -1567,7 +1567,7 @@ rule content_zh_language_nsfw_155 {
   strings:
     $utf8 = "\xe9\x9d\xa0\xe7\x88\xb8" nocase
     $gbk = "\xbf\xbf\xb0\xd6" nocase
-    $wide = "\x9760\x00\x7238\x00" nocase
+    $wide = "\x60\x97\x00\x38\x72\x00" nocase
   condition:
     any of them
 }
@@ -1578,7 +1578,7 @@ rule content_zh_language_nsfw_156 {
   strings:
     $utf8 = "\xe9\x9d\xa0\xe8\x83\x8c" nocase
     $gbk = "\xbf\xbf\xb1\xb3" nocase
-    $wide = "\x9760\x00\x80cc\x00" nocase
+    $wide = "\x60\x97\x00\xcc\x80\x00" nocase
   condition:
     any of them
 }
@@ -1589,7 +1589,7 @@ rule content_zh_language_nsfw_157 {
   strings:
     $utf8 = "\xe9\x9d\xa0\xe8\x85\xb0" nocase
     $gbk = "\xbf\xbf\xd1\xfc" nocase
-    $wide = "\x9760\x00\x8170\x00" nocase
+    $wide = "\x60\x97\x00\x70\x81\x00" nocase
   condition:
     any of them
 }
@@ -1600,7 +1600,7 @@ rule content_zh_language_nsfw_158 {
   strings:
     $utf8 = "\xe9\xaa\x9a\xe6\xaf\x94" nocase
     $gbk = "\xc9\xa7\xb1\xc8" nocase
-    $wide = "\x9a9a\x00\x6bd4\x00" nocase
+    $wide = "\x9a\x9a\x00\xd4\x6b\x00" nocase
   condition:
     any of them
 }
@@ -1611,7 +1611,7 @@ rule content_zh_language_nsfw_159 {
   strings:
     $utf8 = "\xe9\xaa\x9a\xe8\xb4\xa7" nocase
     $gbk = "\xc9\xa7\xbb\xf5" nocase
-    $wide = "\x9a9a\x00\x8d27\x00" nocase
+    $wide = "\x9a\x9a\x00\x27\x8d\x00" nocase
   condition:
     any of them
 }
@@ -1622,7 +1622,7 @@ rule content_zh_language_nsfw_160 {
   strings:
     $utf8 = "\xe9\xaa\x9a\xe9\x80\xbc" nocase
     $gbk = "\xc9\xa7\xb1\xc6" nocase
-    $wide = "\x9a9a\x00\x903c\x00" nocase
+    $wide = "\x9a\x9a\x00\x3c\x90\x00" nocase
   condition:
     any of them
 }
@@ -1633,7 +1633,7 @@ rule content_zh_language_nsfw_161 {
   strings:
     $utf8 = "\xe9\xac\xbc\xe5\x85\xac" nocase
     $gbk = "\xb9\xed\xb9\xab" nocase
-    $wide = "\x9b3c\x00\x516c\x00" nocase
+    $wide = "\x3c\x9b\x00\x6c\x51\x00" nocase
   condition:
     any of them
 }
@@ -1644,7 +1644,7 @@ rule content_zh_language_nsfw_162 {
   strings:
     $utf8 = "\xe9\xb8\xa1\xe5\x85\xab" nocase
     $gbk = "\xbc\xa6\xb0\xcb" nocase
-    $wide = "\x9e21\x00\x516b\x00" nocase
+    $wide = "\x21\x9e\x00\x6b\x51\x00" nocase
   condition:
     any of them
 }
@@ -1655,7 +1655,7 @@ rule content_zh_language_nsfw_163 {
   strings:
     $utf8 = "\xe9\xb8\xa1\xe5\x8f\xad" nocase
     $gbk = "\xbc\xa6\xb0\xc8" nocase
-    $wide = "\x9e21\x00\x53ed\x00" nocase
+    $wide = "\x21\x9e\x00\xed\x53\x00" nocase
   condition:
     any of them
 }
@@ -1666,7 +1666,7 @@ rule content_zh_language_nsfw_164 {
   strings:
     $utf8 = "\xe9\xb8\xa1\xe5\x90\xa7" nocase
     $gbk = "\xbc\xa6\xb0\xc9" nocase
-    $wide = "\x9e21\x00\x5427\x00" nocase
+    $wide = "\x21\x9e\x00\x27\x54\x00" nocase
   condition:
     any of them
 }
@@ -1677,7 +1677,7 @@ rule content_zh_language_nsfw_165 {
   strings:
     $utf8 = "\xe9\xb8\xa1\xe5\xa5\xb8" nocase
     $gbk = "\xbc\xa6\xbc\xe9" nocase
-    $wide = "\x9e21\x00\x5978\x00" nocase
+    $wide = "\x21\x9e\x00\x78\x59\x00" nocase
   condition:
     any of them
 }
@@ -1688,7 +1688,7 @@ rule content_zh_language_nsfw_166 {
   strings:
     $utf8 = "\xe9\xb8\xa1\xe5\xb7\xb4" nocase
     $gbk = "\xbc\xa6\xb0\xcd" nocase
-    $wide = "\x9e21\x00\x5df4\x00" nocase
+    $wide = "\x21\x9e\x00\xf4\x5d\x00" nocase
   condition:
     any of them
 }
@@ -1699,7 +1699,7 @@ rule content_zh_language_nsfw_167 {
   strings:
     $utf8 = "\xe9\xb8\xa1\xe8\x8a\xad" nocase
     $gbk = "\xbc\xa6\xb0\xc5" nocase
-    $wide = "\x9e21\x00\x82ad\x00" nocase
+    $wide = "\x21\x9e\x00\xad\x82\x00" nocase
   condition:
     any of them
 }
@@ -1710,7 +1710,7 @@ rule content_zh_language_nsfw_168 {
   strings:
     $utf8 = "\xe9\xb8\xa1\xe9\xb8\xa1" nocase
     $gbk = "\xbc\xa6\xbc\xa6" nocase
-    $wide = "\x9e21\x00\x9e21\x00" nocase
+    $wide = "\x21\x9e\x00\x21\x9e\x00" nocase
   condition:
     any of them
 }
@@ -1721,7 +1721,7 @@ rule content_zh_language_nsfw_169 {
   strings:
     $utf8 = "\xe9\xbe\x9f\xe5\xa4\xb4" nocase
     $gbk = "\xb9\xea\xcd\xb7" nocase
-    $wide = "\x9f9f\x00\x5934\x00" nocase
+    $wide = "\x9f\x9f\x00\x34\x59\x00" nocase
   condition:
     any of them
 }
@@ -1732,7 +1732,7 @@ rule content_zh_language_nsfw_170 {
   strings:
     $utf8 = "\xe5\xa6\x88\xe4\xb8\xaa\x42" nocase
     $gbk = "\xc2\xe8\xb8\xf6\x42" nocase
-    $wide = "\x5988\x00\x4e2a\x00\x42\x00" nocase
+    $wide = "\x88\x59\x00\x2a\x4e\x00\x42\x00" nocase
   condition:
     any of them
 }
@@ -1743,7 +1743,7 @@ rule content_zh_language_nsfw_171 {
   strings:
     $utf8 = "\xe5\xa6\x88\xe7\x9a\x84\x42" nocase
     $gbk = "\xc2\xe8\xb5\xc4\x42" nocase
-    $wide = "\x5988\x00\x7684\x00\x42\x00" nocase
+    $wide = "\x88\x59\x00\x84\x76\x00\x42\x00" nocase
   condition:
     any of them
 }
@@ -1754,7 +1754,7 @@ rule content_zh_language_nsfw_172 {
   strings:
     $utf8 = "\xe5\xb9\xb2\xe6\xad\xbb\x43\x53" nocase
     $gbk = "\xb8\xc9\xcb\xc0\x43\x53" nocase
-    $wide = "\x5e72\x00\x6b7b\x00\x43\x00\x53\x00" nocase
+    $wide = "\x72\x5e\x00\x7b\x6b\x00\x43\x00\x53\x00" nocase
   condition:
     any of them
 }
@@ -1765,7 +1765,7 @@ rule content_zh_language_nsfw_173 {
   strings:
     $utf8 = "\xe5\xb9\xb2\xe6\xad\xbb\x47\x4d" nocase
     $gbk = "\xb8\xc9\xcb\xc0\x47\x4d" nocase
-    $wide = "\x5e72\x00\x6b7b\x00\x47\x00\x4d\x00" nocase
+    $wide = "\x72\x5e\x00\x7b\x6b\x00\x47\x00\x4d\x00" nocase
   condition:
     any of them
 }
@@ -1776,7 +1776,7 @@ rule content_zh_language_nsfw_174 {
   strings:
     $utf8 = "\xe4\xb8\x89\xe7\xba\xa7\xe7\x89\x87" nocase
     $gbk = "\xc8\xfd\xbc\xb6\xc6\xac" nocase
-    $wide = "\x4e09\x00\x7ea7\x00\x7247\x00" nocase
+    $wide = "\x09\x4e\x00\xa7\x7e\x00\x47\x72\x00" nocase
   condition:
     any of them
 }
@@ -1787,7 +1787,7 @@ rule content_zh_language_nsfw_175 {
   strings:
     $utf8 = "\xe4\xb8\x8b\xe4\xb8\x89\xe7\x83\x82" nocase
     $gbk = "\xcf\xc2\xc8\xfd\xc0\xc3" nocase
-    $wide = "\x4e0b\x00\x4e09\x00\x70c2\x00" nocase
+    $wide = "\x0b\x4e\x00\x09\x4e\x00\xc2\x70\x00" nocase
   condition:
     any of them
 }
@@ -1798,7 +1798,7 @@ rule content_zh_language_nsfw_176 {
   strings:
     $utf8 = "\xe4\xbb\x96\xe5\xa5\xb6\xe5\xa5\xb6" nocase
     $gbk = "\xcb\xfb\xc4\xcc\xc4\xcc" nocase
-    $wide = "\x4ed6\x00\x5976\x00\x5976\x00" nocase
+    $wide = "\xd6\x4e\x00\x76\x59\x00\x76\x59\x00" nocase
   condition:
     any of them
 }
@@ -1809,7 +1809,7 @@ rule content_zh_language_nsfw_177 {
   strings:
     $utf8 = "\xe4\xbb\x96\xe5\xa6\x88\xe5\x9c\xb0" nocase
     $gbk = "\xcb\xfb\xc2\xe8\xb5\xd8" nocase
-    $wide = "\x4ed6\x00\x5988\x00\x5730\x00" nocase
+    $wide = "\xd6\x4e\x00\x88\x59\x00\x30\x57\x00" nocase
   condition:
     any of them
 }
@@ -1820,7 +1820,7 @@ rule content_zh_language_nsfw_178 {
   strings:
     $utf8 = "\xe4\xbb\x96\xe5\xa6\x88\xe7\x9a\x84" nocase
     $gbk = "\xcb\xfb\xc2\xe8\xb5\xc4" nocase
-    $wide = "\x4ed6\x00\x5988\x00\x7684\x00" nocase
+    $wide = "\xd6\x4e\x00\x88\x59\x00\x84\x76\x00" nocase
   condition:
     any of them
 }
@@ -1831,7 +1831,7 @@ rule content_zh_language_nsfw_179 {
   strings:
     $utf8 = "\xe4\xbb\x96\xe9\xa9\xac\xe7\x9a\x84" nocase
     $gbk = "\xcb\xfb\xc2\xed\xb5\xc4" nocase
-    $wide = "\x4ed6\x00\x9a6c\x00\x7684\x00" nocase
+    $wide = "\xd6\x4e\x00\x6c\x9a\x00\x84\x76\x00" nocase
   condition:
     any of them
 }
@@ -1842,7 +1842,7 @@ rule content_zh_language_nsfw_180 {
   strings:
     $utf8 = "\xe4\xbd\xa0\xe5\x85\xa8\xe5\xae\xb6" nocase
     $gbk = "\xc4\xe3\xc8\xab\xbc\xd2" nocase
-    $wide = "\x4f60\x00\x5168\x00\x5bb6\x00" nocase
+    $wide = "\x60\x4f\x00\x68\x51\x00\xb6\x5b\x00" nocase
   condition:
     any of them
 }
@@ -1853,7 +1853,7 @@ rule content_zh_language_nsfw_181 {
   strings:
     $utf8 = "\xe4\xbd\xa0\xe5\xa6\x88\xe7\x9a\x84" nocase
     $gbk = "\xc4\xe3\xc2\xe8\xb5\xc4" nocase
-    $wide = "\x4f60\x00\x5988\x00\x7684\x00" nocase
+    $wide = "\x60\x4f\x00\x88\x59\x00\x84\x76\x00" nocase
   condition:
     any of them
 }
@@ -1864,7 +1864,7 @@ rule content_zh_language_nsfw_182 {
   strings:
     $utf8 = "\xe4\xbd\xa0\xe5\xa8\x98\xe5\x92\xa7" nocase
     $gbk = "\xc4\xe3\xc4\xef\xdf\xd6" nocase
-    $wide = "\x4f60\x00\x5a18\x00\x54a7\x00" nocase
+    $wide = "\x60\x4f\x00\x18\x5a\x00\xa7\x54\x00" nocase
   condition:
     any of them
 }
@@ -1875,7 +1875,7 @@ rule content_zh_language_nsfw_183 {
   strings:
     $utf8 = "\xe4\xbd\xa0\xe6\x98\xaf\xe9\xb8\xa1" nocase
     $gbk = "\xc4\xe3\xca\xc7\xbc\xa6" nocase
-    $wide = "\x4f60\x00\x662f\x00\x9e21\x00" nocase
+    $wide = "\x60\x4f\x00\x2f\x66\x00\x21\x9e\x00" nocase
   condition:
     any of them
 }
@@ -1886,7 +1886,7 @@ rule content_zh_language_nsfw_184 {
   strings:
     $utf8 = "\xe4\xbd\xa0\xe6\x98\xaf\xe9\xb8\xad" nocase
     $gbk = "\xc4\xe3\xca\xc7\xd1\xbc" nocase
-    $wide = "\x4f60\x00\x662f\x00\x9e2d\x00" nocase
+    $wide = "\x60\x4f\x00\x2f\x66\x00\x2d\x9e\x00" nocase
   condition:
     any of them
 }
@@ -1897,7 +1897,7 @@ rule content_zh_language_nsfw_185 {
   strings:
     $utf8 = "\xe4\xbd\xa0\xe9\xa9\xac\xe7\x9a\x84" nocase
     $gbk = "\xc4\xe3\xc2\xed\xb5\xc4" nocase
-    $wide = "\x4f60\x00\x9a6c\x00\x7684\x00" nocase
+    $wide = "\x60\x4f\x00\x6c\x9a\x00\x84\x76\x00" nocase
   condition:
     any of them
 }
@@ -1908,7 +1908,7 @@ rule content_zh_language_nsfw_186 {
   strings:
     $utf8 = "\xe5\x88\x9a\xe7\x98\xaa\xe4\xb8\x89" nocase
     $gbk = "\xb8\xd5\xb1\xf1\xc8\xfd" nocase
-    $wide = "\x521a\x00\x762a\x00\x4e09\x00" nocase
+    $wide = "\x1a\x52\x00\x2a\x76\x00\x09\x4e\x00" nocase
   condition:
     any of them
 }
@@ -1919,7 +1919,7 @@ rule content_zh_language_nsfw_187 {
   strings:
     $utf8 = "\xe5\x8d\x81\xe4\xb8\x89\xe7\x82\xb9" nocase
     $gbk = "\xca\xae\xc8\xfd\xb5\xe3" nocase
-    $wide = "\x5341\x00\x4e09\x00\x70b9\x00" nocase
+    $wide = "\x41\x53\x00\x09\x4e\x00\xb9\x70\x00" nocase
   condition:
     any of them
 }
@@ -1930,7 +1930,7 @@ rule content_zh_language_nsfw_188 {
   strings:
     $utf8 = "\xe5\xa1\x9e\xe4\xbd\xa0\xe5\x85\xac" nocase
     $gbk = "\xc8\xfb\xc4\xe3\xb9\xab" nocase
-    $wide = "\x585e\x00\x4f60\x00\x516c\x00" nocase
+    $wide = "\x5e\x58\x00\x60\x4f\x00\x6c\x51\x00" nocase
   condition:
     any of them
 }
@@ -1941,7 +1941,7 @@ rule content_zh_language_nsfw_189 {
   strings:
     $utf8 = "\xe5\xa1\x9e\xe4\xbd\xa0\xe5\xa8\x98" nocase
     $gbk = "\xc8\xfb\xc4\xe3\xc4\xef" nocase
-    $wide = "\x585e\x00\x4f60\x00\x5a18\x00" nocase
+    $wide = "\x5e\x58\x00\x60\x4f\x00\x18\x5a\x00" nocase
   condition:
     any of them
 }
@@ -1952,7 +1952,7 @@ rule content_zh_language_nsfw_190 {
   strings:
     $utf8 = "\xe5\xa1\x9e\xe4\xbd\xa0\xe6\xaf\x8d" nocase
     $gbk = "\xc8\xfb\xc4\xe3\xc4\xb8" nocase
-    $wide = "\x585e\x00\x4f60\x00\x6bcd\x00" nocase
+    $wide = "\x5e\x58\x00\x60\x4f\x00\xcd\x6b\x00" nocase
   condition:
     any of them
 }
@@ -1963,7 +1963,7 @@ rule content_zh_language_nsfw_191 {
   strings:
     $utf8 = "\xe5\xa1\x9e\xe4\xbd\xa0\xe7\x88\xb8" nocase
     $gbk = "\xc8\xfb\xc4\xe3\xb0\xd6" nocase
-    $wide = "\x585e\x00\x4f60\x00\x7238\x00" nocase
+    $wide = "\x5e\x58\x00\x60\x4f\x00\x38\x72\x00" nocase
   condition:
     any of them
 }
@@ -1974,7 +1974,7 @@ rule content_zh_language_nsfw_192 {
   strings:
     $utf8 = "\xe5\xa4\xa7\xe5\x8d\xb5\xe5\xad\x90" nocase
     $gbk = "\xb4\xf3\xc2\xd1\xd7\xd3" nocase
-    $wide = "\x5927\x00\x5375\x00\x5b50\x00" nocase
+    $wide = "\x27\x59\x00\x75\x53\x00\x50\x5b\x00" nocase
   condition:
     any of them
 }
@@ -1985,7 +1985,7 @@ rule content_zh_language_nsfw_193 {
   strings:
     $utf8 = "\xe5\xa4\xa7\xe5\x8d\xb5\xe6\xb3\xa1" nocase
     $gbk = "\xb4\xf3\xc2\xd1\xc5\xdd" nocase
-    $wide = "\x5927\x00\x5375\x00\x6ce1\x00" nocase
+    $wide = "\x27\x59\x00\x75\x53\x00\xe1\x6c\x00" nocase
   condition:
     any of them
 }
@@ -1996,7 +1996,7 @@ rule content_zh_language_nsfw_194 {
   strings:
     $utf8 = "\xe5\xa4\xa7\xe9\xb8\xa1\xe5\xb7\xb4" nocase
     $gbk = "\xb4\xf3\xbc\xa6\xb0\xcd" nocase
-    $wide = "\x5927\x00\x9e21\x00\x5df4\x00" nocase
+    $wide = "\x27\x59\x00\x21\x9e\x00\xf4\x5d\x00" nocase
   condition:
     any of them
 }
@@ -2007,7 +2007,7 @@ rule content_zh_language_nsfw_195 {
   strings:
     $utf8 = "\xe5\xa5\xb9\xe5\xa6\x88\xe5\x9c\xb0" nocase
     $gbk = "\xcb\xfd\xc2\xe8\xb5\xd8" nocase
-    $wide = "\x5979\x00\x5988\x00\x5730\x00" nocase
+    $wide = "\x79\x59\x00\x88\x59\x00\x30\x57\x00" nocase
   condition:
     any of them
 }
@@ -2018,7 +2018,7 @@ rule content_zh_language_nsfw_196 {
   strings:
     $utf8 = "\xe5\xa5\xb9\xe5\xa6\x88\xe7\x9a\x84" nocase
     $gbk = "\xcb\xfd\xc2\xe8\xb5\xc4" nocase
-    $wide = "\x5979\x00\x5988\x00\x7684\x00" nocase
+    $wide = "\x79\x59\x00\x88\x59\x00\x84\x76\x00" nocase
   condition:
     any of them
 }
@@ -2029,7 +2029,7 @@ rule content_zh_language_nsfw_197 {
   strings:
     $utf8 = "\xe5\xa5\xb9\xe9\xa9\xac\xe7\x9a\x84" nocase
     $gbk = "\xcb\xfd\xc2\xed\xb5\xc4" nocase
-    $wide = "\x5979\x00\x9a6c\x00\x7684\x00" nocase
+    $wide = "\x79\x59\x00\x6c\x9a\x00\x84\x76\x00" nocase
   condition:
     any of them
 }
@@ -2040,7 +2040,7 @@ rule content_zh_language_nsfw_198 {
   strings:
     $utf8 = "\xe5\xa6\x88\xe4\xb8\xaa\xe6\xaf\x94" nocase
     $gbk = "\xc2\xe8\xb8\xf6\xb1\xc8" nocase
-    $wide = "\x5988\x00\x4e2a\x00\x6bd4\x00" nocase
+    $wide = "\x88\x59\x00\x2a\x4e\x00\xd4\x6b\x00" nocase
   condition:
     any of them
 }
@@ -2051,7 +2051,7 @@ rule content_zh_language_nsfw_199 {
   strings:
     $utf8 = "\xe5\xa6\x88\xe5\xa6\x88\xe7\x9a\x84" nocase
     $gbk = "\xc2\xe8\xc2\xe8\xb5\xc4" nocase
-    $wide = "\x5988\x00\x5988\x00\x7684\x00" nocase
+    $wide = "\x88\x59\x00\x88\x59\x00\x84\x76\x00" nocase
   condition:
     any of them
 }
@@ -2062,7 +2062,7 @@ rule content_zh_language_nsfw_200 {
   strings:
     $utf8 = "\xe5\xa6\xb3\xe5\xa6\x88\xe7\x9a\x84" nocase
     $gbk = "\x8a\x85\xc2\xe8\xb5\xc4" nocase
-    $wide = "\x59b3\x00\x5988\x00\x7684\x00" nocase
+    $wide = "\xb3\x59\x00\x88\x59\x00\x84\x76\x00" nocase
   condition:
     any of them
 }
@@ -2073,7 +2073,7 @@ rule content_zh_language_nsfw_201 {
   strings:
     $utf8 = "\xe5\xa6\xb3\xe5\xa8\x98\xe7\x9a\x84" nocase
     $gbk = "\x8a\x85\xc4\xef\xb5\xc4" nocase
-    $wide = "\x59b3\x00\x5a18\x00\x7684\x00" nocase
+    $wide = "\xb3\x59\x00\x18\x5a\x00\x84\x76\x00" nocase
   condition:
     any of them
 }
@@ -2084,7 +2084,7 @@ rule content_zh_language_nsfw_202 {
   strings:
     $utf8 = "\xe5\xa6\xb3\xe9\xa9\xac\xe7\x9a\x84" nocase
     $gbk = "\x8a\x85\xc2\xed\xb5\xc4" nocase
-    $wide = "\x59b3\x00\x9a6c\x00\x7684\x00" nocase
+    $wide = "\xb3\x59\x00\x6c\x9a\x00\x84\x76\x00" nocase
   condition:
     any of them
 }
@@ -2095,7 +2095,7 @@ rule content_zh_language_nsfw_203 {
   strings:
     $utf8 = "\xe5\xa8\x98\xe4\xb8\xaa\xe6\xaf\x94" nocase
     $gbk = "\xc4\xef\xb8\xf6\xb1\xc8" nocase
-    $wide = "\x5a18\x00\x4e2a\x00\x6bd4\x00" nocase
+    $wide = "\x18\x5a\x00\x2a\x4e\x00\xd4\x6b\x00" nocase
   condition:
     any of them
 }
@@ -2106,7 +2106,7 @@ rule content_zh_language_nsfw_204 {
   strings:
     $utf8 = "\xe5\xae\x83\xe5\xa6\x88\xe5\x9c\xb0" nocase
     $gbk = "\xcb\xfc\xc2\xe8\xb5\xd8" nocase
-    $wide = "\x5b83\x00\x5988\x00\x5730\x00" nocase
+    $wide = "\x83\x5b\x00\x88\x59\x00\x30\x57\x00" nocase
   condition:
     any of them
 }
@@ -2117,7 +2117,7 @@ rule content_zh_language_nsfw_205 {
   strings:
     $utf8 = "\xe5\xae\x83\xe5\xa6\x88\xe7\x9a\x84" nocase
     $gbk = "\xcb\xfc\xc2\xe8\xb5\xc4" nocase
-    $wide = "\x5b83\x00\x5988\x00\x7684\x00" nocase
+    $wide = "\x83\x5b\x00\x88\x59\x00\x84\x76\x00" nocase
   condition:
     any of them
 }
@@ -2128,7 +2128,7 @@ rule content_zh_language_nsfw_206 {
   strings:
     $utf8 = "\xe5\xb0\x8f\xe4\xb9\xb3\xe5\xa4\xb4" nocase
     $gbk = "\xd0\xa1\xc8\xe9\xcd\xb7" nocase
-    $wide = "\x5c0f\x00\x4e73\x00\x5934\x00" nocase
+    $wide = "\x0f\x5c\x00\x73\x4e\x00\x34\x59\x00" nocase
   condition:
     any of them
 }
@@ -2139,7 +2139,7 @@ rule content_zh_language_nsfw_207 {
   strings:
     $utf8 = "\xe5\xb0\x8f\xe5\x8d\xb5\xe5\xad\x90" nocase
     $gbk = "\xd0\xa1\xc2\xd1\xd7\xd3" nocase
-    $wide = "\x5c0f\x00\x5375\x00\x5b50\x00" nocase
+    $wide = "\x0f\x5c\x00\x75\x53\x00\x50\x5b\x00" nocase
   condition:
     any of them
 }
@@ -2150,7 +2150,7 @@ rule content_zh_language_nsfw_208 {
   strings:
     $utf8 = "\xe5\xb0\x8f\xe5\x8d\xb5\xe6\xb3\xa1" nocase
     $gbk = "\xd0\xa1\xc2\xd1\xc5\xdd" nocase
-    $wide = "\x5c0f\x00\x5375\x00\x6ce1\x00" nocase
+    $wide = "\x0f\x5c\x00\x75\x53\x00\xe1\x6c\x00" nocase
   condition:
     any of them
 }
@@ -2161,7 +2161,7 @@ rule content_zh_language_nsfw_209 {
   strings:
     $utf8 = "\xe5\xb0\x8f\xe7\x98\xaa\xe4\xb8\x89" nocase
     $gbk = "\xd0\xa1\xb1\xf1\xc8\xfd" nocase
-    $wide = "\x5c0f\x00\x762a\x00\x4e09\x00" nocase
+    $wide = "\x0f\x5c\x00\x2a\x76\x00\x09\x4e\x00" nocase
   condition:
     any of them
 }
@@ -2172,7 +2172,7 @@ rule content_zh_language_nsfw_210 {
   strings:
     $utf8 = "\xe5\xb0\x8f\xe8\x82\x89\xe7\xb2\x92" nocase
     $gbk = "\xd0\xa1\xc8\xe2\xc1\xa3" nocase
-    $wide = "\x5c0f\x00\x8089\x00\x7c92\x00" nocase
+    $wide = "\x0f\x5c\x00\x89\x80\x00\x92\x7c\x00" nocase
   condition:
     any of them
 }
@@ -2183,7 +2183,7 @@ rule content_zh_language_nsfw_211 {
   strings:
     $utf8 = "\xe5\xb0\x8f\xe9\xaa\x9a\xe6\xaf\x94" nocase
     $gbk = "\xd0\xa1\xc9\xa7\xb1\xc8" nocase
-    $wide = "\x5c0f\x00\x9a9a\x00\x6bd4\x00" nocase
+    $wide = "\x0f\x5c\x00\x9a\x9a\x00\xd4\x6b\x00" nocase
   condition:
     any of them
 }
@@ -2194,7 +2194,7 @@ rule content_zh_language_nsfw_212 {
   strings:
     $utf8 = "\xe5\xb0\x8f\xe9\xaa\x9a\xe8\xb4\xa7" nocase
     $gbk = "\xd0\xa1\xc9\xa7\xbb\xf5" nocase
-    $wide = "\x5c0f\x00\x9a9a\x00\x8d27\x00" nocase
+    $wide = "\x0f\x5c\x00\x9a\x9a\x00\x27\x8d\x00" nocase
   condition:
     any of them
 }
@@ -2205,7 +2205,7 @@ rule content_zh_language_nsfw_213 {
   strings:
     $utf8 = "\xe5\xb0\x8f\xe9\xb8\xa1\xe5\xb7\xb4" nocase
     $gbk = "\xd0\xa1\xbc\xa6\xb0\xcd" nocase
-    $wide = "\x5c0f\x00\x9e21\x00\x5df4\x00" nocase
+    $wide = "\x0f\x5c\x00\x21\x9e\x00\xf4\x5d\x00" nocase
   condition:
     any of them
 }
@@ -2216,7 +2216,7 @@ rule content_zh_language_nsfw_214 {
   strings:
     $utf8 = "\xe5\xb0\x8f\xe9\xb8\xa1\xe9\xb8\xa1" nocase
     $gbk = "\xd0\xa1\xbc\xa6\xbc\xa6" nocase
-    $wide = "\x5c0f\x00\x9e21\x00\x9e21\x00" nocase
+    $wide = "\x0f\x5c\x00\x21\x9e\x00\x21\x9e\x00" nocase
   condition:
     any of them
 }
@@ -2227,7 +2227,7 @@ rule content_zh_language_nsfw_215 {
   strings:
     $utf8 = "\xe5\xb9\xb2\xe4\xb8\x83\xe5\x85\xab" nocase
     $gbk = "\xb8\xc9\xc6\xdf\xb0\xcb" nocase
-    $wide = "\x5e72\x00\x4e03\x00\x516b\x00" nocase
+    $wide = "\x72\x5e\x00\x03\x4e\x00\x6b\x51\x00" nocase
   condition:
     any of them
 }
@@ -2238,7 +2238,7 @@ rule content_zh_language_nsfw_216 {
   strings:
     $utf8 = "\xe5\xb9\xb2\xe4\xbd\xa0\xe5\xa6\x88" nocase
     $gbk = "\xb8\xc9\xc4\xe3\xc2\xe8" nocase
-    $wide = "\x5e72\x00\x4f60\x00\x5988\x00" nocase
+    $wide = "\x72\x5e\x00\x60\x4f\x00\x88\x59\x00" nocase
   condition:
     any of them
 }
@@ -2249,7 +2249,7 @@ rule content_zh_language_nsfw_217 {
   strings:
     $utf8 = "\xe5\xb9\xb2\xe4\xbd\xa0\xe5\xa8\x98" nocase
     $gbk = "\xb8\xc9\xc4\xe3\xc4\xef" nocase
-    $wide = "\x5e72\x00\x4f60\x00\x5a18\x00" nocase
+    $wide = "\x72\x5e\x00\x60\x4f\x00\x18\x5a\x00" nocase
   condition:
     any of them
 }
@@ -2260,7 +2260,7 @@ rule content_zh_language_nsfw_218 {
   strings:
     $utf8 = "\xe5\xb9\xb2\xe4\xbd\xa0\xe8\x89\xaf" nocase
     $gbk = "\xb8\xc9\xc4\xe3\xc1\xbc" nocase
-    $wide = "\x5e72\x00\x4f60\x00\x826f\x00" nocase
+    $wide = "\x72\x5e\x00\x60\x4f\x00\x6f\x82\x00" nocase
   condition:
     any of them
 }
@@ -2271,7 +2271,7 @@ rule content_zh_language_nsfw_219 {
   strings:
     $utf8 = "\xe5\xb9\xb2\xe5\xa6\xb3\xe5\xa6\x88" nocase
     $gbk = "\xb8\xc9\x8a\x85\xc2\xe8" nocase
-    $wide = "\x5e72\x00\x59b3\x00\x5988\x00" nocase
+    $wide = "\x72\x5e\x00\xb3\x59\x00\x88\x59\x00" nocase
   condition:
     any of them
 }
@@ -2282,7 +2282,7 @@ rule content_zh_language_nsfw_220 {
   strings:
     $utf8 = "\xe5\xb9\xb2\xe5\xa6\xb3\xe5\xa8\x98" nocase
     $gbk = "\xb8\xc9\x8a\x85\xc4\xef" nocase
-    $wide = "\x5e72\x00\x59b3\x00\x5a18\x00" nocase
+    $wide = "\x72\x5e\x00\xb3\x59\x00\x18\x5a\x00" nocase
   condition:
     any of them
 }
@@ -2293,7 +2293,7 @@ rule content_zh_language_nsfw_221 {
   strings:
     $utf8 = "\xe5\xb9\xb2\xe5\xa6\xb3\xe9\xa9\xac" nocase
     $gbk = "\xb8\xc9\x8a\x85\xc2\xed" nocase
-    $wide = "\x5e72\x00\x59b3\x00\x9a6c\x00" nocase
+    $wide = "\x72\x5e\x00\xb3\x59\x00\x6c\x9a\x00" nocase
   condition:
     any of them
 }
@@ -2304,7 +2304,7 @@ rule content_zh_language_nsfw_222 {
   strings:
     $utf8 = "\xe5\xb9\xb2\xe6\x82\xa8\xe5\xa8\x98" nocase
     $gbk = "\xb8\xc9\xc4\xfa\xc4\xef" nocase
-    $wide = "\x5e72\x00\x60a8\x00\x5a18\x00" nocase
+    $wide = "\x72\x5e\x00\xa8\x60\x00\x18\x5a\x00" nocase
   condition:
     any of them
 }
@@ -2315,7 +2315,7 @@ rule content_zh_language_nsfw_223 {
   strings:
     $utf8 = "\xe5\xb9\xb2\xe6\x9c\xba\xe6\x8e\xb0" nocase
     $gbk = "\xb8\xc9\xbb\xfa\xea\xfe" nocase
-    $wide = "\x5e72\x00\x673a\x00\x63b0\x00" nocase
+    $wide = "\x72\x5e\x00\x3a\x67\x00\xb0\x63\x00" nocase
   condition:
     any of them
 }
@@ -2326,7 +2326,7 @@ rule content_zh_language_nsfw_224 {
   strings:
     $utf8 = "\xe5\xb9\xb2\xe6\xad\xbb\xe4\xbd\xa0" nocase
     $gbk = "\xb8\xc9\xcb\xc0\xc4\xe3" nocase
-    $wide = "\x5e72\x00\x6b7b\x00\x4f60\x00" nocase
+    $wide = "\x72\x5e\x00\x7b\x6b\x00\x60\x4f\x00" nocase
   condition:
     any of them
 }
@@ -2337,7 +2337,7 @@ rule content_zh_language_nsfw_225 {
   strings:
     $utf8 = "\xe5\xbc\xba\xe5\xa5\xb8\xe4\xbd\xa0" nocase
     $gbk = "\xc7\xbf\xbc\xe9\xc4\xe3" nocase
-    $wide = "\x5f3a\x00\x5978\x00\x4f60\x00" nocase
+    $wide = "\x3a\x5f\x00\x78\x59\x00\x60\x4f\x00" nocase
   condition:
     any of them
 }
@@ -2348,7 +2348,7 @@ rule content_zh_language_nsfw_226 {
   strings:
     $utf8 = "\xe6\x80\xa7\xe6\x97\xa0\xe8\x83\xbd" nocase
     $gbk = "\xd0\xd4\xce\xde\xc4\xdc" nocase
-    $wide = "\x6027\x00\x65e0\x00\x80fd\x00" nocase
+    $wide = "\x27\x60\x00\xe0\x65\x00\xfd\x80\x00" nocase
   condition:
     any of them
 }
@@ -2359,7 +2359,7 @@ rule content_zh_language_nsfw_227 {
   strings:
     $utf8 = "\xe6\x83\xb3\xe4\xb8\x8a\xe4\xbd\xa0" nocase
     $gbk = "\xcf\xeb\xc9\xcf\xc4\xe3" nocase
-    $wide = "\x60f3\x00\x4e0a\x00\x4f60\x00" nocase
+    $wide = "\xf3\x60\x00\x0a\x4e\x00\x60\x4f\x00" nocase
   condition:
     any of them
 }
@@ -2370,7 +2370,7 @@ rule content_zh_language_nsfw_228 {
   strings:
     $utf8 = "\xe6\x87\x86\xe6\x82\xa8\xe5\xa6\x88" nocase
     $gbk = "\x91\xa8\xc4\xfa\xc2\xe8" nocase
-    $wide = "\x61c6\x00\x60a8\x00\x5988\x00" nocase
+    $wide = "\xc6\x61\x00\xa8\x60\x00\x88\x59\x00" nocase
   condition:
     any of them
 }
@@ -2381,7 +2381,7 @@ rule content_zh_language_nsfw_229 {
   strings:
     $utf8 = "\xe6\x87\x86\xe6\x82\xa8\xe5\xa8\x98" nocase
     $gbk = "\x91\xa8\xc4\xfa\xc4\xef" nocase
-    $wide = "\x61c6\x00\x60a8\x00\x5a18\x00" nocase
+    $wide = "\xc6\x61\x00\xa8\x60\x00\x18\x5a\x00" nocase
   condition:
     any of them
 }
@@ -2392,7 +2392,7 @@ rule content_zh_language_nsfw_230 {
   strings:
     $utf8 = "\xe6\x89\x93\xe9\xa3\x9e\xe6\x9c\xba" nocase
     $gbk = "\xb4\xf2\xb7\xc9\xbb\xfa" nocase
-    $wide = "\x6253\x00\x98de\x00\x673a\x00" nocase
+    $wide = "\x53\x62\x00\xde\x98\x00\x3a\x67\x00" nocase
   condition:
     any of them
 }
@@ -2403,7 +2403,7 @@ rule content_zh_language_nsfw_231 {
   strings:
     $utf8 = "\xe6\x8f\x92\xe6\xad\xbb\xe4\xbd\xa0" nocase
     $gbk = "\xb2\xe5\xcb\xc0\xc4\xe3" nocase
-    $wide = "\x63d2\x00\x6b7b\x00\x4f60\x00" nocase
+    $wide = "\xd2\x63\x00\x7b\x6b\x00\x60\x4f\x00" nocase
   condition:
     any of them
 }
@@ -2414,7 +2414,7 @@ rule content_zh_language_nsfw_232 {
   strings:
     $utf8 = "\xe6\x93\x8d\xe4\xbd\xa0\xe5\xa6\x88" nocase
     $gbk = "\xb2\xd9\xc4\xe3\xc2\xe8" nocase
-    $wide = "\x64cd\x00\x4f60\x00\x5988\x00" nocase
+    $wide = "\xcd\x64\x00\x60\x4f\x00\x88\x59\x00" nocase
   condition:
     any of them
 }
@@ -2425,7 +2425,7 @@ rule content_zh_language_nsfw_233 {
   strings:
     $utf8 = "\xe6\x93\x8d\xe4\xbd\xa0\xe5\xa8\x98" nocase
     $gbk = "\xb2\xd9\xc4\xe3\xc4\xef" nocase
-    $wide = "\x64cd\x00\x4f60\x00\x5a18\x00" nocase
+    $wide = "\xcd\x64\x00\x60\x4f\x00\x18\x5a\x00" nocase
   condition:
     any of them
 }
@@ -2436,7 +2436,7 @@ rule content_zh_language_nsfw_234 {
   strings:
     $utf8 = "\xe6\x93\x8d\xe5\xa6\xb3\xe5\xa6\x88" nocase
     $gbk = "\xb2\xd9\x8a\x85\xc2\xe8" nocase
-    $wide = "\x64cd\x00\x59b3\x00\x5988\x00" nocase
+    $wide = "\xcd\x64\x00\xb3\x59\x00\x88\x59\x00" nocase
   condition:
     any of them
 }
@@ -2447,7 +2447,7 @@ rule content_zh_language_nsfw_235 {
   strings:
     $utf8 = "\xe6\x93\x8d\xe5\xa6\xb3\xe5\xa8\x98" nocase
     $gbk = "\xb2\xd9\x8a\x85\xc4\xef" nocase
-    $wide = "\x64cd\x00\x59b3\x00\x5a18\x00" nocase
+    $wide = "\xcd\x64\x00\xb3\x59\x00\x18\x5a\x00" nocase
   condition:
     any of them
 }
@@ -2458,7 +2458,7 @@ rule content_zh_language_nsfw_236 {
   strings:
     $utf8 = "\xe6\x93\x8d\xe6\x9c\xba\xe6\x8e\xb0" nocase
     $gbk = "\xb2\xd9\xbb\xfa\xea\xfe" nocase
-    $wide = "\x64cd\x00\x673a\x00\x63b0\x00" nocase
+    $wide = "\xcd\x64\x00\x3a\x67\x00\xb0\x63\x00" nocase
   condition:
     any of them
 }
@@ -2469,7 +2469,7 @@ rule content_zh_language_nsfw_237 {
   strings:
     $utf8 = "\xe6\x97\xa5\xe4\xbb\x96\xe5\xa8\x98" nocase
     $gbk = "\xc8\xd5\xcb\xfb\xc4\xef" nocase
-    $wide = "\x65e5\x00\x4ed6\x00\x5a18\x00" nocase
+    $wide = "\xe5\x65\x00\xd6\x4e\x00\x18\x5a\x00" nocase
   condition:
     any of them
 }
@@ -2480,7 +2480,7 @@ rule content_zh_language_nsfw_238 {
   strings:
     $utf8 = "\xe6\x97\xa5\xe4\xbd\xa0\xe5\xa6\x88" nocase
     $gbk = "\xc8\xd5\xc4\xe3\xc2\xe8" nocase
-    $wide = "\x65e5\x00\x4f60\x00\x5988\x00" nocase
+    $wide = "\xe5\x65\x00\x60\x4f\x00\x88\x59\x00" nocase
   condition:
     any of them
 }
@@ -2491,7 +2491,7 @@ rule content_zh_language_nsfw_239 {
   strings:
     $utf8 = "\xe7\x81\xa8\xe4\xbd\xa0\xe5\xa8\x98" nocase
     $gbk = "\x9e\xb8\xc4\xe3\xc4\xef" nocase
-    $wide = "\x7068\x00\x4f60\x00\x5a18\x00" nocase
+    $wide = "\x68\x70\x00\x60\x4f\x00\x18\x5a\x00" nocase
   condition:
     any of them
 }
@@ -2502,7 +2502,7 @@ rule content_zh_language_nsfw_240 {
   strings:
     $utf8 = "\xe7\x8e\x8b\xe5\x85\xab\xe8\x9b\x8b" nocase
     $gbk = "\xcd\xf5\xb0\xcb\xb5\xb0" nocase
-    $wide = "\x738b\x00\x516b\x00\x86cb\x00" nocase
+    $wide = "\x8b\x73\x00\x6b\x51\x00\xcb\x86\x00" nocase
   condition:
     any of them
 }
@@ -2513,7 +2513,7 @@ rule content_zh_language_nsfw_241 {
   strings:
     $utf8 = "\xe7\x93\x9c\xe5\xa8\x83\xe5\xad\x90" nocase
     $gbk = "\xb9\xcf\xcd\xde\xd7\xd3" nocase
-    $wide = "\x74dc\x00\x5a03\x00\x5b50\x00" nocase
+    $wide = "\xdc\x74\x00\x03\x5a\x00\x50\x5b\x00" nocase
   condition:
     any of them
 }
@@ -2524,7 +2524,7 @@ rule content_zh_language_nsfw_242 {
   strings:
     $utf8 = "\xe7\x93\x9c\xe5\xa9\x86\xe5\xa8\x98" nocase
     $gbk = "\xb9\xcf\xc6\xc5\xc4\xef" nocase
-    $wide = "\x74dc\x00\x5a46\x00\x5a18\x00" nocase
+    $wide = "\xdc\x74\x00\x46\x5a\x00\x18\x5a\x00" nocase
   condition:
     any of them
 }
@@ -2535,7 +2535,7 @@ rule content_zh_language_nsfw_243 {
   strings:
     $utf8 = "\xe8\x80\x81\xe7\x98\xaa\xe4\xb8\x89" nocase
     $gbk = "\xc0\xcf\xb1\xf1\xc8\xfd" nocase
-    $wide = "\x8001\x00\x762a\x00\x4e09\x00" nocase
+    $wide = "\x01\x80\x00\x2a\x76\x00\x09\x4e\x00" nocase
   condition:
     any of them
 }
@@ -2546,7 +2546,7 @@ rule content_zh_language_nsfw_244 {
   strings:
     $utf8 = "\xe8\x80\x81\xe9\xaa\x9a\xe6\xaf\x94" nocase
     $gbk = "\xc0\xcf\xc9\xa7\xb1\xc8" nocase
-    $wide = "\x8001\x00\x9a9a\x00\x6bd4\x00" nocase
+    $wide = "\x01\x80\x00\x9a\x9a\x00\xd4\x6b\x00" nocase
   condition:
     any of them
 }
@@ -2557,7 +2557,7 @@ rule content_zh_language_nsfw_245 {
   strings:
     $utf8 = "\xe8\x80\x81\xe9\xaa\x9a\xe8\xb4\xa7" nocase
     $gbk = "\xc0\xcf\xc9\xa7\xbb\xf5" nocase
-    $wide = "\x8001\x00\x9a9a\x00\x8d27\x00" nocase
+    $wide = "\x01\x80\x00\x9a\x9a\x00\x27\x8d\x00" nocase
   condition:
     any of them
 }
@@ -2568,7 +2568,7 @@ rule content_zh_language_nsfw_246 {
   strings:
     $utf8 = "\xe8\x82\x89\xe6\xa3\x8d\xe5\xad\x90" nocase
     $gbk = "\xc8\xe2\xb9\xf7\xd7\xd3" nocase
-    $wide = "\x8089\x00\x68cd\x00\x5b50\x00" nocase
+    $wide = "\x89\x80\x00\xcd\x68\x00\x50\x5b\x00" nocase
   condition:
     any of them
 }
@@ -2579,7 +2579,7 @@ rule content_zh_language_nsfw_247 {
   strings:
     $utf8 = "\xe8\xb4\xbc\xe4\xbd\xa0\xe5\xa6\x88" nocase
     $gbk = "\xd4\xf4\xc4\xe3\xc2\xe8" nocase
-    $wide = "\x8d3c\x00\x4f60\x00\x5988\x00" nocase
+    $wide = "\x3c\x8d\x00\x60\x4f\x00\x88\x59\x00" nocase
   condition:
     any of them
 }
@@ -2590,7 +2590,7 @@ rule content_zh_language_nsfw_248 {
   strings:
     $utf8 = "\xe8\xb5\xa3\xe6\x82\xa8\xe5\xa8\x98" nocase
     $gbk = "\xb8\xd3\xc4\xfa\xc4\xef" nocase
-    $wide = "\x8d63\x00\x60a8\x00\x5a18\x00" nocase
+    $wide = "\x63\x8d\x00\xa8\x60\x00\x18\x5a\x00" nocase
   condition:
     any of them
 }
@@ -2601,7 +2601,7 @@ rule content_zh_language_nsfw_249 {
   strings:
     $utf8 = "\xe9\xa9\xb6\xe4\xbd\xa0\xe5\x85\xac" nocase
     $gbk = "\xca\xbb\xc4\xe3\xb9\xab" nocase
-    $wide = "\x9a76\x00\x4f60\x00\x516c\x00" nocase
+    $wide = "\x76\x9a\x00\x60\x4f\x00\x6c\x51\x00" nocase
   condition:
     any of them
 }
@@ -2612,7 +2612,7 @@ rule content_zh_language_nsfw_250 {
   strings:
     $utf8 = "\xe9\xa9\xb6\xe4\xbd\xa0\xe5\xa8\x98" nocase
     $gbk = "\xca\xbb\xc4\xe3\xc4\xef" nocase
-    $wide = "\x9a76\x00\x4f60\x00\x5a18\x00" nocase
+    $wide = "\x76\x9a\x00\x60\x4f\x00\x18\x5a\x00" nocase
   condition:
     any of them
 }
@@ -2623,7 +2623,7 @@ rule content_zh_language_nsfw_251 {
   strings:
     $utf8 = "\xe9\xa9\xb6\xe4\xbd\xa0\xe6\xaf\x8d" nocase
     $gbk = "\xca\xbb\xc4\xe3\xc4\xb8" nocase
-    $wide = "\x9a76\x00\x4f60\x00\x6bcd\x00" nocase
+    $wide = "\x76\x9a\x00\x60\x4f\x00\xcd\x6b\x00" nocase
   condition:
     any of them
 }
@@ -2634,7 +2634,7 @@ rule content_zh_language_nsfw_252 {
   strings:
     $utf8 = "\xe9\xa9\xb6\xe4\xbd\xa0\xe7\x88\xb8" nocase
     $gbk = "\xca\xbb\xc4\xe3\xb0\xd6" nocase
-    $wide = "\x9a76\x00\x4f60\x00\x7238\x00" nocase
+    $wide = "\x76\x9a\x00\x60\x4f\x00\x38\x72\x00" nocase
   condition:
     any of them
 }
@@ -2645,7 +2645,7 @@ rule content_zh_language_nsfw_253 {
   strings:
     $utf8 = "\xe9\xbe\x9f\xe5\x84\xbf\xe5\xad\x90" nocase
     $gbk = "\xb9\xea\xb6\xf9\xd7\xd3" nocase
-    $wide = "\x9f9f\x00\x513f\x00\x5b50\x00" nocase
+    $wide = "\x9f\x9f\x00\x3f\x51\x00\x50\x5b\x00" nocase
   condition:
     any of them
 }
@@ -2656,7 +2656,7 @@ rule content_zh_language_nsfw_254 {
   strings:
     $utf8 = "\xe4\xb8\xaa\xe8\x80\x81\xe5\xad\x90\xe7\x9a\x84" nocase
     $gbk = "\xb8\xf6\xc0\xcf\xd7\xd3\xb5\xc4" nocase
-    $wide = "\x4e2a\x00\x8001\x00\x5b50\x00\x7684\x00" nocase
+    $wide = "\x2a\x4e\x00\x01\x80\x00\x50\x5b\x00\x84\x76\x00" nocase
   condition:
     any of them
 }
@@ -2667,7 +2667,7 @@ rule content_zh_language_nsfw_255 {
   strings:
     $utf8 = "\xe4\xb9\xb3\xe6\xb3\xa2\xe8\x87\x80\xe6\xb5\xaa" nocase
     $gbk = "\xc8\xe9\xb2\xa8\xcd\xce\xc0\xcb" nocase
-    $wide = "\x4e73\x00\x6ce2\x00\x81c0\x00\x6d6a\x00" nocase
+    $wide = "\x73\x4e\x00\xe2\x6c\x00\xc0\x81\x00\x6a\x6d\x00" nocase
   condition:
     any of them
 }
@@ -2678,7 +2678,7 @@ rule content_zh_language_nsfw_256 {
   strings:
     $utf8 = "\xe4\xbb\x96\xe5\xa5\xb6\xe5\xa5\xb6\xe7\x9a\x84" nocase
     $gbk = "\xcb\xfb\xc4\xcc\xc4\xcc\xb5\xc4" nocase
-    $wide = "\x4ed6\x00\x5976\x00\x5976\x00\x7684\x00" nocase
+    $wide = "\xd6\x4e\x00\x76\x59\x00\x76\x59\x00\x84\x76\x00" nocase
   condition:
     any of them
 }
@@ -2689,7 +2689,7 @@ rule content_zh_language_nsfw_257 {
   strings:
     $utf8 = "\xe4\xbb\x96\xe5\xa5\xb6\xe5\xa8\x98\xe7\x9a\x84" nocase
     $gbk = "\xcb\xfb\xc4\xcc\xc4\xef\xb5\xc4" nocase
-    $wide = "\x4ed6\x00\x5976\x00\x5a18\x00\x7684\x00" nocase
+    $wide = "\xd6\x4e\x00\x76\x59\x00\x18\x5a\x00\x84\x76\x00" nocase
   condition:
     any of them
 }
@@ -2700,7 +2700,7 @@ rule content_zh_language_nsfw_258 {
   strings:
     $utf8 = "\xe4\xbd\xa0\xe4\xb8\xaa\xe5\x82\xbb\xe6\xaf\x94" nocase
     $gbk = "\xc4\xe3\xb8\xf6\xc9\xb5\xb1\xc8" nocase
-    $wide = "\x4f60\x00\x4e2a\x00\x50bb\x00\x6bd4\x00" nocase
+    $wide = "\x60\x4f\x00\x2a\x4e\x00\xbb\x50\x00\xd4\x6b\x00" nocase
   condition:
     any of them
 }
@@ -2711,7 +2711,7 @@ rule content_zh_language_nsfw_259 {
   strings:
     $utf8 = "\xe4\xbd\xa0\xe4\xbb\x96\xe9\xa9\xac\xe7\x9a\x84" nocase
     $gbk = "\xc4\xe3\xcb\xfb\xc2\xed\xb5\xc4" nocase
-    $wide = "\x4f60\x00\x4ed6\x00\x9a6c\x00\x7684\x00" nocase
+    $wide = "\x60\x4f\x00\xd6\x4e\x00\x6c\x9a\x00\x84\x76\x00" nocase
   condition:
     any of them
 }
@@ -2722,7 +2722,7 @@ rule content_zh_language_nsfw_260 {
   strings:
     $utf8 = "\xe4\xbd\xa0\xe5\xa5\xb6\xe5\xa5\xb6\xe7\x9a\x84" nocase
     $gbk = "\xc4\xe3\xc4\xcc\xc4\xcc\xb5\xc4" nocase
-    $wide = "\x4f60\x00\x5976\x00\x5976\x00\x7684\x00" nocase
+    $wide = "\x60\x4f\x00\x76\x59\x00\x76\x59\x00\x84\x76\x00" nocase
   condition:
     any of them
 }
@@ -2733,7 +2733,7 @@ rule content_zh_language_nsfw_261 {
   strings:
     $utf8 = "\xe4\xbd\xa0\xe5\xa5\xb9\xe9\xa9\xac\xe7\x9a\x84" nocase
     $gbk = "\xc4\xe3\xcb\xfd\xc2\xed\xb5\xc4" nocase
-    $wide = "\x4f60\x00\x5979\x00\x9a6c\x00\x7684\x00" nocase
+    $wide = "\x60\x4f\x00\x79\x59\x00\x6c\x9a\x00\x84\x76\x00" nocase
   condition:
     any of them
 }
@@ -2744,7 +2744,7 @@ rule content_zh_language_nsfw_262 {
   strings:
     $utf8 = "\xe4\xbd\xa0\xe5\xa8\x98\xe5\x8d\xa1\xe5\xa5\xbd" nocase
     $gbk = "\xc4\xe3\xc4\xef\xbf\xa8\xba\xc3" nocase
-    $wide = "\x4f60\x00\x5a18\x00\x5361\x00\x597d\x00" nocase
+    $wide = "\x60\x4f\x00\x18\x5a\x00\x61\x53\x00\x7d\x59\x00" nocase
   condition:
     any of them
 }
@@ -2755,7 +2755,7 @@ rule content_zh_language_nsfw_263 {
   strings:
     $utf8 = "\xe4\xbd\xa0\xe5\xae\x83\xe5\xa6\x88\xe7\x9a\x84" nocase
     $gbk = "\xc4\xe3\xcb\xfc\xc2\xe8\xb5\xc4" nocase
-    $wide = "\x4f60\x00\x5b83\x00\x5988\x00\x7684\x00" nocase
+    $wide = "\x60\x4f\x00\x83\x5b\x00\x88\x59\x00\x84\x76\x00" nocase
   condition:
     any of them
 }
@@ -2766,7 +2766,7 @@ rule content_zh_language_nsfw_264 {
   strings:
     $utf8 = "\xe4\xbd\xa0\xe5\xae\x83\xe9\xa9\xac\xe7\x9a\x84" nocase
     $gbk = "\xc4\xe3\xcb\xfc\xc2\xed\xb5\xc4" nocase
-    $wide = "\x4f60\x00\x5b83\x00\x9a6c\x00\x7684\x00" nocase
+    $wide = "\x60\x4f\x00\x83\x5b\x00\x6c\x9a\x00\x84\x76\x00" nocase
   condition:
     any of them
 }
@@ -2777,7 +2777,7 @@ rule content_zh_language_nsfw_265 {
   strings:
     $utf8 = "\xe5\x8f\x8c\xe5\xb3\xb0\xe5\xbe\xae\xe9\xa2\xa4" nocase
     $gbk = "\xcb\xab\xb7\xe5\xce\xa2\xb2\xfc" nocase
-    $wide = "\x53cc\x00\x5cf0\x00\x5fae\x00\x98a4\x00" nocase
+    $wide = "\xcc\x53\x00\xf0\x5c\x00\xae\x5f\x00\xa4\x98\x00" nocase
   condition:
     any of them
 }
@@ -2788,7 +2788,7 @@ rule content_zh_language_nsfw_266 {
   strings:
     $utf8 = "\xe5\xa1\x9e\xe4\xbd\xa0\xe8\x80\x81\xe5\xb8\x88" nocase
     $gbk = "\xc8\xfb\xc4\xe3\xc0\xcf\xca\xa6" nocase
-    $wide = "\x585e\x00\x4f60\x00\x8001\x00\x5e08\x00" nocase
+    $wide = "\x5e\x58\x00\x60\x4f\x00\x01\x80\x00\x08\x5e\x00" nocase
   condition:
     any of them
 }
@@ -2799,7 +2799,7 @@ rule content_zh_language_nsfw_267 {
   strings:
     $utf8 = "\xe5\xa1\x9e\xe4\xbd\xa0\xe8\x80\x81\xe6\xaf\x8d" nocase
     $gbk = "\xc8\xfb\xc4\xe3\xc0\xcf\xc4\xb8" nocase
-    $wide = "\x585e\x00\x4f60\x00\x8001\x00\x6bcd\x00" nocase
+    $wide = "\x5e\x58\x00\x60\x4f\x00\x01\x80\x00\xcd\x6b\x00" nocase
   condition:
     any of them
 }
@@ -2810,7 +2810,7 @@ rule content_zh_language_nsfw_268 {
   strings:
     $utf8 = "\xe5\xa5\xb6\xe5\xa5\xb6\xe7\x9a\x84\xe7\x86\x8a" nocase
     $gbk = "\xc4\xcc\xc4\xcc\xb5\xc4\xd0\xdc" nocase
-    $wide = "\x5976\x00\x5976\x00\x7684\x00\x718a\x00" nocase
+    $wide = "\x76\x59\x00\x76\x59\x00\x84\x76\x00\x8a\x71\x00" nocase
   condition:
     any of them
 }
@@ -2821,7 +2821,7 @@ rule content_zh_language_nsfw_269 {
   strings:
     $utf8 = "\xe5\xa6\x88\xe4\xb8\xaa\xe8\x80\x81\xe6\xaf\x94" nocase
     $gbk = "\xc2\xe8\xb8\xf6\xc0\xcf\xb1\xc8" nocase
-    $wide = "\x5988\x00\x4e2a\x00\x8001\x00\x6bd4\x00" nocase
+    $wide = "\x88\x59\x00\x2a\x4e\x00\x01\x80\x00\xd4\x6b\x00" nocase
   condition:
     any of them
 }
@@ -2832,7 +2832,7 @@ rule content_zh_language_nsfw_270 {
   strings:
     $utf8 = "\xe5\xa6\xb3\xe5\xa5\xb9\xe5\xa6\x88\xe7\x9a\x84" nocase
     $gbk = "\x8a\x85\xcb\xfd\xc2\xe8\xb5\xc4" nocase
-    $wide = "\x59b3\x00\x5979\x00\x5988\x00\x7684\x00" nocase
+    $wide = "\xb3\x59\x00\x79\x59\x00\x88\x59\x00\x84\x76\x00" nocase
   condition:
     any of them
 }
@@ -2843,7 +2843,7 @@ rule content_zh_language_nsfw_271 {
   strings:
     $utf8 = "\xe5\xa6\xb3\xe8\x80\x81\xe6\xaf\x8d\xe7\x9a\x84" nocase
     $gbk = "\x8a\x85\xc0\xcf\xc4\xb8\xb5\xc4" nocase
-    $wide = "\x59b3\x00\x8001\x00\x6bcd\x00\x7684\x00" nocase
+    $wide = "\xb3\x59\x00\x01\x80\x00\xcd\x6b\x00\x84\x76\x00" nocase
   condition:
     any of them
 }
@@ -2854,7 +2854,7 @@ rule content_zh_language_nsfw_272 {
   strings:
     $utf8 = "\xe5\xa9\x8a\xe5\xad\x90\xe5\x85\xbb\xe7\x9a\x84" nocase
     $gbk = "\xe6\xbb\xd7\xd3\xd1\xf8\xb5\xc4" nocase
-    $wide = "\x5a4a\x00\x5b50\x00\x517b\x00\x7684\x00" nocase
+    $wide = "\x4a\x5a\x00\x50\x5b\x00\x7b\x51\x00\x84\x76\x00" nocase
   condition:
     any of them
 }
@@ -2865,7 +2865,7 @@ rule content_zh_language_nsfw_273 {
   strings:
     $utf8 = "\xe5\xb9\xb2\xe4\xbd\xa0\xe8\x80\x81\xe6\xaf\x8d" nocase
     $gbk = "\xb8\xc9\xc4\xe3\xc0\xcf\xc4\xb8" nocase
-    $wide = "\x5e72\x00\x4f60\x00\x8001\x00\x6bcd\x00" nocase
+    $wide = "\x72\x5e\x00\x60\x4f\x00\x01\x80\x00\xcd\x6b\x00" nocase
   condition:
     any of them
 }
@@ -2876,7 +2876,7 @@ rule content_zh_language_nsfw_274 {
   strings:
     $utf8 = "\xe5\xb9\xb2\xe5\xa6\xb3\xe8\x80\x81\xe6\xaf\x8d" nocase
     $gbk = "\xb8\xc9\x8a\x85\xc0\xcf\xc4\xb8" nocase
-    $wide = "\x5e72\x00\x59b3\x00\x8001\x00\x6bcd\x00" nocase
+    $wide = "\x72\x5e\x00\xb3\x59\x00\x01\x80\x00\xcd\x6b\x00" nocase
   condition:
     any of them
 }
@@ -2887,7 +2887,7 @@ rule content_zh_language_nsfw_275 {
   strings:
     $utf8 = "\xe5\xb9\xb2\xe6\xad\xbb\xe5\xae\xa2\xe6\x9c\x8d" nocase
     $gbk = "\xb8\xc9\xcb\xc0\xbf\xcd\xb7\xfe" nocase
-    $wide = "\x5e72\x00\x6b7b\x00\x5ba2\x00\x670d\x00" nocase
+    $wide = "\x72\x5e\x00\x7b\x6b\x00\xa2\x5b\x00\x0d\x67\x00" nocase
   condition:
     any of them
 }
@@ -2898,7 +2898,7 @@ rule content_zh_language_nsfw_276 {
   strings:
     $utf8 = "\xe6\x93\x8d\xe4\xbd\xa0\xe5\x85\xa8\xe5\xae\xb6" nocase
     $gbk = "\xb2\xd9\xc4\xe3\xc8\xab\xbc\xd2" nocase
-    $wide = "\x64cd\x00\x4f60\x00\x5168\x00\x5bb6\x00" nocase
+    $wide = "\xcd\x64\x00\x60\x4f\x00\x68\x51\x00\xb6\x5b\x00" nocase
   condition:
     any of them
 }
@@ -2909,7 +2909,7 @@ rule content_zh_language_nsfw_277 {
   strings:
     $utf8 = "\xe6\x93\x8d\xe4\xbd\xa0\xe5\xa5\xb6\xe5\xa5\xb6" nocase
     $gbk = "\xb2\xd9\xc4\xe3\xc4\xcc\xc4\xcc" nocase
-    $wide = "\x64cd\x00\x4f60\x00\x5976\x00\x5976\x00" nocase
+    $wide = "\xcd\x64\x00\x60\x4f\x00\x76\x59\x00\x76\x59\x00" nocase
   condition:
     any of them
 }
@@ -2920,7 +2920,7 @@ rule content_zh_language_nsfw_278 {
   strings:
     $utf8 = "\xe6\x93\x8d\xe4\xbd\xa0\xe7\xa5\x96\xe5\xae\x97" nocase
     $gbk = "\xb2\xd9\xc4\xe3\xd7\xe6\xd7\xda" nocase
-    $wide = "\x64cd\x00\x4f60\x00\x7956\x00\x5b97\x00" nocase
+    $wide = "\xcd\x64\x00\x60\x4f\x00\x56\x79\x00\x97\x5b\x00" nocase
   condition:
     any of them
 }
@@ -2931,7 +2931,7 @@ rule content_zh_language_nsfw_279 {
   strings:
     $utf8 = "\xe6\x93\x8d\xe4\xbd\xa0\xe8\x80\x81\xe5\xa6\x88" nocase
     $gbk = "\xb2\xd9\xc4\xe3\xc0\xcf\xc2\xe8" nocase
-    $wide = "\x64cd\x00\x4f60\x00\x8001\x00\x5988\x00" nocase
+    $wide = "\xcd\x64\x00\x60\x4f\x00\x01\x80\x00\x88\x59\x00" nocase
   condition:
     any of them
 }
@@ -2942,7 +2942,7 @@ rule content_zh_language_nsfw_280 {
   strings:
     $utf8 = "\xe6\x93\x8d\xe4\xbd\xa0\xe8\x80\x81\xe6\xaf\x8d" nocase
     $gbk = "\xb2\xd9\xc4\xe3\xc0\xcf\xc4\xb8" nocase
-    $wide = "\x64cd\x00\x4f60\x00\x8001\x00\x6bcd\x00" nocase
+    $wide = "\xcd\x64\x00\x60\x4f\x00\x01\x80\x00\xcd\x6b\x00" nocase
   condition:
     any of them
 }
@@ -2953,7 +2953,7 @@ rule content_zh_language_nsfw_281 {
   strings:
     $utf8 = "\xe6\x93\x8d\xe5\xa6\xb3\xe5\x85\xa8\xe5\xae\xb6" nocase
     $gbk = "\xb2\xd9\x8a\x85\xc8\xab\xbc\xd2" nocase
-    $wide = "\x64cd\x00\x59b3\x00\x5168\x00\x5bb6\x00" nocase
+    $wide = "\xcd\x64\x00\xb3\x59\x00\x68\x51\x00\xb6\x5b\x00" nocase
   condition:
     any of them
 }
@@ -2964,7 +2964,7 @@ rule content_zh_language_nsfw_282 {
   strings:
     $utf8 = "\xe6\x93\x8d\xe5\xa6\xb3\xe7\xa5\x96\xe5\xae\x97" nocase
     $gbk = "\xb2\xd9\x8a\x85\xd7\xe6\xd7\xda" nocase
-    $wide = "\x64cd\x00\x59b3\x00\x7956\x00\x5b97\x00" nocase
+    $wide = "\xcd\x64\x00\xb3\x59\x00\x56\x79\x00\x97\x5b\x00" nocase
   condition:
     any of them
 }
@@ -2975,7 +2975,7 @@ rule content_zh_language_nsfw_283 {
   strings:
     $utf8 = "\xe6\x97\xa5\xe4\xbd\xa0\xe8\x80\x81\xe5\xa8\x98" nocase
     $gbk = "\xc8\xd5\xc4\xe3\xc0\xcf\xc4\xef" nocase
-    $wide = "\x65e5\x00\x4f60\x00\x8001\x00\x5a18\x00" nocase
+    $wide = "\xe5\x65\x00\x60\x4f\x00\x01\x80\x00\x18\x5a\x00" nocase
   condition:
     any of them
 }
@@ -2986,7 +2986,7 @@ rule content_zh_language_nsfw_284 {
   strings:
     $utf8 = "\xe6\x97\xa5\xe4\xbd\xa0\xe8\x80\x81\xe6\xaf\x8d" nocase
     $gbk = "\xc8\xd5\xc4\xe3\xc0\xcf\xc4\xb8" nocase
-    $wide = "\x65e5\x00\x4f60\x00\x8001\x00\x6bcd\x00" nocase
+    $wide = "\xe5\x65\x00\x60\x4f\x00\x01\x80\x00\xcd\x6b\x00" nocase
   condition:
     any of them
 }
@@ -2997,7 +2997,7 @@ rule content_zh_language_nsfw_285 {
   strings:
     $utf8 = "\xe6\x9c\xba\xe6\x9c\xba\xe6\xad\xaa\xe6\xad\xaa" nocase
     $gbk = "\xbb\xfa\xbb\xfa\xcd\xe1\xcd\xe1" nocase
-    $wide = "\x673a\x00\x673a\x00\x6b6a\x00\x6b6a\x00" nocase
+    $wide = "\x3a\x67\x00\x3a\x67\x00\x6a\x6b\x00\x6a\x6b\x00" nocase
   condition:
     any of them
 }
@@ -3008,7 +3008,7 @@ rule content_zh_language_nsfw_286 {
   strings:
     $utf8 = "\xe7\x8b\x97\xe7\x8b\xbc\xe5\x85\xbb\xe7\x9a\x84" nocase
     $gbk = "\xb9\xb7\xc0\xc7\xd1\xf8\xb5\xc4" nocase
-    $wide = "\x72d7\x00\x72fc\x00\x517b\x00\x7684\x00" nocase
+    $wide = "\xd7\x72\x00\xfc\x72\x00\x7b\x51\x00\x84\x76\x00" nocase
   condition:
     any of them
 }
@@ -3019,7 +3019,7 @@ rule content_zh_language_nsfw_287 {
   strings:
     $utf8 = "\xe8\xb5\x9b\xe4\xbd\xa0\xe8\x80\x81\xe6\xaf\x8d" nocase
     $gbk = "\xc8\xfc\xc4\xe3\xc0\xcf\xc4\xb8" nocase
-    $wide = "\x8d5b\x00\x4f60\x00\x8001\x00\x6bcd\x00" nocase
+    $wide = "\x5b\x8d\x00\x60\x4f\x00\x01\x80\x00\xcd\x6b\x00" nocase
   condition:
     any of them
 }
@@ -3030,7 +3030,7 @@ rule content_zh_language_nsfw_288 {
   strings:
     $utf8 = "\xe8\xb5\x9b\xe5\xa6\xb3\xe9\x98\xbf\xe6\xaf\x8d" nocase
     $gbk = "\xc8\xfc\x8a\x85\xb0\xa2\xc4\xb8" nocase
-    $wide = "\x8d5b\x00\x59b3\x00\x963f\x00\x6bcd\x00" nocase
+    $wide = "\x5b\x8d\x00\xb3\x59\x00\x3f\x96\x00\xcd\x6b\x00" nocase
   condition:
     any of them
 }
@@ -3041,7 +3041,7 @@ rule content_zh_language_nsfw_289 {
   strings:
     $utf8 = "\xe9\xa9\xb6\xe4\xbd\xa0\xe8\x80\x81\xe5\xb8\x88" nocase
     $gbk = "\xca\xbb\xc4\xe3\xc0\xcf\xca\xa6" nocase
-    $wide = "\x9a76\x00\x4f60\x00\x8001\x00\x5e08\x00" nocase
+    $wide = "\x76\x9a\x00\x60\x4f\x00\x01\x80\x00\x08\x5e\x00" nocase
   condition:
     any of them
 }
@@ -3052,7 +3052,7 @@ rule content_zh_language_nsfw_290 {
   strings:
     $utf8 = "\xe9\xa9\xb6\xe4\xbd\xa0\xe8\x80\x81\xe6\xaf\x8d" nocase
     $gbk = "\xca\xbb\xc4\xe3\xc0\xcf\xc4\xb8" nocase
-    $wide = "\x9a76\x00\x4f60\x00\x8001\x00\x6bcd\x00" nocase
+    $wide = "\x76\x9a\x00\x60\x4f\x00\x01\x80\x00\xcd\x6b\x00" nocase
   condition:
     any of them
 }
@@ -3063,7 +3063,7 @@ rule content_zh_language_nsfw_291 {
   strings:
     $utf8 = "\xe6\xb9\xbf\xe9\x80\x8f\xe7\x9a\x84\xe5\x86\x85\xe8\xa3\xa4" nocase
     $gbk = "\xca\xaa\xcd\xb8\xb5\xc4\xc4\xda\xbf\xe3" nocase
-    $wide = "\x6e7f\x00\x900f\x00\x7684\x00\x5185\x00\x88e4\x00" nocase
+    $wide = "\x7f\x6e\x00\x0f\x90\x00\x84\x76\x00\x85\x51\x00\xe4\x88\x00" nocase
   condition:
     any of them
 }
@@ -3074,7 +3074,7 @@ rule content_zh_language_nsfw_292 {
   strings:
     $utf8 = "\xe4\xbb\x96\xe5\xa6\x88\xe3\x84\x89\xe7\x8e\x8b\xe5\x85\xab\xe8\x9b\x8b" nocase
     $gbk = "\xcb\xfb\xc2\xe8\xa8\xc9\xcd\xf5\xb0\xcb\xb5\xb0" nocase
-    $wide = "\x4ed6\x00\x5988\x00\x3109\x00\x738b\x00\x516b\x00\x86cb\x00" nocase
+    $wide = "\xd6\x4e\x00\x88\x59\x00\x09\x31\x00\x8b\x73\x00\x6b\x51\x00\xcb\x86\x00" nocase
   condition:
     any of them
 }
@@ -3085,7 +3085,7 @@ rule content_zh_language_nsfw_293 {
   strings:
     $utf8 = "\xe6\x88\x91\xe6\x93\x8d\xe4\xbd\xa0\xe7\xa5\x96\xe5\xae\x97\xe5\x8d\x81\xe5\x85\xab\xe4\xbb\xa3" nocase
     $gbk = "\xce\xd2\xb2\xd9\xc4\xe3\xd7\xe6\xd7\xda\xca\xae\xb0\xcb\xb4\xfa" nocase
-    $wide = "\x6211\x00\x64cd\x00\x4f60\x00\x7956\x00\x5b97\x00\x5341\x00\x516b\x00\x4ee3\x00" nocase
+    $wide = "\x11\x62\x00\xcd\x64\x00\x60\x4f\x00\x56\x79\x00\x97\x5b\x00\x41\x53\x00\x6b\x51\x00\xe3\x4e\x00" nocase
   condition:
     any of them
 }
@@ -3096,7 +3096,7 @@ rule content_zh_language_nsfw_294 {
   strings:
     $utf8 = "\xe8\x82\x8f" nocase
     $gbk = "\xc3\x48" nocase
-    $wide = "\x808f\x00" nocase
+    $wide = "\x8f\x80\x00" nocase
   condition:
     any of them
 }
@@ -3107,7 +3107,7 @@ rule content_zh_language_nsfw_295 {
   strings:
     $utf8 = "\xe5\xb1\x8c" nocase
     $gbk = "\x8c\xc5" nocase
-    $wide = "\x5c4c\x00" nocase
+    $wide = "\x4c\x5c\x00" nocase
   condition:
     any of them
 }
@@ -3118,7 +3118,7 @@ rule content_zh_language_nsfw_296 {
   strings:
     $utf8 = "\xe9\xb8\xa1\xe5\xb7\xb4" nocase
     $gbk = "\xbc\xa6\xb0\xcd" nocase
-    $wide = "\x9e21\x00\x5df4\x00" nocase
+    $wide = "\x21\x9e\x00\xf4\x5d\x00" nocase
   condition:
     any of them
 }
@@ -3129,7 +3129,7 @@ rule content_zh_language_nsfw_300 {
   strings:
     $utf8 = "\xe9\xaa\x9a\xe9\x80\xbc" nocase
     $gbk = "\xc9\xa7\xb1\xc6" nocase
-    $wide = "\x9a9a\x00\x903c\x00" nocase
+    $wide = "\x9a\x9a\x00\x3c\x90\x00" nocase
   condition:
     any of them
 }
@@ -3140,7 +3140,7 @@ rule content_zh_language_nsfw_301 {
   strings:
     $utf8 = "\xe8\x87\xad\xe9\x80\xbc" nocase
     $gbk = "\xb3\xf4\xb1\xc6" nocase
-    $wide = "\x81ed\x00\x903c\x00" nocase
+    $wide = "\xed\x81\x00\x3c\x90\x00" nocase
   condition:
     any of them
 }
@@ -3151,7 +3151,7 @@ rule content_zh_language_nsfw_302 {
   strings:
     $utf8 = "\xe7\x83\x82\xe9\x80\xbc" nocase
     $gbk = "\xc0\xc3\xb1\xc6" nocase
-    $wide = "\x70c2\x00\x903c\x00" nocase
+    $wide = "\xc2\x70\x00\x3c\x90\x00" nocase
   condition:
     any of them
 }
@@ -3162,7 +3162,7 @@ rule content_zh_language_nsfw_303 {
   strings:
     $utf8 = "\xe5\xb9\xb2\xe4\xbd\xa0\xe5\xa8\x98" nocase
     $gbk = "\xb8\xc9\xc4\xe3\xc4\xef" nocase
-    $wide = "\x5e72\x00\x4f60\x00\x5a18\x00" nocase
+    $wide = "\x72\x5e\x00\x60\x4f\x00\x18\x5a\x00" nocase
   condition:
     any of them
 }
@@ -3173,7 +3173,7 @@ rule content_zh_language_nsfw_304 {
   strings:
     $utf8 = "\xe8\x82\x8f\xe4\xbd\xa0\xe5\xa6\x88" nocase
     $gbk = "\xc3\x48\xc4\xe3\xc2\xe8" nocase
-    $wide = "\x808f\x00\x4f60\x00\x5988\x00" nocase
+    $wide = "\x8f\x80\x00\x60\x4f\x00\x88\x59\x00" nocase
   condition:
     any of them
 }
@@ -3184,7 +3184,7 @@ rule content_zh_language_nsfw_305 {
   strings:
     $utf8 = "\xe5\x82\xbb\xe9\x80\xbc" nocase
     $gbk = "\xc9\xb5\xb1\xc6" nocase
-    $wide = "\x50bb\x00\x903c\x00" nocase
+    $wide = "\xbb\x50\x00\x3c\x90\x00" nocase
   condition:
     any of them
 }
@@ -3195,7 +3195,7 @@ rule content_zh_language_nsfw_306 {
   strings:
     $utf8 = "\xe4\xba\x8c\xe9\x80\xbc" nocase
     $gbk = "\xb6\xfe\xb1\xc6" nocase
-    $wide = "\x4e8c\x00\x903c\x00" nocase
+    $wide = "\x8c\x4e\x00\x3c\x90\x00" nocase
   condition:
     any of them
 }
