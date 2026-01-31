@@ -1,864 +1,641 @@
-// Vulgar or otherwise not suitable for work words in english
-
-rule content_en_language_nsfw_1
-{
-  strings:
-    $ =  "2 girls 1 cup"  fullword wide ascii nocase
-    $ =  "2g1c"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_2 
-{
-  strings:
-    $ =  "apeshit"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
 rule content_en_language_nsfw_3 {
+  meta:
+    info = "arsehole"
   strings:
-    $ =  "arsehole"  fullword wide ascii nocase
-    $ =  "asshole"  fullword wide ascii nocase
+    $ascii1 = "\x61\x72\x73\x65\x68\x6f\x6c\x65" nocase  // arsehole in ASCII/UTF-8
+    $wide1 = "\x61\x00\x72\x00\x73\x00\x65\x00\x68\x00\x6f\x00\x6c\x00\x65\x00" nocase  // arsehole in UTF-16LE
+    $ascii2 = "\x61\x73\x73\x68\x6f\x6c\x65" nocase  // asshole in ASCII/UTF-8
+    $wide2 = "\x61\x00\x73\x00\x73\x00\x68\x00\x6f\x00\x6c\x00\x65\x00" nocase  // asshole in UTF-16LE
   condition:
-    1 of them
+    any of them
 }
 rule content_en_language_nsfw_4 {
+  meta:
+    info = "assmunch"
   strings:
-    $ =  "assmunch"  fullword wide ascii nocase
+    $ascii = "\x61\x73\x73\x6d\x75\x6e\x63\x68" nocase  // assmunch in ASCII/UTF-8
+    $wide = "\x61\x00\x73\x00\x73\x00\x6d\x00\x75\x00\x6e\x00\x63\x00\x68\x00" nocase  // assmunch in UTF-16LE
   condition:
-    1 of them
-}
-rule content_en_language_nsfw_7 {
-  strings:
-    $ =  "ball sack"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_8 {
-  strings:
-    $ =  "bangbros"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-
-rule content_en_language_nsfw_11 {
-  strings:
-    $ =  "bbw"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_12 {
-  strings:
-    $ =  "bdsm"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_16 {
-  strings:
-    $ =  "bitch"  fullword wide ascii nocase
-    $ =  "bitches"  fullword wide ascii nocase
-    $ =  "bitched"  fullword wide ascii nocase
-    $ =  "bitching"  fullword wide ascii nocase
-  condition:
-    1 of them
+    any of them
 }
 rule content_en_language_nsfw_18 {
+  meta:
+    info = "blowjob"
   strings:
-    $ =  "blowjob"  fullword wide ascii nocase
-    $ =  "blowjobs"  fullword wide ascii nocase
-    $ =  "blow job"  fullword wide ascii nocase
-    $ =  "blow jobs"  fullword wide ascii nocase
+    $ascii1 = "\x62\x6c\x6f\x77\x6a\x6f\x62" nocase  // blowjob in ASCII/UTF-8
+    $wide1 = "\x62\x00\x6c\x00\x6f\x00\x77\x00\x6a\x00\x6f\x00\x62\x00" nocase  // blowjob in UTF-16LE
+    $ascii2 = "\x62\x6c\x6f\x77\x6a\x6f\x62\x73" nocase  // blowjobs in ASCII/UTF-8
+    $wide2 = "\x62\x00\x6c\x00\x6f\x00\x77\x00\x6a\x00\x6f\x00\x62\x00\x73\x00" nocase  // blowjobs in UTF-16LE
+    $ascii3 = "\x62\x6c\x6f\x77\x20\x6a\x6f\x62" nocase  // blow job in ASCII/UTF-8
+    $wide3 = "\x62\x00\x6c\x00\x6f\x00\x77\x00\x20\x00\x6a\x00\x6f\x00\x62\x00" nocase  // blow job in UTF-16LE
+    $ascii4 = "\x62\x6c\x6f\x77\x20\x6a\x6f\x62\x73" nocase  // blow jobs in ASCII/UTF-8
+    $wide4 = "\x62\x00\x6c\x00\x6f\x00\x77\x00\x20\x00\x6a\x00\x6f\x00\x62\x00\x73\x00" nocase  // blow jobs in UTF-16LE
   condition:
-    1 of them
-}
-rule content_en_language_nsfw_19 {
-  strings:
-    $ =  "blumpkin"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_20 {
-  strings:
-    $ =  "bollocks"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_23 {
-  strings:
-    $ =  "booty call"  fullword wide ascii nocase
-    $ =  "bootycall"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_24 {
-  strings:
-    $ =  "brown showers"  fullword wide ascii nocase
-  condition:
-    1 of them
+    any of them
 }
 rule content_en_language_nsfw_25 {
+  meta:
+    info = "bukkake"
   strings:
-    $ =  "bukkake"  fullword wide ascii nocase
+    $ascii = "\x62\x75\x6b\x6b\x61\x6b\x65" nocase  // bukkake in ASCII/UTF-8
+    $wide = "\x62\x00\x75\x00\x6b\x00\x6b\x00\x61\x00\x6b\x00\x65\x00" nocase  // bukkake in UTF-16LE
   condition:
-    1 of them
+    any of them
 }
 rule content_en_language_nsfw_26 {
+  meta:
+    info = "bulldyke"
   strings:
-    $ =  "bulldyke"  fullword wide ascii nocase
+    $ascii = "\x62\x75\x6c\x6c\x64\x79\x6b\x65" nocase  // bulldyke in ASCII/UTF-8
+    $wide = "\x62\x00\x75\x00\x6c\x00\x6c\x00\x64\x00\x79\x00\x6b\x00\x65\x00" nocase  // bulldyke in UTF-16LE
   condition:
-    1 of them
+    any of them
 }
 rule content_en_language_nsfw_27 {
+  meta:
+    info = "bullshit"
   strings:
-    $ =  "bullshit"  fullword wide ascii nocase
-    $ =  "bull shit"  fullword wide ascii nocase
+    $ascii1 = "\x62\x75\x6c\x6c\x73\x68\x69\x74" nocase  // bullshit in ASCII/UTF-8
+    $wide1 = "\x62\x00\x75\x00\x6c\x00\x6c\x00\x73\x00\x68\x00\x69\x00\x74\x00" nocase  // bullshit in UTF-16LE
+    $ascii2 = "\x62\x75\x6c\x6c\x20\x73\x68\x69\x74" nocase  // bull shit in ASCII/UTF-8
+    $wide2 = "\x62\x00\x75\x00\x6c\x00\x6c\x00\x20\x00\x73\x00\x68\x00\x69\x00\x74\x00" nocase  // bull shit in UTF-16LE
   condition:
-    1 of them
-}
-rule content_en_language_nsfw_28 {
-  strings:
-    $ =  "bung hole"  fullword wide ascii nocase
-    $ =  "bunghole"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-// rule content_en_language_nsfw_30 {
-//   strings:
-//     $ =  "butt"  fullword wide ascii nocase
-//   condition:
-//     1 of them
-// }
-rule content_en_language_nsfw_31 {
-  strings:
-    $ =  "buttcheeks"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_32 {
-  strings:
-    $ =  "butthole"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_33 {
-  strings:
-    $ =  "camel toe"  fullword wide ascii nocase
-    $ =  "cameltoe"  fullword wide ascii nocase
-  condition:
-    1 of them
+    any of them
 }
 rule content_en_language_nsfw_34 {
+  meta:
+    info = "camgirl"
   strings:
-    $ =  "camgirl"  fullword wide ascii nocase
+    $ascii = "\x63\x61\x6d\x67\x69\x72\x6c" nocase  // camgirl in ASCII/UTF-8
+    $wide = "\x63\x00\x61\x00\x6d\x00\x67\x00\x69\x00\x72\x00\x6c\x00" nocase  // camgirl in UTF-16LE
   condition:
-    1 of them
+    any of them
 }
 rule content_en_language_nsfw_35 {
+  meta:
+    info = "camslut"
   strings:
-    $ =  "camslut"  fullword wide ascii nocase
+    $ascii = "\x63\x61\x6d\x73\x6c\x75\x74" nocase  // camslut in ASCII/UTF-8
+    $wide = "\x63\x00\x61\x00\x6d\x00\x73\x00\x6c\x00\x75\x00\x74\x00" nocase  // camslut in UTF-16LE
   condition:
-    1 of them
+    any of them
 }
 rule content_en_language_nsfw_36 {
+  meta:
+    info = "camwhore"
   strings:
-    $ =  "camwhore"  fullword wide ascii nocase
+    $ascii = "\x63\x61\x6d\x77\x68\x6f\x72\x65" nocase  // camwhore in ASCII/UTF-8
+    $wide = "\x63\x00\x61\x00\x6d\x00\x77\x00\x68\x00\x6f\x00\x72\x00\x65\x00" nocase  // camwhore in UTF-16LE
   condition:
-    1 of them
-}
-rule content_en_language_nsfw_37 {
-  strings:
-    $ =  "carpet muncher"  fullword wide ascii nocase
-    $ =  "carpetmuncher"  fullword wide ascii nocase
-    $ =  "carpetmunchers"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_38 {
-  strings:
-    $ =  "circlejerk"  fullword wide ascii nocase
-    $ =  "circlejerks"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_39 {
-  strings:
-    $ =  "cleveland steamer"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_40 {
-  strings:
-    $ =  "clit"  fullword wide ascii nocase
-  condition:
-    1 of them
+    any of them
 }
 rule content_en_language_nsfw_41 {
+  meta:
+    info = "clusterfuck"
   strings:
-    $ =  "clusterfuck"  fullword wide ascii nocase
+    $ascii = "\x63\x6c\x75\x73\x74\x65\x72\x66\x75\x63\x6b" nocase  // clusterfuck in ASCII/UTF-8
+    $wide = "\x63\x00\x6c\x00\x75\x00\x73\x00\x74\x00\x65\x00\x72\x00\x66\x00\x75\x00\x63\x00\x6b\x00" nocase  // clusterfuck in UTF-16LE
   condition:
-    1 of them
+    any of them
 }
 rule content_en_language_nsfw_44 {
+  meta:
+    info = "coprolagnia"
   strings:
-    $ =  "coprolagnia"  fullword wide ascii nocase
-    $ =  "coprophilia"  fullword wide ascii nocase
+    $ascii1 = "\x63\x6f\x70\x72\x6f\x6c\x61\x67\x6e\x69\x61" nocase  // coprolagnia in ASCII/UTF-8
+    $wide1 = "\x63\x00\x6f\x00\x70\x00\x72\x00\x6f\x00\x6c\x00\x61\x00\x67\x00\x6e\x00\x69\x00\x61\x00" nocase  // coprolagnia in UTF-16LE
+    $ascii2 = "\x63\x6f\x70\x72\x6f\x70\x68\x69\x6c\x69\x61" nocase  // coprophilia in ASCII/UTF-8
+    $wide2 = "\x63\x00\x6f\x00\x70\x00\x72\x00\x6f\x00\x70\x00\x68\x00\x69\x00\x6c\x00\x69\x00\x61\x00" nocase  // coprophilia in UTF-16LE
   condition:
-    1 of them
+    any of them
 }
 rule content_en_language_nsfw_45 {
+  meta:
+    info = "creampie"
   strings:
-    $ =  "creampie"  fullword wide ascii nocase
+    $ascii = "\x63\x72\x65\x61\x6d\x70\x69\x65" nocase  // creampie in ASCII/UTF-8
+    $wide = "\x63\x00\x72\x00\x65\x00\x61\x00\x6d\x00\x70\x00\x69\x00\x65\x00" nocase  // creampie in UTF-16LE
   condition:
-    1 of them
-}
-// high false positive rate: 
-// rule content_en_language_nsfw_47 {
-//  strings:
-//    $ =  "cumming"  fullword wide ascii nocase
-//  condition:
-//    1 of them
-//}
-rule content_en_language_nsfw_48 {
-  strings:
-    $ =  "cunnilingus"  fullword wide ascii nocase
-  condition:
-    1 of them
+    any of them
 }
 rule content_en_language_nsfw_49 {
+  meta:
+    info = "cunt"
   strings:
-    $ =  "cunt"  fullword wide ascii nocase
+    $ascii = "\x63\x75\x6e\x74" nocase  // cunt in ASCII/UTF-8
+    $wide = "\x63\x00\x75\x00\x6e\x00\x74\x00" nocase  // cunt in UTF-16LE
   condition:
-    1 of them
-}
-rule content_en_language_nsfw_50 {
-  strings:
-    $ =  "darkie"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_51 {
-  strings:
-    $ =  "dildo"  fullword wide ascii nocase
-    $ =  "dildos"  fullword wide ascii nocase
-  condition:
-    1 of them
+    any of them
 }
 rule content_en_language_nsfw_52 {
+  meta:
+    info = "dingleberries"
   strings:
-    $ =  "dingleberries"  fullword wide ascii nocase
-    $ =  "dingleberry"  fullword wide ascii nocase
+    $ascii1 = "\x64\x69\x6e\x67\x6c\x65\x62\x65\x72\x72\x69\x65\x73" nocase  // dingleberries in ASCII/UTF-8
+    $wide1 = "\x64\x00\x69\x00\x6e\x00\x67\x00\x6c\x00\x65\x00\x62\x00\x65\x00\x72\x00\x72\x00\x69\x00\x65\x00\x73\x00" nocase  // dingleberries in UTF-16LE
+    $ascii2 = "\x64\x69\x6e\x67\x6c\x65\x62\x65\x72\x72\x79" nocase  // dingleberry in ASCII/UTF-8
+    $wide2 = "\x64\x00\x69\x00\x6e\x00\x67\x00\x6c\x00\x65\x00\x62\x00\x65\x00\x72\x00\x72\x00\x79\x00" nocase  // dingleberry in UTF-16LE
   condition:
-    1 of them
+    any of them
 }
-rule content_en_language_nsfw_53 {
-  strings:
-    $ =  "dirty sanchez"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_54 {
-  strings:
-    $ =  "dog style"  fullword wide ascii nocase
-    $ =  "doggie style"  fullword wide ascii nocase
-    $ =  "doggystyle"  fullword wide ascii nocase
-  condition:
-    1 of them
-}  
-rule content_en_language_nsfw_58 {
-  strings:
-    $ =  "faggot"  fullword wide ascii nocase
-    $ =  "faggots"  fullword wide ascii nocase
-    $ =  "fagot"  fullword wide ascii nocase
-    $ =  "fagots"  fullword wide ascii nocase
-  condition:
-    1 of them
-} 
 rule content_en_language_nsfw_59 {
+  meta:
+    info = "figging"
   strings:
-    $ =  "figging"  fullword wide ascii nocase
+    $ascii = "\x66\x69\x67\x67\x69\x6e\x67" nocase  // figging in ASCII/UTF-8
+    $wide = "\x66\x00\x69\x00\x67\x00\x67\x00\x69\x00\x6e\x00\x67\x00" nocase  // figging in UTF-16LE
   condition:
-    1 of them
+    any of them
 }
 rule content_en_language_nsfw_60 {
+  meta:
+    info = "fingerbang"
   strings:
-    $ =  "fingerbang"  fullword wide ascii nocase
+    $ascii = "\x66\x69\x6e\x67\x65\x72\x62\x61\x6e\x67" nocase  // fingerbang in ASCII/UTF-8
+    $wide = "\x66\x00\x69\x00\x6e\x00\x67\x00\x65\x00\x72\x00\x62\x00\x61\x00\x6e\x00\x67\x00" nocase  // fingerbang in UTF-16LE
   condition:
-    1 of them
+    any of them
 }  
  
 rule content_en_language_nsfw_62 {
+  meta:
+    info = "fisting"
   strings:
-    $ =  "fisting"  fullword wide ascii nocase
+    $ascii = "\x66\x69\x73\x74\x69\x6e\x67" nocase  // fisting in ASCII/UTF-8
+    $wide = "\x66\x00\x69\x00\x73\x00\x74\x00\x69\x00\x6e\x00\x67\x00" nocase  // fisting in UTF-16LE
   condition:
-    1 of them
+    any of them
 } 
 rule content_en_language_nsfw_63 {
+  meta:
+    info = "footjob"
   strings:
-    $ =  "footjob"  fullword wide ascii nocase
+    $ascii = "\x66\x6f\x6f\x74\x6a\x6f\x62" nocase  // footjob in ASCII/UTF-8
+    $wide = "\x66\x00\x6f\x00\x6f\x00\x74\x00\x6a\x00\x6f\x00\x62\x00" nocase  // footjob in UTF-16LE
   condition:
-    1 of them
+    any of them
 }
 rule content_en_language_nsfw_64 {
+  meta:
+    info = "frotting"
   strings:
-    $ =  "frotting"  fullword wide ascii nocase
+    $ascii = "\x66\x72\x6f\x74\x74\x69\x6e\x67" nocase  // frotting in ASCII/UTF-8
+    $wide = "\x66\x00\x72\x00\x6f\x00\x74\x00\x74\x00\x69\x00\x6e\x00\x67\x00" nocase  // frotting in UTF-16LE
   condition:
-    1 of them
+    any of them
 }
 rule content_en_language_nsfw_65 {
+  meta:
+    info = "fuck"
   strings:
-    $ =  "fuck"  fullword wide ascii nocase
-    $ =  "fucks"  fullword wide ascii nocase
-    $ =  "f***"  fullword wide ascii nocase
-    $ =  "f****"  fullword wide ascii nocase
-    $ =  "fucked"  fullword wide ascii nocase
-    $ =  "fucking"  fullword wide ascii nocase
-    $ =  "fuckin"  fullword wide ascii nocase
+    $ascii1 = "\x66\x75\x63\x6b" nocase  // fuck in ASCII/UTF-8
+    $wide1 = "\x66\x00\x75\x00\x63\x00\x6b\x00" nocase  // fuck in UTF-16LE
+    $ascii2 = "\x66\x75\x63\x6b\x73" nocase  // fucks in ASCII/UTF-8
+    $wide2 = "\x66\x00\x75\x00\x63\x00\x6b\x00\x73\x00" nocase  // fucks in UTF-16LE
+    $ascii3 = "\x66\x2a\x2a\x2a" nocase  // f*** in ASCII/UTF-8
+    $wide3 = "\x66\x00\x2a\x00\x2a\x00\x2a\x00" nocase  // f*** in UTF-16LE
+    $ascii4 = "\x66\x2a\x2a\x2a\x2a" nocase  // f**** in ASCII/UTF-8
+    $wide4 = "\x66\x00\x2a\x00\x2a\x00\x2a\x00\x2a\x00" nocase  // f**** in UTF-16LE
+    $ascii5 = "\x66\x75\x63\x6b\x65\x64" nocase  // fucked in ASCII/UTF-8
+    $wide5 = "\x66\x00\x75\x00\x63\x00\x6b\x00\x65\x00\x64\x00" nocase  // fucked in UTF-16LE
+    $ascii6 = "\x66\x75\x63\x6b\x69\x6e\x67" nocase  // fucking in ASCII/UTF-8
+    $wide6 = "\x66\x00\x75\x00\x63\x00\x6b\x00\x69\x00\x6e\x00\x67\x00" nocase  // fucking in UTF-16LE
+    $ascii7 = "\x66\x75\x63\x6b\x69\x6e" nocase  // fuckin in ASCII/UTF-8
+    $wide7 = "\x66\x00\x75\x00\x63\x00\x6b\x00\x69\x00\x6e\x00" nocase  // fuckin in UTF-16LE
   condition:
-    1 of them
+    any of them
 }
 rule content_en_language_nsfw_67 {
+  meta:
+    info = "fucktard"
   strings:
-    $ =  "fucktard"  fullword wide ascii nocase
-    $ =  "fucktards"  fullword wide ascii nocase
+    $ascii1 = "\x66\x75\x63\x6b\x74\x61\x72\x64" nocase  // fucktard in ASCII/UTF-8
+    $wide1 = "\x66\x00\x75\x00\x63\x00\x6b\x00\x74\x00\x61\x00\x72\x00\x64\x00" nocase  // fucktard in UTF-16LE
+    $ascii2 = "\x66\x75\x63\x6b\x74\x61\x72\x64\x73" nocase  // fucktards in ASCII/UTF-8
+    $wide2 = "\x66\x00\x75\x00\x63\x00\x6b\x00\x74\x00\x61\x00\x72\x00\x64\x00\x73\x00" nocase  // fucktards in UTF-16LE
   condition:
-    1 of them
+    any of them
 }
 rule content_en_language_nsfw_68 {
+  meta:
+    info = "fudge packer"
   strings:
-    $ =  "fudge packer"  fullword wide ascii nocase
-    $ =  "fudgepacker"  fullword wide ascii nocase
+    $ascii1 = "\x66\x75\x64\x67\x65\x20\x70\x61\x63\x6b\x65\x72" nocase  // fudge packer in ASCII/UTF-8
+    $wide1 = "\x66\x00\x75\x00\x64\x00\x67\x00\x65\x00\x20\x00\x70\x00\x61\x00\x63\x00\x6b\x00\x65\x00\x72\x00" nocase  // fudge packer in UTF-16LE
+    $ascii2 = "\x66\x75\x64\x67\x65\x70\x61\x63\x6b\x65\x72" nocase  // fudgepacker in ASCII/UTF-8
+    $wide2 = "\x66\x00\x75\x00\x64\x00\x67\x00\x65\x00\x70\x00\x61\x00\x63\x00\x6b\x00\x65\x00\x72\x00" nocase  // fudgepacker in UTF-16LE
   condition:
-    1 of them
+    any of them
 }
 rule content_en_language_nsfw_69 {
+  meta:
+    info = "futanari"
   strings:
-    $ =  "futanari"  fullword wide ascii nocase
+    $ascii = "\x66\x75\x74\x61\x6e\x61\x72\x69" nocase  // futanari in ASCII/UTF-8
+    $wide = "\x66\x00\x75\x00\x74\x00\x61\x00\x6e\x00\x61\x00\x72\x00\x69\x00" nocase  // futanari in UTF-16LE
   condition:
-    1 of them
+    any of them
 }
   
 rule content_en_language_nsfw_71 {
+  meta:
+    info = "gang bang"
   strings:
-    $ =  "gang bang"  fullword wide ascii nocase
-    $ =  "gangbang"  fullword wide ascii nocase
+    $ascii1 = "\x67\x61\x6e\x67\x20\x62\x61\x6e\x67" nocase  // gang bang in ASCII/UTF-8
+    $wide1 = "\x67\x00\x61\x00\x6e\x00\x67\x00\x20\x00\x62\x00\x61\x00\x6e\x00\x67\x00" nocase  // gang bang in UTF-16LE
+    $ascii2 = "\x67\x61\x6e\x67\x62\x61\x6e\x67" nocase  // gangbang in ASCII/UTF-8
+    $wide2 = "\x67\x00\x61\x00\x6e\x00\x67\x00\x62\x00\x61\x00\x6e\x00\x67\x00" nocase  // gangbang in UTF-16LE
   condition:
-    1 of them
+    any of them
 }
 
-rule content_en_language_nsfw_73 {
-  strings:
-    $ =  "god damn"  fullword wide ascii nocase
-    $ =  "goddamn"  fullword wide ascii nocase
-    $ =  "goddamns"  fullword wide ascii nocase
-  condition:
-    1 of them
-} 
 rule content_en_language_nsfw_74 {
+  meta:
+    info = "gokkun"
   strings:
-    $ =  "gokkun"  fullword wide ascii nocase
+    $ascii = "\x67\x6f\x6b\x6b\x75\x6e" nocase  // gokkun in ASCII/UTF-8
+    $wide = "\x67\x00\x6f\x00\x6b\x00\x6b\x00\x75\x00\x6e\x00" nocase  // gokkun in UTF-16LE
   condition:
-    1 of them
+    any of them
 } 
-rule content_en_language_nsfw_75 {
-  strings:
-    $ =  "golden shower"  fullword wide ascii nocase
-    $ =  "golden showers"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_76 {
-  strings:
-    $ =  "goodpoop"  fullword wide ascii nocase
-    $ =  "goodpoops"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
 rule content_en_language_nsfw_77 {
+  meta:
+    info = "hand job"
   strings:
-    $ =  "hand job"  fullword wide ascii nocase
-    $ =  "hand jobs"  fullword wide ascii nocase
-    $ =  "handjob"  fullword wide ascii nocase
-    $ =  "handjobs"  fullword wide ascii nocase
+    $ascii1 = "\x68\x61\x6e\x64\x20\x6a\x6f\x62" nocase  // hand job in ASCII/UTF-8
+    $wide1 = "\x68\x00\x61\x00\x6e\x00\x64\x00\x20\x00\x6a\x00\x6f\x00\x62\x00" nocase  // hand job in UTF-16LE
+    $ascii2 = "\x68\x61\x6e\x64\x20\x6a\x6f\x62\x73" nocase  // hand jobs in ASCII/UTF-8
+    $wide2 = "\x68\x00\x61\x00\x6e\x00\x64\x00\x20\x00\x6a\x00\x6f\x00\x62\x00\x73\x00" nocase  // hand jobs in UTF-16LE
+    $ascii3 = "\x68\x61\x6e\x64\x6a\x6f\x62" nocase  // handjob in ASCII/UTF-8
+    $wide3 = "\x68\x00\x61\x00\x6e\x00\x64\x00\x6a\x00\x6f\x00\x62\x00" nocase  // handjob in UTF-16LE
+    $ascii4 = "\x68\x61\x6e\x64\x6a\x6f\x62\x73" nocase  // handjobs in ASCII/UTF-8
+    $wide4 = "\x68\x00\x61\x00\x6e\x00\x64\x00\x6a\x00\x6f\x00\x62\x00\x73\x00" nocase  // handjobs in UTF-16LE
   condition:
-    1 of them
-}
-rule content_en_language_nsfw_78 {
-  strings:
-    $ =  "honkey"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_81 {
-  strings:
-    $ =  "humping"  fullword wide ascii nocase
-  condition:
-    1 of them
+    any of them
 }
 rule content_en_language_nsfw_82 {
+  meta:
+    info = "jack off"
   strings:
-    $ =  "jack off"  fullword wide ascii nocase
-    $ =  "jackoff"  fullword wide ascii nocase
-    $ =  "jacking off"  fullword wide ascii nocase
+    $ascii1 = "\x6a\x61\x63\x6b\x20\x6f\x66\x66" nocase  // jack off in ASCII/UTF-8
+    $wide1 = "\x6a\x00\x61\x00\x63\x00\x6b\x00\x20\x00\x6f\x00\x66\x00\x66\x00" nocase  // jack off in UTF-16LE
+    $ascii2 = "\x6a\x61\x63\x6b\x6f\x66\x66" nocase  // jackoff in ASCII/UTF-8
+    $wide2 = "\x6a\x00\x61\x00\x63\x00\x6b\x00\x6f\x00\x66\x00\x66\x00" nocase  // jackoff in UTF-16LE
+    $ascii3 = "\x6a\x61\x63\x6b\x69\x6e\x67\x20\x6f\x66\x66" nocase  // jacking off in ASCII/UTF-8
+    $wide3 = "\x6a\x00\x61\x00\x63\x00\x6b\x00\x69\x00\x6e\x00\x67\x00\x20\x00\x6f\x00\x66\x00\x66\x00" nocase  // jacking off in UTF-16LE
   condition:
-    1 of them
-}
-rule content_en_language_nsfw_83 {
-  strings:
-    $ =  "jail bait"  fullword wide ascii nocase
-    $ =  "jailbait"  fullword wide ascii nocase
-  condition:
-    1 of them
+    any of them
 }
 rule content_en_language_nsfw_84 {
+  meta:
+    info = "jerk off"
   strings:
-    $ =  "jerk off"  fullword wide ascii nocase
+    $ascii = "\x6a\x65\x72\x6b\x20\x6f\x66\x66" nocase  // jerk off in ASCII/UTF-8
+    $wide = "\x6a\x00\x65\x00\x72\x00\x6b\x00\x20\x00\x6f\x00\x66\x00\x66\x00" nocase  // jerk off in UTF-16LE
   condition:
-    1 of them
-}
-rule content_en_language_nsfw_85 {
-  strings:
-    $ =  "jigaboo"  fullword wide ascii nocase
-    $ =  "jiggaboo"  fullword wide ascii nocase
-    $ =  "jiggerboo"  fullword wide ascii nocase
-  condition:
-    1 of them
+    any of them
 }
 rule content_en_language_nsfw_86 {
+  meta:
+    info = "jizz"
   strings:
-    $ =  "jizz"  fullword wide ascii nocase
-    $ =  "jism"  fullword wide ascii nocase
+    $ascii1 = "\x6a\x69\x7a\x7a" nocase  // jizz in ASCII/UTF-8
+    $wide1 = "\x6a\x00\x69\x00\x7a\x00\x7a\x00" nocase  // jizz in UTF-16LE
+    $ascii2 = "\x6a\x69\x73\x6d" nocase  // jism in ASCII/UTF-8
+    $wide2 = "\x6a\x00\x69\x00\x73\x00\x6d\x00" nocase  // jism in UTF-16LE
   condition:
-    1 of them
+    any of them
 }
 rule content_en_language_nsfw_87 {
+  meta:
+    info = "kinbaku"
   strings:
-    $ =  "kinbaku"  fullword wide ascii nocase
+    $ascii = "\x6b\x69\x6e\x62\x61\x6b\x75" nocase  // kinbaku in ASCII/UTF-8
+    $wide = "\x6b\x00\x69\x00\x6e\x00\x62\x00\x61\x00\x6b\x00\x75\x00" nocase  // kinbaku in UTF-16LE
   condition:
-    1 of them
-}
-rule content_en_language_nsfw_88 {
-  strings:
-    $ =  "kinkster"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_90 {
-  strings:
-    $ =  "knobbing"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_91 {
-  strings:
-    $ =  "make me come"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_92 {
-  strings:
-    $ =  "menage a trois"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_93 {
-  strings:
-    $ =  "milf"  fullword wide ascii nocase
-  condition:
-    1 of them
+    any of them
 }
 rule content_en_language_nsfw_94 {
+  meta:
+    info = "motherfucker"
   strings:
-    $ =  "motherfucker"  fullword wide ascii nocase
-    $ =  "motherfuckers"  fullword wide ascii nocase
-    $ =  "mother fucker"  fullword wide ascii nocase
-    $ =  "mother fuckers"  fullword wide ascii nocase
+    $ascii1 = "\x6d\x6f\x74\x68\x65\x72\x66\x75\x63\x6b\x65\x72" nocase  // motherfucker in ASCII/UTF-8
+    $wide1 = "\x6d\x00\x6f\x00\x74\x00\x68\x00\x65\x00\x72\x00\x66\x00\x75\x00\x63\x00\x6b\x00\x65\x00\x72\x00" nocase  // motherfucker in UTF-16LE
+    $ascii2 = "\x6d\x6f\x74\x68\x65\x72\x66\x75\x63\x6b\x65\x72\x73" nocase  // motherfuckers in ASCII/UTF-8
+    $wide2 = "\x6d\x00\x6f\x00\x74\x00\x68\x00\x65\x00\x72\x00\x66\x00\x75\x00\x63\x00\x6b\x00\x65\x00\x72\x00\x73\x00" nocase  // motherfuckers in UTF-16LE
+    $ascii3 = "\x6d\x6f\x74\x68\x65\x72\x20\x66\x75\x63\x6b\x65\x72" nocase  // mother fucker in ASCII/UTF-8
+    $wide3 = "\x6d\x00\x6f\x00\x74\x00\x68\x00\x65\x00\x72\x00\x20\x00\x66\x00\x75\x00\x63\x00\x6b\x00\x65\x00\x72\x00" nocase  // mother fucker in UTF-16LE
+    $ascii4 = "\x6d\x6f\x74\x68\x65\x72\x20\x66\x75\x63\x6b\x65\x72\x73" nocase  // mother fuckers in ASCII/UTF-8
+    $wide4 = "\x6d\x00\x6f\x00\x74\x00\x68\x00\x65\x00\x72\x00\x20\x00\x66\x00\x75\x00\x63\x00\x6b\x00\x65\x00\x72\x00\x73\x00" nocase  // mother fuckers in UTF-16LE
   condition:
-    1 of them
-}
-rule content_en_language_nsfw_95 {
-  strings:
-    $ =  "mound of venus"  fullword wide ascii nocase
-  condition:
-    1 of them
+    any of them
 }
 rule content_en_language_nsfw_96 {
+  meta:
+    info = "muff diver"
   strings:
-    $ =  "muff diver"  fullword wide ascii nocase
+    $ascii = "\x6d\x75\x66\x66\x20\x64\x69\x76\x65\x72" nocase  // muff diver in ASCII/UTF-8
+    $wide = "\x6d\x00\x75\x00\x66\x00\x66\x00\x20\x00\x64\x00\x69\x00\x76\x00\x65\x00\x72\x00" nocase  // muff diver in UTF-16LE
   condition:
-    1 of them
+    any of them
 }
 rule content_en_language_nsfw_97 {
+  meta:
+    info = "muffdiving"
   strings:
-    $ =  "muffdiving"  fullword wide ascii nocase
+    $ascii = "\x6d\x75\x66\x66\x64\x69\x76\x69\x6e\x67" nocase  // muffdiving in ASCII/UTF-8
+    $wide = "\x6d\x00\x75\x00\x66\x00\x66\x00\x64\x00\x69\x00\x76\x00\x69\x00\x6e\x00\x67\x00" nocase  // muffdiving in UTF-16LE
   condition:
-    1 of them
-}
-rule content_en_language_nsfw_98 {
-  strings:
-    $ =  "nawashi"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_99 {
-  strings:
-    $ =  "octopussy"  fullword wide ascii nocase
-  condition:
-    1 of them
+    any of them
 }
 rule content_en_language_nsfw_100 {
+  meta:
+    info = "omorashi"
   strings:
-    $ =  "omorashi"  fullword wide ascii nocase
+    $ascii = "\x6f\x6d\x6f\x72\x61\x73\x68\x69" nocase  // omorashi in ASCII/UTF-8
+    $wide = "\x6f\x00\x6d\x00\x6f\x00\x72\x00\x61\x00\x73\x00\x68\x00\x69\x00" nocase  // omorashi in UTF-16LE
   condition:
-    1 of them
+    any of them
 }
 rule content_en_language_nsfw_101 {
+  meta:
+    info = "one cup two girls"
   strings:
-    $ =  "one cup two girls"  fullword wide ascii nocase
+    $ascii = "\x6f\x6e\x65\x20\x63\x75\x70\x20\x74\x77\x6f\x20\x67\x69\x72\x6c\x73" nocase  // one cup two girls in ASCII/UTF-8
+    $wide = "\x6f\x00\x6e\x00\x65\x00\x20\x00\x63\x00\x75\x00\x70\x00\x20\x00\x74\x00\x77\x00\x6f\x00\x20\x00\x67\x00\x69\x00\x72\x00\x6c\x00\x73\x00" nocase  // one cup two girls in UTF-16LE
   condition:
-    1 of them
-}
-rule content_en_language_nsfw_102 {
-  strings:
-    $ =  "one guy one jar"  fullword wide ascii nocase
-  condition:
-    1 of them
+    any of them
 }
 rule content_en_language_nsfw_103 {
+  meta:
+    info = "piece of shit"
   strings:
-    $ =  "piece of shit"  fullword wide ascii nocase
-    $ =  "pieces of shit"  fullword wide ascii nocase
+    $ascii1 = "\x70\x69\x65\x63\x65\x20\x6f\x66\x20\x73\x68\x69\x74" nocase  // piece of shit in ASCII/UTF-8
+    $wide1 = "\x70\x00\x69\x00\x65\x00\x63\x00\x65\x00\x20\x00\x6f\x00\x66\x00\x20\x00\x73\x00\x68\x00\x69\x00\x74\x00" nocase  // piece of shit in UTF-16LE
+    $ascii2 = "\x70\x69\x65\x63\x65\x73\x20\x6f\x66\x20\x73\x68\x69\x74" nocase  // pieces of shit in ASCII/UTF-8
+    $wide2 = "\x70\x00\x69\x00\x65\x00\x63\x00\x65\x00\x73\x00\x20\x00\x6f\x00\x66\x00\x20\x00\x73\x00\x68\x00\x69\x00\x74\x00" nocase  // pieces of shit in UTF-16LE
   condition:
-    1 of them
+    any of them
 }
 rule content_en_language_nsfw_104 {
+  meta:
+    info = "piss pig"
   strings:
-    $ =  "piss pig"  fullword wide ascii nocase
+    $ascii = "\x70\x69\x73\x73\x20\x70\x69\x67" nocase  // piss pig in ASCII/UTF-8
+    $wide = "\x70\x00\x69\x00\x73\x00\x73\x00\x20\x00\x70\x00\x69\x00\x67\x00" nocase  // piss pig in UTF-16LE
   condition:
-    1 of them
-}
-rule content_en_language_nsfw_105 {
-  strings:
-    $ =  "pole smoker"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_106 {
-  strings:
-    $ =  "ponyplay"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_107 {
-  strings:
-    $ =  "poon"  fullword wide ascii nocase
-  condition:
-    1 of them
+    any of them
 }
 rule content_en_language_nsfw_108 {
+  meta:
+    info = "poontang"
   strings:
-    $ =  "poontang"  fullword wide ascii nocase
+    $ascii = "\x70\x6f\x6f\x6e\x74\x61\x6e\x67" nocase  // poontang in ASCII/UTF-8
+    $wide = "\x70\x00\x6f\x00\x6f\x00\x6e\x00\x74\x00\x61\x00\x6e\x00\x67\x00" nocase  // poontang in UTF-16LE
   condition:
-    1 of them
+    any of them
 }
 rule content_en_language_nsfw_109 {
+  meta:
+    info = "poop chute"
   strings:
-    $ =  "poop chute"  fullword wide ascii nocase
-    $ =  "poopchute"  fullword wide ascii nocase
+    $ascii1 = "\x70\x6f\x6f\x70\x20\x63\x68\x75\x74\x65" nocase  // poop chute in ASCII/UTF-8
+    $wide1 = "\x70\x00\x6f\x00\x6f\x00\x70\x00\x20\x00\x63\x00\x68\x00\x75\x00\x74\x00\x65\x00" nocase  // poop chute in UTF-16LE
+    $ascii2 = "\x70\x6f\x6f\x70\x63\x68\x75\x74\x65" nocase  // poopchute in ASCII/UTF-8
+    $wide2 = "\x70\x00\x6f\x00\x6f\x00\x70\x00\x63\x00\x68\x00\x75\x00\x74\x00\x65\x00" nocase  // poopchute in UTF-16LE
   condition:
-    1 of them
-}
-rule content_en_language_nsfw_110 {
-  strings:
-    $ =  "prince albert piercing"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_112 {
-  strings:
-    $ =  "punany"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_113 {
-  strings:
-    $ =  "pussy"  fullword wide ascii nocase
-    $ =  "pussies"  fullword wide ascii nocase
-  condition:
-    1 of them
+    any of them
 }
 rule content_en_language_nsfw_114 {
+  meta:
+    info = "queaf"
   strings:
-    $ =  "queaf"  fullword wide ascii nocase
-    $ =  "queef"  fullword wide ascii nocase
+    $ascii1 = "\x71\x75\x65\x61\x66" nocase  // queaf in ASCII/UTF-8
+    $wide1 = "\x71\x00\x75\x00\x65\x00\x61\x00\x66\x00" nocase  // queaf in UTF-16LE
+    $ascii2 = "\x71\x75\x65\x65\x66" nocase  // queef in ASCII/UTF-8
+    $wide2 = "\x71\x00\x75\x00\x65\x00\x65\x00\x66\x00" nocase  // queef in UTF-16LE
   condition:
-    1 of them
-}
-rule content_en_language_nsfw_115 {
-  strings:
-    $ =  "quim"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_116 {
-  strings:
-    $ =  "raging boner"  fullword wide ascii nocase
-    $ =  "raging boners"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_117 {
-  strings:
-    $ =  "reverse cowgirl"  fullword wide ascii nocase
-  condition:
-    1 of them
+    any of them
 }
 rule content_en_language_nsfw_118 {
+  meta:
+    info = "rimjob"
   strings:
-    $ =  "rimjob"  fullword wide ascii nocase
-    $ =  "rimming"  fullword wide ascii nocase
+    $ascii1 = "\x72\x69\x6d\x6a\x6f\x62" nocase  // rimjob in ASCII/UTF-8
+    $wide1 = "\x72\x00\x69\x00\x6d\x00\x6a\x00\x6f\x00\x62\x00" nocase  // rimjob in UTF-16LE
+    $ascii2 = "\x72\x69\x6d\x6d\x69\x6e\x67" nocase  // rimming in ASCII/UTF-8
+    $wide2 = "\x72\x00\x69\x00\x6d\x00\x6d\x00\x69\x00\x6e\x00\x67\x00" nocase  // rimming in UTF-16LE
   condition:
-    1 of them
-}
-rule content_en_language_nsfw_119 {
-  strings:
-    $ =  "rirosy palmm"  fullword wide ascii nocase
-    $ =  "rosy palm and her 5 sisters"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_120 {
-  strings:
-    $ =  "rusty trombone"  fullword wide ascii nocase
-  condition:
-    1 of them
+    any of them
 }
 rule content_en_language_nsfw_121 {
+  meta:
+    info = "schlong"
   strings:
-    $ =  "schlong"  fullword wide ascii nocase
-    $ =  "schlongs"  fullword wide ascii nocase
+    $ascii1 = "\x73\x63\x68\x6c\x6f\x6e\x67" nocase  // schlong in ASCII/UTF-8
+    $wide1 = "\x73\x00\x63\x00\x68\x00\x6c\x00\x6f\x00\x6e\x00\x67\x00" nocase  // schlong in UTF-16LE
+    $ascii2 = "\x73\x63\x68\x6c\x6f\x6e\x67\x73" nocase  // schlongs in ASCII/UTF-8
+    $wide2 = "\x73\x00\x63\x00\x68\x00\x6c\x00\x6f\x00\x6e\x00\x67\x00\x73\x00" nocase  // schlongs in UTF-16LE
   condition:
-    1 of them
-}
-rule content_en_language_nsfw_122 {
-  strings:
-    $ =  "shaved beaver"  fullword wide ascii nocase
-    $ =  "shaved beavers"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_123 {
-  strings:
-    $ =  "shemale"  fullword wide ascii nocase
-    $ =  "shemales"  fullword wide ascii nocase
-  condition:
-    1 of them
+    any of them
 }
 rule content_en_language_nsfw_124 {
+  meta:
+    info = "shibari"
   strings:
-    $ =  "shibari"  fullword wide ascii nocase
-    $ =  "shibaris"  fullword wide ascii nocase
+    $ascii1 = "\x73\x68\x69\x62\x61\x72\x69" nocase  // shibari in ASCII/UTF-8
+    $wide1 = "\x73\x00\x68\x00\x69\x00\x62\x00\x61\x00\x72\x00\x69\x00" nocase  // shibari in UTF-16LE
+    $ascii2 = "\x73\x68\x69\x62\x61\x72\x69\x73" nocase  // shibaris in ASCII/UTF-8
+    $wide2 = "\x73\x00\x68\x00\x69\x00\x62\x00\x61\x00\x72\x00\x69\x00\x73\x00" nocase  // shibaris in UTF-16LE
   condition:
-    1 of them
+    any of them
 }
-rule content_en_language_nsfw_125 {
-  strings:
-    $ =  "shit"  fullword wide ascii nocase
-    $ =  "shits"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_126 {
-  strings:
-    $ =  "shota"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_127 {
-  strings:
-    $ =  "slut"  fullword wide ascii nocase
-    $ =  "sluts"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-
 rule content_en_language_nsfw_130 {
+  meta:
+    info = "splooge"
   strings:
-    $ =  "splooge"  fullword wide ascii nocase
+    $ascii = "\x73\x70\x6c\x6f\x6f\x67\x65" nocase  // splooge in ASCII/UTF-8
+    $wide = "\x73\x00\x70\x00\x6c\x00\x6f\x00\x6f\x00\x67\x00\x65\x00" nocase  // splooge in UTF-16LE
   condition:
-    1 of them
+    any of them
 }
 rule content_en_language_nsfw_131 {
+  meta:
+    info = "spooge"
   strings:
-    $ =  "spooge"  fullword wide ascii nocase
+    $ascii = "\x73\x70\x6f\x6f\x67\x65" nocase  // spooge in ASCII/UTF-8
+    $wide = "\x73\x00\x70\x00\x6f\x00\x6f\x00\x67\x00\x65\x00" nocase  // spooge in UTF-16LE
   condition:
-    1 of them
-}
-rule content_en_language_nsfw_134 {
-  strings:
-    $ =  "strapon"  fullword wide ascii nocase
-    $ =  "strap on"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_135 {
-  strings:
-    $ =  "strappado"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_136 {
-  strings:
-    $ =  "tea bagging"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_138 {
-  strings:
-    $ =  "tranny"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_139 {
-  strings:
-    $ =  "tub girl"  fullword wide ascii nocase
-    $ =  "tubgirl"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_140 {
-  strings:
-    $ =  "tushy"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_141 {
-  strings:
-    $ =  "twat"  fullword wide ascii nocase
-    $ =  "twats"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_142 {
-  strings:
-    $ =  "upskirt"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_144 {
-  strings:
-    $ =  "wank"  fullword wide ascii nocase
-    $ =  "wanker"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_145 {
-  strings:
-    $ =  "yaoi"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_146 {
-  strings:
-    $ =  "yiffy"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_147 {
-  strings:
-    $ =  "wrinkled starfish"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_148 {
-  strings:
-    $ =  "yellow showers"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_149 {
-  strings:
-    $ =  "donkey punch"  fullword wide ascii nocase
-    $ =  "donkey punches"  fullword wide ascii nocase
-  condition:
-    1 of them
+    any of them
 }
 rule content_en_language_nsfw_150 {
+  meta:
+    info = "goregasm"
   strings:
-    $ =  "goregasm"  fullword wide ascii nocase
-    $ =  "goregasms"  fullword wide ascii nocase
+    $ascii1 = "\x67\x6f\x72\x65\x67\x61\x73\x6d" nocase  // goregasm in ASCII/UTF-8
+    $wide1 = "\x67\x00\x6f\x00\x72\x00\x65\x00\x67\x00\x61\x00\x73\x00\x6d\x00" nocase  // goregasm in UTF-16LE
+    $ascii2 = "\x67\x6f\x72\x65\x67\x61\x73\x6d\x73" nocase  // goregasms in ASCII/UTF-8
+    $wide2 = "\x67\x00\x6f\x00\x72\x00\x65\x00\x67\x00\x61\x00\x73\x00\x6d\x00\x73\x00" nocase  // goregasms in UTF-16LE
   condition:
-    1 of them
-}
-rule content_en_language_nsfw_151{
-  strings:
-    $ =  "hot carl"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_152 {
-  strings:
-    $ =  "🖕"  fullword wide ascii nocase
-  condition:
-    1 of them
-}
-rule content_en_language_nsfw_153 {
-  strings:
-    $ =  "wet dream"  fullword wide ascii nocase
-    $ =  "wet dreams"  fullword wide ascii nocase
-  condition:
-    1 of them
+    any of them
 }
 rule content_en_language_nsfw_154 {
+  meta:
+    info = "F@cking"
   strings:
-    $ = "F@cking" fullword wide ascii nocase
+    $ascii = "\x46\x40\x63\x6b\x69\x6e\x67" nocase  // F@cking in ASCII/UTF-8
+    $wide = "\x46\x00\x40\x00\x63\x00\x6b\x00\x69\x00\x6e\x00\x67\x00" nocase  // F@cking in UTF-16LE
   condition:
-    1 of them
+    any of them
 }
 rule content_en_language_nsfw_155 {
+  meta:
+    info = "c0ck"
   strings:
-    $ = "c0ck" fullword wide ascii nocase
+    $ascii = "\x63\x30\x63\x6b" nocase  // c0ck in ASCII/UTF-8
+    $wide = "\x63\x00\x30\x00\x63\x00\x6b\x00" nocase  // c0ck in UTF-16LE
   condition:
-    1 of them
+    any of them
 }
 
 rule content_en_language_nsfw_156 {
+  meta:
+    info = "pu$$y"
   strings:
-    $ = "pu$$y" fullword wide ascii nocase
+    $ascii = "\x70\x75\x24\x24\x79" nocase  // pu$$y in ASCII/UTF-8
+    $wide = "\x70\x00\x75\x00\x24\x00\x24\x00\x79\x00" nocase  // pu$$y in UTF-16LE
   condition:
-    1 of them
+    any of them
 }
 
 rule content_en_language_nsfw_157 {
+  meta:
+    info = "$luts"
   strings:
-    $ = "$luts" fullword wide ascii nocase
+    $ascii = "\x24\x6c\x75\x74\x73" nocase  // $luts in ASCII/UTF-8
+    $wide = "\x24\x00\x6c\x00\x75\x00\x74\x00\x73\x00" nocase  // $luts in UTF-16LE
   condition:
-    1 of them
+    any of them
 }
 
 rule content_en_language_nsfw_158 {
+  meta:
+    info = "h00kers"
   strings:
-    $ = "h00kers" fullword wide ascii nocase
+    $ascii = "\x68\x30\x30\x6b\x65\x72\x73" nocase  // h00kers in ASCII/UTF-8
+    $wide = "\x68\x00\x30\x00\x30\x00\x6b\x00\x65\x00\x72\x00\x73\x00" nocase  // h00kers in UTF-16LE
   condition:
-    1 of them
+    any of them
 }
 
 rule content_en_language_nsfw_159 {
+  meta:
+    info = "cre@mpied"
   strings:
-    $ = "cre@mpied" fullword wide ascii nocase
+    $ascii = "\x63\x72\x65\x40\x6d\x70\x69\x65\x64" nocase  // cre@mpied in ASCII/UTF-8
+    $wide = "\x63\x00\x72\x00\x65\x00\x40\x00\x6d\x00\x70\x00\x69\x00\x65\x00\x64\x00" nocase  // cre@mpied in UTF-16LE
   condition:
-    1 of them
+    any of them
 }
 
 rule content_en_language_nsfw_160 {
+  meta:
+    info = "f@cials"
   strings:
-    $ = "f@cials" fullword wide ascii nocase
+    $ascii = "\x66\x40\x63\x69\x61\x6c\x73" nocase  // f@cials in ASCII/UTF-8
+    $wide = "\x66\x00\x40\x00\x63\x00\x69\x00\x61\x00\x6c\x00\x73\x00" nocase  // f@cials in UTF-16LE
   condition:
-    1 of them
+    any of them
 }
 
 rule content_en_language_nsfw_161 {
+  meta:
+    info = "b00bs"
   strings:
-    $ = "b00bs" fullword wide ascii nocase
+    $ascii = "\x62\x30\x30\x62\x73" nocase  // b00bs in ASCII/UTF-8
+    $wide = "\x62\x00\x30\x00\x30\x00\x62\x00\x73\x00" nocase  // b00bs in UTF-16LE
   condition:
-    1 of them
+    any of them
 }
+
+rule content_en_language_nsfw_165 {
+  meta:
+    info = "felching"
+  strings:
+    $ascii = "\x66\x65\x6c\x63\x68\x69\x6e\x67" nocase  // felching in ASCII/UTF-8
+    $wide = "\x66\x00\x65\x00\x6c\x00\x63\x00\x68\x00\x69\x00\x6e\x00\x67\x00" nocase  // felching in UTF-16LE
+  condition:
+    any of them
+}
+
+rule content_en_language_nsfw_171 {
+  meta:
+    info = "facefuck"
+  strings:
+    $ascii1 = "\x66\x61\x63\x65\x66\x75\x63\x6b" nocase  // facefuck in ASCII/UTF-8
+    $wide1 = "\x66\x00\x61\x00\x63\x00\x65\x00\x66\x00\x75\x00\x63\x00\x6b\x00" nocase  // facefuck in UTF-16LE
+    $ascii2 = "\x66\x61\x63\x65\x20\x66\x75\x63\x6b" nocase  // face fuck in ASCII/UTF-8
+    $wide2 = "\x66\x00\x61\x00\x63\x00\x65\x00\x20\x00\x66\x00\x75\x00\x63\x00\x6b\x00" nocase  // face fuck in UTF-16LE
+  condition:
+    any of them
+}
+
+rule content_en_language_nsfw_172 {
+  meta:
+    info = "skullfuck"
+  strings:
+    $ascii1 = "\x73\x6b\x75\x6c\x6c\x66\x75\x63\x6b" nocase  // skullfuck in ASCII/UTF-8
+    $wide1 = "\x73\x00\x6b\x00\x75\x00\x6c\x00\x6c\x00\x66\x00\x75\x00\x63\x00\x6b\x00" nocase  // skullfuck in UTF-16LE
+    $ascii2 = "\x73\x6b\x75\x6c\x6c\x20\x66\x75\x63\x6b" nocase  // skull fuck in ASCII/UTF-8
+    $wide2 = "\x73\x00\x6b\x00\x75\x00\x6c\x00\x6c\x00\x20\x00\x66\x00\x75\x00\x63\x00\x6b\x00" nocase  // skull fuck in UTF-16LE
+  condition:
+    any of them
+}
+
+rule content_en_language_nsfw_173 {
+  meta:
+    info = "titfuck"
+  strings:
+    $ascii1 = "\x74\x69\x74\x66\x75\x63\x6b" nocase  // titfuck in ASCII/UTF-8
+    $wide1 = "\x74\x00\x69\x00\x74\x00\x66\x00\x75\x00\x63\x00\x6b\x00" nocase  // titfuck in UTF-16LE
+    $ascii2 = "\x74\x69\x74\x20\x66\x75\x63\x6b" nocase  // tit fuck in ASCII/UTF-8
+    $wide2 = "\x74\x00\x69\x00\x74\x00\x20\x00\x66\x00\x75\x00\x63\x00\x6b\x00" nocase  // tit fuck in UTF-16LE
+  condition:
+    any of them
+}
+
+rule content_en_language_nsfw_174 {
+  meta:
+    info = "buttfuck"
+  strings:
+    $ascii1 = "\x62\x75\x74\x74\x66\x75\x63\x6b" nocase  // buttfuck in ASCII/UTF-8
+    $wide1 = "\x62\x00\x75\x00\x74\x00\x74\x00\x66\x00\x75\x00\x63\x00\x6b\x00" nocase  // buttfuck in UTF-16LE
+    $ascii2 = "\x62\x75\x74\x74\x20\x66\x75\x63\x6b" nocase  // butt fuck in ASCII/UTF-8
+    $wide2 = "\x62\x00\x75\x00\x74\x00\x74\x00\x20\x00\x66\x00\x75\x00\x63\x00\x6b\x00" nocase  // butt fuck in UTF-16LE
+  condition:
+    any of them
+}
+
+rule content_en_language_nsfw_175 {
+  meta:
+    info = "assfuck"
+  strings:
+    $ascii1 = "\x61\x73\x73\x66\x75\x63\x6b" nocase  // assfuck in ASCII/UTF-8
+    $wide1 = "\x61\x00\x73\x00\x73\x00\x66\x00\x75\x00\x63\x00\x6b\x00" nocase  // assfuck in UTF-16LE
+    $ascii2 = "\x61\x73\x73\x20\x66\x75\x63\x6b" nocase  // ass fuck in ASCII/UTF-8
+    $wide2 = "\x61\x00\x73\x00\x73\x00\x20\x00\x66\x00\x75\x00\x63\x00\x6b\x00" nocase  // ass fuck in UTF-16LE
+  condition:
+    any of them
+}
+
+rule content_en_language_nsfw_177 {
+  meta:
+    info = "throatfuck"
+  strings:
+    $ascii = "\x74\x68\x72\x6f\x61\x74\x66\x75\x63\x6b" nocase  // throatfuck in ASCII/UTF-8
+    $wide = "\x74\x00\x68\x00\x72\x00\x6f\x00\x61\x00\x74\x00\x66\x00\x75\x00\x63\x00\x6b\x00" nocase  // throatfuck in UTF-16LE
+  condition:
+    any of them
+}
+
+

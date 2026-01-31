@@ -1,973 +1,1474 @@
-
 rule content_it_language_nsfw_1 {
+  meta:
+    info = "allupato"
   strings:
-    $ = "allupato" ascii wide nocase fullword
+    $utf8 = "\x61\x6c\x6c\x75\x70\x61\x74\x6f" nocase fullword
+    $latin1 = "\x61\x6c\x6c\x75\x70\x61\x74\x6f" nocase fullword
+    $cp1252 = "\x61\x6c\x6c\x75\x70\x61\x74\x6f" nocase fullword
+    $wide = "\x61\x00\x6c\x00\x6c\x00\x75\x00\x70\x00\x61\x00\x74\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_2 {
+  meta:
+    info = "ammucchiata"
   strings:
-    $ = "ammucchiata" ascii wide nocase fullword
+    $utf8 = "\x61\x6d\x6d\x75\x63\x63\x68\x69\x61\x74\x61" nocase fullword
+    $latin1 = "\x61\x6d\x6d\x75\x63\x63\x68\x69\x61\x74\x61" nocase fullword
+    $cp1252 = "\x61\x6d\x6d\x75\x63\x63\x68\x69\x61\x74\x61" nocase fullword
+    $wide = "\x61\x00\x6d\x00\x6d\x00\x75\x00\x63\x00\x63\x00\x68\x00\x69\x00\x61\x00\x74\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
-rule content_it_language_nsfw_3 {
-  strings:
-    $ = "anale" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_it_language_nsfw_4 {
+  meta:
+    info = "arrapato"
   strings:
-    $ = "arrapato" ascii wide nocase fullword
+    $utf8 = "\x61\x72\x72\x61\x70\x61\x74\x6f" nocase fullword
+    $latin1 = "\x61\x72\x72\x61\x70\x61\x74\x6f" nocase fullword
+    $cp1252 = "\x61\x72\x72\x61\x70\x61\x74\x6f" nocase fullword
+    $wide = "\x61\x00\x72\x00\x72\x00\x61\x00\x70\x00\x61\x00\x74\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
-rule content_it_language_nsfw_5 {
-  strings:
-    $ = "arrusa" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_it_language_nsfw_6 {
+  meta:
+    info = "arruso"
   strings:
-    $ = "arruso" ascii wide nocase fullword
+    $utf8 = "\x61\x72\x72\x75\x73\x6f" nocase fullword
+    $latin1 = "\x61\x72\x72\x75\x73\x6f" nocase fullword
+    $cp1252 = "\x61\x72\x72\x75\x73\x6f" nocase fullword
+    $wide = "\x61\x00\x72\x00\x72\x00\x75\x00\x73\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_7 {
+  meta:
+    info = "assatanato"
   strings:
-    $ = "assatanato" ascii wide nocase fullword
+    $utf8 = "\x61\x73\x73\x61\x74\x61\x6e\x61\x74\x6f" nocase fullword
+    $latin1 = "\x61\x73\x73\x61\x74\x61\x6e\x61\x74\x6f" nocase fullword
+    $cp1252 = "\x61\x73\x73\x61\x74\x61\x6e\x61\x74\x6f" nocase fullword
+    $wide = "\x61\x00\x73\x00\x73\x00\x61\x00\x74\x00\x61\x00\x6e\x00\x61\x00\x74\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_8 {
+  meta:
+    info = "bagascia"
   strings:
-    $ = "bagascia" ascii wide nocase fullword
+    $utf8 = "\x62\x61\x67\x61\x73\x63\x69\x61" nocase fullword
+    $latin1 = "\x62\x61\x67\x61\x73\x63\x69\x61" nocase fullword
+    $cp1252 = "\x62\x61\x67\x61\x73\x63\x69\x61" nocase fullword
+    $wide = "\x62\x00\x61\x00\x67\x00\x61\x00\x73\x00\x63\x00\x69\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_9 {
+  meta:
+    info = "bagassa"
   strings:
-    $ = "bagassa" ascii wide nocase fullword
+    $utf8 = "\x62\x61\x67\x61\x73\x73\x61" nocase fullword
+    $latin1 = "\x62\x61\x67\x61\x73\x73\x61" nocase fullword
+    $cp1252 = "\x62\x61\x67\x61\x73\x73\x61" nocase fullword
+    $wide = "\x62\x00\x61\x00\x67\x00\x61\x00\x73\x00\x73\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
+rule content_it_language_nsfw_10 {
+  meta:
+    info = "baldracca"
+  strings:
+    $utf8 = "\x62\x61\x6c\x64\x72\x61\x63\x63\x61" nocase fullword
+    $latin1 = "\x62\x61\x6c\x64\x72\x61\x63\x63\x61" nocase fullword
+    $cp1252 = "\x62\x61\x6c\x64\x72\x61\x63\x63\x61" nocase fullword
+    $wide = "\x62\x00\x61\x00\x6c\x00\x64\x00\x72\x00\x61\x00\x63\x00\x63\x00\x61\x00" nocase fullword
+  condition:
+    any of them
+}
 rule content_it_language_nsfw_11 {
+  meta:
+    info = "battona"
   strings:
-    $ = "baldracca" ascii wide nocase fullword
+    $utf8 = "\x62\x61\x74\x74\x6f\x6e\x61" nocase fullword
+    $latin1 = "\x62\x61\x74\x74\x6f\x6e\x61" nocase fullword
+    $cp1252 = "\x62\x61\x74\x74\x6f\x6e\x61" nocase fullword
+    $wide = "\x62\x00\x61\x00\x74\x00\x74\x00\x6f\x00\x6e\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
+rule content_it_language_nsfw_12 {
+  meta:
+    info = "belino"
+  strings:
+    $utf8 = "\x62\x65\x6c\x69\x6e\x6f" nocase fullword
+    $latin1 = "\x62\x65\x6c\x69\x6e\x6f" nocase fullword
+    $cp1252 = "\x62\x65\x6c\x69\x6e\x6f" nocase fullword
+    $wide = "\x62\x00\x65\x00\x6c\x00\x69\x00\x6e\x00\x6f\x00" nocase fullword
+  condition:
+    any of them
+}
+rule content_it_language_nsfw_13 {
+  meta:
+    info = "bocchinara"
+  strings:
+    $utf8 = "\x62\x6f\x63\x63\x68\x69\x6e\x61\x72\x61" nocase fullword
+    $latin1 = "\x62\x6f\x63\x63\x68\x69\x6e\x61\x72\x61" nocase fullword
+    $cp1252 = "\x62\x6f\x63\x63\x68\x69\x6e\x61\x72\x61" nocase fullword
+    $wide = "\x62\x00\x6f\x00\x63\x00\x63\x00\x68\x00\x69\x00\x6e\x00\x61\x00\x72\x00\x61\x00" nocase fullword
+  condition:
+    any of them
+}
 rule content_it_language_nsfw_14 {
+  meta:
+    info = "bocchino"
   strings:
-    $ = "battona" ascii wide nocase fullword
+    $utf8 = "\x62\x6f\x63\x63\x68\x69\x6e\x6f" nocase fullword
+    $latin1 = "\x62\x6f\x63\x63\x68\x69\x6e\x6f" nocase fullword
+    $cp1252 = "\x62\x6f\x63\x63\x68\x69\x6e\x6f" nocase fullword
+    $wide = "\x62\x00\x6f\x00\x63\x00\x63\x00\x68\x00\x69\x00\x6e\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_15 {
+  meta:
+    info = "bofilo"
   strings:
-    $ = "belino" ascii wide nocase fullword
+    $utf8 = "\x62\x6f\x66\x69\x6c\x6f" nocase fullword
+    $latin1 = "\x62\x6f\x66\x69\x6c\x6f" nocase fullword
+    $cp1252 = "\x62\x6f\x66\x69\x6c\x6f" nocase fullword
+    $wide = "\x62\x00\x6f\x00\x66\x00\x69\x00\x6c\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
+rule content_it_language_nsfw_16 {
+  meta:
+    info = "boiata"
+  strings:
+    $utf8 = "\x62\x6f\x69\x61\x74\x61" nocase fullword
+    $latin1 = "\x62\x6f\x69\x61\x74\x61" nocase fullword
+    $cp1252 = "\x62\x6f\x69\x61\x74\x61" nocase fullword
+    $wide = "\x62\x00\x6f\x00\x69\x00\x61\x00\x74\x00\x61\x00" nocase fullword
+  condition:
+    any of them
+}
 rule content_it_language_nsfw_17 {
+  meta:
+    info = "bordello"
   strings:
-    $ = "bocchinara" ascii wide nocase fullword
+    $utf8 = "\x62\x6f\x72\x64\x65\x6c\x6c\x6f" nocase fullword
+    $latin1 = "\x62\x6f\x72\x64\x65\x6c\x6c\x6f" nocase fullword
+    $cp1252 = "\x62\x6f\x72\x64\x65\x6c\x6c\x6f" nocase fullword
+    $wide = "\x62\x00\x6f\x00\x72\x00\x64\x00\x65\x00\x6c\x00\x6c\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_18 {
+  meta:
+    info = "brinca"
   strings:
-    $ = "bocchino" ascii wide nocase fullword
+    $utf8 = "\x62\x72\x69\x6e\x63\x61" nocase fullword
+    $latin1 = "\x62\x72\x69\x6e\x63\x61" nocase fullword
+    $cp1252 = "\x62\x72\x69\x6e\x63\x61" nocase fullword
+    $wide = "\x62\x00\x72\x00\x69\x00\x6e\x00\x63\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_19 {
+  meta:
+    info = "bucaiolo"
   strings:
-    $ = "bofilo" ascii wide nocase fullword
+    $utf8 = "\x62\x75\x63\x61\x69\x6f\x6c\x6f" nocase fullword
+    $latin1 = "\x62\x75\x63\x61\x69\x6f\x6c\x6f" nocase fullword
+    $cp1252 = "\x62\x75\x63\x61\x69\x6f\x6c\x6f" nocase fullword
+    $wide = "\x62\x00\x75\x00\x63\x00\x61\x00\x69\x00\x6f\x00\x6c\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_20 {
+  meta:
+    info = "budiùlo"
   strings:
-    $ = "boiata" ascii wide nocase fullword
+    $utf8 = "\x62\x75\x64\x69\xc3\xb9\x6c\x6f" nocase fullword
+    $latin1 = "\x62\x75\x64\x69\xf9\x6c\x6f" nocase fullword
+    $cp1252 = "\x62\x75\x64\x69\xf9\x6c\x6f" nocase fullword
+    $wide = "\x62\x00\x75\x00\x64\x00\x69\x00\xf9\x00\x6c\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_21 {
+  meta:
+    info = "buona donna"
   strings:
-    $ = "bordello" ascii wide nocase fullword
+    $utf8 = "\x62\x75\x6f\x6e\x61\x20\x64\x6f\x6e\x6e\x61" nocase fullword
+    $latin1 = "\x62\x75\x6f\x6e\x61\x20\x64\x6f\x6e\x6e\x61" nocase fullword
+    $cp1252 = "\x62\x75\x6f\x6e\x61\x20\x64\x6f\x6e\x6e\x61" nocase fullword
+    $wide = "\x62\x00\x75\x00\x6f\x00\x6e\x00\x61\x00\x20\x00\x64\x00\x6f\x00\x6e\x00\x6e\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_22 {
+  meta:
+    info = "busone"
   strings:
-    $ = "brinca" ascii wide nocase fullword
+    $utf8 = "\x62\x75\x73\x6f\x6e\x65" nocase fullword
+    $latin1 = "\x62\x75\x73\x6f\x6e\x65" nocase fullword
+    $cp1252 = "\x62\x75\x73\x6f\x6e\x65" nocase fullword
+    $wide = "\x62\x00\x75\x00\x73\x00\x6f\x00\x6e\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_23 {
+  meta:
+    info = "caccati in mano e prenditi a schiaffi"
   strings:
-    $ = "bucaiolo" ascii wide nocase fullword
+    $utf8 = "\x63\x61\x63\x63\x61\x74\x69\x20\x69\x6e\x20\x6d\x61\x6e\x6f\x20\x65\x20\x70\x72\x65\x6e\x64\x69\x74\x69\x20\x61\x20\x73\x63\x68\x69\x61\x66\x66\x69" nocase fullword
+    $latin1 = "\x63\x61\x63\x63\x61\x74\x69\x20\x69\x6e\x20\x6d\x61\x6e\x6f\x20\x65\x20\x70\x72\x65\x6e\x64\x69\x74\x69\x20\x61\x20\x73\x63\x68\x69\x61\x66\x66\x69" nocase fullword
+    $cp1252 = "\x63\x61\x63\x63\x61\x74\x69\x20\x69\x6e\x20\x6d\x61\x6e\x6f\x20\x65\x20\x70\x72\x65\x6e\x64\x69\x74\x69\x20\x61\x20\x73\x63\x68\x69\x61\x66\x66\x69" nocase fullword
+    $wide = "\x63\x00\x61\x00\x63\x00\x63\x00\x61\x00\x74\x00\x69\x00\x20\x00\x69\x00\x6e\x00\x20\x00\x6d\x00\x61\x00\x6e\x00\x6f\x00\x20\x00\x65\x00\x20\x00\x70\x00\x72\x00\x65\x00\x6e\x00\x64\x00\x69\x00\x74\x00\x69\x00\x20\x00\x61\x00\x20\x00\x73\x00\x63\x00\x68\x00\x69\x00\x61\x00\x66\x00\x66\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_24 {
+  meta:
+    info = "caciocappella"
   strings:
-    $ = "budiùlo" ascii wide nocase fullword
+    $utf8 = "\x63\x61\x63\x69\x6f\x63\x61\x70\x70\x65\x6c\x6c\x61" nocase fullword
+    $latin1 = "\x63\x61\x63\x69\x6f\x63\x61\x70\x70\x65\x6c\x6c\x61" nocase fullword
+    $cp1252 = "\x63\x61\x63\x69\x6f\x63\x61\x70\x70\x65\x6c\x6c\x61" nocase fullword
+    $wide = "\x63\x00\x61\x00\x63\x00\x69\x00\x6f\x00\x63\x00\x61\x00\x70\x00\x70\x00\x65\x00\x6c\x00\x6c\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_25 {
+  meta:
+    info = "cagare"
   strings:
-    $ = "buona donna" ascii wide nocase fullword
+    $utf8 = "\x63\x61\x67\x61\x72\x65" nocase fullword
+    $latin1 = "\x63\x61\x67\x61\x72\x65" nocase fullword
+    $cp1252 = "\x63\x61\x67\x61\x72\x65" nocase fullword
+    $wide = "\x63\x00\x61\x00\x67\x00\x61\x00\x72\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_26 {
+  meta:
+    info = "cagata"
   strings:
-    $ = "busone" ascii wide nocase fullword
+    $utf8 = "\x63\x61\x67\x61\x74\x61" nocase fullword
+    $latin1 = "\x63\x61\x67\x61\x74\x61" nocase fullword
+    $cp1252 = "\x63\x61\x67\x61\x74\x61" nocase fullword
+    $wide = "\x63\x00\x61\x00\x67\x00\x61\x00\x74\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
+rule content_it_language_nsfw_27 {
+  meta:
+    info = "casci"
+  strings:
+    $utf8 = "\x63\x61\x73\x63\x69" nocase fullword
+    $latin1 = "\x63\x61\x73\x63\x69" nocase fullword
+    $cp1252 = "\x63\x61\x73\x63\x69" nocase fullword
+    $wide = "\x63\x00\x61\x00\x73\x00\x63\x00\x69\x00" nocase fullword
+  condition:
+    any of them
+}
 rule content_it_language_nsfw_28 {
+  meta:
+    info = "cazzata"
   strings:
-    $ = "caccati in mano e prenditi a schiaffi" ascii wide nocase fullword
+    $utf8 = "\x63\x61\x7a\x7a\x61\x74\x61" nocase fullword
+    $latin1 = "\x63\x61\x7a\x7a\x61\x74\x61" nocase fullword
+    $cp1252 = "\x63\x61\x7a\x7a\x61\x74\x61" nocase fullword
+    $wide = "\x63\x00\x61\x00\x7a\x00\x7a\x00\x61\x00\x74\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_29 {
+  meta:
+    info = "cazzimma"
   strings:
-    $ = "caciocappella" ascii wide nocase fullword
+    $utf8 = "\x63\x61\x7a\x7a\x69\x6d\x6d\x61" nocase fullword
+    $latin1 = "\x63\x61\x7a\x7a\x69\x6d\x6d\x61" nocase fullword
+    $cp1252 = "\x63\x61\x7a\x7a\x69\x6d\x6d\x61" nocase fullword
+    $wide = "\x63\x00\x61\x00\x7a\x00\x7a\x00\x69\x00\x6d\x00\x6d\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
+rule content_it_language_nsfw_30 {
+  meta:
+    info = "cazzo"
+  strings:
+    $utf8 = "\x63\x61\x7a\x7a\x6f" nocase fullword
+    $latin1 = "\x63\x61\x7a\x7a\x6f" nocase fullword
+    $cp1252 = "\x63\x61\x7a\x7a\x6f" nocase fullword
+    $wide = "\x63\x00\x61\x00\x7a\x00\x7a\x00\x6f\x00" nocase fullword
+  condition:
+    any of them
+}
 rule content_it_language_nsfw_31 {
+  meta:
+    info = "checca"
   strings:
-    $ = "cagare" ascii wide nocase fullword
+    $utf8 = "\x63\x68\x65\x63\x63\x61" nocase fullword
+    $latin1 = "\x63\x68\x65\x63\x63\x61" nocase fullword
+    $cp1252 = "\x63\x68\x65\x63\x63\x61" nocase fullword
+    $wide = "\x63\x00\x68\x00\x65\x00\x63\x00\x63\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_32 {
+  meta:
+    info = "chiappa"
   strings:
-    $ = "cagata" ascii wide nocase fullword
+    $utf8 = "\x63\x68\x69\x61\x70\x70\x61" nocase fullword
+    $latin1 = "\x63\x68\x69\x61\x70\x70\x61" nocase fullword
+    $cp1252 = "\x63\x68\x69\x61\x70\x70\x61" nocase fullword
+    $wide = "\x63\x00\x68\x00\x69\x00\x61\x00\x70\x00\x70\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
-rule content_it_language_nsfw_38 {
+rule content_it_language_nsfw_33 {
+  meta:
+    info = "chiavare"
   strings:
-    $ = "casci" ascii wide nocase fullword
+    $utf8 = "\x63\x68\x69\x61\x76\x61\x72\x65" nocase fullword
+    $latin1 = "\x63\x68\x69\x61\x76\x61\x72\x65" nocase fullword
+    $cp1252 = "\x63\x68\x69\x61\x76\x61\x72\x65" nocase fullword
+    $wide = "\x63\x00\x68\x00\x69\x00\x61\x00\x76\x00\x61\x00\x72\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
+rule content_it_language_nsfw_34 {
+  meta:
+    info = "chiavata"
+  strings:
+    $utf8 = "\x63\x68\x69\x61\x76\x61\x74\x61" nocase fullword
+    $latin1 = "\x63\x68\x69\x61\x76\x61\x74\x61" nocase fullword
+    $cp1252 = "\x63\x68\x69\x61\x76\x61\x74\x61" nocase fullword
+    $wide = "\x63\x00\x68\x00\x69\x00\x61\x00\x76\x00\x61\x00\x74\x00\x61\x00" nocase fullword
+  condition:
+    any of them
+}
+rule content_it_language_nsfw_35 {
+  meta:
+    info = "ciospo"
+  strings:
+    $utf8 = "\x63\x69\x6f\x73\x70\x6f" nocase fullword
+    $latin1 = "\x63\x69\x6f\x73\x70\x6f" nocase fullword
+    $cp1252 = "\x63\x69\x6f\x73\x70\x6f" nocase fullword
+    $wide = "\x63\x00\x69\x00\x6f\x00\x73\x00\x70\x00\x6f\x00" nocase fullword
+  condition:
+    any of them
+}
+rule content_it_language_nsfw_36 {
+  meta:
+    info = "ciucciami il cazzo"
+  strings:
+    $utf8 = "\x63\x69\x75\x63\x63\x69\x61\x6d\x69\x20\x69\x6c\x20\x63\x61\x7a\x7a\x6f" nocase fullword
+    $latin1 = "\x63\x69\x75\x63\x63\x69\x61\x6d\x69\x20\x69\x6c\x20\x63\x61\x7a\x7a\x6f" nocase fullword
+    $cp1252 = "\x63\x69\x75\x63\x63\x69\x61\x6d\x69\x20\x69\x6c\x20\x63\x61\x7a\x7a\x6f" nocase fullword
+    $wide = "\x63\x00\x69\x00\x75\x00\x63\x00\x63\x00\x69\x00\x61\x00\x6d\x00\x69\x00\x20\x00\x69\x00\x6c\x00\x20\x00\x63\x00\x61\x00\x7a\x00\x7a\x00\x6f\x00" nocase fullword
+  condition:
+    any of them
+}
+rule content_it_language_nsfw_37 {
+  meta:
+    info = "coglione"
+  strings:
+    $utf8 = "\x63\x6f\x67\x6c\x69\x6f\x6e\x65" nocase fullword
+    $latin1 = "\x63\x6f\x67\x6c\x69\x6f\x6e\x65" nocase fullword
+    $cp1252 = "\x63\x6f\x67\x6c\x69\x6f\x6e\x65" nocase fullword
+    $wide = "\x63\x00\x6f\x00\x67\x00\x6c\x00\x69\x00\x6f\x00\x6e\x00\x65\x00" nocase fullword
+  condition:
+    any of them
+}
 rule content_it_language_nsfw_39 {
+  meta:
+    info = "cornuto"
   strings:
-    $ = "cazzata" ascii wide nocase fullword
+    $utf8 = "\x63\x6f\x72\x6e\x75\x74\x6f" nocase fullword
+    $latin1 = "\x63\x6f\x72\x6e\x75\x74\x6f" nocase fullword
+    $cp1252 = "\x63\x6f\x72\x6e\x75\x74\x6f" nocase fullword
+    $wide = "\x63\x00\x6f\x00\x72\x00\x6e\x00\x75\x00\x74\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_40 {
+  meta:
+    info = "cozza"
   strings:
-    $ = "cazzimma" ascii wide nocase fullword
+    $utf8 = "\x63\x6f\x7a\x7a\x61" nocase fullword
+    $latin1 = "\x63\x6f\x7a\x7a\x61" nocase fullword
+    $cp1252 = "\x63\x6f\x7a\x7a\x61" nocase fullword
+    $wide = "\x63\x00\x6f\x00\x7a\x00\x7a\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_41 {
+  meta:
+    info = "culattina"
   strings:
-    $ = "cazzo" ascii wide nocase fullword
+    $utf8 = "\x63\x75\x6c\x61\x74\x74\x69\x6e\x61" nocase fullword
+    $latin1 = "\x63\x75\x6c\x61\x74\x74\x69\x6e\x61" nocase fullword
+    $cp1252 = "\x63\x75\x6c\x61\x74\x74\x69\x6e\x61" nocase fullword
+    $wide = "\x63\x00\x75\x00\x6c\x00\x61\x00\x74\x00\x74\x00\x69\x00\x6e\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_42 {
+  meta:
+    info = "culattone"
   strings:
-    $ = "checca" ascii wide nocase fullword
+    $utf8 = "\x63\x75\x6c\x61\x74\x74\x6f\x6e\x65" nocase fullword
+    $latin1 = "\x63\x75\x6c\x61\x74\x74\x6f\x6e\x65" nocase fullword
+    $cp1252 = "\x63\x75\x6c\x61\x74\x74\x6f\x6e\x65" nocase fullword
+    $wide = "\x63\x00\x75\x00\x6c\x00\x61\x00\x74\x00\x74\x00\x6f\x00\x6e\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_43 {
+  meta:
+    info = "culo"
   strings:
-    $ = "chiappa" ascii wide nocase fullword
+    $utf8 = "\x63\x75\x6c\x6f" nocase fullword
+    $latin1 = "\x63\x75\x6c\x6f" nocase fullword
+    $cp1252 = "\x63\x75\x6c\x6f" nocase fullword
+    $wide = "\x63\x00\x75\x00\x6c\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_44 {
+  meta:
+    info = "di merda"
   strings:
-    $ = "chiavare" ascii wide nocase fullword
+    $utf8 = "\x64\x69\x20\x6d\x65\x72\x64\x61" nocase fullword
+    $latin1 = "\x64\x69\x20\x6d\x65\x72\x64\x61" nocase fullword
+    $cp1252 = "\x64\x69\x20\x6d\x65\x72\x64\x61" nocase fullword
+    $wide = "\x64\x00\x69\x00\x20\x00\x6d\x00\x65\x00\x72\x00\x64\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_45 {
+  meta:
+    info = "ditalino"
   strings:
-    $ = "chiavata" ascii wide nocase fullword
+    $utf8 = "\x64\x69\x74\x61\x6c\x69\x6e\x6f" nocase fullword
+    $latin1 = "\x64\x69\x74\x61\x6c\x69\x6e\x6f" nocase fullword
+    $cp1252 = "\x64\x69\x74\x61\x6c\x69\x6e\x6f" nocase fullword
+    $wide = "\x64\x00\x69\x00\x74\x00\x61\x00\x6c\x00\x69\x00\x6e\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_46 {
+  meta:
+    info = "fare unaŠ"
   strings:
-    $ = "ciospo" ascii wide nocase fullword
+    $utf8 = "\x66\x61\x72\x65\x20\x75\x6e\x61\xc5\xa0" nocase fullword
+    $latin1 = "\x66\x61\x72\x65\x20\x75\x6e\x61\xc5\xa0" nocase fullword
+    $cp1252 = "\x66\x61\x72\x65\x20\x75\x6e\x61\x8a" nocase fullword
+    $wide = "\x66\x00\x61\x00\x72\x00\x65\x00\x20\x00\x75\x00\x6e\x00\x61\x00\x60\x01" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_47 {
+  meta:
+    info = "femminuccia"
   strings:
-    $ = "ciucciami il cazzo" ascii wide nocase fullword
+    $utf8 = "\x66\x65\x6d\x6d\x69\x6e\x75\x63\x63\x69\x61" nocase fullword
+    $latin1 = "\x66\x65\x6d\x6d\x69\x6e\x75\x63\x63\x69\x61" nocase fullword
+    $cp1252 = "\x66\x65\x6d\x6d\x69\x6e\x75\x63\x63\x69\x61" nocase fullword
+    $wide = "\x66\x00\x65\x00\x6d\x00\x6d\x00\x69\x00\x6e\x00\x75\x00\x63\x00\x63\x00\x69\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_48 {
+  meta:
+    info = "fica"
   strings:
-    $ = "coglione" ascii wide nocase fullword
+    $utf8 = "\x66\x69\x63\x61" nocase fullword
+    $latin1 = "\x66\x69\x63\x61" nocase fullword
+    $cp1252 = "\x66\x69\x63\x61" nocase fullword
+    $wide = "\x66\x00\x69\x00\x63\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_49 {
+  meta:
+    info = "figa"
   strings:
-    $ = "coglioni" ascii wide nocase fullword
+    $utf8 = "\x66\x69\x67\x61" nocase fullword
+    $latin1 = "\x66\x69\x67\x61" nocase fullword
+    $cp1252 = "\x66\x69\x67\x61" nocase fullword
+    $wide = "\x66\x00\x69\x00\x67\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_50 {
+  meta:
+    info = "figlio di buona donna"
   strings:
-    $ = "cornuto" ascii wide nocase fullword
+    $utf8 = "\x66\x69\x67\x6c\x69\x6f\x20\x64\x69\x20\x62\x75\x6f\x6e\x61\x20\x64\x6f\x6e\x6e\x61" nocase fullword
+    $latin1 = "\x66\x69\x67\x6c\x69\x6f\x20\x64\x69\x20\x62\x75\x6f\x6e\x61\x20\x64\x6f\x6e\x6e\x61" nocase fullword
+    $cp1252 = "\x66\x69\x67\x6c\x69\x6f\x20\x64\x69\x20\x62\x75\x6f\x6e\x61\x20\x64\x6f\x6e\x6e\x61" nocase fullword
+    $wide = "\x66\x00\x69\x00\x67\x00\x6c\x00\x69\x00\x6f\x00\x20\x00\x64\x00\x69\x00\x20\x00\x62\x00\x75\x00\x6f\x00\x6e\x00\x61\x00\x20\x00\x64\x00\x6f\x00\x6e\x00\x6e\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_51 {
+  meta:
+    info = "figlio di puttana"
   strings:
-    $ = "cozza" ascii wide nocase fullword
+    $utf8 = "\x66\x69\x67\x6c\x69\x6f\x20\x64\x69\x20\x70\x75\x74\x74\x61\x6e\x61" nocase fullword
+    $latin1 = "\x66\x69\x67\x6c\x69\x6f\x20\x64\x69\x20\x70\x75\x74\x74\x61\x6e\x61" nocase fullword
+    $cp1252 = "\x66\x69\x67\x6c\x69\x6f\x20\x64\x69\x20\x70\x75\x74\x74\x61\x6e\x61" nocase fullword
+    $wide = "\x66\x00\x69\x00\x67\x00\x6c\x00\x69\x00\x6f\x00\x20\x00\x64\x00\x69\x00\x20\x00\x70\x00\x75\x00\x74\x00\x74\x00\x61\x00\x6e\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_52 {
+  meta:
+    info = "figone"
   strings:
-    $ = "culattina" ascii wide nocase fullword
+    $utf8 = "\x66\x69\x67\x6f\x6e\x65" nocase fullword
+    $latin1 = "\x66\x69\x67\x6f\x6e\x65" nocase fullword
+    $cp1252 = "\x66\x69\x67\x6f\x6e\x65" nocase fullword
+    $wide = "\x66\x00\x69\x00\x67\x00\x6f\x00\x6e\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_53 {
+  meta:
+    info = "fottere"
   strings:
-    $ = "culattone" ascii wide nocase fullword
+    $utf8 = "\x66\x6f\x74\x74\x65\x72\x65" nocase fullword
+    $latin1 = "\x66\x6f\x74\x74\x65\x72\x65" nocase fullword
+    $cp1252 = "\x66\x6f\x74\x74\x65\x72\x65" nocase fullword
+    $wide = "\x66\x00\x6f\x00\x74\x00\x74\x00\x65\x00\x72\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_54 {
+  meta:
+    info = "fottersi"
   strings:
-    $ = "culo" ascii wide nocase fullword
+    $utf8 = "\x66\x6f\x74\x74\x65\x72\x73\x69" nocase fullword
+    $latin1 = "\x66\x6f\x74\x74\x65\x72\x73\x69" nocase fullword
+    $cp1252 = "\x66\x6f\x74\x74\x65\x72\x73\x69" nocase fullword
+    $wide = "\x66\x00\x6f\x00\x74\x00\x74\x00\x65\x00\x72\x00\x73\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_55 {
+  meta:
+    info = "fracicone"
   strings:
-    $ = "di merda" ascii wide nocase fullword
+    $utf8 = "\x66\x72\x61\x63\x69\x63\x6f\x6e\x65" nocase fullword
+    $latin1 = "\x66\x72\x61\x63\x69\x63\x6f\x6e\x65" nocase fullword
+    $cp1252 = "\x66\x72\x61\x63\x69\x63\x6f\x6e\x65" nocase fullword
+    $wide = "\x66\x00\x72\x00\x61\x00\x63\x00\x69\x00\x63\x00\x6f\x00\x6e\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_56 {
+  meta:
+    info = "fregna"
   strings:
-    $ = "ditalino" ascii wide nocase fullword
+    $utf8 = "\x66\x72\x65\x67\x6e\x61" nocase fullword
+    $latin1 = "\x66\x72\x65\x67\x6e\x61" nocase fullword
+    $cp1252 = "\x66\x72\x65\x67\x6e\x61" nocase fullword
+    $wide = "\x66\x00\x72\x00\x65\x00\x67\x00\x6e\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
+rule content_it_language_nsfw_57 {
+  meta:
+    info = "frocio"
+  strings:
+    $utf8 = "\x66\x72\x6f\x63\x69\x6f" nocase fullword
+    $latin1 = "\x66\x72\x6f\x63\x69\x6f" nocase fullword
+    $cp1252 = "\x66\x72\x6f\x63\x69\x6f" nocase fullword
+    $wide = "\x66\x00\x72\x00\x6f\x00\x63\x00\x69\x00\x6f\x00" nocase fullword
+  condition:
+    any of them
+}
 rule content_it_language_nsfw_58 {
+  meta:
+    info = "froscio"
   strings:
-    $ = "fare unaŠ" ascii wide nocase fullword
+    $utf8 = "\x66\x72\x6f\x73\x63\x69\x6f" nocase fullword
+    $latin1 = "\x66\x72\x6f\x73\x63\x69\x6f" nocase fullword
+    $cp1252 = "\x66\x72\x6f\x73\x63\x69\x6f" nocase fullword
+    $wide = "\x66\x00\x72\x00\x6f\x00\x73\x00\x63\x00\x69\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
+rule content_it_language_nsfw_59 {
+  meta:
+    info = "fuori come un balcone"
+  strings:
+    $utf8 = "\x66\x75\x6f\x72\x69\x20\x63\x6f\x6d\x65\x20\x75\x6e\x20\x62\x61\x6c\x63\x6f\x6e\x65" nocase fullword
+    $latin1 = "\x66\x75\x6f\x72\x69\x20\x63\x6f\x6d\x65\x20\x75\x6e\x20\x62\x61\x6c\x63\x6f\x6e\x65" nocase fullword
+    $cp1252 = "\x66\x75\x6f\x72\x69\x20\x63\x6f\x6d\x65\x20\x75\x6e\x20\x62\x61\x6c\x63\x6f\x6e\x65" nocase fullword
+    $wide = "\x66\x00\x75\x00\x6f\x00\x72\x00\x69\x00\x20\x00\x63\x00\x6f\x00\x6d\x00\x65\x00\x20\x00\x75\x00\x6e\x00\x20\x00\x62\x00\x61\x00\x6c\x00\x63\x00\x6f\x00\x6e\x00\x65\x00" nocase fullword
+  condition:
+    any of them
+}
 rule content_it_language_nsfw_60 {
+  meta:
+    info = "goldone"
   strings:
-    $ = "femminuccia" ascii wide nocase fullword
+    $utf8 = "\x67\x6f\x6c\x64\x6f\x6e\x65" nocase fullword
+    $latin1 = "\x67\x6f\x6c\x64\x6f\x6e\x65" nocase fullword
+    $cp1252 = "\x67\x6f\x6c\x64\x6f\x6e\x65" nocase fullword
+    $wide = "\x67\x00\x6f\x00\x6c\x00\x64\x00\x6f\x00\x6e\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_61 {
+  meta:
+    info = "guardone"
   strings:
-    $ = "fica" ascii wide nocase fullword
+    $utf8 = "\x67\x75\x61\x72\x64\x6f\x6e\x65" nocase fullword
+    $latin1 = "\x67\x75\x61\x72\x64\x6f\x6e\x65" nocase fullword
+    $cp1252 = "\x67\x75\x61\x72\x64\x6f\x6e\x65" nocase fullword
+    $wide = "\x67\x00\x75\x00\x61\x00\x72\x00\x64\x00\x6f\x00\x6e\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_62 {
+  meta:
+    info = "incazzarsi"
   strings:
-    $ = "figa" ascii wide nocase fullword
+    $utf8 = "\x69\x6e\x63\x61\x7a\x7a\x61\x72\x73\x69" nocase fullword
+    $latin1 = "\x69\x6e\x63\x61\x7a\x7a\x61\x72\x73\x69" nocase fullword
+    $cp1252 = "\x69\x6e\x63\x61\x7a\x7a\x61\x72\x73\x69" nocase fullword
+    $wide = "\x69\x00\x6e\x00\x63\x00\x61\x00\x7a\x00\x7a\x00\x61\x00\x72\x00\x73\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_63 {
+  meta:
+    info = "incoglionirsi"
   strings:
-    $ = "figlio di buona donna" ascii wide nocase fullword
+    $utf8 = "\x69\x6e\x63\x6f\x67\x6c\x69\x6f\x6e\x69\x72\x73\x69" nocase fullword
+    $latin1 = "\x69\x6e\x63\x6f\x67\x6c\x69\x6f\x6e\x69\x72\x73\x69" nocase fullword
+    $cp1252 = "\x69\x6e\x63\x6f\x67\x6c\x69\x6f\x6e\x69\x72\x73\x69" nocase fullword
+    $wide = "\x69\x00\x6e\x00\x63\x00\x6f\x00\x67\x00\x6c\x00\x69\x00\x6f\x00\x6e\x00\x69\x00\x72\x00\x73\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_64 {
+  meta:
+    info = "ingoio"
   strings:
-    $ = "figlio di puttana" ascii wide nocase fullword
+    $utf8 = "\x69\x6e\x67\x6f\x69\x6f" nocase fullword
+    $latin1 = "\x69\x6e\x67\x6f\x69\x6f" nocase fullword
+    $cp1252 = "\x69\x6e\x67\x6f\x69\x6f" nocase fullword
+    $wide = "\x69\x00\x6e\x00\x67\x00\x6f\x00\x69\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_65 {
+  meta:
+    info = "l'arte bolognese"
   strings:
-    $ = "figone" ascii wide nocase fullword
+    $utf8 = "\x6c\x27\x61\x72\x74\x65\x20\x62\x6f\x6c\x6f\x67\x6e\x65\x73\x65" nocase fullword
+    $latin1 = "\x6c\x27\x61\x72\x74\x65\x20\x62\x6f\x6c\x6f\x67\x6e\x65\x73\x65" nocase fullword
+    $cp1252 = "\x6c\x27\x61\x72\x74\x65\x20\x62\x6f\x6c\x6f\x67\x6e\x65\x73\x65" nocase fullword
+    $wide = "\x6c\x00\x27\x00\x61\x00\x72\x00\x74\x00\x65\x00\x20\x00\x62\x00\x6f\x00\x6c\x00\x6f\x00\x67\x00\x6e\x00\x65\x00\x73\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
+rule content_it_language_nsfw_66 {
+  meta:
+    info = "leccaculo"
+  strings:
+    $utf8 = "\x6c\x65\x63\x63\x61\x63\x75\x6c\x6f" nocase fullword
+    $latin1 = "\x6c\x65\x63\x63\x61\x63\x75\x6c\x6f" nocase fullword
+    $cp1252 = "\x6c\x65\x63\x63\x61\x63\x75\x6c\x6f" nocase fullword
+    $wide = "\x6c\x00\x65\x00\x63\x00\x63\x00\x61\x00\x63\x00\x75\x00\x6c\x00\x6f\x00" nocase fullword
+  condition:
+    any of them
+}
 rule content_it_language_nsfw_67 {
+  meta:
+    info = "lecchino"
   strings:
-    $ = "fottere" ascii wide nocase fullword
+    $utf8 = "\x6c\x65\x63\x63\x68\x69\x6e\x6f" nocase fullword
+    $latin1 = "\x6c\x65\x63\x63\x68\x69\x6e\x6f" nocase fullword
+    $cp1252 = "\x6c\x65\x63\x63\x68\x69\x6e\x6f" nocase fullword
+    $wide = "\x6c\x00\x65\x00\x63\x00\x63\x00\x68\x00\x69\x00\x6e\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
-rule content_it_language_nsfw_68 {
-  strings:
-    $ = "fottersi" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_it_language_nsfw_69 {
+  meta:
+    info = "loffa"
   strings:
-    $ = "fracicone" ascii wide nocase fullword
+    $utf8 = "\x6c\x6f\x66\x66\x61" nocase fullword
+    $latin1 = "\x6c\x6f\x66\x66\x61" nocase fullword
+    $cp1252 = "\x6c\x6f\x66\x66\x61" nocase fullword
+    $wide = "\x6c\x00\x6f\x00\x66\x00\x66\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_70 {
+  meta:
+    info = "loffare"
   strings:
-    $ = "fregna" ascii wide nocase fullword
+    $utf8 = "\x6c\x6f\x66\x66\x61\x72\x65" nocase fullword
+    $latin1 = "\x6c\x6f\x66\x66\x61\x72\x65" nocase fullword
+    $cp1252 = "\x6c\x6f\x66\x66\x61\x72\x65" nocase fullword
+    $wide = "\x6c\x00\x6f\x00\x66\x00\x66\x00\x61\x00\x72\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_71 {
+  meta:
+    info = "mannaggia"
   strings:
-    $ = "frocio" ascii wide nocase fullword
+    $utf8 = "\x6d\x61\x6e\x6e\x61\x67\x67\x69\x61" nocase fullword
+    $latin1 = "\x6d\x61\x6e\x6e\x61\x67\x67\x69\x61" nocase fullword
+    $cp1252 = "\x6d\x61\x6e\x6e\x61\x67\x67\x69\x61" nocase fullword
+    $wide = "\x6d\x00\x61\x00\x6e\x00\x6e\x00\x61\x00\x67\x00\x67\x00\x69\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_72 {
+  meta:
+    info = "merda"
   strings:
-    $ = "froscio" ascii wide nocase fullword
+    $utf8 = "\x6d\x65\x72\x64\x61" nocase fullword
+    $latin1 = "\x6d\x65\x72\x64\x61" nocase fullword
+    $cp1252 = "\x6d\x65\x72\x64\x61" nocase fullword
+    $wide = "\x6d\x00\x65\x00\x72\x00\x64\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_73 {
+  meta:
+    info = "merdata"
   strings:
-    $ = "fuori come un balcone" ascii wide nocase fullword
+    $utf8 = "\x6d\x65\x72\x64\x61\x74\x61" nocase fullword
+    $latin1 = "\x6d\x65\x72\x64\x61\x74\x61" nocase fullword
+    $cp1252 = "\x6d\x65\x72\x64\x61\x74\x61" nocase fullword
+    $wide = "\x6d\x00\x65\x00\x72\x00\x64\x00\x61\x00\x74\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_74 {
+  meta:
+    info = "merdoso"
   strings:
-    $ = "goldone" ascii wide nocase fullword
+    $utf8 = "\x6d\x65\x72\x64\x6f\x73\x6f" nocase fullword
+    $latin1 = "\x6d\x65\x72\x64\x6f\x73\x6f" nocase fullword
+    $cp1252 = "\x6d\x65\x72\x64\x6f\x73\x6f" nocase fullword
+    $wide = "\x6d\x00\x65\x00\x72\x00\x64\x00\x6f\x00\x73\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
+rule content_it_language_nsfw_75 {
+  meta:
+    info = "mignotta"
+  strings:
+    $utf8 = "\x6d\x69\x67\x6e\x6f\x74\x74\x61" nocase fullword
+    $latin1 = "\x6d\x69\x67\x6e\x6f\x74\x74\x61" nocase fullword
+    $cp1252 = "\x6d\x69\x67\x6e\x6f\x74\x74\x61" nocase fullword
+    $wide = "\x6d\x00\x69\x00\x67\x00\x6e\x00\x6f\x00\x74\x00\x74\x00\x61\x00" nocase fullword
+  condition:
+    any of them
+}
+rule content_it_language_nsfw_76 {
+  meta:
+    info = "minchia"
+  strings:
+    $utf8 = "\x6d\x69\x6e\x63\x68\x69\x61" nocase fullword
+    $latin1 = "\x6d\x69\x6e\x63\x68\x69\x61" nocase fullword
+    $cp1252 = "\x6d\x69\x6e\x63\x68\x69\x61" nocase fullword
+    $wide = "\x6d\x00\x69\x00\x6e\x00\x63\x00\x68\x00\x69\x00\x61\x00" nocase fullword
+  condition:
+    any of them
+}
 rule content_it_language_nsfw_77 {
+  meta:
+    info = "minchione"
   strings:
-    $ = "guardone" ascii wide nocase fullword
+    $utf8 = "\x6d\x69\x6e\x63\x68\x69\x6f\x6e\x65" nocase fullword
+    $latin1 = "\x6d\x69\x6e\x63\x68\x69\x6f\x6e\x65" nocase fullword
+    $cp1252 = "\x6d\x69\x6e\x63\x68\x69\x6f\x6e\x65" nocase fullword
+    $wide = "\x6d\x00\x69\x00\x6e\x00\x63\x00\x68\x00\x69\x00\x6f\x00\x6e\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_78 {
+  meta:
+    info = "mona"
   strings:
-    $ = "incazzarsi" ascii wide nocase fullword
+    $utf8 = "\x6d\x6f\x6e\x61" nocase fullword
+    $latin1 = "\x6d\x6f\x6e\x61" nocase fullword
+    $cp1252 = "\x6d\x6f\x6e\x61" nocase fullword
+    $wide = "\x6d\x00\x6f\x00\x6e\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_79 {
+  meta:
+    info = "mussa"
   strings:
-    $ = "incoglionirsi" ascii wide nocase fullword
+    $utf8 = "\x6d\x75\x73\x73\x61" nocase fullword
+    $latin1 = "\x6d\x75\x73\x73\x61" nocase fullword
+    $cp1252 = "\x6d\x75\x73\x73\x61" nocase fullword
+    $wide = "\x6d\x00\x75\x00\x73\x00\x73\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_80 {
+  meta:
+    info = "nave scuola"
   strings:
-    $ = "ingoio" ascii wide nocase fullword
+    $utf8 = "\x6e\x61\x76\x65\x20\x73\x63\x75\x6f\x6c\x61" nocase fullword
+    $latin1 = "\x6e\x61\x76\x65\x20\x73\x63\x75\x6f\x6c\x61" nocase fullword
+    $cp1252 = "\x6e\x61\x76\x65\x20\x73\x63\x75\x6f\x6c\x61" nocase fullword
+    $wide = "\x6e\x00\x61\x00\x76\x00\x65\x00\x20\x00\x73\x00\x63\x00\x75\x00\x6f\x00\x6c\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_81 {
+  meta:
+    info = "nerchia"
   strings:
-    $ = "l'arte bolognese" ascii wide nocase fullword
+    $utf8 = "\x6e\x65\x72\x63\x68\x69\x61" nocase fullword
+    $latin1 = "\x6e\x65\x72\x63\x68\x69\x61" nocase fullword
+    $cp1252 = "\x6e\x65\x72\x63\x68\x69\x61" nocase fullword
+    $wide = "\x6e\x00\x65\x00\x72\x00\x63\x00\x68\x00\x69\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_82 {
+  meta:
+    info = "padulo"
   strings:
-    $ = "leccaculo" ascii wide nocase fullword
+    $utf8 = "\x70\x61\x64\x75\x6c\x6f" nocase fullword
+    $latin1 = "\x70\x61\x64\x75\x6c\x6f" nocase fullword
+    $cp1252 = "\x70\x61\x64\x75\x6c\x6f" nocase fullword
+    $wide = "\x70\x00\x61\x00\x64\x00\x75\x00\x6c\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_83 {
+  meta:
+    info = "palloso"
   strings:
-    $ = "lecchino" ascii wide nocase fullword
+    $utf8 = "\x70\x61\x6c\x6c\x6f\x73\x6f" nocase fullword
+    $latin1 = "\x70\x61\x6c\x6c\x6f\x73\x6f" nocase fullword
+    $cp1252 = "\x70\x61\x6c\x6c\x6f\x73\x6f" nocase fullword
+    $wide = "\x70\x00\x61\x00\x6c\x00\x6c\x00\x6f\x00\x73\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_84 {
+  meta:
+    info = "patacca"
   strings:
-    $ = "lofare" ascii wide nocase fullword
+    $utf8 = "\x70\x61\x74\x61\x63\x63\x61" nocase fullword
+    $latin1 = "\x70\x61\x74\x61\x63\x63\x61" nocase fullword
+    $cp1252 = "\x70\x61\x74\x61\x63\x63\x61" nocase fullword
+    $wide = "\x70\x00\x61\x00\x74\x00\x61\x00\x63\x00\x63\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_85 {
+  meta:
+    info = "patonza"
   strings:
-    $ = "loffa" ascii wide nocase fullword
+    $utf8 = "\x70\x61\x74\x6f\x6e\x7a\x61" nocase fullword
+    $latin1 = "\x70\x61\x74\x6f\x6e\x7a\x61" nocase fullword
+    $cp1252 = "\x70\x61\x74\x6f\x6e\x7a\x61" nocase fullword
+    $wide = "\x70\x00\x61\x00\x74\x00\x6f\x00\x6e\x00\x7a\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_86 {
+  meta:
+    info = "pecorina"
   strings:
-    $ = "loffare" ascii wide nocase fullword
+    $utf8 = "\x70\x65\x63\x6f\x72\x69\x6e\x61" nocase fullword
+    $latin1 = "\x70\x65\x63\x6f\x72\x69\x6e\x61" nocase fullword
+    $cp1252 = "\x70\x65\x63\x6f\x72\x69\x6e\x61" nocase fullword
+    $wide = "\x70\x00\x65\x00\x63\x00\x6f\x00\x72\x00\x69\x00\x6e\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
+rule content_it_language_nsfw_87 {
+  meta:
+    info = "picio"
+  strings:
+    $utf8 = "\x70\x69\x63\x69\x6f" nocase fullword
+    $latin1 = "\x70\x69\x63\x69\x6f" nocase fullword
+    $cp1252 = "\x70\x69\x63\x69\x6f" nocase fullword
+    $wide = "\x70\x00\x69\x00\x63\x00\x69\x00\x6f\x00" nocase fullword
+  condition:
+    any of them
+}
+rule content_it_language_nsfw_88 {
+  meta:
+    info = "pincare"
+  strings:
+    $utf8 = "\x70\x69\x6e\x63\x61\x72\x65" nocase fullword
+    $latin1 = "\x70\x69\x6e\x63\x61\x72\x65" nocase fullword
+    $cp1252 = "\x70\x69\x6e\x63\x61\x72\x65" nocase fullword
+    $wide = "\x70\x00\x69\x00\x6e\x00\x63\x00\x61\x00\x72\x00\x65\x00" nocase fullword
+  condition:
+    any of them
+}
 rule content_it_language_nsfw_89 {
+  meta:
+    info = "pippone"
   strings:
-    $ = "mannaggia" ascii wide nocase fullword
+    $utf8 = "\x70\x69\x70\x70\x6f\x6e\x65" nocase fullword
+    $latin1 = "\x70\x69\x70\x70\x6f\x6e\x65" nocase fullword
+    $cp1252 = "\x70\x69\x70\x70\x6f\x6e\x65" nocase fullword
+    $wide = "\x70\x00\x69\x00\x70\x00\x70\x00\x6f\x00\x6e\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_90 {
+  meta:
+    info = "pirla"
   strings:
-    $ = "merda" ascii wide nocase fullword
+    $utf8 = "\x70\x69\x72\x6c\x61" nocase fullword
+    $latin1 = "\x70\x69\x72\x6c\x61" nocase fullword
+    $cp1252 = "\x70\x69\x72\x6c\x61" nocase fullword
+    $wide = "\x70\x00\x69\x00\x72\x00\x6c\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_91 {
+  meta:
+    info = "pisciare"
   strings:
-    $ = "merdata" ascii wide nocase fullword
+    $utf8 = "\x70\x69\x73\x63\x69\x61\x72\x65" nocase fullword
+    $latin1 = "\x70\x69\x73\x63\x69\x61\x72\x65" nocase fullword
+    $cp1252 = "\x70\x69\x73\x63\x69\x61\x72\x65" nocase fullword
+    $wide = "\x70\x00\x69\x00\x73\x00\x63\x00\x69\x00\x61\x00\x72\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_92 {
+  meta:
+    info = "piscio"
   strings:
-    $ = "merdoso" ascii wide nocase fullword
+    $utf8 = "\x70\x69\x73\x63\x69\x6f" nocase fullword
+    $latin1 = "\x70\x69\x73\x63\x69\x6f" nocase fullword
+    $cp1252 = "\x70\x69\x73\x63\x69\x6f" nocase fullword
+    $wide = "\x70\x00\x69\x00\x73\x00\x63\x00\x69\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_93 {
+  meta:
+    info = "pistolotto"
   strings:
-    $ = "mignotta" ascii wide nocase fullword
+    $utf8 = "\x70\x69\x73\x74\x6f\x6c\x6f\x74\x74\x6f" nocase fullword
+    $latin1 = "\x70\x69\x73\x74\x6f\x6c\x6f\x74\x74\x6f" nocase fullword
+    $cp1252 = "\x70\x69\x73\x74\x6f\x6c\x6f\x74\x74\x6f" nocase fullword
+    $wide = "\x70\x00\x69\x00\x73\x00\x74\x00\x6f\x00\x6c\x00\x6f\x00\x74\x00\x74\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_94 {
+  meta:
+    info = "pomiciare"
   strings:
-    $ = "minchia" ascii wide nocase fullword
+    $utf8 = "\x70\x6f\x6d\x69\x63\x69\x61\x72\x65" nocase fullword
+    $latin1 = "\x70\x6f\x6d\x69\x63\x69\x61\x72\x65" nocase fullword
+    $cp1252 = "\x70\x6f\x6d\x69\x63\x69\x61\x72\x65" nocase fullword
+    $wide = "\x70\x00\x6f\x00\x6d\x00\x69\x00\x63\x00\x69\x00\x61\x00\x72\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_95 {
+  meta:
+    info = "pompino"
   strings:
-    $ = "minchione" ascii wide nocase fullword
+    $utf8 = "\x70\x6f\x6d\x70\x69\x6e\x6f" nocase fullword
+    $latin1 = "\x70\x6f\x6d\x70\x69\x6e\x6f" nocase fullword
+    $cp1252 = "\x70\x6f\x6d\x70\x69\x6e\x6f" nocase fullword
+    $wide = "\x70\x00\x6f\x00\x6d\x00\x70\x00\x69\x00\x6e\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_96 {
+  meta:
+    info = "porca madonna"
   strings:
-    $ = "mona" ascii wide nocase fullword
+    $utf8 = "\x70\x6f\x72\x63\x61\x20\x6d\x61\x64\x6f\x6e\x6e\x61" nocase fullword
+    $latin1 = "\x70\x6f\x72\x63\x61\x20\x6d\x61\x64\x6f\x6e\x6e\x61" nocase fullword
+    $cp1252 = "\x70\x6f\x72\x63\x61\x20\x6d\x61\x64\x6f\x6e\x6e\x61" nocase fullword
+    $wide = "\x70\x00\x6f\x00\x72\x00\x63\x00\x61\x00\x20\x00\x6d\x00\x61\x00\x64\x00\x6f\x00\x6e\x00\x6e\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
+rule content_it_language_nsfw_97 {
+  meta:
+    info = "porca miseria"
+  strings:
+    $utf8 = "\x70\x6f\x72\x63\x61\x20\x6d\x69\x73\x65\x72\x69\x61" nocase fullword
+    $latin1 = "\x70\x6f\x72\x63\x61\x20\x6d\x69\x73\x65\x72\x69\x61" nocase fullword
+    $cp1252 = "\x70\x6f\x72\x63\x61\x20\x6d\x69\x73\x65\x72\x69\x61" nocase fullword
+    $wide = "\x70\x00\x6f\x00\x72\x00\x63\x00\x61\x00\x20\x00\x6d\x00\x69\x00\x73\x00\x65\x00\x72\x00\x69\x00\x61\x00" nocase fullword
+  condition:
+    any of them
+}
+rule content_it_language_nsfw_98 {
+  meta:
+    info = "porca puttana"
+  strings:
+    $utf8 = "\x70\x6f\x72\x63\x61\x20\x70\x75\x74\x74\x61\x6e\x61" nocase fullword
+    $latin1 = "\x70\x6f\x72\x63\x61\x20\x70\x75\x74\x74\x61\x6e\x61" nocase fullword
+    $cp1252 = "\x70\x6f\x72\x63\x61\x20\x70\x75\x74\x74\x61\x6e\x61" nocase fullword
+    $wide = "\x70\x00\x6f\x00\x72\x00\x63\x00\x61\x00\x20\x00\x70\x00\x75\x00\x74\x00\x74\x00\x61\x00\x6e\x00\x61\x00" nocase fullword
+  condition:
+    any of them
+}
 rule content_it_language_nsfw_99 {
+  meta:
+    info = "porco due"
   strings:
-    $ = "mussa" ascii wide nocase fullword
+    $utf8 = "\x70\x6f\x72\x63\x6f\x20\x64\x75\x65" nocase fullword
+    $latin1 = "\x70\x6f\x72\x63\x6f\x20\x64\x75\x65" nocase fullword
+    $cp1252 = "\x70\x6f\x72\x63\x6f\x20\x64\x75\x65" nocase fullword
+    $wide = "\x70\x00\x6f\x00\x72\x00\x63\x00\x6f\x00\x20\x00\x64\x00\x75\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_100 {
+  meta:
+    info = "porco zio"
   strings:
-    $ = "nave scuola" ascii wide nocase fullword
+    $utf8 = "\x70\x6f\x72\x63\x6f\x20\x7a\x69\x6f" nocase fullword
+    $latin1 = "\x70\x6f\x72\x63\x6f\x20\x7a\x69\x6f" nocase fullword
+    $cp1252 = "\x70\x6f\x72\x63\x6f\x20\x7a\x69\x6f" nocase fullword
+    $wide = "\x70\x00\x6f\x00\x72\x00\x63\x00\x6f\x00\x20\x00\x7a\x00\x69\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_101 {
+  meta:
+    info = "potta"
   strings:
-    $ = "nerchia" ascii wide nocase fullword
+    $utf8 = "\x70\x6f\x74\x74\x61" nocase fullword
+    $latin1 = "\x70\x6f\x74\x74\x61" nocase fullword
+    $cp1252 = "\x70\x6f\x74\x74\x61" nocase fullword
+    $wide = "\x70\x00\x6f\x00\x74\x00\x74\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
+rule content_it_language_nsfw_102 {
+  meta:
+    info = "puppami"
+  strings:
+    $utf8 = "\x70\x75\x70\x70\x61\x6d\x69" nocase fullword
+    $latin1 = "\x70\x75\x70\x70\x61\x6d\x69" nocase fullword
+    $cp1252 = "\x70\x75\x70\x70\x61\x6d\x69" nocase fullword
+    $wide = "\x70\x00\x75\x00\x70\x00\x70\x00\x61\x00\x6d\x00\x69\x00" nocase fullword
+  condition:
+    any of them
+}
 rule content_it_language_nsfw_103 {
+  meta:
+    info = "puttana"
   strings:
-    $ = "padulo" ascii wide nocase fullword
+    $utf8 = "\x70\x75\x74\x74\x61\x6e\x61" nocase fullword
+    $latin1 = "\x70\x75\x74\x74\x61\x6e\x61" nocase fullword
+    $cp1252 = "\x70\x75\x74\x74\x61\x6e\x61" nocase fullword
+    $wide = "\x70\x00\x75\x00\x74\x00\x74\x00\x61\x00\x6e\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
+rule content_it_language_nsfw_104 {
+  meta:
+    info = "recchione"
+  strings:
+    $utf8 = "\x72\x65\x63\x63\x68\x69\x6f\x6e\x65" nocase fullword
+    $latin1 = "\x72\x65\x63\x63\x68\x69\x6f\x6e\x65" nocase fullword
+    $cp1252 = "\x72\x65\x63\x63\x68\x69\x6f\x6e\x65" nocase fullword
+    $wide = "\x72\x00\x65\x00\x63\x00\x63\x00\x68\x00\x69\x00\x6f\x00\x6e\x00\x65\x00" nocase fullword
+  condition:
+    any of them
+}
 rule content_it_language_nsfw_105 {
+  meta:
+    info = "rincoglionire"
   strings:
-    $ = "palloso" ascii wide nocase fullword
+    $utf8 = "\x72\x69\x6e\x63\x6f\x67\x6c\x69\x6f\x6e\x69\x72\x65" nocase fullword
+    $latin1 = "\x72\x69\x6e\x63\x6f\x67\x6c\x69\x6f\x6e\x69\x72\x65" nocase fullword
+    $cp1252 = "\x72\x69\x6e\x63\x6f\x67\x6c\x69\x6f\x6e\x69\x72\x65" nocase fullword
+    $wide = "\x72\x00\x69\x00\x6e\x00\x63\x00\x6f\x00\x67\x00\x6c\x00\x69\x00\x6f\x00\x6e\x00\x69\x00\x72\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_106 {
+  meta:
+    info = "rizzarsi"
   strings:
-    $ = "patacca" ascii wide nocase fullword
+    $utf8 = "\x72\x69\x7a\x7a\x61\x72\x73\x69" nocase fullword
+    $latin1 = "\x72\x69\x7a\x7a\x61\x72\x73\x69" nocase fullword
+    $cp1252 = "\x72\x69\x7a\x7a\x61\x72\x73\x69" nocase fullword
+    $wide = "\x72\x00\x69\x00\x7a\x00\x7a\x00\x61\x00\x72\x00\x73\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_107 {
+  meta:
+    info = "rompiballe"
   strings:
-    $ = "patonza" ascii wide nocase fullword
+    $utf8 = "\x72\x6f\x6d\x70\x69\x62\x61\x6c\x6c\x65" nocase fullword
+    $latin1 = "\x72\x6f\x6d\x70\x69\x62\x61\x6c\x6c\x65" nocase fullword
+    $cp1252 = "\x72\x6f\x6d\x70\x69\x62\x61\x6c\x6c\x65" nocase fullword
+    $wide = "\x72\x00\x6f\x00\x6d\x00\x70\x00\x69\x00\x62\x00\x61\x00\x6c\x00\x6c\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_108 {
+  meta:
+    info = "ruffiano"
   strings:
-    $ = "pecorina" ascii wide nocase fullword
+    $utf8 = "\x72\x75\x66\x66\x69\x61\x6e\x6f" nocase fullword
+    $latin1 = "\x72\x75\x66\x66\x69\x61\x6e\x6f" nocase fullword
+    $cp1252 = "\x72\x75\x66\x66\x69\x61\x6e\x6f" nocase fullword
+    $wide = "\x72\x00\x75\x00\x66\x00\x66\x00\x69\x00\x61\x00\x6e\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
+rule content_it_language_nsfw_109 {
+  meta:
+    info = "sborra"
+  strings:
+    $utf8 = "\x73\x62\x6f\x72\x72\x61" nocase fullword
+    $latin1 = "\x73\x62\x6f\x72\x72\x61" nocase fullword
+    $cp1252 = "\x73\x62\x6f\x72\x72\x61" nocase fullword
+    $wide = "\x73\x00\x62\x00\x6f\x00\x72\x00\x72\x00\x61\x00" nocase fullword
+  condition:
+    any of them
+}
 rule content_it_language_nsfw_110 {
+  meta:
+    info = "sborrata"
   strings:
-    $ = "picio" ascii wide nocase fullword
+    $utf8 = "\x73\x62\x6f\x72\x72\x61\x74\x61" nocase fullword
+    $latin1 = "\x73\x62\x6f\x72\x72\x61\x74\x61" nocase fullword
+    $cp1252 = "\x73\x62\x6f\x72\x72\x61\x74\x61" nocase fullword
+    $wide = "\x73\x00\x62\x00\x6f\x00\x72\x00\x72\x00\x61\x00\x74\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_111 {
+  meta:
+    info = "sborrone"
   strings:
-    $ = "pincare" ascii wide nocase fullword
+    $utf8 = "\x73\x62\x6f\x72\x72\x6f\x6e\x65" nocase fullword
+    $latin1 = "\x73\x62\x6f\x72\x72\x6f\x6e\x65" nocase fullword
+    $cp1252 = "\x73\x62\x6f\x72\x72\x6f\x6e\x65" nocase fullword
+    $wide = "\x73\x00\x62\x00\x6f\x00\x72\x00\x72\x00\x6f\x00\x6e\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
+rule content_it_language_nsfw_112 {
+  meta:
+    info = "sbrodolata"
+  strings:
+    $utf8 = "\x73\x62\x72\x6f\x64\x6f\x6c\x61\x74\x61" nocase fullword
+    $latin1 = "\x73\x62\x72\x6f\x64\x6f\x6c\x61\x74\x61" nocase fullword
+    $cp1252 = "\x73\x62\x72\x6f\x64\x6f\x6c\x61\x74\x61" nocase fullword
+    $wide = "\x73\x00\x62\x00\x72\x00\x6f\x00\x64\x00\x6f\x00\x6c\x00\x61\x00\x74\x00\x61\x00" nocase fullword
+  condition:
+    any of them
+}
 rule content_it_language_nsfw_113 {
+  meta:
+    info = "scopare"
   strings:
-    $ = "pippone" ascii wide nocase fullword
+    $utf8 = "\x73\x63\x6f\x70\x61\x72\x65" nocase fullword
+    $latin1 = "\x73\x63\x6f\x70\x61\x72\x65" nocase fullword
+    $cp1252 = "\x73\x63\x6f\x70\x61\x72\x65" nocase fullword
+    $wide = "\x73\x00\x63\x00\x6f\x00\x70\x00\x61\x00\x72\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
+rule content_it_language_nsfw_114 {
+  meta:
+    info = "scopata"
+  strings:
+    $utf8 = "\x73\x63\x6f\x70\x61\x74\x61" nocase fullword
+    $latin1 = "\x73\x63\x6f\x70\x61\x74\x61" nocase fullword
+    $cp1252 = "\x73\x63\x6f\x70\x61\x74\x61" nocase fullword
+    $wide = "\x73\x00\x63\x00\x6f\x00\x70\x00\x61\x00\x74\x00\x61\x00" nocase fullword
+  condition:
+    any of them
+}
 rule content_it_language_nsfw_115 {
+  meta:
+    info = "scorreggiare"
   strings:
-    $ = "pirla" ascii wide nocase fullword
+    $utf8 = "\x73\x63\x6f\x72\x72\x65\x67\x67\x69\x61\x72\x65" nocase fullword
+    $latin1 = "\x73\x63\x6f\x72\x72\x65\x67\x67\x69\x61\x72\x65" nocase fullword
+    $cp1252 = "\x73\x63\x6f\x72\x72\x65\x67\x67\x69\x61\x72\x65" nocase fullword
+    $wide = "\x73\x00\x63\x00\x6f\x00\x72\x00\x72\x00\x65\x00\x67\x00\x67\x00\x69\x00\x61\x00\x72\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_116 {
+  meta:
+    info = "slinguare"
   strings:
-    $ = "pisciare" ascii wide nocase fullword
+    $utf8 = "\x73\x6c\x69\x6e\x67\x75\x61\x72\x65" nocase fullword
+    $latin1 = "\x73\x6c\x69\x6e\x67\x75\x61\x72\x65" nocase fullword
+    $cp1252 = "\x73\x6c\x69\x6e\x67\x75\x61\x72\x65" nocase fullword
+    $wide = "\x73\x00\x6c\x00\x69\x00\x6e\x00\x67\x00\x75\x00\x61\x00\x72\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_117 {
+  meta:
+    info = "slinguata"
   strings:
-    $ = "piscio" ascii wide nocase fullword
+    $utf8 = "\x73\x6c\x69\x6e\x67\x75\x61\x74\x61" nocase fullword
+    $latin1 = "\x73\x6c\x69\x6e\x67\x75\x61\x74\x61" nocase fullword
+    $cp1252 = "\x73\x6c\x69\x6e\x67\x75\x61\x74\x61" nocase fullword
+    $wide = "\x73\x00\x6c\x00\x69\x00\x6e\x00\x67\x00\x75\x00\x61\x00\x74\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
+rule content_it_language_nsfw_118 {
+  meta:
+    info = "smandrappata"
+  strings:
+    $utf8 = "\x73\x6d\x61\x6e\x64\x72\x61\x70\x70\x61\x74\x61" nocase fullword
+    $latin1 = "\x73\x6d\x61\x6e\x64\x72\x61\x70\x70\x61\x74\x61" nocase fullword
+    $cp1252 = "\x73\x6d\x61\x6e\x64\x72\x61\x70\x70\x61\x74\x61" nocase fullword
+    $wide = "\x73\x00\x6d\x00\x61\x00\x6e\x00\x64\x00\x72\x00\x61\x00\x70\x00\x70\x00\x61\x00\x74\x00\x61\x00" nocase fullword
+  condition:
+    any of them
+}
+rule content_it_language_nsfw_119 {
+  meta:
+    info = "soccia"
+  strings:
+    $utf8 = "\x73\x6f\x63\x63\x69\x61" nocase fullword
+    $latin1 = "\x73\x6f\x63\x63\x69\x61" nocase fullword
+    $cp1252 = "\x73\x6f\x63\x63\x69\x61" nocase fullword
+    $wide = "\x73\x00\x6f\x00\x63\x00\x63\x00\x69\x00\x61\x00" nocase fullword
+  condition:
+    any of them
+}
 rule content_it_language_nsfw_120 {
+  meta:
+    info = "socmel"
   strings:
-    $ = "pistolotto" ascii wide nocase fullword
+    $utf8 = "\x73\x6f\x63\x6d\x65\x6c" nocase fullword
+    $latin1 = "\x73\x6f\x63\x6d\x65\x6c" nocase fullword
+    $cp1252 = "\x73\x6f\x63\x6d\x65\x6c" nocase fullword
+    $wide = "\x73\x00\x6f\x00\x63\x00\x6d\x00\x65\x00\x6c\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_121 {
+  meta:
+    info = "sorca"
   strings:
-    $ = "pomiciare" ascii wide nocase fullword
+    $utf8 = "\x73\x6f\x72\x63\x61" nocase fullword
+    $latin1 = "\x73\x6f\x72\x63\x61" nocase fullword
+    $cp1252 = "\x73\x6f\x72\x63\x61" nocase fullword
+    $wide = "\x73\x00\x6f\x00\x72\x00\x63\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
+rule content_it_language_nsfw_122 {
+  meta:
+    info = "spompinare"
+  strings:
+    $utf8 = "\x73\x70\x6f\x6d\x70\x69\x6e\x61\x72\x65" nocase fullword
+    $latin1 = "\x73\x70\x6f\x6d\x70\x69\x6e\x61\x72\x65" nocase fullword
+    $cp1252 = "\x73\x70\x6f\x6d\x70\x69\x6e\x61\x72\x65" nocase fullword
+    $wide = "\x73\x00\x70\x00\x6f\x00\x6d\x00\x70\x00\x69\x00\x6e\x00\x61\x00\x72\x00\x65\x00" nocase fullword
+  condition:
+    any of them
+}
 rule content_it_language_nsfw_123 {
+  meta:
+    info = "sticchio"
   strings:
-    $ = "pompino" ascii wide nocase fullword
+    $utf8 = "\x73\x74\x69\x63\x63\x68\x69\x6f" nocase fullword
+    $latin1 = "\x73\x74\x69\x63\x63\x68\x69\x6f" nocase fullword
+    $cp1252 = "\x73\x74\x69\x63\x63\x68\x69\x6f" nocase fullword
+    $wide = "\x73\x00\x74\x00\x69\x00\x63\x00\x63\x00\x68\x00\x69\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_125 {
+  meta:
+    info = "stronzata"
   strings:
-    $ = "porca madonna" ascii wide nocase fullword
+    $utf8 = "\x73\x74\x72\x6f\x6e\x7a\x61\x74\x61" nocase fullword
+    $latin1 = "\x73\x74\x72\x6f\x6e\x7a\x61\x74\x61" nocase fullword
+    $cp1252 = "\x73\x74\x72\x6f\x6e\x7a\x61\x74\x61" nocase fullword
+    $wide = "\x73\x00\x74\x00\x72\x00\x6f\x00\x6e\x00\x7a\x00\x61\x00\x74\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_126 {
+  meta:
+    info = "stronzo"
   strings:
-    $ = "porca miseria" ascii wide nocase fullword
+    $utf8 = "\x73\x74\x72\x6f\x6e\x7a\x6f" nocase fullword
+    $latin1 = "\x73\x74\x72\x6f\x6e\x7a\x6f" nocase fullword
+    $cp1252 = "\x73\x74\x72\x6f\x6e\x7a\x6f" nocase fullword
+    $wide = "\x73\x00\x74\x00\x72\x00\x6f\x00\x6e\x00\x7a\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_127 {
+  meta:
+    info = "succhiami"
   strings:
-    $ = "porca puttana" ascii wide nocase fullword
+    $utf8 = "\x73\x75\x63\x63\x68\x69\x61\x6d\x69" nocase fullword
+    $latin1 = "\x73\x75\x63\x63\x68\x69\x61\x6d\x69" nocase fullword
+    $cp1252 = "\x73\x75\x63\x63\x68\x69\x61\x6d\x69" nocase fullword
+    $wide = "\x73\x00\x75\x00\x63\x00\x63\x00\x68\x00\x69\x00\x61\x00\x6d\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_128 {
+  meta:
+    info = "sveltina"
   strings:
-    $ = "porco due" ascii wide nocase fullword
+    $utf8 = "\x73\x76\x65\x6c\x74\x69\x6e\x61" nocase fullword
+    $latin1 = "\x73\x76\x65\x6c\x74\x69\x6e\x61" nocase fullword
+    $cp1252 = "\x73\x76\x65\x6c\x74\x69\x6e\x61" nocase fullword
+    $wide = "\x73\x00\x76\x00\x65\x00\x6c\x00\x74\x00\x69\x00\x6e\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_129 {
+  meta:
+    info = "sverginare"
   strings:
-    $ = "porco zio" ascii wide nocase fullword
+    $utf8 = "\x73\x76\x65\x72\x67\x69\x6e\x61\x72\x65" nocase fullword
+    $latin1 = "\x73\x76\x65\x72\x67\x69\x6e\x61\x72\x65" nocase fullword
+    $cp1252 = "\x73\x76\x65\x72\x67\x69\x6e\x61\x72\x65" nocase fullword
+    $wide = "\x73\x00\x76\x00\x65\x00\x72\x00\x67\x00\x69\x00\x6e\x00\x61\x00\x72\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_130 {
+  meta:
+    info = "tarzanello"
   strings:
-    $ = "potta" ascii wide nocase fullword
+    $utf8 = "\x74\x61\x72\x7a\x61\x6e\x65\x6c\x6c\x6f" nocase fullword
+    $latin1 = "\x74\x61\x72\x7a\x61\x6e\x65\x6c\x6c\x6f" nocase fullword
+    $cp1252 = "\x74\x61\x72\x7a\x61\x6e\x65\x6c\x6c\x6f" nocase fullword
+    $wide = "\x74\x00\x61\x00\x72\x00\x7a\x00\x61\x00\x6e\x00\x65\x00\x6c\x00\x6c\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_131 {
+  meta:
+    info = "terrone"
   strings:
-    $ = "puppami" ascii wide nocase fullword
+    $utf8 = "\x74\x65\x72\x72\x6f\x6e\x65" nocase fullword
+    $latin1 = "\x74\x65\x72\x72\x6f\x6e\x65" nocase fullword
+    $cp1252 = "\x74\x65\x72\x72\x6f\x6e\x65" nocase fullword
+    $wide = "\x74\x00\x65\x00\x72\x00\x72\x00\x6f\x00\x6e\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_132 {
+  meta:
+    info = "testa di cazzo"
   strings:
-    $ = "puttana" ascii wide nocase fullword
+    $utf8 = "\x74\x65\x73\x74\x61\x20\x64\x69\x20\x63\x61\x7a\x7a\x6f" nocase fullword
+    $latin1 = "\x74\x65\x73\x74\x61\x20\x64\x69\x20\x63\x61\x7a\x7a\x6f" nocase fullword
+    $cp1252 = "\x74\x65\x73\x74\x61\x20\x64\x69\x20\x63\x61\x7a\x7a\x6f" nocase fullword
+    $wide = "\x74\x00\x65\x00\x73\x00\x74\x00\x61\x00\x20\x00\x64\x00\x69\x00\x20\x00\x63\x00\x61\x00\x7a\x00\x7a\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
+rule content_it_language_nsfw_133 {
+  meta:
+    info = "tette"
+  strings:
+    $utf8 = "\x74\x65\x74\x74\x65" nocase fullword
+    $latin1 = "\x74\x65\x74\x74\x65" nocase fullword
+    $cp1252 = "\x74\x65\x74\x74\x65" nocase fullword
+    $wide = "\x74\x00\x65\x00\x74\x00\x74\x00\x65\x00" nocase fullword
+  condition:
+    any of them
+}
 rule content_it_language_nsfw_134 {
+  meta:
+    info = "topa"
   strings:
-    $ = "recchione" ascii wide nocase fullword
+    $utf8 = "\x74\x6f\x70\x61" nocase fullword
+    $latin1 = "\x74\x6f\x70\x61" nocase fullword
+    $cp1252 = "\x74\x6f\x70\x61" nocase fullword
+    $wide = "\x74\x00\x6f\x00\x70\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
+rule content_it_language_nsfw_135 {
+  meta:
+    info = "trombare"
+  strings:
+    $utf8 = "\x74\x72\x6f\x6d\x62\x61\x72\x65" nocase fullword
+    $latin1 = "\x74\x72\x6f\x6d\x62\x61\x72\x65" nocase fullword
+    $cp1252 = "\x74\x72\x6f\x6d\x62\x61\x72\x65" nocase fullword
+    $wide = "\x74\x00\x72\x00\x6f\x00\x6d\x00\x62\x00\x61\x00\x72\x00\x65\x00" nocase fullword
+  condition:
+    any of them
+}
 rule content_it_language_nsfw_136 {
+  meta:
+    info = "vaffanculo"
   strings:
-    $ = "rincoglionire" ascii wide nocase fullword
+    $utf8 = "\x76\x61\x66\x66\x61\x6e\x63\x75\x6c\x6f" nocase fullword
+    $latin1 = "\x76\x61\x66\x66\x61\x6e\x63\x75\x6c\x6f" nocase fullword
+    $cp1252 = "\x76\x61\x66\x66\x61\x6e\x63\x75\x6c\x6f" nocase fullword
+    $wide = "\x76\x00\x61\x00\x66\x00\x66\x00\x61\x00\x6e\x00\x63\x00\x75\x00\x6c\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_137 {
+  meta:
+    info = "zinne"
   strings:
-    $ = "rizzarsi" ascii wide nocase fullword
+    $utf8 = "\x7a\x69\x6e\x6e\x65" nocase fullword
+    $latin1 = "\x7a\x69\x6e\x6e\x65" nocase fullword
+    $cp1252 = "\x7a\x69\x6e\x6e\x65" nocase fullword
+    $wide = "\x7a\x00\x69\x00\x6e\x00\x6e\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_138 {
+  meta:
+    info = "zio cantante"
   strings:
-    $ = "rompiballe" ascii wide nocase fullword
+    $utf8 = "\x7a\x69\x6f\x20\x63\x61\x6e\x74\x61\x6e\x74\x65" nocase fullword
+    $latin1 = "\x7a\x69\x6f\x20\x63\x61\x6e\x74\x61\x6e\x74\x65" nocase fullword
+    $cp1252 = "\x7a\x69\x6f\x20\x63\x61\x6e\x74\x61\x6e\x74\x65" nocase fullword
+    $wide = "\x7a\x00\x69\x00\x6f\x00\x20\x00\x63\x00\x61\x00\x6e\x00\x74\x00\x61\x00\x6e\x00\x74\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_it_language_nsfw_139 {
+  meta:
+    info = "zoccola"
   strings:
-    $ = "ruffiano" ascii wide nocase fullword
+    $utf8 = "\x7a\x6f\x63\x63\x6f\x6c\x61" nocase fullword
+    $latin1 = "\x7a\x6f\x63\x63\x6f\x6c\x61" nocase fullword
+    $cp1252 = "\x7a\x6f\x63\x63\x6f\x6c\x61" nocase fullword
+    $wide = "\x7a\x00\x6f\x00\x63\x00\x63\x00\x6f\x00\x6c\x00\x61\x00" nocase fullword
   condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_142 {
-  strings:
-    $ = "sborra" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_143 {
-  strings:
-    $ = "sborrata" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_144 {
-  strings:
-    $ = "sborrone" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_145 {
-  strings:
-    $ = "sbrodolata" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_146 {
-  strings:
-    $ = "scopare" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_147 {
-  strings:
-    $ = "scopata" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_148 {
-  strings:
-    $ = "scorreggiare" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_150 {
-  strings:
-    $ = "slinguare" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_151 {
-  strings:
-    $ = "slinguata" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_152 {
-  strings:
-    $ = "smandrappata" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_153 {
-  strings:
-    $ = "soccia" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_154 {
-  strings:
-    $ = "socmel" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_155 {
-  strings:
-    $ = "sorca" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_157 {
-  strings:
-    $ = "spompinare" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_158 {
-  strings:
-    $ = "sticchio" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_159 {
-  strings:
-    $ = "stronza" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_160 {
-  strings:
-    $ = "stronzata" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_161 {
-  strings:
-    $ = "stronzo" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_162 {
-  strings:
-    $ = "succhiami" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_163 {
-  strings:
-    $ = "sveltina" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_164 {
-  strings:
-    $ = "sverginare" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_165 {
-  strings:
-    $ = "tarzanello" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_166 {
-  strings:
-    $ = "terrone" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_167 {
-  strings:
-    $ = "testa di cazzo" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_168 {
-  strings:
-    $ = "tette" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_170 {
-  strings:
-    $ = "topa" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_172 {
-  strings:
-    $ = "trombare" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_175 {
-  strings:
-    $ = "vaffanculo" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_178 {
-  strings:
-    $ = "zinne" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_179 {
-  strings:
-    $ = "zio cantante" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_it_language_nsfw_180 {
-  strings:
-    $ = "zoccola" ascii wide nocase fullword
-  condition:
-    1 of them
+    any of them
 }

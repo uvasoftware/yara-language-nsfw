@@ -1,350 +1,561 @@
 
 rule content_es_language_nsfw_2 {
+  meta:
+    info = "Bollera"
   strings:
-    $ = "Bollera" ascii wide nocase fullword
+    $utf8 = "\x42\x6f\x6c\x6c\x65\x72\x61" nocase
+    $latin1 = "\x42\x6f\x6c\x6c\x65\x72\x61" nocase
+    $cp1252 = "\x42\x6f\x6c\x6c\x65\x72\x61" nocase
+    $wide = "\x42\x00\x6f\x00\x6c\x00\x6c\x00\x65\x00\x72\x00\x61\x00" nocase
   condition:
-    1 of them
-}
-
-rule content_es_language_nsfw_3 {
-  strings:
-    $ = "Cabron" ascii wide nocase fullword
-  condition:
-    1 of them
+    any of them
 }
 
 rule content_es_language_nsfw_4 {
+  meta:
+    info = "Cabrón"
   strings:
-    $ = "Cabrón" ascii wide nocase fullword
+    $utf8 = "\x43\x61\x62\x72\xc3\xb3\x6e" nocase
+    $latin1 = "\x43\x61\x62\x72\xf3\x6e" nocase
+    $cp1252 = "\x43\x61\x62\x72\xf3\x6e" nocase
+    $wide = "\x43\x00\x61\x00\x62\x00\x72\x00\xf3\x00\x6e\x00" nocase
   condition:
-    1 of them
+    any of them
 }
 
 rule content_es_language_nsfw_6 {
+  meta:
+    info = "Chupada"
   strings:
-    $ = "Chupada" ascii wide nocase fullword
+    $utf8 = "\x43\x68\x75\x70\x61\x64\x61" nocase
+    $latin1 = "\x43\x68\x75\x70\x61\x64\x61" nocase
+    $cp1252 = "\x43\x68\x75\x70\x61\x64\x61" nocase
+    $wide = "\x43\x00\x68\x00\x75\x00\x70\x00\x61\x00\x64\x00\x61\x00" nocase
   condition:
-    1 of them
+    any of them
 }
 
 rule content_es_language_nsfw_7 {
+  meta:
+    info = "Chupapollas"
   strings:
-    $ = "Chupapollas" ascii wide nocase fullword
+    $utf8 = "\x43\x68\x75\x70\x61\x70\x6f\x6c\x6c\x61\x73" nocase
+    $latin1 = "\x43\x68\x75\x70\x61\x70\x6f\x6c\x6c\x61\x73" nocase
+    $cp1252 = "\x43\x68\x75\x70\x61\x70\x6f\x6c\x6c\x61\x73" nocase
+    $wide = "\x43\x00\x68\x00\x75\x00\x70\x00\x61\x00\x70\x00\x6f\x00\x6c\x00\x6c\x00\x61\x00\x73\x00" nocase
   condition:
-    1 of them
+    any of them
 }
 
 rule content_es_language_nsfw_8 {
+  meta:
+    info = "Chupetón"
   strings:
-    $ = "Chupetón" ascii wide nocase fullword
+    $utf8 = "\x43\x68\x75\x70\x65\x74\xc3\xb3\x6e" nocase
+    $latin1 = "\x43\x68\x75\x70\x65\x74\xf3\x6e" nocase
+    $cp1252 = "\x43\x68\x75\x70\x65\x74\xf3\x6e" nocase
+    $wide = "\x43\x00\x68\x00\x75\x00\x70\x00\x65\x00\x74\x00\xf3\x00\x6e\x00" nocase
   condition:
-    1 of them
+    any of them
 }
 
 rule content_es_language_nsfw_9 {
+  meta:
+    info = "Concha de tu madre"
   strings:
-    $ = "Concha de tu madre" ascii wide nocase fullword
+    $utf8 = "\x43\x6f\x6e\x63\x68\x61\x20\x64\x65\x20\x74\x75\x20\x6d\x61\x64\x72\x65" nocase
+    $latin1 = "\x43\x6f\x6e\x63\x68\x61\x20\x64\x65\x20\x74\x75\x20\x6d\x61\x64\x72\x65" nocase
+    $cp1252 = "\x43\x6f\x6e\x63\x68\x61\x20\x64\x65\x20\x74\x75\x20\x6d\x61\x64\x72\x65" nocase
+    $wide = "\x43\x00\x6f\x00\x6e\x00\x63\x00\x68\x00\x61\x00\x20\x00\x64\x00\x65\x00\x20\x00\x74\x00\x75\x00\x20\x00\x6d\x00\x61\x00\x64\x00\x72\x00\x65\x00" nocase
   condition:
-    1 of them
+    any of them
 }
 
 rule content_es_language_nsfw_10 {
+  meta:
+    info = "Coprofagía"
   strings:
-    $ = "Coprofagía" ascii wide nocase fullword
+    $utf8 = "\x43\x6f\x70\x72\x6f\x66\x61\x67\xc3\xad\x61" nocase
+    $latin1 = "\x43\x6f\x70\x72\x6f\x66\x61\x67\xed\x61" nocase
+    $cp1252 = "\x43\x6f\x70\x72\x6f\x66\x61\x67\xed\x61" nocase
+    $wide = "\x43\x00\x6f\x00\x70\x00\x72\x00\x6f\x00\x66\x00\x61\x00\x67\x00\xed\x00\x61\x00" nocase
   condition:
-    1 of them
+    any of them
 }
 
 rule content_es_language_nsfw_11 {
+  meta:
+    info = "Coño"
   strings:
-    $ = "Coño" ascii wide nocase fullword
+    $utf8 = "\x43\x6f\xc3\xb1\x6f" nocase
+    $latin1 = "\x43\x6f\xf1\x6f" nocase
+    $cp1252 = "\x43\x6f\xf1\x6f" nocase
+    $wide = "\x43\x00\x6f\x00\xf1\x00\x6f\x00" nocase
   condition:
-    1 of them
-}
-
-rule content_es_language_nsfw_12 {
-  strings:
-    $ = "Culo" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_es_language_nsfw_14 {
-  strings:
-    $ = "Esperma" ascii wide nocase fullword
-  condition:
-    1 of them
+    any of them
 }
 
 rule content_es_language_nsfw_15 {
+  meta:
+    info = "Fiesta de salchichas"
   strings:
-    $ = "Fiesta de salchichas" ascii wide nocase fullword
+    $utf8 = "\x46\x69\x65\x73\x74\x61\x20\x64\x65\x20\x73\x61\x6c\x63\x68\x69\x63\x68\x61\x73" nocase
+    $latin1 = "\x46\x69\x65\x73\x74\x61\x20\x64\x65\x20\x73\x61\x6c\x63\x68\x69\x63\x68\x61\x73" nocase
+    $cp1252 = "\x46\x69\x65\x73\x74\x61\x20\x64\x65\x20\x73\x61\x6c\x63\x68\x69\x63\x68\x61\x73" nocase
+    $wide = "\x46\x00\x69\x00\x65\x00\x73\x00\x74\x00\x61\x00\x20\x00\x64\x00\x65\x00\x20\x00\x73\x00\x61\x00\x6c\x00\x63\x00\x68\x00\x69\x00\x63\x00\x68\x00\x61\x00\x73\x00" nocase
   condition:
-    1 of them
+    any of them
 }
 
 rule content_es_language_nsfw_16 {
+  meta:
+    info = "Follador"
   strings:
-    $ = "Follador" ascii wide nocase fullword
+    $utf8 = "\x46\x6f\x6c\x6c\x61\x64\x6f\x72" nocase
+    $latin1 = "\x46\x6f\x6c\x6c\x61\x64\x6f\x72" nocase
+    $cp1252 = "\x46\x6f\x6c\x6c\x61\x64\x6f\x72" nocase
+    $wide = "\x46\x00\x6f\x00\x6c\x00\x6c\x00\x61\x00\x64\x00\x6f\x00\x72\x00" nocase
   condition:
-    1 of them
+    any of them
 }
 
 rule content_es_language_nsfw_17 {
+  meta:
+    info = "Follar"
   strings:
-    $ = "Follar" ascii wide nocase fullword
+    $utf8 = "\x46\x6f\x6c\x6c\x61\x72" nocase
+    $latin1 = "\x46\x6f\x6c\x6c\x61\x72" nocase
+    $cp1252 = "\x46\x6f\x6c\x6c\x61\x72" nocase
+    $wide = "\x46\x00\x6f\x00\x6c\x00\x6c\x00\x61\x00\x72\x00" nocase
   condition:
-    1 of them
+    any of them
 }
 
 rule content_es_language_nsfw_18 {
+  meta:
+    info = "Gilipichis"
   strings:
-    $ = "Gilipichis" ascii wide nocase fullword
+    $utf8 = "\x47\x69\x6c\x69\x70\x69\x63\x68\x69\x73" nocase
+    $latin1 = "\x47\x69\x6c\x69\x70\x69\x63\x68\x69\x73" nocase
+    $cp1252 = "\x47\x69\x6c\x69\x70\x69\x63\x68\x69\x73" nocase
+    $wide = "\x47\x00\x69\x00\x6c\x00\x69\x00\x70\x00\x69\x00\x63\x00\x68\x00\x69\x00\x73\x00" nocase
   condition:
-    1 of them
+    any of them
 }
 
 rule content_es_language_nsfw_19 {
+  meta:
+    info = "Gilipollas"
   strings:
-    $ = "Gilipollas" ascii wide nocase fullword
+    $utf8 = "\x47\x69\x6c\x69\x70\x6f\x6c\x6c\x61\x73" nocase
+    $latin1 = "\x47\x69\x6c\x69\x70\x6f\x6c\x6c\x61\x73" nocase
+    $cp1252 = "\x47\x69\x6c\x69\x70\x6f\x6c\x6c\x61\x73" nocase
+    $wide = "\x47\x00\x69\x00\x6c\x00\x69\x00\x70\x00\x6f\x00\x6c\x00\x6c\x00\x61\x00\x73\x00" nocase
   condition:
-    1 of them
+    any of them
 }
 
 rule content_es_language_nsfw_20 {
+  meta:
+    info = "Hacer una paja"
   strings:
-    $ = "Hacer una paja" ascii wide nocase fullword
+    $utf8 = "\x48\x61\x63\x65\x72\x20\x75\x6e\x61\x20\x70\x61\x6a\x61" nocase
+    $latin1 = "\x48\x61\x63\x65\x72\x20\x75\x6e\x61\x20\x70\x61\x6a\x61" nocase
+    $cp1252 = "\x48\x61\x63\x65\x72\x20\x75\x6e\x61\x20\x70\x61\x6a\x61" nocase
+    $wide = "\x48\x00\x61\x00\x63\x00\x65\x00\x72\x00\x20\x00\x75\x00\x6e\x00\x61\x00\x20\x00\x70\x00\x61\x00\x6a\x00\x61\x00" nocase
   condition:
-    1 of them
+    any of them
 }
 
 rule content_es_language_nsfw_21 {
+  meta:
+    info = "Haciendo el amor"
   strings:
-    $ = "Haciendo el amor" ascii wide nocase fullword
+    $utf8 = "\x48\x61\x63\x69\x65\x6e\x64\x6f\x20\x65\x6c\x20\x61\x6d\x6f\x72" nocase
+    $latin1 = "\x48\x61\x63\x69\x65\x6e\x64\x6f\x20\x65\x6c\x20\x61\x6d\x6f\x72" nocase
+    $cp1252 = "\x48\x61\x63\x69\x65\x6e\x64\x6f\x20\x65\x6c\x20\x61\x6d\x6f\x72" nocase
+    $wide = "\x48\x00\x61\x00\x63\x00\x69\x00\x65\x00\x6e\x00\x64\x00\x6f\x00\x20\x00\x65\x00\x6c\x00\x20\x00\x61\x00\x6d\x00\x6f\x00\x72\x00" nocase
   condition:
-    1 of them
+    any of them
 }
 
 rule content_es_language_nsfw_23 {
+  meta:
+    info = "Hija de puta"
   strings:
-    $ = "Hija de puta" ascii wide nocase fullword
+    $utf8 = "\x48\x69\x6a\x61\x20\x64\x65\x20\x70\x75\x74\x61" nocase
+    $latin1 = "\x48\x69\x6a\x61\x20\x64\x65\x20\x70\x75\x74\x61" nocase
+    $cp1252 = "\x48\x69\x6a\x61\x20\x64\x65\x20\x70\x75\x74\x61" nocase
+    $wide = "\x48\x00\x69\x00\x6a\x00\x61\x00\x20\x00\x64\x00\x65\x00\x20\x00\x70\x00\x75\x00\x74\x00\x61\x00" nocase
   condition:
-    1 of them
+    any of them
 }
 
 rule content_es_language_nsfw_24 {
+  meta:
+    info = "Hijaputa"
   strings:
-    $ = "Hijaputa" ascii wide nocase fullword
+    $utf8 = "\x48\x69\x6a\x61\x70\x75\x74\x61" nocase
+    $latin1 = "\x48\x69\x6a\x61\x70\x75\x74\x61" nocase
+    $cp1252 = "\x48\x69\x6a\x61\x70\x75\x74\x61" nocase
+    $wide = "\x48\x00\x69\x00\x6a\x00\x61\x00\x70\x00\x75\x00\x74\x00\x61\x00" nocase
   condition:
-    1 of them
+    any of them
 }
 
 rule content_es_language_nsfw_25 {
+  meta:
+    info = "Hijo de puta"
   strings:
-    $ = "Hijo de puta" ascii wide nocase fullword
+    $utf8 = "\x48\x69\x6a\x6f\x20\x64\x65\x20\x70\x75\x74\x61" nocase
+    $latin1 = "\x48\x69\x6a\x6f\x20\x64\x65\x20\x70\x75\x74\x61" nocase
+    $cp1252 = "\x48\x69\x6a\x6f\x20\x64\x65\x20\x70\x75\x74\x61" nocase
+    $wide = "\x48\x00\x69\x00\x6a\x00\x6f\x00\x20\x00\x64\x00\x65\x00\x20\x00\x70\x00\x75\x00\x74\x00\x61\x00" nocase
   condition:
-    1 of them
+    any of them
 }
 
 rule content_es_language_nsfw_26 {
+  meta:
+    info = "Hijoputa"
   strings:
-    $ = "Hijoputa" ascii wide nocase fullword
+    $utf8 = "\x48\x69\x6a\x6f\x70\x75\x74\x61" nocase
+    $latin1 = "\x48\x69\x6a\x6f\x70\x75\x74\x61" nocase
+    $cp1252 = "\x48\x69\x6a\x6f\x70\x75\x74\x61" nocase
+    $wide = "\x48\x00\x69\x00\x6a\x00\x6f\x00\x70\x00\x75\x00\x74\x00\x61\x00" nocase
   condition:
-    1 of them
+    any of them
 }
 
 rule content_es_language_nsfw_29 {
+  meta:
+    info = "Jilipollas"
   strings:
-    $ = "Jilipollas" ascii wide nocase fullword
+    $utf8 = "\x4a\x69\x6c\x69\x70\x6f\x6c\x6c\x61\x73" nocase
+    $latin1 = "\x4a\x69\x6c\x69\x70\x6f\x6c\x6c\x61\x73" nocase
+    $cp1252 = "\x4a\x69\x6c\x69\x70\x6f\x6c\x6c\x61\x73" nocase
+    $wide = "\x4a\x00\x69\x00\x6c\x00\x69\x00\x70\x00\x6f\x00\x6c\x00\x6c\x00\x61\x00\x73\x00" nocase
   condition:
-    1 of them
+    any of them
 }
 
 rule content_es_language_nsfw_30 {
+  meta:
+    info = "Kapullo"
   strings:
-    $ = "Kapullo" ascii wide nocase fullword
+    $utf8 = "\x4b\x61\x70\x75\x6c\x6c\x6f" nocase
+    $latin1 = "\x4b\x61\x70\x75\x6c\x6c\x6f" nocase
+    $cp1252 = "\x4b\x61\x70\x75\x6c\x6c\x6f" nocase
+    $wide = "\x4b\x00\x61\x00\x70\x00\x75\x00\x6c\x00\x6c\x00\x6f\x00" nocase
   condition:
-    1 of them
+    any of them
 }
 
 rule content_es_language_nsfw_31 {
+  meta:
+    info = "Lameculos"
   strings:
-    $ = "Lameculos" ascii wide nocase fullword
+    $utf8 = "\x4c\x61\x6d\x65\x63\x75\x6c\x6f\x73" nocase
+    $latin1 = "\x4c\x61\x6d\x65\x63\x75\x6c\x6f\x73" nocase
+    $cp1252 = "\x4c\x61\x6d\x65\x63\x75\x6c\x6f\x73" nocase
+    $wide = "\x4c\x00\x61\x00\x6d\x00\x65\x00\x63\x00\x75\x00\x6c\x00\x6f\x00\x73\x00" nocase
   condition:
-    1 of them
+    any of them
 }
 
 rule content_es_language_nsfw_32 {
+  meta:
+    info = "Maciza"
   strings:
-    $ = "Maciza" ascii wide nocase fullword
+    $utf8 = "\x4d\x61\x63\x69\x7a\x61" nocase
+    $latin1 = "\x4d\x61\x63\x69\x7a\x61" nocase
+    $cp1252 = "\x4d\x61\x63\x69\x7a\x61" nocase
+    $wide = "\x4d\x00\x61\x00\x63\x00\x69\x00\x7a\x00\x61\x00" nocase
   condition:
-    1 of them
+    any of them
 }
 
 rule content_es_language_nsfw_33 {
+  meta:
+    info = "Macizorra"
   strings:
-    $ = "Macizorra" ascii wide nocase fullword
+    $utf8 = "\x4d\x61\x63\x69\x7a\x6f\x72\x72\x61" nocase
+    $latin1 = "\x4d\x61\x63\x69\x7a\x6f\x72\x72\x61" nocase
+    $cp1252 = "\x4d\x61\x63\x69\x7a\x6f\x72\x72\x61" nocase
+    $wide = "\x4d\x00\x61\x00\x63\x00\x69\x00\x7a\x00\x6f\x00\x72\x00\x72\x00\x61\x00" nocase
   condition:
-    1 of them
+    any of them
 }
 
 rule content_es_language_nsfw_34 {
+  meta:
+    info = "Mamada"
   strings:
-    $ = "Mamada" ascii wide nocase fullword
+    $utf8 = "\x4d\x61\x6d\x61\x64\x61" nocase
+    $latin1 = "\x4d\x61\x6d\x61\x64\x61" nocase
+    $cp1252 = "\x4d\x61\x6d\x61\x64\x61" nocase
+    $wide = "\x4d\x00\x61\x00\x6d\x00\x61\x00\x64\x00\x61\x00" nocase
   condition:
-    1 of them
-}
-
-rule content_es_language_nsfw_35 {
-  strings:
-    $ = "Marica" ascii wide nocase fullword
-  condition:
-    1 of them
+    any of them
 }
 
 rule content_es_language_nsfw_36 {
+  meta:
+    info = "Mariconazo"
   strings:
-    $ = "Mariconazo" ascii wide nocase fullword
+    $utf8 = "\x4d\x61\x72\x69\x63\x6f\x6e\x61\x7a\x6f" nocase
+    $latin1 = "\x4d\x61\x72\x69\x63\x6f\x6e\x61\x7a\x6f" nocase
+    $cp1252 = "\x4d\x61\x72\x69\x63\x6f\x6e\x61\x7a\x6f" nocase
+    $wide = "\x4d\x00\x61\x00\x72\x00\x69\x00\x63\x00\x6f\x00\x6e\x00\x61\x00\x7a\x00\x6f\x00" nocase
   condition:
-    1 of them
+    any of them
 }
 
 rule content_es_language_nsfw_37 {
+  meta:
+    info = "Maricón"
   strings:
-    $ = "Maricón" ascii wide nocase fullword
+    $utf8 = "\x4d\x61\x72\x69\x63\xc3\xb3\x6e" nocase
+    $latin1 = "\x4d\x61\x72\x69\x63\xf3\x6e" nocase
+    $cp1252 = "\x4d\x61\x72\x69\x63\xf3\x6e" nocase
+    $wide = "\x4d\x00\x61\x00\x72\x00\x69\x00\x63\x00\xf3\x00\x6e\x00" nocase
   condition:
-    1 of them
+    any of them
 }
 
 rule content_es_language_nsfw_38 {
+  meta:
+    info = "Mierda"
   strings:
-    $ = "Mierda" ascii wide nocase fullword
+    $utf8 = "\x4d\x69\x65\x72\x64\x61" nocase
+    $latin1 = "\x4d\x69\x65\x72\x64\x61" nocase
+    $cp1252 = "\x4d\x69\x65\x72\x64\x61" nocase
+    $wide = "\x4d\x00\x69\x00\x65\x00\x72\x00\x64\x00\x61\x00" nocase
   condition:
-    1 of them
-}
-
-rule content_es_language_nsfw_42 {
-  strings:
-    $ = "Pervertido" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_es_language_nsfw_43 {
-  strings:
-    $ = "Pezón" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_es_language_nsfw_44 {
-  strings:
-    $ = "Pinche" ascii wide nocase fullword
-  condition:
-    1 of them
+    any of them
 }
 
 rule content_es_language_nsfw_46 {
+  meta:
+    info = "Prostituta"
   strings:
-    $ = "Prostituta" ascii wide nocase fullword
+    $utf8 = "\x50\x72\x6f\x73\x74\x69\x74\x75\x74\x61" nocase
+    $latin1 = "\x50\x72\x6f\x73\x74\x69\x74\x75\x74\x61" nocase
+    $cp1252 = "\x50\x72\x6f\x73\x74\x69\x74\x75\x74\x61" nocase
+    $wide = "\x50\x00\x72\x00\x6f\x00\x73\x00\x74\x00\x69\x00\x74\x00\x75\x00\x74\x00\x61\x00" nocase
   condition:
-    1 of them
+    any of them
 }
 
 rule content_es_language_nsfw_47 {
+  meta:
+    info = "Puta"
   strings:
-    $ = "Puta" ascii wide nocase fullword
+    $utf8 = "\x50\x75\x74\x61" nocase
+    $latin1 = "\x50\x75\x74\x61" nocase
+    $cp1252 = "\x50\x75\x74\x61" nocase
+    $wide = "\x50\x00\x75\x00\x74\x00\x61\x00" nocase
   condition:
-    1 of them
+    any of them
 }
 
 rule content_es_language_nsfw_49 {
+  meta:
+    info = "Ramera"
   strings:
-    $ = "Ramera" ascii wide nocase fullword
+    $utf8 = "\x52\x61\x6d\x65\x72\x61" nocase
+    $latin1 = "\x52\x61\x6d\x65\x72\x61" nocase
+    $cp1252 = "\x52\x61\x6d\x65\x72\x61" nocase
+    $wide = "\x52\x00\x61\x00\x6d\x00\x65\x00\x72\x00\x61\x00" nocase
   condition:
-    1 of them
-}
-
-rule content_es_language_nsfw_50 {
-  strings:
-    $ = "Semen" ascii wide nocase fullword
-  condition:
-    1 of them
+    any of them
 }
 
 rule content_es_language_nsfw_52 {
+  meta:
+    info = "Sexo oral"
   strings:
-    $ = "Sexo oral" ascii wide nocase fullword
+    $utf8 = "\x53\x65\x78\x6f\x20\x6f\x72\x61\x6c" nocase
+    $latin1 = "\x53\x65\x78\x6f\x20\x6f\x72\x61\x6c" nocase
+    $cp1252 = "\x53\x65\x78\x6f\x20\x6f\x72\x61\x6c" nocase
+    $wide = "\x53\x00\x65\x00\x78\x00\x6f\x00\x20\x00\x6f\x00\x72\x00\x61\x00\x6c\x00" nocase
   condition:
-    1 of them
+    any of them
 }
 
 rule content_es_language_nsfw_53 {
+  meta:
+    info = "Soplagaitas"
   strings:
-    $ = "Soplagaitas" ascii wide nocase fullword
+    $utf8 = "\x53\x6f\x70\x6c\x61\x67\x61\x69\x74\x61\x73" nocase
+    $latin1 = "\x53\x6f\x70\x6c\x61\x67\x61\x69\x74\x61\x73" nocase
+    $cp1252 = "\x53\x6f\x70\x6c\x61\x67\x61\x69\x74\x61\x73" nocase
+    $wide = "\x53\x00\x6f\x00\x70\x00\x6c\x00\x61\x00\x67\x00\x61\x00\x69\x00\x74\x00\x61\x00\x73\x00" nocase
   condition:
-    1 of them
+    any of them
 }
 
 rule content_es_language_nsfw_54 {
+  meta:
+    info = "Soplapollas"
   strings:
-    $ = "Soplapollas" ascii wide nocase fullword
+    $utf8 = "\x53\x6f\x70\x6c\x61\x70\x6f\x6c\x6c\x61\x73" nocase
+    $latin1 = "\x53\x6f\x70\x6c\x61\x70\x6f\x6c\x6c\x61\x73" nocase
+    $cp1252 = "\x53\x6f\x70\x6c\x61\x70\x6f\x6c\x6c\x61\x73" nocase
+    $wide = "\x53\x00\x6f\x00\x70\x00\x6c\x00\x61\x00\x70\x00\x6f\x00\x6c\x00\x6c\x00\x61\x00\x73\x00" nocase
   condition:
-    1 of them
+    any of them
 }
 
 rule content_es_language_nsfw_55 {
+  meta:
+    info = "Sádico"
   strings:
-    $ = "Sádico" ascii wide nocase fullword
+    $utf8 = "\x53\xc3\xa1\x64\x69\x63\x6f" nocase
+    $latin1 = "\x53\xe1\x64\x69\x63\x6f" nocase
+    $cp1252 = "\x53\xe1\x64\x69\x63\x6f" nocase
+    $wide = "\x53\x00\xe1\x00\x64\x00\x69\x00\x63\x00\x6f\x00" nocase
   condition:
-    1 of them
+    any of them
 }
 
 rule content_es_language_nsfw_56 {
+  meta:
+    info = "Tetas grandes"
   strings:
-    $ = "Tetas grandes" ascii wide nocase fullword
+    $utf8 = "\x54\x65\x74\x61\x73\x20\x67\x72\x61\x6e\x64\x65\x73" nocase
+    $latin1 = "\x54\x65\x74\x61\x73\x20\x67\x72\x61\x6e\x64\x65\x73" nocase
+    $cp1252 = "\x54\x65\x74\x61\x73\x20\x67\x72\x61\x6e\x64\x65\x73" nocase
+    $wide = "\x54\x00\x65\x00\x74\x00\x61\x00\x73\x00\x20\x00\x67\x00\x72\x00\x61\x00\x6e\x00\x64\x00\x65\x00\x73\x00" nocase
   condition:
-    1 of them
-}
-
-rule content_es_language_nsfw_57 {
-  strings:
-    $ = "Travesti" ascii wide nocase fullword
-  condition:
-    1 of them
+    any of them
 }
 
 rule content_es_language_nsfw_59 {
+  meta:
+    info = "Tía buena"
   strings:
-    $ = "Tía buena" ascii wide nocase fullword
+    $utf8 = "\x54\xc3\xad\x61\x20\x62\x75\x65\x6e\x61" nocase
+    $latin1 = "\x54\xed\x61\x20\x62\x75\x65\x6e\x61" nocase
+    $cp1252 = "\x54\xed\x61\x20\x62\x75\x65\x6e\x61" nocase
+    $wide = "\x54\x00\xed\x00\x61\x00\x20\x00\x62\x00\x75\x00\x65\x00\x6e\x00\x61\x00" nocase
   condition:
-    1 of them
+    any of them
 }
 
 rule content_es_language_nsfw_60 {
+  meta:
+    info = "Verga"
   strings:
-    $ = "Verga" ascii wide nocase fullword
+    $utf8 = "\x56\x65\x72\x67\x61" nocase
+    $latin1 = "\x56\x65\x72\x67\x61" nocase
+    $cp1252 = "\x56\x65\x72\x67\x61" nocase
+    $wide = "\x56\x00\x65\x00\x72\x00\x67\x00\x61\x00" nocase
   condition:
-    1 of them
-}
-
-rule content_es_language_nsfw_61 {
-  strings:
-    $ = "Vulva" ascii wide nocase fullword
-  condition:
-    1 of them
+    any of them
 }
 
 rule content_es_language_nsfw_66 {
+  meta:
+    info = "maldito"
   strings:
-    $ = "maldito" ascii wide nocase fullword
+    $utf8 = "\x6d\x61\x6c\x64\x69\x74\x6f" nocase
+    $latin1 = "\x6d\x61\x6c\x64\x69\x74\x6f" nocase
+    $cp1252 = "\x6d\x61\x6c\x64\x69\x74\x6f" nocase
+    $wide = "\x6d\x00\x61\x00\x6c\x00\x64\x00\x69\x00\x74\x00\x6f\x00" nocase
   condition:
-    1 of them
+    any of them
 }
 
 rule content_es_language_nsfw_68 {
+  meta:
+    info = "vete a la mierda"
   strings:
-    $ = "vete a la mierda" ascii wide nocase fullword
+    $utf8 = "\x76\x65\x74\x65\x20\x61\x20\x6c\x61\x20\x6d\x69\x65\x72\x64\x61" nocase
+    $latin1 = "\x76\x65\x74\x65\x20\x61\x20\x6c\x61\x20\x6d\x69\x65\x72\x64\x61" nocase
+    $cp1252 = "\x76\x65\x74\x65\x20\x61\x20\x6c\x61\x20\x6d\x69\x65\x72\x64\x61" nocase
+    $wide = "\x76\x00\x65\x00\x74\x00\x65\x00\x20\x00\x61\x00\x20\x00\x6c\x00\x61\x00\x20\x00\x6d\x00\x69\x00\x65\x00\x72\x00\x64\x00\x61\x00" nocase
   condition:
-    1 of them
+    any of them
 }
+
+rule content_es_language_nsfw_69 {
+  meta:
+    info = "chingar"
+  strings:
+    $utf8_1 = "\x63\x68\x69\x6e\x67\x61\x72" nocase
+    $latin1_1 = "\x63\x68\x69\x6e\x67\x61\x72" nocase
+    $cp1252_1 = "\x63\x68\x69\x6e\x67\x61\x72" nocase
+    $wide_1 = "\x63\x00\x68\x00\x69\x00\x6e\x00\x67\x00\x61\x00\x72\x00" nocase
+    $utf8_2 = "\x63\x68\x69\x6e\x67\x61\x64\x61" nocase
+    $latin1_2 = "\x63\x68\x69\x6e\x67\x61\x64\x61" nocase
+    $cp1252_2 = "\x63\x68\x69\x6e\x67\x61\x64\x61" nocase
+    $wide_2 = "\x63\x00\x68\x00\x69\x00\x6e\x00\x67\x00\x61\x00\x64\x00\x61\x00" nocase
+  condition:
+    any of them
+}
+
+rule content_es_language_nsfw_71 {
+  meta:
+    info = "culero"
+  strings:
+    $utf8_1 = "\x63\x75\x6c\x65\x72\x6f" nocase
+    $latin1_1 = "\x63\x75\x6c\x65\x72\x6f" nocase
+    $cp1252_1 = "\x63\x75\x6c\x65\x72\x6f" nocase
+    $wide_1 = "\x63\x00\x75\x00\x6c\x00\x65\x00\x72\x00\x6f\x00" nocase
+    $utf8_2 = "\x63\x75\x6c\x65\x72\x61" nocase
+    $latin1_2 = "\x63\x75\x6c\x65\x72\x61" nocase
+    $cp1252_2 = "\x63\x75\x6c\x65\x72\x61" nocase
+    $wide_2 = "\x63\x00\x75\x00\x6c\x00\x65\x00\x72\x00\x61\x00" nocase
+  condition:
+    any of them
+}
+
+rule content_es_language_nsfw_73 {
+  meta:
+    info = "cogida"
+  strings:
+    $utf8 = "\x63\x6f\x67\x69\x64\x61" nocase
+    $latin1 = "\x63\x6f\x67\x69\x64\x61" nocase
+    $cp1252 = "\x63\x6f\x67\x69\x64\x61" nocase
+    $wide = "\x63\x00\x6f\x00\x67\x00\x69\x00\x64\x00\x61\x00" nocase
+  condition:
+    any of them
+}
+
+rule content_es_language_nsfw_75 {
+  meta:
+    info = "chupamela"
+  strings:
+    $utf8 = "\x63\x68\x75\x70\x61\x6d\x65\x6c\x61" nocase
+    $latin1 = "\x63\x68\x75\x70\x61\x6d\x65\x6c\x61" nocase
+    $cp1252 = "\x63\x68\x75\x70\x61\x6d\x65\x6c\x61" nocase
+    $wide = "\x63\x00\x68\x00\x75\x00\x70\x00\x61\x00\x6d\x00\x65\x00\x6c\x00\x61\x00" nocase
+  condition:
+    any of them
+}
+
+rule content_es_language_nsfw_84 {
+  meta:
+    info = "chingado"
+  strings:
+    $utf8 = "\x63\x68\x69\x6e\x67\x61\x64\x6f" nocase
+    $latin1 = "\x63\x68\x69\x6e\x67\x61\x64\x6f" nocase
+    $cp1252 = "\x63\x68\x69\x6e\x67\x61\x64\x6f" nocase
+    $wide = "\x63\x00\x68\x00\x69\x00\x6e\x00\x67\x00\x61\x00\x64\x00\x6f\x00" nocase
+  condition:
+    any of them
+}
+
+rule content_es_language_nsfw_85 {
+  meta:
+    info = "putero"
+  strings:
+    $utf8 = "\x70\x75\x74\x65\x72\x6f" nocase
+    $latin1 = "\x70\x75\x74\x65\x72\x6f" nocase
+    $cp1252 = "\x70\x75\x74\x65\x72\x6f" nocase
+    $wide = "\x70\x00\x75\x00\x74\x00\x65\x00\x72\x00\x6f\x00" nocase
+  condition:
+    any of them
+}
+

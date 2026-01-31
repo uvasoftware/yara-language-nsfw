@@ -1,385 +1,414 @@
-
-rule content_de_language_nsfw_1 {
-  strings:
-    $ = "MILF" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_de_language_nsfw_2 {
+  meta:
+    info = "analritter"
   strings:
-    $ = "analritter" ascii wide nocase fullword
+    $utf8 = "\x61\x6e\x61\x6c\x72\x69\x74\x74\x65\x72" nocase fullword
+    $wide = "\x61\x00\x6e\x00\x61\x00\x6c\x00\x72\x00\x69\x00\x74\x00\x74\x00\x65\x00\x72\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_de_language_nsfw_3 {
+  meta:
+    info = "arsch"
   strings:
-    $ = "arsch" ascii wide nocase fullword
+    $utf8 = "\x61\x72\x73\x63\x68" nocase fullword
+    $wide = "\x61\x00\x72\x00\x73\x00\x63\x00\x68\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_de_language_nsfw_4 {
+  meta:
+    info = "arschficker"
   strings:
-    $ = "arschficker" ascii wide nocase fullword
+    $utf8 = "\x61\x72\x73\x63\x68\x66\x69\x63\x6b\x65\x72" nocase fullword
+    $wide = "\x61\x00\x72\x00\x73\x00\x63\x00\x68\x00\x66\x00\x69\x00\x63\x00\x6b\x00\x65\x00\x72\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_de_language_nsfw_5 {
+  meta:
+    info = "arschlecker"
   strings:
-    $ = "arschlecker" ascii wide nocase fullword
+    $utf8 = "\x61\x72\x73\x63\x68\x6c\x65\x63\x6b\x65\x72" nocase fullword
+    $wide = "\x61\x00\x72\x00\x73\x00\x63\x00\x68\x00\x6c\x00\x65\x00\x63\x00\x6b\x00\x65\x00\x72\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_de_language_nsfw_6 {
+  meta:
+    info = "arschloch"
   strings:
-    $ = "arschloch" ascii wide nocase fullword
+    $utf8 = "\x61\x72\x73\x63\x68\x6c\x6f\x63\x68" nocase fullword
+    $wide = "\x61\x00\x72\x00\x73\x00\x63\x00\x68\x00\x6c\x00\x6f\x00\x63\x00\x68\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
-rule content_de_language_nsfw_7 {
+rule content_de_language_nsfw_8 {
+  meta:
+    info = "bratze"
   strings:
-    $ = "bimbo" ascii wide nocase fullword
+    $utf8 = "\x62\x72\x61\x74\x7a\x65" nocase fullword
+    $wide = "\x62\x00\x72\x00\x61\x00\x74\x00\x7a\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_de_language_nsfw_9 {
+  meta:
+    info = "bumsen"
   strings:
-    $ = "bratze" ascii wide nocase fullword
+    $utf8 = "\x62\x75\x6d\x73\x65\x6e" nocase fullword
+    $wide = "\x62\x00\x75\x00\x6d\x00\x73\x00\x65\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_de_language_nsfw_10 {
+  meta:
+    info = "dödel"
   strings:
-    $ = "bumsen" ascii wide nocase fullword
+    $utf8 = "\x64\xc3\xb6\x64\x65\x6c" nocase fullword
+    $wide = "\x64\x00\xf6\x00\x64\x00\x65\x00\x6c\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
-rule content_de_language_nsfw_11 {
-  strings:
-    $ = "dödel" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_de_language_nsfw_12 {
+  meta:
+    info = "ficken"
   strings:
-    $ = "fick" ascii wide nocase fullword
+    $utf8 = "\x66\x69\x63\x6b\x65\x6e" nocase fullword
+    $wide = "\x66\x00\x69\x00\x63\x00\x6b\x00\x65\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_de_language_nsfw_13 {
+  meta:
+    info = "flittchen"
   strings:
-    $ = "ficken" ascii wide nocase fullword
+    $utf8 = "\x66\x6c\x69\x74\x74\x63\x68\x65\x6e" nocase fullword
+    $wide = "\x66\x00\x6c\x00\x69\x00\x74\x00\x74\x00\x63\x00\x68\x00\x65\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_de_language_nsfw_14 {
+  meta:
+    info = "fotze"
   strings:
-    $ = "flittchen" ascii wide nocase fullword
+    $utf8 = "\x66\x6f\x74\x7a\x65" nocase fullword
+    $wide = "\x66\x00\x6f\x00\x74\x00\x7a\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_de_language_nsfw_15 {
+  meta:
+    info = "hackfresse"
   strings:
-    $ = "fotze" ascii wide nocase fullword
+    $utf8 = "\x68\x61\x63\x6b\x66\x72\x65\x73\x73\x65" nocase fullword
+    $wide = "\x68\x00\x61\x00\x63\x00\x6b\x00\x66\x00\x72\x00\x65\x00\x73\x00\x73\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
+rule content_de_language_nsfw_16 {
+  meta:
+    info = "hure"
+  strings:
+    $utf8 = "\x68\x75\x72\x65" nocase fullword
+    $wide = "\x68\x00\x75\x00\x72\x00\x65\x00" nocase fullword
+  condition:
+    any of them
+}
 rule content_de_language_nsfw_17 {
+  meta:
+    info = "hurensohn"
   strings:
-    $ = "hackfresse" ascii wide nocase fullword
+    $utf8 = "\x68\x75\x72\x65\x6e\x73\x6f\x68\x6e" nocase fullword
+    $wide = "\x68\x00\x75\x00\x72\x00\x65\x00\x6e\x00\x73\x00\x6f\x00\x68\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_de_language_nsfw_18 {
+  meta:
+    info = "ische"
   strings:
-    $ = "hure" ascii wide nocase fullword
+    $utf8 = "\x69\x73\x63\x68\x65" nocase fullword
+    $wide = "\x69\x00\x73\x00\x63\x00\x68\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_de_language_nsfw_19 {
+  meta:
+    info = "kackbratze"
   strings:
-    $ = "hurensohn" ascii wide nocase fullword
+    $utf8 = "\x6b\x61\x63\x6b\x62\x72\x61\x74\x7a\x65" nocase fullword
+    $wide = "\x6b\x00\x61\x00\x63\x00\x6b\x00\x62\x00\x72\x00\x61\x00\x74\x00\x7a\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_de_language_nsfw_20 {
+  meta:
+    info = "kacke"
   strings:
-    $ = "ische" ascii wide nocase fullword
+    $utf8 = "\x6b\x61\x63\x6b\x65" nocase fullword
+    $wide = "\x6b\x00\x61\x00\x63\x00\x6b\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
-rule content_de_language_nsfw_21 {
-  strings:
-    $ = "kackbratze" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_de_language_nsfw_22 {
+  meta:
+    info = "kackwurst"
   strings:
-    $ = "kacke" ascii wide nocase fullword
+    $utf8 = "\x6b\x61\x63\x6b\x77\x75\x72\x73\x74" nocase fullword
+    $wide = "\x6b\x00\x61\x00\x63\x00\x6b\x00\x77\x00\x75\x00\x72\x00\x73\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_de_language_nsfw_23 {
+  meta:
+    info = "kampflesbe"
   strings:
-    $ = "kacken" ascii wide nocase fullword
+    $utf8 = "\x6b\x61\x6d\x70\x66\x6c\x65\x73\x62\x65" nocase fullword
+    $wide = "\x6b\x00\x61\x00\x6d\x00\x70\x00\x66\x00\x6c\x00\x65\x00\x73\x00\x62\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_de_language_nsfw_24 {
+  meta:
+    info = "kanake"
   strings:
-    $ = "kackwurst" ascii wide nocase fullword
+    $utf8 = "\x6b\x61\x6e\x61\x6b\x65" nocase fullword
+    $wide = "\x6b\x00\x61\x00\x6e\x00\x61\x00\x6b\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_de_language_nsfw_25 {
+  meta:
+    info = "morgenlatte"
   strings:
-    $ = "kampflesbe" ascii wide nocase fullword
+    $utf8 = "\x6d\x6f\x72\x67\x65\x6e\x6c\x61\x74\x74\x65" nocase fullword
+    $wide = "\x6d\x00\x6f\x00\x72\x00\x67\x00\x65\x00\x6e\x00\x6c\x00\x61\x00\x74\x00\x74\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_de_language_nsfw_26 {
+  meta:
+    info = "muschi"
   strings:
-    $ = "kanake" ascii wide nocase fullword
+    $utf8 = "\x6d\x75\x73\x63\x68\x69" nocase fullword
+    $wide = "\x6d\x00\x75\x00\x73\x00\x63\x00\x68\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
+rule content_de_language_nsfw_27 {
+  meta:
+    info = "möpse"
+  strings:
+    $utf8 = "\x6d\xc3\xb6\x70\x73\x65" nocase fullword
+    $wide = "\x6d\x00\xf6\x00\x70\x00\x73\x00\x65\x00" nocase fullword
+  condition:
+    any of them
+}
+rule content_de_language_nsfw_28 {
+  meta:
+    info = "möse"
+  strings:
+    $utf8 = "\x6d\xc3\xb6\x73\x65" nocase fullword
+    $wide = "\x6d\x00\xf6\x00\x73\x00\x65\x00" nocase fullword
+  condition:
+    any of them
+}
 rule content_de_language_nsfw_29 {
+  meta:
+    info = "neger"
   strings:
-    $ = "morgenlatte" ascii wide nocase fullword
+    $utf8 = "\x6e\x65\x67\x65\x72" nocase fullword
+    $wide = "\x6e\x00\x65\x00\x67\x00\x65\x00\x72\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
-rule content_de_language_nsfw_31 {
+rule content_de_language_nsfw_30 {
+  meta:
+    info = "nigger"
   strings:
-    $ = "muschi" ascii wide nocase fullword
+    $utf8 = "\x6e\x69\x67\x67\x65\x72" nocase fullword
+    $wide = "\x6e\x00\x69\x00\x67\x00\x67\x00\x65\x00\x72\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_de_language_nsfw_32 {
+  meta:
+    info = "nutte"
   strings:
-    $ = "möpse" ascii wide nocase fullword
+    $utf8 = "\x6e\x75\x74\x74\x65" nocase fullword
+    $wide = "\x6e\x00\x75\x00\x74\x00\x74\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_de_language_nsfw_33 {
+  meta:
+    info = "onanieren"
   strings:
-    $ = "möse" ascii wide nocase fullword
+    $utf8 = "\x6f\x6e\x61\x6e\x69\x65\x72\x65\x6e" nocase fullword
+    $wide = "\x6f\x00\x6e\x00\x61\x00\x6e\x00\x69\x00\x65\x00\x72\x00\x65\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_de_language_nsfw_35 {
+  meta:
+    info = "pimmel"
   strings:
-    $ = "neger" ascii wide nocase fullword
+    $utf8 = "\x70\x69\x6d\x6d\x65\x6c" nocase fullword
+    $wide = "\x70\x00\x69\x00\x6d\x00\x6d\x00\x65\x00\x6c\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_de_language_nsfw_36 {
+  meta:
+    info = "pimpern"
   strings:
-    $ = "nigger" ascii wide nocase fullword
+    $utf8 = "\x70\x69\x6d\x70\x65\x72\x6e" nocase fullword
+    $wide = "\x70\x00\x69\x00\x6d\x00\x70\x00\x65\x00\x72\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_de_language_nsfw_37 {
+  meta:
+    info = "pinkeln"
   strings:
-    $ = "nippel" ascii wide nocase fullword
+    $utf8 = "\x70\x69\x6e\x6b\x65\x6c\x6e" nocase fullword
+    $wide = "\x70\x00\x69\x00\x6e\x00\x6b\x00\x65\x00\x6c\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_de_language_nsfw_38 {
+  meta:
+    info = "pissen"
   strings:
-    $ = "nutte" ascii wide nocase fullword
+    $utf8 = "\x70\x69\x73\x73\x65\x6e" nocase fullword
+    $wide = "\x70\x00\x69\x00\x73\x00\x73\x00\x65\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_de_language_nsfw_39 {
+  meta:
+    info = "pisser"
   strings:
-    $ = "onanieren" ascii wide nocase fullword
+    $utf8 = "\x70\x69\x73\x73\x65\x72" nocase fullword
+    $wide = "\x70\x00\x69\x00\x73\x00\x73\x00\x65\x00\x72\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_de_language_nsfw_40 {
+  meta:
+    info = "poppen"
   strings:
-    $ = "orgasmus" ascii wide nocase fullword
+    $utf8 = "\x70\x6f\x70\x70\x65\x6e" nocase fullword
+    $wide = "\x70\x00\x6f\x00\x70\x00\x70\x00\x65\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
-rule content_de_language_nsfw_41 {
-  strings:
-    $ = "pimmel" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_de_language_nsfw_42 {
+  meta:
+    info = "reudig"
   strings:
-    $ = "pimpern" ascii wide nocase fullword
+    $utf8 = "\x72\x65\x75\x64\x69\x67" nocase fullword
+    $wide = "\x72\x00\x65\x00\x75\x00\x64\x00\x69\x00\x67\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_de_language_nsfw_43 {
+  meta:
+    info = "scheisser"
   strings:
-    $ = "pinkeln" ascii wide nocase fullword
+    $utf8 = "\x73\x63\x68\x65\x69\x73\x73\x65\x72" nocase fullword
+    $wide = "\x73\x00\x63\x00\x68\x00\x65\x00\x69\x00\x73\x00\x73\x00\x65\x00\x72\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_de_language_nsfw_44 {
+  meta:
+    info = "scheiße"
   strings:
-    $ = "pissen" ascii wide nocase fullword
+    $utf8 = "\x73\x63\x68\x65\x69\xc3\x9f\x65" nocase fullword
+    $wide = "\x73\x00\x63\x00\x68\x00\x65\x00\x69\x00\xdf\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_de_language_nsfw_45 {
+  meta:
+    info = "schlampe"
   strings:
-    $ = "pisser" ascii wide nocase fullword
+    $utf8 = "\x73\x63\x68\x6c\x61\x6d\x70\x65" nocase fullword
+    $wide = "\x73\x00\x63\x00\x68\x00\x6c\x00\x61\x00\x6d\x00\x70\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
+rule content_de_language_nsfw_46 {
+  meta:
+    info = "schnackeln"
+  strings:
+    $utf8 = "\x73\x63\x68\x6e\x61\x63\x6b\x65\x6c\x6e" nocase fullword
+    $wide = "\x73\x00\x63\x00\x68\x00\x6e\x00\x61\x00\x63\x00\x6b\x00\x65\x00\x6c\x00\x6e\x00" nocase fullword
+  condition:
+    any of them
+}
 rule content_de_language_nsfw_47 {
+  meta:
+    info = "schwanzlutscher"
   strings:
-    $ = "poppen" ascii wide nocase fullword
+    $utf8 = "\x73\x63\x68\x77\x61\x6e\x7a\x6c\x75\x74\x73\x63\x68\x65\x72" nocase fullword
+    $wide = "\x73\x00\x63\x00\x68\x00\x77\x00\x61\x00\x6e\x00\x7a\x00\x6c\x00\x75\x00\x74\x00\x73\x00\x63\x00\x68\x00\x65\x00\x72\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_de_language_nsfw_48 {
+  meta:
+    info = "schwuchtel"
   strings:
-    $ = "porno" ascii wide nocase fullword
+    $utf8 = "\x73\x63\x68\x77\x75\x63\x68\x74\x65\x6c" nocase fullword
+    $wide = "\x73\x00\x63\x00\x68\x00\x77\x00\x75\x00\x63\x00\x68\x00\x74\x00\x65\x00\x6c\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_de_language_nsfw_49 {
+  meta:
+    info = "tittchen"
   strings:
-    $ = "reudig" ascii wide nocase fullword
+    $utf8 = "\x74\x69\x74\x74\x63\x68\x65\x6e" nocase fullword
+    $wide = "\x74\x00\x69\x00\x74\x00\x74\x00\x63\x00\x68\x00\x65\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
+rule content_de_language_nsfw_50 {
+  meta:
+    info = "titten"
+  strings:
+    $utf8 = "\x74\x69\x74\x74\x65\x6e" nocase fullword
+    $wide = "\x74\x00\x69\x00\x74\x00\x74\x00\x65\x00\x6e\x00" nocase fullword
+  condition:
+    any of them
+}
+rule content_de_language_nsfw_51 {
+  meta:
+    info = "vollpfosten"
+  strings:
+    $utf8 = "\x76\x6f\x6c\x6c\x70\x66\x6f\x73\x74\x65\x6e" nocase fullword
+    $wide = "\x76\x00\x6f\x00\x6c\x00\x6c\x00\x70\x00\x66\x00\x6f\x00\x73\x00\x74\x00\x65\x00\x6e\x00" nocase fullword
+  condition:
+    any of them
+}
 rule content_de_language_nsfw_52 {
+  meta:
+    info = "vögeln"
   strings:
-    $ = "scheisser" ascii wide nocase fullword
+    $utf8 = "\x76\xc3\xb6\x67\x65\x6c\x6e" nocase fullword
+    $wide = "\x76\x00\xf6\x00\x67\x00\x65\x00\x6c\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_de_language_nsfw_53 {
+  meta:
+    info = "wichse"
   strings:
-    $ = "scheiße" ascii wide nocase fullword
+    $utf8 = "\x77\x69\x63\x68\x73\x65" nocase fullword
+    $wide = "\x77\x00\x69\x00\x63\x00\x68\x00\x73\x00\x65\x00" nocase fullword
   condition:
-    1 of them
-}
-
-rule content_de_language_nsfw_55 {
-  strings:
-    $ = "schlampe" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_de_language_nsfw_56 {
-  strings:
-    $ = "schnackeln" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_de_language_nsfw_57 {
-  strings:
-    $ = "schwanzlutscher" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_de_language_nsfw_58 {
-  strings:
-    $ = "schwuchtel" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_de_language_nsfw_59 {
-  strings:
-    $ = "tittchen" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_de_language_nsfw_60 {
-  strings:
-    $ = "titten" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_de_language_nsfw_61 {
-  strings:
-    $ = "vollpfosten" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_de_language_nsfw_62 {
-  strings:
-    $ = "vögeln" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_de_language_nsfw_63 {
-  strings:
-    $ = "wichse" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_de_language_nsfw_64 {
-  strings:
-    $ = "wichsen" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_de_language_nsfw_65 {
-  strings:
-    $ = "wichser" ascii wide nocase fullword
-  condition:
-    1 of them
+    any of them
 }

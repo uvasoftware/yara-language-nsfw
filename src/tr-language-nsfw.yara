@@ -1,987 +1,1269 @@
-
 rule content_tr_language_nsfw_1 {
+  meta:
+    info = "amcık"
   strings:
-    $ = "amcık" ascii wide nocase fullword
+    $utf8 = "\x61\x6d\x63\xc4\xb1\x6b" nocase fullword
+    $wide = "\x61\x00\x6d\x00\x63\x00\x31\x01\x6b\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_2 {
+  meta:
+    info = "amcıklar"
   strings:
-    $ = "amcıklar" ascii wide nocase fullword
+    $utf8 = "\x61\x6d\x63\xc4\xb1\x6b\x6c\x61\x72" nocase fullword
+    $wide = "\x61\x00\x6d\x00\x63\x00\x31\x01\x6b\x00\x6c\x00\x61\x00\x72\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_3 {
+  meta:
+    info = "amcıklara"
   strings:
-    $ = "amcıklara" ascii wide nocase fullword
+    $utf8 = "\x61\x6d\x63\xc4\xb1\x6b\x6c\x61\x72\x61" nocase fullword
+    $wide = "\x61\x00\x6d\x00\x63\x00\x31\x01\x6b\x00\x6c\x00\x61\x00\x72\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_4 {
+  meta:
+    info = "amcıklarda"
   strings:
-    $ = "amcıklarda" ascii wide nocase fullword
+    $utf8 = "\x61\x6d\x63\xc4\xb1\x6b\x6c\x61\x72\x64\x61" nocase fullword
+    $wide = "\x61\x00\x6d\x00\x63\x00\x31\x01\x6b\x00\x6c\x00\x61\x00\x72\x00\x64\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_5 {
+  meta:
+    info = "amcıklardan"
   strings:
-    $ = "amcıklardan" ascii wide nocase fullword
+    $utf8 = "\x61\x6d\x63\xc4\xb1\x6b\x6c\x61\x72\x64\x61\x6e" nocase fullword
+    $wide = "\x61\x00\x6d\x00\x63\x00\x31\x01\x6b\x00\x6c\x00\x61\x00\x72\x00\x64\x00\x61\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_6 {
+  meta:
+    info = "amcıkları"
   strings:
-    $ = "amcıkları" ascii wide nocase fullword
+    $utf8 = "\x61\x6d\x63\xc4\xb1\x6b\x6c\x61\x72\xc4\xb1" nocase fullword
+    $wide = "\x61\x00\x6d\x00\x63\x00\x31\x01\x6b\x00\x6c\x00\x61\x00\x72\x00\x31\x01" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_7 {
+  meta:
+    info = "amcıkların"
   strings:
-    $ = "amcıkların" ascii wide nocase fullword
+    $utf8 = "\x61\x6d\x63\xc4\xb1\x6b\x6c\x61\x72\xc4\xb1\x6e" nocase fullword
+    $wide = "\x61\x00\x6d\x00\x63\x00\x31\x01\x6b\x00\x6c\x00\x61\x00\x72\x00\x31\x01\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_8 {
+  meta:
+    info = "amcıkta"
   strings:
-    $ = "amcıkta" ascii wide nocase fullword
+    $utf8 = "\x61\x6d\x63\xc4\xb1\x6b\x74\x61" nocase fullword
+    $wide = "\x61\x00\x6d\x00\x63\x00\x31\x01\x6b\x00\x74\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_9 {
+  meta:
+    info = "amcıktan"
   strings:
-    $ = "amcıktan" ascii wide nocase fullword
+    $utf8 = "\x61\x6d\x63\xc4\xb1\x6b\x74\x61\x6e" nocase fullword
+    $wide = "\x61\x00\x6d\x00\x63\x00\x31\x01\x6b\x00\x74\x00\x61\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_10 {
+  meta:
+    info = "amcığa"
   strings:
-    $ = "amcığa" ascii wide nocase fullword
+    $utf8 = "\x61\x6d\x63\xc4\xb1\xc4\x9f\x61" nocase fullword
+    $wide = "\x61\x00\x6d\x00\x63\x00\x31\x01\x1f\x01\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_11 {
+  meta:
+    info = "amcığı"
   strings:
-    $ = "amcığı" ascii wide nocase fullword
+    $utf8 = "\x61\x6d\x63\xc4\xb1\xc4\x9f\xc4\xb1" nocase fullword
+    $wide = "\x61\x00\x6d\x00\x63\x00\x31\x01\x1f\x01\x31\x01" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_12 {
+  meta:
+    info = "amcığın"
   strings:
-    $ = "amcığın" ascii wide nocase fullword
+    $utf8 = "\x61\x6d\x63\xc4\xb1\xc4\x9f\xc4\xb1\x6e" nocase fullword
+    $wide = "\x61\x00\x6d\x00\x63\x00\x31\x01\x1f\x01\x31\x01\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_13 {
+  meta:
+    info = "amlar"
   strings:
-    $ = "amlar" ascii wide nocase fullword
+    $utf8 = "\x61\x6d\x6c\x61\x72" nocase fullword
+    $wide = "\x61\x00\x6d\x00\x6c\x00\x61\x00\x72\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_14 {
+  meta:
+    info = "amı"
   strings:
-    $ = "amı" ascii wide nocase fullword
+    $utf8 = "\x61\x6d\xc4\xb1" nocase fullword
+    $wide = "\x61\x00\x6d\x00\x31\x01" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_15 {
+  meta:
+    info = "göt"
   strings:
-    $ = "göt" ascii wide nocase fullword
+    $utf8 = "\x67\xc3\xb6\x74" nocase fullword
+    $wide = "\x67\x00\xf6\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_16 {
+  meta:
+    info = "göte"
   strings:
-    $ = "göte" ascii wide nocase fullword
+    $utf8 = "\x67\xc3\xb6\x74\x65" nocase fullword
+    $wide = "\x67\x00\xf6\x00\x74\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_17 {
+  meta:
+    info = "götler"
   strings:
-    $ = "götler" ascii wide nocase fullword
+    $utf8 = "\x67\xc3\xb6\x74\x6c\x65\x72" nocase fullword
+    $wide = "\x67\x00\xf6\x00\x74\x00\x6c\x00\x65\x00\x72\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_18 {
+  meta:
+    info = "götlerde"
   strings:
-    $ = "götlerde" ascii wide nocase fullword
+    $utf8 = "\x67\xc3\xb6\x74\x6c\x65\x72\x64\x65" nocase fullword
+    $wide = "\x67\x00\xf6\x00\x74\x00\x6c\x00\x65\x00\x72\x00\x64\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_19 {
+  meta:
+    info = "götlerden"
   strings:
-    $ = "götlerden" ascii wide nocase fullword
+    $utf8 = "\x67\xc3\xb6\x74\x6c\x65\x72\x64\x65\x6e" nocase fullword
+    $wide = "\x67\x00\xf6\x00\x74\x00\x6c\x00\x65\x00\x72\x00\x64\x00\x65\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_20 {
+  meta:
+    info = "götlere"
   strings:
-    $ = "götlere" ascii wide nocase fullword
+    $utf8 = "\x67\xc3\xb6\x74\x6c\x65\x72\x65" nocase fullword
+    $wide = "\x67\x00\xf6\x00\x74\x00\x6c\x00\x65\x00\x72\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_21 {
+  meta:
+    info = "götleri"
   strings:
-    $ = "götleri" ascii wide nocase fullword
+    $utf8 = "\x67\xc3\xb6\x74\x6c\x65\x72\x69" nocase fullword
+    $wide = "\x67\x00\xf6\x00\x74\x00\x6c\x00\x65\x00\x72\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_22 {
+  meta:
+    info = "götlerin"
   strings:
-    $ = "götlerin" ascii wide nocase fullword
+    $utf8 = "\x67\xc3\xb6\x74\x6c\x65\x72\x69\x6e" nocase fullword
+    $wide = "\x67\x00\xf6\x00\x74\x00\x6c\x00\x65\x00\x72\x00\x69\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_23 {
+  meta:
+    info = "götte"
   strings:
-    $ = "götte" ascii wide nocase fullword
+    $utf8 = "\x67\xc3\xb6\x74\x74\x65" nocase fullword
+    $wide = "\x67\x00\xf6\x00\x74\x00\x74\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_24 {
+  meta:
+    info = "götten"
   strings:
-    $ = "götten" ascii wide nocase fullword
+    $utf8 = "\x67\xc3\xb6\x74\x74\x65\x6e" nocase fullword
+    $wide = "\x67\x00\xf6\x00\x74\x00\x74\x00\x65\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_25 {
+  meta:
+    info = "götveren"
   strings:
-    $ = "götveren" ascii wide nocase fullword
+    $utf8 = "\x67\xc3\xb6\x74\x76\x65\x72\x65\x6e" nocase fullword
+    $wide = "\x67\x00\xf6\x00\x74\x00\x76\x00\x65\x00\x72\x00\x65\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_26 {
+  meta:
+    info = "götverende"
   strings:
-    $ = "götverende" ascii wide nocase fullword
+    $utf8 = "\x67\xc3\xb6\x74\x76\x65\x72\x65\x6e\x64\x65" nocase fullword
+    $wide = "\x67\x00\xf6\x00\x74\x00\x76\x00\x65\x00\x72\x00\x65\x00\x6e\x00\x64\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_27 {
+  meta:
+    info = "götverenden"
   strings:
-    $ = "götverenden" ascii wide nocase fullword
+    $utf8 = "\x67\xc3\xb6\x74\x76\x65\x72\x65\x6e\x64\x65\x6e" nocase fullword
+    $wide = "\x67\x00\xf6\x00\x74\x00\x76\x00\x65\x00\x72\x00\x65\x00\x6e\x00\x64\x00\x65\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_28 {
+  meta:
+    info = "götverene"
   strings:
-    $ = "götverene" ascii wide nocase fullword
+    $utf8 = "\x67\xc3\xb6\x74\x76\x65\x72\x65\x6e\x65" nocase fullword
+    $wide = "\x67\x00\xf6\x00\x74\x00\x76\x00\x65\x00\x72\x00\x65\x00\x6e\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_29 {
+  meta:
+    info = "götvereni"
   strings:
-    $ = "götvereni" ascii wide nocase fullword
+    $utf8 = "\x67\xc3\xb6\x74\x76\x65\x72\x65\x6e\x69" nocase fullword
+    $wide = "\x67\x00\xf6\x00\x74\x00\x76\x00\x65\x00\x72\x00\x65\x00\x6e\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_30 {
+  meta:
+    info = "götverenin"
   strings:
-    $ = "götverenin" ascii wide nocase fullword
+    $utf8 = "\x67\xc3\xb6\x74\x76\x65\x72\x65\x6e\x69\x6e" nocase fullword
+    $wide = "\x67\x00\xf6\x00\x74\x00\x76\x00\x65\x00\x72\x00\x65\x00\x6e\x00\x69\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_31 {
+  meta:
+    info = "götverenler"
   strings:
-    $ = "götverenler" ascii wide nocase fullword
+    $utf8 = "\x67\xc3\xb6\x74\x76\x65\x72\x65\x6e\x6c\x65\x72" nocase fullword
+    $wide = "\x67\x00\xf6\x00\x74\x00\x76\x00\x65\x00\x72\x00\x65\x00\x6e\x00\x6c\x00\x65\x00\x72\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_32 {
+  meta:
+    info = "götverenlerde"
   strings:
-    $ = "götverenlerde" ascii wide nocase fullword
+    $utf8 = "\x67\xc3\xb6\x74\x76\x65\x72\x65\x6e\x6c\x65\x72\x64\x65" nocase fullword
+    $wide = "\x67\x00\xf6\x00\x74\x00\x76\x00\x65\x00\x72\x00\x65\x00\x6e\x00\x6c\x00\x65\x00\x72\x00\x64\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_33 {
+  meta:
+    info = "götverenlerden"
   strings:
-    $ = "götverenlerden" ascii wide nocase fullword
+    $utf8 = "\x67\xc3\xb6\x74\x76\x65\x72\x65\x6e\x6c\x65\x72\x64\x65\x6e" nocase fullword
+    $wide = "\x67\x00\xf6\x00\x74\x00\x76\x00\x65\x00\x72\x00\x65\x00\x6e\x00\x6c\x00\x65\x00\x72\x00\x64\x00\x65\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_34 {
+  meta:
+    info = "götverenlere"
   strings:
-    $ = "götverenlere" ascii wide nocase fullword
+    $utf8 = "\x67\xc3\xb6\x74\x76\x65\x72\x65\x6e\x6c\x65\x72\x65" nocase fullword
+    $wide = "\x67\x00\xf6\x00\x74\x00\x76\x00\x65\x00\x72\x00\x65\x00\x6e\x00\x6c\x00\x65\x00\x72\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_35 {
+  meta:
+    info = "götverenleri"
   strings:
-    $ = "götverenleri" ascii wide nocase fullword
+    $utf8 = "\x67\xc3\xb6\x74\x76\x65\x72\x65\x6e\x6c\x65\x72\x69" nocase fullword
+    $wide = "\x67\x00\xf6\x00\x74\x00\x76\x00\x65\x00\x72\x00\x65\x00\x6e\x00\x6c\x00\x65\x00\x72\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_36 {
+  meta:
+    info = "götverenlerin"
   strings:
-    $ = "götverenlerin" ascii wide nocase fullword
+    $utf8 = "\x67\xc3\xb6\x74\x76\x65\x72\x65\x6e\x6c\x65\x72\x69\x6e" nocase fullword
+    $wide = "\x67\x00\xf6\x00\x74\x00\x76\x00\x65\x00\x72\x00\x65\x00\x6e\x00\x6c\x00\x65\x00\x72\x00\x69\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_37 {
+  meta:
+    info = "götü"
   strings:
-    $ = "götü" ascii wide nocase fullword
+    $utf8 = "\x67\xc3\xb6\x74\xc3\xbc" nocase fullword
+    $wide = "\x67\x00\xf6\x00\x74\x00\xfc\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_38 {
+  meta:
+    info = "götün"
   strings:
-    $ = "götün" ascii wide nocase fullword
+    $utf8 = "\x67\xc3\xb6\x74\xc3\xbc\x6e" nocase fullword
+    $wide = "\x67\x00\xf6\x00\x74\x00\xfc\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_39 {
+  meta:
+    info = "kaltak"
   strings:
-    $ = "kaltak" ascii wide nocase fullword
+    $utf8 = "\x6b\x61\x6c\x74\x61\x6b" nocase fullword
+    $wide = "\x6b\x00\x61\x00\x6c\x00\x74\x00\x61\x00\x6b\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_40 {
+  meta:
+    info = "kaltaklar"
   strings:
-    $ = "kaltaklar" ascii wide nocase fullword
+    $utf8 = "\x6b\x61\x6c\x74\x61\x6b\x6c\x61\x72" nocase fullword
+    $wide = "\x6b\x00\x61\x00\x6c\x00\x74\x00\x61\x00\x6b\x00\x6c\x00\x61\x00\x72\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_41 {
+  meta:
+    info = "kaltaklara"
   strings:
-    $ = "kaltaklara" ascii wide nocase fullword
+    $utf8 = "\x6b\x61\x6c\x74\x61\x6b\x6c\x61\x72\x61" nocase fullword
+    $wide = "\x6b\x00\x61\x00\x6c\x00\x74\x00\x61\x00\x6b\x00\x6c\x00\x61\x00\x72\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_42 {
+  meta:
+    info = "kaltaklarda"
   strings:
-    $ = "kaltaklarda" ascii wide nocase fullword
+    $utf8 = "\x6b\x61\x6c\x74\x61\x6b\x6c\x61\x72\x64\x61" nocase fullword
+    $wide = "\x6b\x00\x61\x00\x6c\x00\x74\x00\x61\x00\x6b\x00\x6c\x00\x61\x00\x72\x00\x64\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_43 {
+  meta:
+    info = "kaltaklardan"
   strings:
-    $ = "kaltaklardan" ascii wide nocase fullword
+    $utf8 = "\x6b\x61\x6c\x74\x61\x6b\x6c\x61\x72\x64\x61\x6e" nocase fullword
+    $wide = "\x6b\x00\x61\x00\x6c\x00\x74\x00\x61\x00\x6b\x00\x6c\x00\x61\x00\x72\x00\x64\x00\x61\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_44 {
+  meta:
+    info = "kaltakları"
   strings:
-    $ = "kaltakları" ascii wide nocase fullword
+    $utf8 = "\x6b\x61\x6c\x74\x61\x6b\x6c\x61\x72\xc4\xb1" nocase fullword
+    $wide = "\x6b\x00\x61\x00\x6c\x00\x74\x00\x61\x00\x6b\x00\x6c\x00\x61\x00\x72\x00\x31\x01" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_45 {
+  meta:
+    info = "kaltakların"
   strings:
-    $ = "kaltakların" ascii wide nocase fullword
+    $utf8 = "\x6b\x61\x6c\x74\x61\x6b\x6c\x61\x72\xc4\xb1\x6e" nocase fullword
+    $wide = "\x6b\x00\x61\x00\x6c\x00\x74\x00\x61\x00\x6b\x00\x6c\x00\x61\x00\x72\x00\x31\x01\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_46 {
+  meta:
+    info = "kaltakta"
   strings:
-    $ = "kaltakta" ascii wide nocase fullword
+    $utf8 = "\x6b\x61\x6c\x74\x61\x6b\x74\x61" nocase fullword
+    $wide = "\x6b\x00\x61\x00\x6c\x00\x74\x00\x61\x00\x6b\x00\x74\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_47 {
+  meta:
+    info = "kaltaktan"
   strings:
-    $ = "kaltaktan" ascii wide nocase fullword
+    $utf8 = "\x6b\x61\x6c\x74\x61\x6b\x74\x61\x6e" nocase fullword
+    $wide = "\x6b\x00\x61\x00\x6c\x00\x74\x00\x61\x00\x6b\x00\x74\x00\x61\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_48 {
+  meta:
+    info = "kaltağa"
   strings:
-    $ = "kaltağa" ascii wide nocase fullword
+    $utf8 = "\x6b\x61\x6c\x74\x61\xc4\x9f\x61" nocase fullword
+    $wide = "\x6b\x00\x61\x00\x6c\x00\x74\x00\x61\x00\x1f\x01\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_49 {
+  meta:
+    info = "kaltağı"
   strings:
-    $ = "kaltağı" ascii wide nocase fullword
+    $utf8 = "\x6b\x61\x6c\x74\x61\xc4\x9f\xc4\xb1" nocase fullword
+    $wide = "\x6b\x00\x61\x00\x6c\x00\x74\x00\x61\x00\x1f\x01\x31\x01" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_50 {
+  meta:
+    info = "kaltağın"
   strings:
-    $ = "kaltağın" ascii wide nocase fullword
+    $utf8 = "\x6b\x61\x6c\x74\x61\xc4\x9f\xc4\xb1\x6e" nocase fullword
+    $wide = "\x6b\x00\x61\x00\x6c\x00\x74\x00\x61\x00\x1f\x01\x31\x01\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_51 {
+  meta:
+    info = "orospu"
   strings:
-    $ = "orospu" ascii wide nocase fullword
+    $utf8 = "\x6f\x72\x6f\x73\x70\x75" nocase fullword
+    $wide = "\x6f\x00\x72\x00\x6f\x00\x73\x00\x70\x00\x75\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_52 {
+  meta:
+    info = "orospuda"
   strings:
-    $ = "orospuda" ascii wide nocase fullword
+    $utf8 = "\x6f\x72\x6f\x73\x70\x75\x64\x61" nocase fullword
+    $wide = "\x6f\x00\x72\x00\x6f\x00\x73\x00\x70\x00\x75\x00\x64\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_53 {
+  meta:
+    info = "orospudan"
   strings:
-    $ = "orospudan" ascii wide nocase fullword
+    $utf8 = "\x6f\x72\x6f\x73\x70\x75\x64\x61\x6e" nocase fullword
+    $wide = "\x6f\x00\x72\x00\x6f\x00\x73\x00\x70\x00\x75\x00\x64\x00\x61\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_54 {
+  meta:
+    info = "orospular"
   strings:
-    $ = "orospular" ascii wide nocase fullword
+    $utf8 = "\x6f\x72\x6f\x73\x70\x75\x6c\x61\x72" nocase fullword
+    $wide = "\x6f\x00\x72\x00\x6f\x00\x73\x00\x70\x00\x75\x00\x6c\x00\x61\x00\x72\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_55 {
+  meta:
+    info = "orospulara"
   strings:
-    $ = "orospulara" ascii wide nocase fullword
+    $utf8 = "\x6f\x72\x6f\x73\x70\x75\x6c\x61\x72\x61" nocase fullword
+    $wide = "\x6f\x00\x72\x00\x6f\x00\x73\x00\x70\x00\x75\x00\x6c\x00\x61\x00\x72\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_56 {
+  meta:
+    info = "orospularda"
   strings:
-    $ = "orospularda" ascii wide nocase fullword
+    $utf8 = "\x6f\x72\x6f\x73\x70\x75\x6c\x61\x72\x64\x61" nocase fullword
+    $wide = "\x6f\x00\x72\x00\x6f\x00\x73\x00\x70\x00\x75\x00\x6c\x00\x61\x00\x72\x00\x64\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_57 {
+  meta:
+    info = "orospulardan"
   strings:
-    $ = "orospulardan" ascii wide nocase fullword
+    $utf8 = "\x6f\x72\x6f\x73\x70\x75\x6c\x61\x72\x64\x61\x6e" nocase fullword
+    $wide = "\x6f\x00\x72\x00\x6f\x00\x73\x00\x70\x00\x75\x00\x6c\x00\x61\x00\x72\x00\x64\x00\x61\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_58 {
+  meta:
+    info = "orospuları"
   strings:
-    $ = "orospuları" ascii wide nocase fullword
+    $utf8 = "\x6f\x72\x6f\x73\x70\x75\x6c\x61\x72\xc4\xb1" nocase fullword
+    $wide = "\x6f\x00\x72\x00\x6f\x00\x73\x00\x70\x00\x75\x00\x6c\x00\x61\x00\x72\x00\x31\x01" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_59 {
+  meta:
+    info = "orospuların"
   strings:
-    $ = "orospuların" ascii wide nocase fullword
+    $utf8 = "\x6f\x72\x6f\x73\x70\x75\x6c\x61\x72\xc4\xb1\x6e" nocase fullword
+    $wide = "\x6f\x00\x72\x00\x6f\x00\x73\x00\x70\x00\x75\x00\x6c\x00\x61\x00\x72\x00\x31\x01\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_60 {
+  meta:
+    info = "orospunun"
   strings:
-    $ = "orospunun" ascii wide nocase fullword
+    $utf8 = "\x6f\x72\x6f\x73\x70\x75\x6e\x75\x6e" nocase fullword
+    $wide = "\x6f\x00\x72\x00\x6f\x00\x73\x00\x70\x00\x75\x00\x6e\x00\x75\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_61 {
+  meta:
+    info = "orospuya"
   strings:
-    $ = "orospuya" ascii wide nocase fullword
+    $utf8 = "\x6f\x72\x6f\x73\x70\x75\x79\x61" nocase fullword
+    $wide = "\x6f\x00\x72\x00\x6f\x00\x73\x00\x70\x00\x75\x00\x79\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_62 {
+  meta:
+    info = "orospuyu"
   strings:
-    $ = "orospuyu" ascii wide nocase fullword
+    $utf8 = "\x6f\x72\x6f\x73\x70\x75\x79\x75" nocase fullword
+    $wide = "\x6f\x00\x72\x00\x6f\x00\x73\x00\x70\x00\x75\x00\x79\x00\x75\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_63 {
+  meta:
+    info = "otuz birci"
   strings:
-    $ = "otuz birci" ascii wide nocase fullword
+    $utf8 = "\x6f\x74\x75\x7a\x20\x62\x69\x72\x63\x69" nocase fullword
+    $wide = "\x6f\x00\x74\x00\x75\x00\x7a\x00\x20\x00\x62\x00\x69\x00\x72\x00\x63\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_64 {
+  meta:
+    info = "otuz bircide"
   strings:
-    $ = "otuz bircide" ascii wide nocase fullword
+    $utf8 = "\x6f\x74\x75\x7a\x20\x62\x69\x72\x63\x69\x64\x65" nocase fullword
+    $wide = "\x6f\x00\x74\x00\x75\x00\x7a\x00\x20\x00\x62\x00\x69\x00\x72\x00\x63\x00\x69\x00\x64\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_65 {
+  meta:
+    info = "otuz birciden"
   strings:
-    $ = "otuz birciden" ascii wide nocase fullword
+    $utf8 = "\x6f\x74\x75\x7a\x20\x62\x69\x72\x63\x69\x64\x65\x6e" nocase fullword
+    $wide = "\x6f\x00\x74\x00\x75\x00\x7a\x00\x20\x00\x62\x00\x69\x00\x72\x00\x63\x00\x69\x00\x64\x00\x65\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_66 {
+  meta:
+    info = "otuz birciler"
   strings:
-    $ = "otuz birciler" ascii wide nocase fullword
+    $utf8 = "\x6f\x74\x75\x7a\x20\x62\x69\x72\x63\x69\x6c\x65\x72" nocase fullword
+    $wide = "\x6f\x00\x74\x00\x75\x00\x7a\x00\x20\x00\x62\x00\x69\x00\x72\x00\x63\x00\x69\x00\x6c\x00\x65\x00\x72\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_67 {
+  meta:
+    info = "otuz bircilerde"
   strings:
-    $ = "otuz bircilerde" ascii wide nocase fullword
+    $utf8 = "\x6f\x74\x75\x7a\x20\x62\x69\x72\x63\x69\x6c\x65\x72\x64\x65" nocase fullword
+    $wide = "\x6f\x00\x74\x00\x75\x00\x7a\x00\x20\x00\x62\x00\x69\x00\x72\x00\x63\x00\x69\x00\x6c\x00\x65\x00\x72\x00\x64\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_68 {
+  meta:
+    info = "otuz bircilerden"
   strings:
-    $ = "otuz bircilerden" ascii wide nocase fullword
+    $utf8 = "\x6f\x74\x75\x7a\x20\x62\x69\x72\x63\x69\x6c\x65\x72\x64\x65\x6e" nocase fullword
+    $wide = "\x6f\x00\x74\x00\x75\x00\x7a\x00\x20\x00\x62\x00\x69\x00\x72\x00\x63\x00\x69\x00\x6c\x00\x65\x00\x72\x00\x64\x00\x65\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_69 {
+  meta:
+    info = "otuz bircilere"
   strings:
-    $ = "otuz bircilere" ascii wide nocase fullword
+    $utf8 = "\x6f\x74\x75\x7a\x20\x62\x69\x72\x63\x69\x6c\x65\x72\x65" nocase fullword
+    $wide = "\x6f\x00\x74\x00\x75\x00\x7a\x00\x20\x00\x62\x00\x69\x00\x72\x00\x63\x00\x69\x00\x6c\x00\x65\x00\x72\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_70 {
+  meta:
+    info = "otuz bircileri"
   strings:
-    $ = "otuz bircileri" ascii wide nocase fullword
+    $utf8 = "\x6f\x74\x75\x7a\x20\x62\x69\x72\x63\x69\x6c\x65\x72\x69" nocase fullword
+    $wide = "\x6f\x00\x74\x00\x75\x00\x7a\x00\x20\x00\x62\x00\x69\x00\x72\x00\x63\x00\x69\x00\x6c\x00\x65\x00\x72\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_71 {
+  meta:
+    info = "otuz bircilerin"
   strings:
-    $ = "otuz bircilerin" ascii wide nocase fullword
+    $utf8 = "\x6f\x74\x75\x7a\x20\x62\x69\x72\x63\x69\x6c\x65\x72\x69\x6e" nocase fullword
+    $wide = "\x6f\x00\x74\x00\x75\x00\x7a\x00\x20\x00\x62\x00\x69\x00\x72\x00\x63\x00\x69\x00\x6c\x00\x65\x00\x72\x00\x69\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_72 {
+  meta:
+    info = "otuz bircinin"
   strings:
-    $ = "otuz bircinin" ascii wide nocase fullword
+    $utf8 = "\x6f\x74\x75\x7a\x20\x62\x69\x72\x63\x69\x6e\x69\x6e" nocase fullword
+    $wide = "\x6f\x00\x74\x00\x75\x00\x7a\x00\x20\x00\x62\x00\x69\x00\x72\x00\x63\x00\x69\x00\x6e\x00\x69\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_73 {
+  meta:
+    info = "otuz birciye"
   strings:
-    $ = "otuz birciye" ascii wide nocase fullword
+    $utf8 = "\x6f\x74\x75\x7a\x20\x62\x69\x72\x63\x69\x79\x65" nocase fullword
+    $wide = "\x6f\x00\x74\x00\x75\x00\x7a\x00\x20\x00\x62\x00\x69\x00\x72\x00\x63\x00\x69\x00\x79\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_74 {
+  meta:
+    info = "otuz birciyi"
   strings:
-    $ = "otuz birciyi" ascii wide nocase fullword
+    $utf8 = "\x6f\x74\x75\x7a\x20\x62\x69\x72\x63\x69\x79\x69" nocase fullword
+    $wide = "\x6f\x00\x74\x00\x75\x00\x7a\x00\x20\x00\x62\x00\x69\x00\x72\x00\x63\x00\x69\x00\x79\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_75 {
+  meta:
+    info = "saksocu"
   strings:
-    $ = "saksocu" ascii wide nocase fullword
+    $utf8 = "\x73\x61\x6b\x73\x6f\x63\x75" nocase fullword
+    $wide = "\x73\x00\x61\x00\x6b\x00\x73\x00\x6f\x00\x63\x00\x75\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_76 {
+  meta:
+    info = "saksocuda"
   strings:
-    $ = "saksocuda" ascii wide nocase fullword
+    $utf8 = "\x73\x61\x6b\x73\x6f\x63\x75\x64\x61" nocase fullword
+    $wide = "\x73\x00\x61\x00\x6b\x00\x73\x00\x6f\x00\x63\x00\x75\x00\x64\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_77 {
+  meta:
+    info = "saksocudan"
   strings:
-    $ = "saksocudan" ascii wide nocase fullword
+    $utf8 = "\x73\x61\x6b\x73\x6f\x63\x75\x64\x61\x6e" nocase fullword
+    $wide = "\x73\x00\x61\x00\x6b\x00\x73\x00\x6f\x00\x63\x00\x75\x00\x64\x00\x61\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_78 {
+  meta:
+    info = "saksocular"
   strings:
-    $ = "saksocular" ascii wide nocase fullword
+    $utf8 = "\x73\x61\x6b\x73\x6f\x63\x75\x6c\x61\x72" nocase fullword
+    $wide = "\x73\x00\x61\x00\x6b\x00\x73\x00\x6f\x00\x63\x00\x75\x00\x6c\x00\x61\x00\x72\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_79 {
+  meta:
+    info = "saksoculara"
   strings:
-    $ = "saksoculara" ascii wide nocase fullword
+    $utf8 = "\x73\x61\x6b\x73\x6f\x63\x75\x6c\x61\x72\x61" nocase fullword
+    $wide = "\x73\x00\x61\x00\x6b\x00\x73\x00\x6f\x00\x63\x00\x75\x00\x6c\x00\x61\x00\x72\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_80 {
+  meta:
+    info = "saksocularda"
   strings:
-    $ = "saksocularda" ascii wide nocase fullword
+    $utf8 = "\x73\x61\x6b\x73\x6f\x63\x75\x6c\x61\x72\x64\x61" nocase fullword
+    $wide = "\x73\x00\x61\x00\x6b\x00\x73\x00\x6f\x00\x63\x00\x75\x00\x6c\x00\x61\x00\x72\x00\x64\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_81 {
+  meta:
+    info = "saksoculardan"
   strings:
-    $ = "saksoculardan" ascii wide nocase fullword
+    $utf8 = "\x73\x61\x6b\x73\x6f\x63\x75\x6c\x61\x72\x64\x61\x6e" nocase fullword
+    $wide = "\x73\x00\x61\x00\x6b\x00\x73\x00\x6f\x00\x63\x00\x75\x00\x6c\x00\x61\x00\x72\x00\x64\x00\x61\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_82 {
+  meta:
+    info = "saksocuları"
   strings:
-    $ = "saksocuları" ascii wide nocase fullword
+    $utf8 = "\x73\x61\x6b\x73\x6f\x63\x75\x6c\x61\x72\xc4\xb1" nocase fullword
+    $wide = "\x73\x00\x61\x00\x6b\x00\x73\x00\x6f\x00\x63\x00\x75\x00\x6c\x00\x61\x00\x72\x00\x31\x01" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_83 {
+  meta:
+    info = "saksocuların"
   strings:
-    $ = "saksocuların" ascii wide nocase fullword
+    $utf8 = "\x73\x61\x6b\x73\x6f\x63\x75\x6c\x61\x72\xc4\xb1\x6e" nocase fullword
+    $wide = "\x73\x00\x61\x00\x6b\x00\x73\x00\x6f\x00\x63\x00\x75\x00\x6c\x00\x61\x00\x72\x00\x31\x01\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_84 {
+  meta:
+    info = "saksocunun"
   strings:
-    $ = "saksocunun" ascii wide nocase fullword
+    $utf8 = "\x73\x61\x6b\x73\x6f\x63\x75\x6e\x75\x6e" nocase fullword
+    $wide = "\x73\x00\x61\x00\x6b\x00\x73\x00\x6f\x00\x63\x00\x75\x00\x6e\x00\x75\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_85 {
+  meta:
+    info = "saksocuya"
   strings:
-    $ = "saksocuya" ascii wide nocase fullword
+    $utf8 = "\x73\x61\x6b\x73\x6f\x63\x75\x79\x61" nocase fullword
+    $wide = "\x73\x00\x61\x00\x6b\x00\x73\x00\x6f\x00\x63\x00\x75\x00\x79\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_86 {
+  meta:
+    info = "saksocuyu"
   strings:
-    $ = "saksocuyu" ascii wide nocase fullword
+    $utf8 = "\x73\x61\x6b\x73\x6f\x63\x75\x79\x75" nocase fullword
+    $wide = "\x73\x00\x61\x00\x6b\x00\x73\x00\x6f\x00\x63\x00\x75\x00\x79\x00\x75\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_87 {
+  meta:
+    info = "sik"
   strings:
-    $ = "sik" ascii wide nocase fullword
+    $utf8 = "\x73\x69\x6b" nocase fullword
+    $wide = "\x73\x00\x69\x00\x6b\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_88 {
+  meta:
+    info = "sike"
   strings:
-    $ = "sike" ascii wide nocase fullword
+    $utf8 = "\x73\x69\x6b\x65" nocase fullword
+    $wide = "\x73\x00\x69\x00\x6b\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_89 {
+  meta:
+    info = "siker sikmez"
   strings:
-    $ = "siker sikmez" ascii wide nocase fullword
+    $utf8 = "\x73\x69\x6b\x65\x72\x20\x73\x69\x6b\x6d\x65\x7a" nocase fullword
+    $wide = "\x73\x00\x69\x00\x6b\x00\x65\x00\x72\x00\x20\x00\x73\x00\x69\x00\x6b\x00\x6d\x00\x65\x00\x7a\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_90 {
+  meta:
+    info = "siki"
   strings:
-    $ = "siki" ascii wide nocase fullword
+    $utf8 = "\x73\x69\x6b\x69" nocase fullword
+    $wide = "\x73\x00\x69\x00\x6b\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_91 {
+  meta:
+    info = "sikilir sikilmez"
   strings:
-    $ = "sikilir sikilmez" ascii wide nocase fullword
+    $utf8 = "\x73\x69\x6b\x69\x6c\x69\x72\x20\x73\x69\x6b\x69\x6c\x6d\x65\x7a" nocase fullword
+    $wide = "\x73\x00\x69\x00\x6b\x00\x69\x00\x6c\x00\x69\x00\x72\x00\x20\x00\x73\x00\x69\x00\x6b\x00\x69\x00\x6c\x00\x6d\x00\x65\x00\x7a\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_92 {
+  meta:
+    info = "sikin"
   strings:
-    $ = "sikin" ascii wide nocase fullword
+    $utf8 = "\x73\x69\x6b\x69\x6e" nocase fullword
+    $wide = "\x73\x00\x69\x00\x6b\x00\x69\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_93 {
+  meta:
+    info = "sikler"
   strings:
-    $ = "sikler" ascii wide nocase fullword
+    $utf8 = "\x73\x69\x6b\x6c\x65\x72" nocase fullword
+    $wide = "\x73\x00\x69\x00\x6b\x00\x6c\x00\x65\x00\x72\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_94 {
+  meta:
+    info = "siklerde"
   strings:
-    $ = "siklerde" ascii wide nocase fullword
+    $utf8 = "\x73\x69\x6b\x6c\x65\x72\x64\x65" nocase fullword
+    $wide = "\x73\x00\x69\x00\x6b\x00\x6c\x00\x65\x00\x72\x00\x64\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_95 {
+  meta:
+    info = "siklerden"
   strings:
-    $ = "siklerden" ascii wide nocase fullword
+    $utf8 = "\x73\x69\x6b\x6c\x65\x72\x64\x65\x6e" nocase fullword
+    $wide = "\x73\x00\x69\x00\x6b\x00\x6c\x00\x65\x00\x72\x00\x64\x00\x65\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_96 {
+  meta:
+    info = "siklere"
   strings:
-    $ = "siklere" ascii wide nocase fullword
+    $utf8 = "\x73\x69\x6b\x6c\x65\x72\x65" nocase fullword
+    $wide = "\x73\x00\x69\x00\x6b\x00\x6c\x00\x65\x00\x72\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_97 {
+  meta:
+    info = "sikleri"
   strings:
-    $ = "sikleri" ascii wide nocase fullword
+    $utf8 = "\x73\x69\x6b\x6c\x65\x72\x69" nocase fullword
+    $wide = "\x73\x00\x69\x00\x6b\x00\x6c\x00\x65\x00\x72\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_98 {
+  meta:
+    info = "siklerin"
   strings:
-    $ = "siklerin" ascii wide nocase fullword
+    $utf8 = "\x73\x69\x6b\x6c\x65\x72\x69\x6e" nocase fullword
+    $wide = "\x73\x00\x69\x00\x6b\x00\x6c\x00\x65\x00\x72\x00\x69\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_99 {
+  meta:
+    info = "sikmek"
   strings:
-    $ = "sikmek" ascii wide nocase fullword
+    $utf8 = "\x73\x69\x6b\x6d\x65\x6b" nocase fullword
+    $wide = "\x73\x00\x69\x00\x6b\x00\x6d\x00\x65\x00\x6b\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_100 {
+  meta:
+    info = "sikmemek"
   strings:
-    $ = "sikmemek" ascii wide nocase fullword
+    $utf8 = "\x73\x69\x6b\x6d\x65\x6d\x65\x6b" nocase fullword
+    $wide = "\x73\x00\x69\x00\x6b\x00\x6d\x00\x65\x00\x6d\x00\x65\x00\x6b\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_101 {
+  meta:
+    info = "sikte"
   strings:
-    $ = "sikte" ascii wide nocase fullword
+    $utf8 = "\x73\x69\x6b\x74\x65" nocase fullword
+    $wide = "\x73\x00\x69\x00\x6b\x00\x74\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_102 {
+  meta:
+    info = "sikten"
   strings:
-    $ = "sikten" ascii wide nocase fullword
+    $utf8 = "\x73\x69\x6b\x74\x65\x6e" nocase fullword
+    $wide = "\x73\x00\x69\x00\x6b\x00\x74\x00\x65\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_103 {
+  meta:
+    info = "siktir"
   strings:
-    $ = "siktir" ascii wide nocase fullword
+    $utf8 = "\x73\x69\x6b\x74\x69\x72" nocase fullword
+    $wide = "\x73\x00\x69\x00\x6b\x00\x74\x00\x69\x00\x72\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_104 {
+  meta:
+    info = "siktirir siktirmez"
   strings:
-    $ = "siktirir siktirmez" ascii wide nocase fullword
+    $utf8 = "\x73\x69\x6b\x74\x69\x72\x69\x72\x20\x73\x69\x6b\x74\x69\x72\x6d\x65\x7a" nocase fullword
+    $wide = "\x73\x00\x69\x00\x6b\x00\x74\x00\x69\x00\x72\x00\x69\x00\x72\x00\x20\x00\x73\x00\x69\x00\x6b\x00\x74\x00\x69\x00\x72\x00\x6d\x00\x65\x00\x7a\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_105 {
+  meta:
+    info = "sıçmak"
   strings:
-    $ = "sıçmak" ascii wide nocase fullword
+    $utf8 = "\x73\xc4\xb1\xc3\xa7\x6d\x61\x6b" nocase fullword
+    $wide = "\x73\x00\x31\x01\xe7\x00\x6d\x00\x61\x00\x6b\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_106 {
+  meta:
+    info = "taşak"
   strings:
-    $ = "taşak" ascii wide nocase fullword
+    $utf8 = "\x74\x61\xc5\x9f\x61\x6b" nocase fullword
+    $wide = "\x74\x00\x61\x00\x5f\x01\x61\x00\x6b\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_107 {
+  meta:
+    info = "taşaklar"
   strings:
-    $ = "taşaklar" ascii wide nocase fullword
+    $utf8 = "\x74\x61\xc5\x9f\x61\x6b\x6c\x61\x72" nocase fullword
+    $wide = "\x74\x00\x61\x00\x5f\x01\x61\x00\x6b\x00\x6c\x00\x61\x00\x72\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_108 {
+  meta:
+    info = "taşaklara"
   strings:
-    $ = "taşaklara" ascii wide nocase fullword
+    $utf8 = "\x74\x61\xc5\x9f\x61\x6b\x6c\x61\x72\x61" nocase fullword
+    $wide = "\x74\x00\x61\x00\x5f\x01\x61\x00\x6b\x00\x6c\x00\x61\x00\x72\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_109 {
+  meta:
+    info = "taşaklarda"
   strings:
-    $ = "taşaklarda" ascii wide nocase fullword
+    $utf8 = "\x74\x61\xc5\x9f\x61\x6b\x6c\x61\x72\x64\x61" nocase fullword
+    $wide = "\x74\x00\x61\x00\x5f\x01\x61\x00\x6b\x00\x6c\x00\x61\x00\x72\x00\x64\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_110 {
+  meta:
+    info = "taşaklardan"
   strings:
-    $ = "taşaklardan" ascii wide nocase fullword
+    $utf8 = "\x74\x61\xc5\x9f\x61\x6b\x6c\x61\x72\x64\x61\x6e" nocase fullword
+    $wide = "\x74\x00\x61\x00\x5f\x01\x61\x00\x6b\x00\x6c\x00\x61\x00\x72\x00\x64\x00\x61\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_111 {
+  meta:
+    info = "taşakları"
   strings:
-    $ = "taşakları" ascii wide nocase fullword
+    $utf8 = "\x74\x61\xc5\x9f\x61\x6b\x6c\x61\x72\xc4\xb1" nocase fullword
+    $wide = "\x74\x00\x61\x00\x5f\x01\x61\x00\x6b\x00\x6c\x00\x61\x00\x72\x00\x31\x01" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_112 {
+  meta:
+    info = "taşakların"
   strings:
-    $ = "taşakların" ascii wide nocase fullword
+    $utf8 = "\x74\x61\xc5\x9f\x61\x6b\x6c\x61\x72\xc4\xb1\x6e" nocase fullword
+    $wide = "\x74\x00\x61\x00\x5f\x01\x61\x00\x6b\x00\x6c\x00\x61\x00\x72\x00\x31\x01\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_113 {
+  meta:
+    info = "taşakta"
   strings:
-    $ = "taşakta" ascii wide nocase fullword
+    $utf8 = "\x74\x61\xc5\x9f\x61\x6b\x74\x61" nocase fullword
+    $wide = "\x74\x00\x61\x00\x5f\x01\x61\x00\x6b\x00\x74\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_114 {
+  meta:
+    info = "taşaktan"
   strings:
-    $ = "taşaktan" ascii wide nocase fullword
+    $utf8 = "\x74\x61\xc5\x9f\x61\x6b\x74\x61\x6e" nocase fullword
+    $wide = "\x74\x00\x61\x00\x5f\x01\x61\x00\x6b\x00\x74\x00\x61\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_115 {
+  meta:
+    info = "taşağa"
   strings:
-    $ = "taşağa" ascii wide nocase fullword
+    $utf8 = "\x74\x61\xc5\x9f\x61\xc4\x9f\x61" nocase fullword
+    $wide = "\x74\x00\x61\x00\x5f\x01\x61\x00\x1f\x01\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_116 {
+  meta:
+    info = "taşağı"
   strings:
-    $ = "taşağı" ascii wide nocase fullword
+    $utf8 = "\x74\x61\xc5\x9f\x61\xc4\x9f\xc4\xb1" nocase fullword
+    $wide = "\x74\x00\x61\x00\x5f\x01\x61\x00\x1f\x01\x31\x01" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_117 {
+  meta:
+    info = "taşağın"
   strings:
-    $ = "taşağın" ascii wide nocase fullword
+    $utf8 = "\x74\x61\xc5\x9f\x61\xc4\x9f\xc4\xb1\x6e" nocase fullword
+    $wide = "\x74\x00\x61\x00\x5f\x01\x61\x00\x1f\x01\x31\x01\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_118 {
+  meta:
+    info = "yarak"
   strings:
-    $ = "yarak" ascii wide nocase fullword
+    $utf8 = "\x79\x61\x72\x61\x6b" nocase fullword
+    $wide = "\x79\x00\x61\x00\x72\x00\x61\x00\x6b\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_119 {
+  meta:
+    info = "yaraklar"
   strings:
-    $ = "yaraklar" ascii wide nocase fullword
+    $utf8 = "\x79\x61\x72\x61\x6b\x6c\x61\x72" nocase fullword
+    $wide = "\x79\x00\x61\x00\x72\x00\x61\x00\x6b\x00\x6c\x00\x61\x00\x72\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_120 {
+  meta:
+    info = "yaraklara"
   strings:
-    $ = "yaraklara" ascii wide nocase fullword
+    $utf8 = "\x79\x61\x72\x61\x6b\x6c\x61\x72\x61" nocase fullword
+    $wide = "\x79\x00\x61\x00\x72\x00\x61\x00\x6b\x00\x6c\x00\x61\x00\x72\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_121 {
+  meta:
+    info = "yaraklarda"
   strings:
-    $ = "yaraklarda" ascii wide nocase fullword
+    $utf8 = "\x79\x61\x72\x61\x6b\x6c\x61\x72\x64\x61" nocase fullword
+    $wide = "\x79\x00\x61\x00\x72\x00\x61\x00\x6b\x00\x6c\x00\x61\x00\x72\x00\x64\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_122 {
+  meta:
+    info = "yaraklardan"
   strings:
-    $ = "yaraklardan" ascii wide nocase fullword
+    $utf8 = "\x79\x61\x72\x61\x6b\x6c\x61\x72\x64\x61\x6e" nocase fullword
+    $wide = "\x79\x00\x61\x00\x72\x00\x61\x00\x6b\x00\x6c\x00\x61\x00\x72\x00\x64\x00\x61\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_123 {
+  meta:
+    info = "yarakları"
   strings:
-    $ = "yarakları" ascii wide nocase fullword
+    $utf8 = "\x79\x61\x72\x61\x6b\x6c\x61\x72\xc4\xb1" nocase fullword
+    $wide = "\x79\x00\x61\x00\x72\x00\x61\x00\x6b\x00\x6c\x00\x61\x00\x72\x00\x31\x01" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_124 {
+  meta:
+    info = "yarakların"
   strings:
-    $ = "yarakların" ascii wide nocase fullword
+    $utf8 = "\x79\x61\x72\x61\x6b\x6c\x61\x72\xc4\xb1\x6e" nocase fullword
+    $wide = "\x79\x00\x61\x00\x72\x00\x61\x00\x6b\x00\x6c\x00\x61\x00\x72\x00\x31\x01\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_125 {
+  meta:
+    info = "yarakta"
   strings:
-    $ = "yarakta" ascii wide nocase fullword
+    $utf8 = "\x79\x61\x72\x61\x6b\x74\x61" nocase fullword
+    $wide = "\x79\x00\x61\x00\x72\x00\x61\x00\x6b\x00\x74\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_126 {
+  meta:
+    info = "yaraktan"
   strings:
-    $ = "yaraktan" ascii wide nocase fullword
+    $utf8 = "\x79\x61\x72\x61\x6b\x74\x61\x6e" nocase fullword
+    $wide = "\x79\x00\x61\x00\x72\x00\x61\x00\x6b\x00\x74\x00\x61\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_127 {
+  meta:
+    info = "yarağa"
   strings:
-    $ = "yarağa" ascii wide nocase fullword
+    $utf8 = "\x79\x61\x72\x61\xc4\x9f\x61" nocase fullword
+    $wide = "\x79\x00\x61\x00\x72\x00\x61\x00\x1f\x01\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_128 {
+  meta:
+    info = "yarağı"
   strings:
-    $ = "yarağı" ascii wide nocase fullword
+    $utf8 = "\x79\x61\x72\x61\xc4\x9f\xc4\xb1" nocase fullword
+    $wide = "\x79\x00\x61\x00\x72\x00\x61\x00\x1f\x01\x31\x01" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_129 {
+  meta:
+    info = "yarağın"
   strings:
-    $ = "yarağın" ascii wide nocase fullword
+    $utf8 = "\x79\x61\x72\x61\xc4\x9f\xc4\xb1\x6e" nocase fullword
+    $wide = "\x79\x00\x61\x00\x72\x00\x61\x00\x1f\x01\x31\x01\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_130 {
+  meta:
+    info = "Çingenede"
   strings:
-    $ = "Çingenede" ascii wide nocase fullword
+    $utf8 = "\xc3\x87\x69\x6e\x67\x65\x6e\x65\x64\x65" nocase fullword
+    $wide = "\xc7\x00\x69\x00\x6e\x00\x67\x00\x65\x00\x6e\x00\x65\x00\x64\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_131 {
+  meta:
+    info = "Çingeneden"
   strings:
-    $ = "Çingeneden" ascii wide nocase fullword
+    $utf8 = "\xc3\x87\x69\x6e\x67\x65\x6e\x65\x64\x65\x6e" nocase fullword
+    $wide = "\xc7\x00\x69\x00\x6e\x00\x67\x00\x65\x00\x6e\x00\x65\x00\x64\x00\x65\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_132 {
+  meta:
+    info = "Çingeneler"
   strings:
-    $ = "Çingeneler" ascii wide nocase fullword
+    $utf8 = "\xc3\x87\x69\x6e\x67\x65\x6e\x65\x6c\x65\x72" nocase fullword
+    $wide = "\xc7\x00\x69\x00\x6e\x00\x67\x00\x65\x00\x6e\x00\x65\x00\x6c\x00\x65\x00\x72\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_133 {
+  meta:
+    info = "Çingenelerde"
   strings:
-    $ = "Çingenelerde" ascii wide nocase fullword
+    $utf8 = "\xc3\x87\x69\x6e\x67\x65\x6e\x65\x6c\x65\x72\x64\x65" nocase fullword
+    $wide = "\xc7\x00\x69\x00\x6e\x00\x67\x00\x65\x00\x6e\x00\x65\x00\x6c\x00\x65\x00\x72\x00\x64\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_134 {
+  meta:
+    info = "Çingenelerden"
   strings:
-    $ = "Çingenelerden" ascii wide nocase fullword
+    $utf8 = "\xc3\x87\x69\x6e\x67\x65\x6e\x65\x6c\x65\x72\x64\x65\x6e" nocase fullword
+    $wide = "\xc7\x00\x69\x00\x6e\x00\x67\x00\x65\x00\x6e\x00\x65\x00\x6c\x00\x65\x00\x72\x00\x64\x00\x65\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_135 {
+  meta:
+    info = "Çingenelere"
   strings:
-    $ = "Çingenelere" ascii wide nocase fullword
+    $utf8 = "\xc3\x87\x69\x6e\x67\x65\x6e\x65\x6c\x65\x72\x65" nocase fullword
+    $wide = "\xc7\x00\x69\x00\x6e\x00\x67\x00\x65\x00\x6e\x00\x65\x00\x6c\x00\x65\x00\x72\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_136 {
+  meta:
+    info = "Çingeneleri"
   strings:
-    $ = "Çingeneleri" ascii wide nocase fullword
+    $utf8 = "\xc3\x87\x69\x6e\x67\x65\x6e\x65\x6c\x65\x72\x69" nocase fullword
+    $wide = "\xc7\x00\x69\x00\x6e\x00\x67\x00\x65\x00\x6e\x00\x65\x00\x6c\x00\x65\x00\x72\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_137 {
+  meta:
+    info = "Çingenelerin"
   strings:
-    $ = "Çingenelerin" ascii wide nocase fullword
+    $utf8 = "\xc3\x87\x69\x6e\x67\x65\x6e\x65\x6c\x65\x72\x69\x6e" nocase fullword
+    $wide = "\xc7\x00\x69\x00\x6e\x00\x67\x00\x65\x00\x6e\x00\x65\x00\x6c\x00\x65\x00\x72\x00\x69\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_138 {
+  meta:
+    info = "Çingenenin"
   strings:
-    $ = "Çingenenin" ascii wide nocase fullword
+    $utf8 = "\xc3\x87\x69\x6e\x67\x65\x6e\x65\x6e\x69\x6e" nocase fullword
+    $wide = "\xc7\x00\x69\x00\x6e\x00\x67\x00\x65\x00\x6e\x00\x65\x00\x6e\x00\x69\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_139 {
+  meta:
+    info = "Çingeneye"
   strings:
-    $ = "Çingeneye" ascii wide nocase fullword
+    $utf8 = "\xc3\x87\x69\x6e\x67\x65\x6e\x65\x79\x65" nocase fullword
+    $wide = "\xc7\x00\x69\x00\x6e\x00\x67\x00\x65\x00\x6e\x00\x65\x00\x79\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_140 {
+  meta:
+    info = "Çingeneyi"
   strings:
-    $ = "Çingeneyi" ascii wide nocase fullword
+    $utf8 = "\xc3\x87\x69\x6e\x67\x65\x6e\x65\x79\x69" nocase fullword
+    $wide = "\xc7\x00\x69\x00\x6e\x00\x67\x00\x65\x00\x6e\x00\x65\x00\x79\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_tr_language_nsfw_141 {
+  meta:
+    info = "çingene"
   strings:
-    $ = "çingene" ascii wide nocase fullword
+    $utf8 = "\xc3\xa7\x69\x6e\x67\x65\x6e\x65" nocase fullword
+    $wide = "\xe7\x00\x69\x00\x6e\x00\x67\x00\x65\x00\x6e\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }

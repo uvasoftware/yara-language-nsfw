@@ -1,6 +1,8 @@
 /*
 * Bundle rule that include all underlying languages
 */
+include "ar-language-nsfw.yara"
+include "bn-language-nsfw.yara"
 include "cs-language-nsfw.yara"
 include "da-language-nsfw.yara"
 include "de-language-nsfw.yara"
@@ -22,7 +24,5 @@ include "pt-language-nsfw.yara"
 include "ru-language-nsfw.yara"
 include "sv-language-nsfw.yara"
 include "th-language-nsfw.yara"
-include "tlh-language-nsfw.yara"
 include "tr-language-nsfw.yara"
 include "zh-language-nsfw.yara"
-include "test-rules.yara"

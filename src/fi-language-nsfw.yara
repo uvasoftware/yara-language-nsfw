@@ -1,861 +1,1089 @@
-
 rule content_fi_language_nsfw_1 {
+  meta:
+    info = "alfred nussi"
   strings:
-    $ = "alfred nussi" ascii wide nocase fullword
+    $utf8 = "\x61\x6c\x66\x72\x65\x64\x20\x6e\x75\x73\x73\x69" nocase fullword
+    $wide = "\x61\x00\x6c\x00\x66\x00\x72\x00\x65\x00\x64\x00\x20\x00\x6e\x00\x75\x00\x73\x00\x73\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_2 {
+  meta:
+    info = "bylsiä"
   strings:
-    $ = "bylsiä" ascii wide nocase fullword
+    $utf8 = "\x62\x79\x6c\x73\x69\xc3\xa4" nocase fullword
+    $wide = "\x62\x00\x79\x00\x6c\x00\x73\x00\x69\x00\xe4\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_3 {
+  meta:
+    info = "haahka"
   strings:
-    $ = "haahka" ascii wide nocase fullword
+    $utf8 = "\x68\x61\x61\x68\x6b\x61" nocase fullword
+    $wide = "\x68\x00\x61\x00\x61\x00\x68\x00\x6b\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_4 {
+  meta:
+    info = "haista paska"
   strings:
-    $ = "haista paska" ascii wide nocase fullword
+    $utf8 = "\x68\x61\x69\x73\x74\x61\x20\x70\x61\x73\x6b\x61" nocase fullword
+    $wide = "\x68\x00\x61\x00\x69\x00\x73\x00\x74\x00\x61\x00\x20\x00\x70\x00\x61\x00\x73\x00\x6b\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_5 {
+  meta:
+    info = "haista vittu"
   strings:
-    $ = "haista vittu" ascii wide nocase fullword
+    $utf8 = "\x68\x61\x69\x73\x74\x61\x20\x76\x69\x74\x74\x75" nocase fullword
+    $wide = "\x68\x00\x61\x00\x69\x00\x73\x00\x74\x00\x61\x00\x20\x00\x76\x00\x69\x00\x74\x00\x74\x00\x75\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_6 {
+  meta:
+    info = "hatullinen"
   strings:
-    $ = "hatullinen" ascii wide nocase fullword
+    $utf8 = "\x68\x61\x74\x75\x6c\x6c\x69\x6e\x65\x6e" nocase fullword
+    $wide = "\x68\x00\x61\x00\x74\x00\x75\x00\x6c\x00\x6c\x00\x69\x00\x6e\x00\x65\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_7 {
+  meta:
+    info = "helvetisti"
   strings:
-    $ = "helvetisti" ascii wide nocase fullword
+    $utf8 = "\x68\x65\x6c\x76\x65\x74\x69\x73\x74\x69" nocase fullword
+    $wide = "\x68\x00\x65\x00\x6c\x00\x76\x00\x65\x00\x74\x00\x69\x00\x73\x00\x74\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_8 {
+  meta:
+    info = "hevonkuusi"
   strings:
-    $ = "hevonkuusi" ascii wide nocase fullword
+    $utf8 = "\x68\x65\x76\x6f\x6e\x6b\x75\x75\x73\x69" nocase fullword
+    $wide = "\x68\x00\x65\x00\x76\x00\x6f\x00\x6e\x00\x6b\x00\x75\x00\x75\x00\x73\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_9 {
+  meta:
+    info = "hevonpaska"
   strings:
-    $ = "hevonpaska" ascii wide nocase fullword
+    $utf8 = "\x68\x65\x76\x6f\x6e\x70\x61\x73\x6b\x61" nocase fullword
+    $wide = "\x68\x00\x65\x00\x76\x00\x6f\x00\x6e\x00\x70\x00\x61\x00\x73\x00\x6b\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_10 {
+  meta:
+    info = "hevonperse"
   strings:
-    $ = "hevonperse" ascii wide nocase fullword
+    $utf8 = "\x68\x65\x76\x6f\x6e\x70\x65\x72\x73\x65" nocase fullword
+    $wide = "\x68\x00\x65\x00\x76\x00\x6f\x00\x6e\x00\x70\x00\x65\x00\x72\x00\x73\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_11 {
+  meta:
+    info = "hevonvittu"
   strings:
-    $ = "hevonvittu" ascii wide nocase fullword
+    $utf8 = "\x68\x65\x76\x6f\x6e\x76\x69\x74\x74\x75" nocase fullword
+    $wide = "\x68\x00\x65\x00\x76\x00\x6f\x00\x6e\x00\x76\x00\x69\x00\x74\x00\x74\x00\x75\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_12 {
+  meta:
+    info = "hevonvitunperse"
   strings:
-    $ = "hevonvitunperse" ascii wide nocase fullword
+    $utf8 = "\x68\x65\x76\x6f\x6e\x76\x69\x74\x75\x6e\x70\x65\x72\x73\x65" nocase fullword
+    $wide = "\x68\x00\x65\x00\x76\x00\x6f\x00\x6e\x00\x76\x00\x69\x00\x74\x00\x75\x00\x6e\x00\x70\x00\x65\x00\x72\x00\x73\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_13 {
+  meta:
+    info = "hitosti"
   strings:
-    $ = "hitosti" ascii wide nocase fullword
+    $utf8 = "\x68\x69\x74\x6f\x73\x74\x69" nocase fullword
+    $wide = "\x68\x00\x69\x00\x74\x00\x6f\x00\x73\x00\x74\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
-rule content_fi_language_nsfw_14 {
-  strings:
-    $ = "hitto" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_fi_language_nsfw_15 {
+  meta:
+    info = "huorata"
   strings:
-    $ = "huorata" ascii wide nocase fullword
+    $utf8 = "\x68\x75\x6f\x72\x61\x74\x61" nocase fullword
+    $wide = "\x68\x00\x75\x00\x6f\x00\x72\x00\x61\x00\x74\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_16 {
+  meta:
+    info = "hässiä"
   strings:
-    $ = "hässiä" ascii wide nocase fullword
+    $utf8 = "\x68\xc3\xa4\x73\x73\x69\xc3\xa4" nocase fullword
+    $wide = "\x68\x00\xe4\x00\x73\x00\x73\x00\x69\x00\xe4\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_17 {
+  meta:
+    info = "juosten kustu"
   strings:
-    $ = "juosten kustu" ascii wide nocase fullword
+    $utf8 = "\x6a\x75\x6f\x73\x74\x65\x6e\x20\x6b\x75\x73\x74\x75" nocase fullword
+    $wide = "\x6a\x00\x75\x00\x6f\x00\x73\x00\x74\x00\x65\x00\x6e\x00\x20\x00\x6b\x00\x75\x00\x73\x00\x74\x00\x75\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_18 {
+  meta:
+    info = "jutku"
   strings:
-    $ = "jutku" ascii wide nocase fullword
+    $utf8 = "\x6a\x75\x74\x6b\x75" nocase fullword
+    $wide = "\x6a\x00\x75\x00\x74\x00\x6b\x00\x75\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_19 {
+  meta:
+    info = "jutsku"
   strings:
-    $ = "jutsku" ascii wide nocase fullword
+    $utf8 = "\x6a\x75\x74\x73\x6b\x75" nocase fullword
+    $wide = "\x6a\x00\x75\x00\x74\x00\x73\x00\x6b\x00\x75\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
+rule content_fi_language_nsfw_20 {
+  meta:
+    info = "kananpaska"
+  strings:
+    $utf8 = "\x6b\x61\x6e\x61\x6e\x70\x61\x73\x6b\x61" nocase fullword
+    $wide = "\x6b\x00\x61\x00\x6e\x00\x61\x00\x6e\x00\x70\x00\x61\x00\x73\x00\x6b\x00\x61\x00" nocase fullword
+  condition:
+    any of them
+}
 rule content_fi_language_nsfw_21 {
+  meta:
+    info = "koiranpaska"
   strings:
-    $ = "kananpaska" ascii wide nocase fullword
+    $utf8 = "\x6b\x6f\x69\x72\x61\x6e\x70\x61\x73\x6b\x61" nocase fullword
+    $wide = "\x6b\x00\x6f\x00\x69\x00\x72\x00\x61\x00\x6e\x00\x70\x00\x61\x00\x73\x00\x6b\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_22 {
+  meta:
+    info = "kuin esterin perseestä"
   strings:
-    $ = "koiranpaska" ascii wide nocase fullword
+    $utf8 = "\x6b\x75\x69\x6e\x20\x65\x73\x74\x65\x72\x69\x6e\x20\x70\x65\x72\x73\x65\x65\x73\x74\xc3\xa4" nocase fullword
+    $wide = "\x6b\x00\x75\x00\x69\x00\x6e\x00\x20\x00\x65\x00\x73\x00\x74\x00\x65\x00\x72\x00\x69\x00\x6e\x00\x20\x00\x70\x00\x65\x00\x72\x00\x73\x00\x65\x00\x65\x00\x73\x00\x74\x00\xe4\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_23 {
+  meta:
+    info = "kulli"
   strings:
-    $ = "kuin esterin perseestä" ascii wide nocase fullword
+    $utf8 = "\x6b\x75\x6c\x6c\x69" nocase fullword
+    $wide = "\x6b\x00\x75\x00\x6c\x00\x6c\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_24 {
+  meta:
+    info = "kullinluikaus"
   strings:
-    $ = "kulli" ascii wide nocase fullword
+    $utf8 = "\x6b\x75\x6c\x6c\x69\x6e\x6c\x75\x69\x6b\x61\x75\x73" nocase fullword
+    $wide = "\x6b\x00\x75\x00\x6c\x00\x6c\x00\x69\x00\x6e\x00\x6c\x00\x75\x00\x69\x00\x6b\x00\x61\x00\x75\x00\x73\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_25 {
+  meta:
+    info = "kuppainen"
   strings:
-    $ = "kullinluikaus" ascii wide nocase fullword
+    $utf8 = "\x6b\x75\x70\x70\x61\x69\x6e\x65\x6e" nocase fullword
+    $wide = "\x6b\x00\x75\x00\x70\x00\x70\x00\x61\x00\x69\x00\x6e\x00\x65\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_26 {
+  meta:
+    info = "kusaista"
   strings:
-    $ = "kuppainen" ascii wide nocase fullword
+    $utf8 = "\x6b\x75\x73\x61\x69\x73\x74\x61" nocase fullword
+    $wide = "\x6b\x00\x75\x00\x73\x00\x61\x00\x69\x00\x73\x00\x74\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_27 {
+  meta:
+    info = "kuseksia"
   strings:
-    $ = "kusaista" ascii wide nocase fullword
+    $utf8 = "\x6b\x75\x73\x65\x6b\x73\x69\x61" nocase fullword
+    $wide = "\x6b\x00\x75\x00\x73\x00\x65\x00\x6b\x00\x73\x00\x69\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_28 {
+  meta:
+    info = "kusettaa"
   strings:
-    $ = "kuseksia" ascii wide nocase fullword
+    $utf8 = "\x6b\x75\x73\x65\x74\x74\x61\x61" nocase fullword
+    $wide = "\x6b\x00\x75\x00\x73\x00\x65\x00\x74\x00\x74\x00\x61\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_29 {
+  meta:
+    info = "kusi"
   strings:
-    $ = "kusettaa" ascii wide nocase fullword
+    $utf8 = "\x6b\x75\x73\x69" nocase fullword
+    $wide = "\x6b\x00\x75\x00\x73\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_30 {
+  meta:
+    info = "kusipää"
   strings:
-    $ = "kusi" ascii wide nocase fullword
+    $utf8 = "\x6b\x75\x73\x69\x70\xc3\xa4\xc3\xa4" nocase fullword
+    $wide = "\x6b\x00\x75\x00\x73\x00\x69\x00\x70\x00\xe4\x00\xe4\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_31 {
+  meta:
+    info = "kusta"
   strings:
-    $ = "kusipää" ascii wide nocase fullword
+    $utf8 = "\x6b\x75\x73\x74\x61" nocase fullword
+    $wide = "\x6b\x00\x75\x00\x73\x00\x74\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_32 {
+  meta:
+    info = "kyrpiintynyt"
   strings:
-    $ = "kusta" ascii wide nocase fullword
+    $utf8 = "\x6b\x79\x72\x70\x69\x69\x6e\x74\x79\x6e\x79\x74" nocase fullword
+    $wide = "\x6b\x00\x79\x00\x72\x00\x70\x00\x69\x00\x69\x00\x6e\x00\x74\x00\x79\x00\x6e\x00\x79\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_33 {
+  meta:
+    info = "kyrpiintyä"
   strings:
-    $ = "kyrpiintynyt" ascii wide nocase fullword
+    $utf8 = "\x6b\x79\x72\x70\x69\x69\x6e\x74\x79\xc3\xa4" nocase fullword
+    $wide = "\x6b\x00\x79\x00\x72\x00\x70\x00\x69\x00\x69\x00\x6e\x00\x74\x00\x79\x00\xe4\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_34 {
+  meta:
+    info = "kyrpiä"
   strings:
-    $ = "kyrpiintyä" ascii wide nocase fullword
+    $utf8 = "\x6b\x79\x72\x70\x69\xc3\xa4" nocase fullword
+    $wide = "\x6b\x00\x79\x00\x72\x00\x70\x00\x69\x00\xe4\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_35 {
+  meta:
+    info = "kyrpä"
   strings:
-    $ = "kyrpiä" ascii wide nocase fullword
+    $utf8 = "\x6b\x79\x72\x70\xc3\xa4" nocase fullword
+    $wide = "\x6b\x00\x79\x00\x72\x00\x70\x00\xe4\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_36 {
+  meta:
+    info = "kyrpänaama"
   strings:
-    $ = "kyrpä" ascii wide nocase fullword
+    $utf8 = "\x6b\x79\x72\x70\xc3\xa4\x6e\x61\x61\x6d\x61" nocase fullword
+    $wide = "\x6b\x00\x79\x00\x72\x00\x70\x00\xe4\x00\x6e\x00\x61\x00\x61\x00\x6d\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_37 {
+  meta:
+    info = "kyrvitys"
   strings:
-    $ = "kyrpänaama" ascii wide nocase fullword
+    $utf8 = "\x6b\x79\x72\x76\x69\x74\x79\x73" nocase fullword
+    $wide = "\x6b\x00\x79\x00\x72\x00\x76\x00\x69\x00\x74\x00\x79\x00\x73\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_38 {
+  meta:
+    info = "lahtari"
   strings:
-    $ = "kyrvitys" ascii wide nocase fullword
+    $utf8 = "\x6c\x61\x68\x74\x61\x72\x69" nocase fullword
+    $wide = "\x6c\x00\x61\x00\x68\x00\x74\x00\x61\x00\x72\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_39 {
+  meta:
+    info = "lutka"
   strings:
-    $ = "lahtari" ascii wide nocase fullword
+    $utf8 = "\x6c\x75\x74\x6b\x61" nocase fullword
+    $wide = "\x6c\x00\x75\x00\x74\x00\x6b\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_40 {
+  meta:
+    info = "molo"
   strings:
-    $ = "lutka" ascii wide nocase fullword
+    $utf8 = "\x6d\x6f\x6c\x6f" nocase fullword
+    $wide = "\x6d\x00\x6f\x00\x6c\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_41 {
+  meta:
+    info = "molopää"
   strings:
-    $ = "molo" ascii wide nocase fullword
+    $utf8 = "\x6d\x6f\x6c\x6f\x70\xc3\xa4\xc3\xa4" nocase fullword
+    $wide = "\x6d\x00\x6f\x00\x6c\x00\x6f\x00\x70\x00\xe4\x00\xe4\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_42 {
+  meta:
+    info = "mulkero"
   strings:
-    $ = "molopää" ascii wide nocase fullword
+    $utf8 = "\x6d\x75\x6c\x6b\x65\x72\x6f" nocase fullword
+    $wide = "\x6d\x00\x75\x00\x6c\x00\x6b\x00\x65\x00\x72\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_43 {
+  meta:
+    info = "mulkku"
   strings:
-    $ = "mulkero" ascii wide nocase fullword
+    $utf8 = "\x6d\x75\x6c\x6b\x6b\x75" nocase fullword
+    $wide = "\x6d\x00\x75\x00\x6c\x00\x6b\x00\x6b\x00\x75\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_44 {
+  meta:
+    info = "mulkvisti"
   strings:
-    $ = "mulkku" ascii wide nocase fullword
+    $utf8 = "\x6d\x75\x6c\x6b\x76\x69\x73\x74\x69" nocase fullword
+    $wide = "\x6d\x00\x75\x00\x6c\x00\x6b\x00\x76\x00\x69\x00\x73\x00\x74\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_45 {
+  meta:
+    info = "munapää"
   strings:
-    $ = "mulkvisti" ascii wide nocase fullword
+    $utf8 = "\x6d\x75\x6e\x61\x70\xc3\xa4\xc3\xa4" nocase fullword
+    $wide = "\x6d\x00\x75\x00\x6e\x00\x61\x00\x70\x00\xe4\x00\xe4\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
+rule content_fi_language_nsfw_46 {
+  meta:
+    info = "munaton"
+  strings:
+    $utf8 = "\x6d\x75\x6e\x61\x74\x6f\x6e" nocase fullword
+    $wide = "\x6d\x00\x75\x00\x6e\x00\x61\x00\x74\x00\x6f\x00\x6e\x00" nocase fullword
+  condition:
+    any of them
+}
 rule content_fi_language_nsfw_47 {
+  meta:
+    info = "mutakuono"
   strings:
-    $ = "munapää" ascii wide nocase fullword
+    $utf8 = "\x6d\x75\x74\x61\x6b\x75\x6f\x6e\x6f" nocase fullword
+    $wide = "\x6d\x00\x75\x00\x74\x00\x61\x00\x6b\x00\x75\x00\x6f\x00\x6e\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_48 {
+  meta:
+    info = "mutiainen"
   strings:
-    $ = "munaton" ascii wide nocase fullword
+    $utf8 = "\x6d\x75\x74\x69\x61\x69\x6e\x65\x6e" nocase fullword
+    $wide = "\x6d\x00\x75\x00\x74\x00\x69\x00\x61\x00\x69\x00\x6e\x00\x65\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_49 {
+  meta:
+    info = "naida"
   strings:
-    $ = "mutakuono" ascii wide nocase fullword
+    $utf8 = "\x6e\x61\x69\x64\x61" nocase fullword
+    $wide = "\x6e\x00\x61\x00\x69\x00\x64\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_50 {
+  meta:
+    info = "nainti"
   strings:
-    $ = "mutiainen" ascii wide nocase fullword
+    $utf8 = "\x6e\x61\x69\x6e\x74\x69" nocase fullword
+    $wide = "\x6e\x00\x61\x00\x69\x00\x6e\x00\x74\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_51 {
+  meta:
+    info = "narttu"
   strings:
-    $ = "naida" ascii wide nocase fullword
+    $utf8 = "\x6e\x61\x72\x74\x74\x75" nocase fullword
+    $wide = "\x6e\x00\x61\x00\x72\x00\x74\x00\x74\x00\x75\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_52 {
+  meta:
+    info = "neekeri"
   strings:
-    $ = "nainti" ascii wide nocase fullword
+    $utf8 = "\x6e\x65\x65\x6b\x65\x72\x69" nocase fullword
+    $wide = "\x6e\x00\x65\x00\x65\x00\x6b\x00\x65\x00\x72\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_53 {
+  meta:
+    info = "nekru"
   strings:
-    $ = "narttu" ascii wide nocase fullword
+    $utf8 = "\x6e\x65\x6b\x72\x75" nocase fullword
+    $wide = "\x6e\x00\x65\x00\x6b\x00\x72\x00\x75\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_54 {
+  meta:
+    info = "nuolla persettä"
   strings:
-    $ = "neekeri" ascii wide nocase fullword
+    $utf8 = "\x6e\x75\x6f\x6c\x6c\x61\x20\x70\x65\x72\x73\x65\x74\x74\xc3\xa4" nocase fullword
+    $wide = "\x6e\x00\x75\x00\x6f\x00\x6c\x00\x6c\x00\x61\x00\x20\x00\x70\x00\x65\x00\x72\x00\x73\x00\x65\x00\x74\x00\x74\x00\xe4\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_55 {
+  meta:
+    info = "nussia"
   strings:
-    $ = "nekru" ascii wide nocase fullword
+    $utf8 = "\x6e\x75\x73\x73\x69\x61" nocase fullword
+    $wide = "\x6e\x00\x75\x00\x73\x00\x73\x00\x69\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_56 {
+  meta:
+    info = "nussija"
   strings:
-    $ = "nuolla persettä" ascii wide nocase fullword
+    $utf8 = "\x6e\x75\x73\x73\x69\x6a\x61" nocase fullword
+    $wide = "\x6e\x00\x75\x00\x73\x00\x73\x00\x69\x00\x6a\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_57 {
+  meta:
+    info = "nussinta"
   strings:
-    $ = "nussia" ascii wide nocase fullword
+    $utf8 = "\x6e\x75\x73\x73\x69\x6e\x74\x61" nocase fullword
+    $wide = "\x6e\x00\x75\x00\x73\x00\x73\x00\x69\x00\x6e\x00\x74\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_58 {
+  meta:
+    info = "paljaalla"
   strings:
-    $ = "nussija" ascii wide nocase fullword
+    $utf8 = "\x70\x61\x6c\x6a\x61\x61\x6c\x6c\x61" nocase fullword
+    $wide = "\x70\x00\x61\x00\x6c\x00\x6a\x00\x61\x00\x61\x00\x6c\x00\x6c\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_59 {
+  meta:
+    info = "palli"
   strings:
-    $ = "nussinta" ascii wide nocase fullword
+    $utf8 = "\x70\x61\x6c\x6c\x69" nocase fullword
+    $wide = "\x70\x00\x61\x00\x6c\x00\x6c\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_60 {
+  meta:
+    info = "pallit"
   strings:
-    $ = "paljaalla" ascii wide nocase fullword
+    $utf8 = "\x70\x61\x6c\x6c\x69\x74" nocase fullword
+    $wide = "\x70\x00\x61\x00\x6c\x00\x6c\x00\x69\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_61 {
+  meta:
+    info = "paneskella"
   strings:
-    $ = "palli" ascii wide nocase fullword
+    $utf8 = "\x70\x61\x6e\x65\x73\x6b\x65\x6c\x6c\x61" nocase fullword
+    $wide = "\x70\x00\x61\x00\x6e\x00\x65\x00\x73\x00\x6b\x00\x65\x00\x6c\x00\x6c\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_62 {
+  meta:
+    info = "panettaa"
   strings:
-    $ = "pallit" ascii wide nocase fullword
+    $utf8 = "\x70\x61\x6e\x65\x74\x74\x61\x61" nocase fullword
+    $wide = "\x70\x00\x61\x00\x6e\x00\x65\x00\x74\x00\x74\x00\x61\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_63 {
+  meta:
+    info = "pano"
   strings:
-    $ = "paneskella" ascii wide nocase fullword
+    $utf8 = "\x70\x61\x6e\x6f" nocase fullword
+    $wide = "\x70\x00\x61\x00\x6e\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_64 {
+  meta:
+    info = "pantava"
   strings:
-    $ = "panettaa" ascii wide nocase fullword
+    $utf8 = "\x70\x61\x6e\x74\x61\x76\x61" nocase fullword
+    $wide = "\x70\x00\x61\x00\x6e\x00\x74\x00\x61\x00\x76\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
+rule content_fi_language_nsfw_65 {
+  meta:
+    info = "paska"
+  strings:
+    $utf8 = "\x70\x61\x73\x6b\x61" nocase fullword
+    $wide = "\x70\x00\x61\x00\x73\x00\x6b\x00\x61\x00" nocase fullword
+  condition:
+    any of them
+}
 rule content_fi_language_nsfw_66 {
+  meta:
+    info = "paskainen"
   strings:
-    $ = "pano" ascii wide nocase fullword
+    $utf8 = "\x70\x61\x73\x6b\x61\x69\x6e\x65\x6e" nocase fullword
+    $wide = "\x70\x00\x61\x00\x73\x00\x6b\x00\x61\x00\x69\x00\x6e\x00\x65\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_67 {
+  meta:
+    info = "paskamainen"
   strings:
-    $ = "pantava" ascii wide nocase fullword
+    $utf8 = "\x70\x61\x73\x6b\x61\x6d\x61\x69\x6e\x65\x6e" nocase fullword
+    $wide = "\x70\x00\x61\x00\x73\x00\x6b\x00\x61\x00\x6d\x00\x61\x00\x69\x00\x6e\x00\x65\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_68 {
+  meta:
+    info = "paskanmarjat"
   strings:
-    $ = "paska" ascii wide nocase fullword
+    $utf8 = "\x70\x61\x73\x6b\x61\x6e\x6d\x61\x72\x6a\x61\x74" nocase fullword
+    $wide = "\x70\x00\x61\x00\x73\x00\x6b\x00\x61\x00\x6e\x00\x6d\x00\x61\x00\x72\x00\x6a\x00\x61\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_69 {
+  meta:
+    info = "paskantaa"
   strings:
-    $ = "paskainen" ascii wide nocase fullword
+    $utf8 = "\x70\x61\x73\x6b\x61\x6e\x74\x61\x61" nocase fullword
+    $wide = "\x70\x00\x61\x00\x73\x00\x6b\x00\x61\x00\x6e\x00\x74\x00\x61\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_70 {
+  meta:
+    info = "paskapuhe"
   strings:
-    $ = "paskamainen" ascii wide nocase fullword
+    $utf8 = "\x70\x61\x73\x6b\x61\x70\x75\x68\x65" nocase fullword
+    $wide = "\x70\x00\x61\x00\x73\x00\x6b\x00\x61\x00\x70\x00\x75\x00\x68\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_71 {
+  meta:
+    info = "paskapää"
   strings:
-    $ = "paskanmarjat" ascii wide nocase fullword
+    $utf8 = "\x70\x61\x73\x6b\x61\x70\xc3\xa4\xc3\xa4" nocase fullword
+    $wide = "\x70\x00\x61\x00\x73\x00\x6b\x00\x61\x00\x70\x00\xe4\x00\xe4\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_72 {
+  meta:
+    info = "paskattaa"
   strings:
-    $ = "paskantaa" ascii wide nocase fullword
+    $utf8 = "\x70\x61\x73\x6b\x61\x74\x74\x61\x61" nocase fullword
+    $wide = "\x70\x00\x61\x00\x73\x00\x6b\x00\x61\x00\x74\x00\x74\x00\x61\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_73 {
+  meta:
+    info = "paskiainen"
   strings:
-    $ = "paskapuhe" ascii wide nocase fullword
+    $utf8 = "\x70\x61\x73\x6b\x69\x61\x69\x6e\x65\x6e" nocase fullword
+    $wide = "\x70\x00\x61\x00\x73\x00\x6b\x00\x69\x00\x61\x00\x69\x00\x6e\x00\x65\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_74 {
+  meta:
+    info = "paskoa"
   strings:
-    $ = "paskapää" ascii wide nocase fullword
+    $utf8 = "\x70\x61\x73\x6b\x6f\x61" nocase fullword
+    $wide = "\x70\x00\x61\x00\x73\x00\x6b\x00\x6f\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_75 {
+  meta:
+    info = "pehko"
   strings:
-    $ = "paskattaa" ascii wide nocase fullword
+    $utf8 = "\x70\x65\x68\x6b\x6f" nocase fullword
+    $wide = "\x70\x00\x65\x00\x68\x00\x6b\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_76 {
+  meta:
+    info = "pentele"
   strings:
-    $ = "paskiainen" ascii wide nocase fullword
+    $utf8 = "\x70\x65\x6e\x74\x65\x6c\x65" nocase fullword
+    $wide = "\x70\x00\x65\x00\x6e\x00\x74\x00\x65\x00\x6c\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_77 {
+  meta:
+    info = "perkele"
   strings:
-    $ = "paskoa" ascii wide nocase fullword
+    $utf8 = "\x70\x65\x72\x6b\x65\x6c\x65" nocase fullword
+    $wide = "\x70\x00\x65\x00\x72\x00\x6b\x00\x65\x00\x6c\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_78 {
+  meta:
+    info = "perkeleesti"
   strings:
-    $ = "pehko" ascii wide nocase fullword
+    $utf8 = "\x70\x65\x72\x6b\x65\x6c\x65\x65\x73\x74\x69" nocase fullword
+    $wide = "\x70\x00\x65\x00\x72\x00\x6b\x00\x65\x00\x6c\x00\x65\x00\x65\x00\x73\x00\x74\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_79 {
+  meta:
+    info = "persaukinen"
   strings:
-    $ = "pentele" ascii wide nocase fullword
+    $utf8 = "\x70\x65\x72\x73\x61\x75\x6b\x69\x6e\x65\x6e" nocase fullword
+    $wide = "\x70\x00\x65\x00\x72\x00\x73\x00\x61\x00\x75\x00\x6b\x00\x69\x00\x6e\x00\x65\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_80 {
+  meta:
+    info = "perse"
   strings:
-    $ = "perkele" ascii wide nocase fullword
+    $utf8 = "\x70\x65\x72\x73\x65" nocase fullword
+    $wide = "\x70\x00\x65\x00\x72\x00\x73\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_81 {
+  meta:
+    info = "perseennuolija"
   strings:
-    $ = "perkeleesti" ascii wide nocase fullword
+    $utf8 = "\x70\x65\x72\x73\x65\x65\x6e\x6e\x75\x6f\x6c\x69\x6a\x61" nocase fullword
+    $wide = "\x70\x00\x65\x00\x72\x00\x73\x00\x65\x00\x65\x00\x6e\x00\x6e\x00\x75\x00\x6f\x00\x6c\x00\x69\x00\x6a\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_82 {
+  meta:
+    info = "perseet olalla"
   strings:
-    $ = "persaukinen" ascii wide nocase fullword
+    $utf8 = "\x70\x65\x72\x73\x65\x65\x74\x20\x6f\x6c\x61\x6c\x6c\x61" nocase fullword
+    $wide = "\x70\x00\x65\x00\x72\x00\x73\x00\x65\x00\x65\x00\x74\x00\x20\x00\x6f\x00\x6c\x00\x61\x00\x6c\x00\x6c\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_83 {
+  meta:
+    info = "persereikä"
   strings:
-    $ = "perse" ascii wide nocase fullword
+    $utf8 = "\x70\x65\x72\x73\x65\x72\x65\x69\x6b\xc3\xa4" nocase fullword
+    $wide = "\x70\x00\x65\x00\x72\x00\x73\x00\x65\x00\x72\x00\x65\x00\x69\x00\x6b\x00\xe4\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_84 {
+  meta:
+    info = "perseääliö"
   strings:
-    $ = "perseennuolija" ascii wide nocase fullword
+    $utf8 = "\x70\x65\x72\x73\x65\xc3\xa4\xc3\xa4\x6c\x69\xc3\xb6" nocase fullword
+    $wide = "\x70\x00\x65\x00\x72\x00\x73\x00\x65\x00\xe4\x00\xe4\x00\x6c\x00\x69\x00\xf6\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_85 {
+  meta:
+    info = "persläpi"
   strings:
-    $ = "perseet olalla" ascii wide nocase fullword
+    $utf8 = "\x70\x65\x72\x73\x6c\xc3\xa4\x70\x69" nocase fullword
+    $wide = "\x70\x00\x65\x00\x72\x00\x73\x00\x6c\x00\xe4\x00\x70\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_86 {
+  meta:
+    info = "perspano"
   strings:
-    $ = "persereikä" ascii wide nocase fullword
+    $utf8 = "\x70\x65\x72\x73\x70\x61\x6e\x6f" nocase fullword
+    $wide = "\x70\x00\x65\x00\x72\x00\x73\x00\x70\x00\x61\x00\x6e\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_87 {
+  meta:
+    info = "persvako"
   strings:
-    $ = "perseääliö" ascii wide nocase fullword
+    $utf8 = "\x70\x65\x72\x73\x76\x61\x6b\x6f" nocase fullword
+    $wide = "\x70\x00\x65\x00\x72\x00\x73\x00\x76\x00\x61\x00\x6b\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_88 {
+  meta:
+    info = "pilkunnussija"
   strings:
-    $ = "persläpi" ascii wide nocase fullword
+    $utf8 = "\x70\x69\x6c\x6b\x75\x6e\x6e\x75\x73\x73\x69\x6a\x61" nocase fullword
+    $wide = "\x70\x00\x69\x00\x6c\x00\x6b\x00\x75\x00\x6e\x00\x6e\x00\x75\x00\x73\x00\x73\x00\x69\x00\x6a\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_89 {
+  meta:
+    info = "pillu"
   strings:
-    $ = "perspano" ascii wide nocase fullword
+    $utf8 = "\x70\x69\x6c\x6c\x75" nocase fullword
+    $wide = "\x70\x00\x69\x00\x6c\x00\x6c\x00\x75\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_90 {
+  meta:
+    info = "pillut"
   strings:
-    $ = "persvako" ascii wide nocase fullword
+    $utf8 = "\x70\x69\x6c\x6c\x75\x74" nocase fullword
+    $wide = "\x70\x00\x69\x00\x6c\x00\x6c\x00\x75\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
-rule content_fi_language_nsfw_91 {
-  strings:
-    $ = "pilkunnussija" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_fi_language_nsfw_92 {
+  meta:
+    info = "pistää"
   strings:
-    $ = "pillu" ascii wide nocase fullword
+    $utf8 = "\x70\x69\x73\x74\xc3\xa4\xc3\xa4" nocase fullword
+    $wide = "\x70\x00\x69\x00\x73\x00\x74\x00\xe4\x00\xe4\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_93 {
+  meta:
+    info = "pyllyvako"
   strings:
-    $ = "pillut" ascii wide nocase fullword
+    $utf8 = "\x70\x79\x6c\x6c\x79\x76\x61\x6b\x6f" nocase fullword
+    $wide = "\x70\x00\x79\x00\x6c\x00\x6c\x00\x79\x00\x76\x00\x61\x00\x6b\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
+rule content_fi_language_nsfw_94 {
+  meta:
+    info = "reva"
+  strings:
+    $utf8 = "\x72\x65\x76\x61" nocase fullword
+    $wide = "\x72\x00\x65\x00\x76\x00\x61\x00" nocase fullword
+  condition:
+    any of them
+}
 rule content_fi_language_nsfw_95 {
+  meta:
+    info = "ripsipiirakka"
   strings:
-    $ = "piru" ascii wide nocase fullword
+    $utf8 = "\x72\x69\x70\x73\x69\x70\x69\x69\x72\x61\x6b\x6b\x61" nocase fullword
+    $wide = "\x72\x00\x69\x00\x70\x00\x73\x00\x69\x00\x70\x00\x69\x00\x69\x00\x72\x00\x61\x00\x6b\x00\x6b\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_96 {
+  meta:
+    info = "runkata"
   strings:
-    $ = "pistää" ascii wide nocase fullword
+    $utf8 = "\x72\x75\x6e\x6b\x61\x74\x61" nocase fullword
+    $wide = "\x72\x00\x75\x00\x6e\x00\x6b\x00\x61\x00\x74\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_97 {
+  meta:
+    info = "runkkari"
   strings:
-    $ = "pyllyvako" ascii wide nocase fullword
+    $utf8 = "\x72\x75\x6e\x6b\x6b\x61\x72\x69" nocase fullword
+    $wide = "\x72\x00\x75\x00\x6e\x00\x6b\x00\x6b\x00\x61\x00\x72\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
+rule content_fi_language_nsfw_98 {
+  meta:
+    info = "runkkaus"
+  strings:
+    $utf8 = "\x72\x75\x6e\x6b\x6b\x61\x75\x73" nocase fullword
+    $wide = "\x72\x00\x75\x00\x6e\x00\x6b\x00\x6b\x00\x61\x00\x75\x00\x73\x00" nocase fullword
+  condition:
+    any of them
+}
 rule content_fi_language_nsfw_99 {
+  meta:
+    info = "runkku"
   strings:
-    $ = "reva" ascii wide nocase fullword
+    $utf8 = "\x72\x75\x6e\x6b\x6b\x75" nocase fullword
+    $wide = "\x72\x00\x75\x00\x6e\x00\x6b\x00\x6b\x00\x75\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_100 {
+  meta:
+    info = "ryssä"
   strings:
-    $ = "ripsipiirakka" ascii wide nocase fullword
+    $utf8 = "\x72\x79\x73\x73\xc3\xa4" nocase fullword
+    $wide = "\x72\x00\x79\x00\x73\x00\x73\x00\xe4\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_101 {
+  meta:
+    info = "rättipää"
   strings:
-    $ = "runkata" ascii wide nocase fullword
+    $utf8 = "\x72\xc3\xa4\x74\x74\x69\x70\xc3\xa4\xc3\xa4" nocase fullword
+    $wide = "\x72\x00\xe4\x00\x74\x00\x74\x00\x69\x00\x70\x00\xe4\x00\xe4\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_102 {
+  meta:
+    info = "saatanasti"
   strings:
-    $ = "runkkari" ascii wide nocase fullword
+    $utf8 = "\x73\x61\x61\x74\x61\x6e\x61\x73\x74\x69" nocase fullword
+    $wide = "\x73\x00\x61\x00\x61\x00\x74\x00\x61\x00\x6e\x00\x61\x00\x73\x00\x74\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_103 {
+  meta:
+    info = "suklaaosasto"
   strings:
-    $ = "runkkaus" ascii wide nocase fullword
+    $utf8 = "\x73\x75\x6b\x6c\x61\x61\x6f\x73\x61\x73\x74\x6f" nocase fullword
+    $wide = "\x73\x00\x75\x00\x6b\x00\x6c\x00\x61\x00\x61\x00\x6f\x00\x73\x00\x61\x00\x73\x00\x74\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_104 {
+  meta:
+    info = "toosa"
   strings:
-    $ = "runkku" ascii wide nocase fullword
+    $utf8 = "\x74\x6f\x6f\x73\x61" nocase fullword
+    $wide = "\x74\x00\x6f\x00\x6f\x00\x73\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_105 {
+  meta:
+    info = "tuhkaluukku"
   strings:
-    $ = "ryssä" ascii wide nocase fullword
+    $utf8 = "\x74\x75\x68\x6b\x61\x6c\x75\x75\x6b\x6b\x75" nocase fullword
+    $wide = "\x74\x00\x75\x00\x68\x00\x6b\x00\x61\x00\x6c\x00\x75\x00\x75\x00\x6b\x00\x6b\x00\x75\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_106 {
+  meta:
+    info = "tumputtaa"
   strings:
-    $ = "rättipää" ascii wide nocase fullword
+    $utf8 = "\x74\x75\x6d\x70\x75\x74\x74\x61\x61" nocase fullword
+    $wide = "\x74\x00\x75\x00\x6d\x00\x70\x00\x75\x00\x74\x00\x74\x00\x61\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_107 {
+  meta:
+    info = "turpasauna"
   strings:
-    $ = "saatanasti" ascii wide nocase fullword
+    $utf8 = "\x74\x75\x72\x70\x61\x73\x61\x75\x6e\x61" nocase fullword
+    $wide = "\x74\x00\x75\x00\x72\x00\x70\x00\x61\x00\x73\x00\x61\x00\x75\x00\x6e\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_108 {
+  meta:
+    info = "tussu"
   strings:
-    $ = "suklaaosasto" ascii wide nocase fullword
+    $utf8 = "\x74\x75\x73\x73\x75" nocase fullword
+    $wide = "\x74\x00\x75\x00\x73\x00\x73\x00\x75\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
+rule content_fi_language_nsfw_109 {
+  meta:
+    info = "tussukka"
+  strings:
+    $utf8 = "\x74\x75\x73\x73\x75\x6b\x6b\x61" nocase fullword
+    $wide = "\x74\x00\x75\x00\x73\x00\x73\x00\x75\x00\x6b\x00\x6b\x00\x61\x00" nocase fullword
+  condition:
+    any of them
+}
 rule content_fi_language_nsfw_110 {
+  meta:
+    info = "tussut"
   strings:
-    $ = "toosa" ascii wide nocase fullword
+    $utf8 = "\x74\x75\x73\x73\x75\x74" nocase fullword
+    $wide = "\x74\x00\x75\x00\x73\x00\x73\x00\x75\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_111 {
+  meta:
+    info = "vakipano"
   strings:
-    $ = "tuhkaluukku" ascii wide nocase fullword
+    $utf8 = "\x76\x61\x6b\x69\x70\x61\x6e\x6f" nocase fullword
+    $wide = "\x76\x00\x61\x00\x6b\x00\x69\x00\x70\x00\x61\x00\x6e\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_112 {
+  meta:
+    info = "vetää käteen"
   strings:
-    $ = "tumputtaa" ascii wide nocase fullword
+    $utf8 = "\x76\x65\x74\xc3\xa4\xc3\xa4\x20\x6b\xc3\xa4\x74\x65\x65\x6e" nocase fullword
+    $wide = "\x76\x00\x65\x00\x74\x00\xe4\x00\xe4\x00\x20\x00\x6b\x00\xe4\x00\x74\x00\x65\x00\x65\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_113 {
+  meta:
+    info = "vittu"
   strings:
-    $ = "turpasauna" ascii wide nocase fullword
+    $utf8 = "\x76\x69\x74\x74\x75" nocase fullword
+    $wide = "\x76\x00\x69\x00\x74\x00\x74\x00\x75\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_114 {
+  meta:
+    info = "vittuilla"
   strings:
-    $ = "tussu" ascii wide nocase fullword
+    $utf8 = "\x76\x69\x74\x74\x75\x69\x6c\x6c\x61" nocase fullword
+    $wide = "\x76\x00\x69\x00\x74\x00\x74\x00\x75\x00\x69\x00\x6c\x00\x6c\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_115 {
+  meta:
+    info = "vittuilu"
   strings:
-    $ = "tussukka" ascii wide nocase fullword
+    $utf8 = "\x76\x69\x74\x74\x75\x69\x6c\x75" nocase fullword
+    $wide = "\x76\x00\x69\x00\x74\x00\x74\x00\x75\x00\x69\x00\x6c\x00\x75\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_116 {
+  meta:
+    info = "vittumainen"
   strings:
-    $ = "tussut" ascii wide nocase fullword
+    $utf8 = "\x76\x69\x74\x74\x75\x6d\x61\x69\x6e\x65\x6e" nocase fullword
+    $wide = "\x76\x00\x69\x00\x74\x00\x74\x00\x75\x00\x6d\x00\x61\x00\x69\x00\x6e\x00\x65\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_117 {
+  meta:
+    info = "vittuuntua"
   strings:
-    $ = "vakipano" ascii wide nocase fullword
+    $utf8 = "\x76\x69\x74\x74\x75\x75\x6e\x74\x75\x61" nocase fullword
+    $wide = "\x76\x00\x69\x00\x74\x00\x74\x00\x75\x00\x75\x00\x6e\x00\x74\x00\x75\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_118 {
+  meta:
+    info = "vittuuntunut"
   strings:
-    $ = "vetää käteen" ascii wide nocase fullword
+    $utf8 = "\x76\x69\x74\x74\x75\x75\x6e\x74\x75\x6e\x75\x74" nocase fullword
+    $wide = "\x76\x00\x69\x00\x74\x00\x74\x00\x75\x00\x75\x00\x6e\x00\x74\x00\x75\x00\x6e\x00\x75\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
+rule content_fi_language_nsfw_119 {
+  meta:
+    info = "vitun"
+  strings:
+    $utf8 = "\x76\x69\x74\x75\x6e" nocase fullword
+    $wide = "\x76\x00\x69\x00\x74\x00\x75\x00\x6e\x00" nocase fullword
+  condition:
+    any of them
+}
 rule content_fi_language_nsfw_120 {
+  meta:
+    info = "vitusti"
   strings:
-    $ = "vittu" ascii wide nocase fullword
+    $utf8 = "\x76\x69\x74\x75\x73\x74\x69" nocase fullword
+    $wide = "\x76\x00\x69\x00\x74\x00\x75\x00\x73\x00\x74\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_121 {
+  meta:
+    info = "vituttaa"
   strings:
-    $ = "vittuilla" ascii wide nocase fullword
+    $utf8 = "\x76\x69\x74\x75\x74\x74\x61\x61" nocase fullword
+    $wide = "\x76\x00\x69\x00\x74\x00\x75\x00\x74\x00\x74\x00\x61\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_122 {
+  meta:
+    info = "vitutus"
   strings:
-    $ = "vittuilu" ascii wide nocase fullword
+    $utf8 = "\x76\x69\x74\x75\x74\x75\x73" nocase fullword
+    $wide = "\x76\x00\x69\x00\x74\x00\x75\x00\x74\x00\x75\x00\x73\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_fi_language_nsfw_123 {
+  meta:
+    info = "äpärä"
   strings:
-    $ = "vittumainen" ascii wide nocase fullword
+    $utf8 = "\xc3\xa4\x70\xc3\xa4\x72\xc3\xa4" nocase fullword
+    $wide = "\xe4\x00\x70\x00\xe4\x00\x72\x00\xe4\x00" nocase fullword
   condition:
-    1 of them
-}
-
-rule content_fi_language_nsfw_124 {
-  strings:
-    $ = "vittuuntua" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_fi_language_nsfw_125 {
-  strings:
-    $ = "vittuuntunut" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_fi_language_nsfw_126 {
-  strings:
-    $ = "vitun" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_fi_language_nsfw_127 {
-  strings:
-    $ = "vitusti" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_fi_language_nsfw_128 {
-  strings:
-    $ = "vituttaa" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_fi_language_nsfw_129 {
-  strings:
-    $ = "vitutus" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
-rule content_fi_language_nsfw_130 {
-  strings:
-    $ = "äpärä" ascii wide nocase fullword
-  condition:
-    1 of them
+    any of them
 }
