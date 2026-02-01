@@ -1,1057 +1,1590 @@
-
 rule content_ru_language_nsfw_1 {
+  meta:
+    info = "bychara"
   strings:
-    $ = "bychara" ascii wide nocase fullword
+    $utf8 = "\x62\x79\x63\x68\x61\x72\x61" nocase fullword
+    $cp1251 = "\x62\x79\x63\x68\x61\x72\x61" nocase fullword
+    $wide = "\x62\x00\x79\x00\x63\x00\x68\x00\x61\x00\x72\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_2 {
+  meta:
+    info = "chernozhopyi"
   strings:
-    $ = "byk" ascii wide nocase fullword
+    $utf8 = "\x63\x68\x65\x72\x6e\x6f\x7a\x68\x6f\x70\x79\x69" nocase fullword
+    $cp1251 = "\x63\x68\x65\x72\x6e\x6f\x7a\x68\x6f\x70\x79\x69" nocase fullword
+    $wide = "\x63\x00\x68\x00\x65\x00\x72\x00\x6e\x00\x6f\x00\x7a\x00\x68\x00\x6f\x00\x70\x00\x79\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_3 {
+  meta:
+    info = "dolboy'eb"
   strings:
-    $ = "chernozhopyi" ascii wide nocase fullword
+    $utf8 = "\x64\x6f\x6c\x62\x6f\x79\x27\x65\x62" nocase fullword
+    $cp1251 = "\x64\x6f\x6c\x62\x6f\x79\x27\x65\x62" nocase fullword
+    $wide = "\x64\x00\x6f\x00\x6c\x00\x62\x00\x6f\x00\x79\x00\x27\x00\x65\x00\x62\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_4 {
+  meta:
+    info = "ebalnik"
   strings:
-    $ = "dolboy'eb" ascii wide nocase fullword
+    $utf8 = "\x65\x62\x61\x6c\x6e\x69\x6b" nocase fullword
+    $cp1251 = "\x65\x62\x61\x6c\x6e\x69\x6b" nocase fullword
+    $wide = "\x65\x00\x62\x00\x61\x00\x6c\x00\x6e\x00\x69\x00\x6b\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_5 {
+  meta:
+    info = "ebalo"
   strings:
-    $ = "ebalnik" ascii wide nocase fullword
+    $utf8 = "\x65\x62\x61\x6c\x6f" nocase fullword
+    $cp1251 = "\x65\x62\x61\x6c\x6f" nocase fullword
+    $wide = "\x65\x00\x62\x00\x61\x00\x6c\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_6 {
+  meta:
+    info = "ebalom sch'elkat"
   strings:
-    $ = "ebalo" ascii wide nocase fullword
+    $utf8 = "\x65\x62\x61\x6c\x6f\x6d\x20\x73\x63\x68\x27\x65\x6c\x6b\x61\x74" nocase fullword
+    $cp1251 = "\x65\x62\x61\x6c\x6f\x6d\x20\x73\x63\x68\x27\x65\x6c\x6b\x61\x74" nocase fullword
+    $wide = "\x65\x00\x62\x00\x61\x00\x6c\x00\x6f\x00\x6d\x00\x20\x00\x73\x00\x63\x00\x68\x00\x27\x00\x65\x00\x6c\x00\x6b\x00\x61\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_7 {
+  meta:
+    info = "mudack"
   strings:
-    $ = "ebalom sch'elkat" ascii wide nocase fullword
+    $utf8 = "\x6d\x75\x64\x61\x63\x6b" nocase fullword
+    $cp1251 = "\x6d\x75\x64\x61\x63\x6b" nocase fullword
+    $wide = "\x6d\x00\x75\x00\x64\x00\x61\x00\x63\x00\x6b\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_8 {
+  meta:
+    info = "opizdenet"
   strings:
-    $ = "gol" ascii wide nocase fullword
+    $utf8 = "\x6f\x70\x69\x7a\x64\x65\x6e\x65\x74" nocase fullword
+    $cp1251 = "\x6f\x70\x69\x7a\x64\x65\x6e\x65\x74" nocase fullword
+    $wide = "\x6f\x00\x70\x00\x69\x00\x7a\x00\x64\x00\x65\x00\x6e\x00\x65\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_9 {
+  meta:
+    info = "osto'eblo"
   strings:
-    $ = "mudack" ascii wide nocase fullword
+    $utf8 = "\x6f\x73\x74\x6f\x27\x65\x62\x6c\x6f" nocase fullword
+    $cp1251 = "\x6f\x73\x74\x6f\x27\x65\x62\x6c\x6f" nocase fullword
+    $wide = "\x6f\x00\x73\x00\x74\x00\x6f\x00\x27\x00\x65\x00\x62\x00\x6c\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_10 {
+  meta:
+    info = "ostokhuitel'no"
   strings:
-    $ = "opizdenet" ascii wide nocase fullword
+    $utf8 = "\x6f\x73\x74\x6f\x6b\x68\x75\x69\x74\x65\x6c\x27\x6e\x6f" nocase fullword
+    $cp1251 = "\x6f\x73\x74\x6f\x6b\x68\x75\x69\x74\x65\x6c\x27\x6e\x6f" nocase fullword
+    $wide = "\x6f\x00\x73\x00\x74\x00\x6f\x00\x6b\x00\x68\x00\x75\x00\x69\x00\x74\x00\x65\x00\x6c\x00\x27\x00\x6e\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_11 {
+  meta:
+    info = "ot'ebis"
   strings:
-    $ = "osto'eblo" ascii wide nocase fullword
+    $utf8 = "\x6f\x74\x27\x65\x62\x69\x73" nocase fullword
+    $cp1251 = "\x6f\x74\x27\x65\x62\x69\x73" nocase fullword
+    $wide = "\x6f\x00\x74\x00\x27\x00\x65\x00\x62\x00\x69\x00\x73\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_12 {
+  meta:
+    info = "otmudohat"
   strings:
-    $ = "ostokhuitel'no" ascii wide nocase fullword
+    $utf8 = "\x6f\x74\x6d\x75\x64\x6f\x68\x61\x74" nocase fullword
+    $cp1251 = "\x6f\x74\x6d\x75\x64\x6f\x68\x61\x74" nocase fullword
+    $wide = "\x6f\x00\x74\x00\x6d\x00\x75\x00\x64\x00\x6f\x00\x68\x00\x61\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_13 {
+  meta:
+    info = "otpizdit"
   strings:
-    $ = "ot'ebis" ascii wide nocase fullword
+    $utf8 = "\x6f\x74\x70\x69\x7a\x64\x69\x74" nocase fullword
+    $cp1251 = "\x6f\x74\x70\x69\x7a\x64\x69\x74" nocase fullword
+    $wide = "\x6f\x00\x74\x00\x70\x00\x69\x00\x7a\x00\x64\x00\x69\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_14 {
+  meta:
+    info = "otsosi"
   strings:
-    $ = "otmudohat" ascii wide nocase fullword
+    $utf8 = "\x6f\x74\x73\x6f\x73\x69" nocase fullword
+    $cp1251 = "\x6f\x74\x73\x6f\x73\x69" nocase fullword
+    $wide = "\x6f\x00\x74\x00\x73\x00\x6f\x00\x73\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_15 {
+  meta:
+    info = "padlo"
   strings:
-    $ = "otpizdit" ascii wide nocase fullword
+    $utf8 = "\x70\x61\x64\x6c\x6f" nocase fullword
+    $cp1251 = "\x70\x61\x64\x6c\x6f" nocase fullword
+    $wide = "\x70\x00\x61\x00\x64\x00\x6c\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_16 {
+  meta:
+    info = "pedik"
   strings:
-    $ = "otsosi" ascii wide nocase fullword
+    $utf8 = "\x70\x65\x64\x69\x6b" nocase fullword
+    $cp1251 = "\x70\x65\x64\x69\x6b" nocase fullword
+    $wide = "\x70\x00\x65\x00\x64\x00\x69\x00\x6b\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_17 {
+  meta:
+    info = "perdet"
   strings:
-    $ = "padlo" ascii wide nocase fullword
+    $utf8 = "\x70\x65\x72\x64\x65\x74" nocase fullword
+    $cp1251 = "\x70\x65\x72\x64\x65\x74" nocase fullword
+    $wide = "\x70\x00\x65\x00\x72\x00\x64\x00\x65\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_18 {
+  meta:
+    info = "petuh"
   strings:
-    $ = "pedik" ascii wide nocase fullword
+    $utf8 = "\x70\x65\x74\x75\x68" nocase fullword
+    $cp1251 = "\x70\x65\x74\x75\x68" nocase fullword
+    $wide = "\x70\x00\x65\x00\x74\x00\x75\x00\x68\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_19 {
+  meta:
+    info = "pidar gnoinyj"
   strings:
-    $ = "perdet" ascii wide nocase fullword
+    $utf8 = "\x70\x69\x64\x61\x72\x20\x67\x6e\x6f\x69\x6e\x79\x6a" nocase fullword
+    $cp1251 = "\x70\x69\x64\x61\x72\x20\x67\x6e\x6f\x69\x6e\x79\x6a" nocase fullword
+    $wide = "\x70\x00\x69\x00\x64\x00\x61\x00\x72\x00\x20\x00\x67\x00\x6e\x00\x6f\x00\x69\x00\x6e\x00\x79\x00\x6a\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_20 {
+  meta:
+    info = "piz'det"
   strings:
-    $ = "petuh" ascii wide nocase fullword
+    $utf8 = "\x70\x69\x7a\x27\x64\x65\x74" nocase fullword
+    $cp1251 = "\x70\x69\x7a\x27\x64\x65\x74" nocase fullword
+    $wide = "\x70\x00\x69\x00\x7a\x00\x27\x00\x64\x00\x65\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_21 {
+  meta:
+    info = "piz`dyulina"
   strings:
-    $ = "pidar gnoinyj" ascii wide nocase fullword
+    $utf8 = "\x70\x69\x7a\x60\x64\x79\x75\x6c\x69\x6e\x61" nocase fullword
+    $cp1251 = "\x70\x69\x7a\x60\x64\x79\x75\x6c\x69\x6e\x61" nocase fullword
+    $wide = "\x70\x00\x69\x00\x7a\x00\x60\x00\x64\x00\x79\x00\x75\x00\x6c\x00\x69\x00\x6e\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_22 {
+  meta:
+    info = "pizd'uk"
   strings:
-    $ = "piz'det" ascii wide nocase fullword
+    $utf8 = "\x70\x69\x7a\x64\x27\x75\x6b" nocase fullword
+    $cp1251 = "\x70\x69\x7a\x64\x27\x75\x6b" nocase fullword
+    $wide = "\x70\x00\x69\x00\x7a\x00\x64\x00\x27\x00\x75\x00\x6b\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_23 {
+  meta:
+    info = "pizda"
   strings:
-    $ = "piz`dyulina" ascii wide nocase fullword
+    $utf8 = "\x70\x69\x7a\x64\x61" nocase fullword
+    $cp1251 = "\x70\x69\x7a\x64\x61" nocase fullword
+    $wide = "\x70\x00\x69\x00\x7a\x00\x64\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_24 {
+  meta:
+    info = "pizdato"
   strings:
-    $ = "pizd'uk" ascii wide nocase fullword
+    $utf8 = "\x70\x69\x7a\x64\x61\x74\x6f" nocase fullword
+    $cp1251 = "\x70\x69\x7a\x64\x61\x74\x6f" nocase fullword
+    $wide = "\x70\x00\x69\x00\x7a\x00\x64\x00\x61\x00\x74\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_25 {
+  meta:
+    info = "pizdatyi"
   strings:
-    $ = "pizda" ascii wide nocase fullword
+    $utf8 = "\x70\x69\x7a\x64\x61\x74\x79\x69" nocase fullword
+    $cp1251 = "\x70\x69\x7a\x64\x61\x74\x79\x69" nocase fullword
+    $wide = "\x70\x00\x69\x00\x7a\x00\x64\x00\x61\x00\x74\x00\x79\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_26 {
+  meta:
+    info = "pizdetc"
   strings:
-    $ = "pizdato" ascii wide nocase fullword
+    $utf8 = "\x70\x69\x7a\x64\x65\x74\x63" nocase fullword
+    $cp1251 = "\x70\x69\x7a\x64\x65\x74\x63" nocase fullword
+    $wide = "\x70\x00\x69\x00\x7a\x00\x64\x00\x65\x00\x74\x00\x63\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_27 {
+  meta:
+    info = "pizdoi nakryt'sja"
   strings:
-    $ = "pizdatyi" ascii wide nocase fullword
+    $utf8 = "\x70\x69\x7a\x64\x6f\x69\x20\x6e\x61\x6b\x72\x79\x74\x27\x73\x6a\x61" nocase fullword
+    $cp1251 = "\x70\x69\x7a\x64\x6f\x69\x20\x6e\x61\x6b\x72\x79\x74\x27\x73\x6a\x61" nocase fullword
+    $wide = "\x70\x00\x69\x00\x7a\x00\x64\x00\x6f\x00\x69\x00\x20\x00\x6e\x00\x61\x00\x6b\x00\x72\x00\x79\x00\x74\x00\x27\x00\x73\x00\x6a\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_28 {
+  meta:
+    info = "po khuy"
   strings:
-    $ = "pizdetc" ascii wide nocase fullword
+    $utf8 = "\x70\x6f\x20\x6b\x68\x75\x79" nocase fullword
+    $cp1251 = "\x70\x6f\x20\x6b\x68\x75\x79" nocase fullword
+    $wide = "\x70\x00\x6f\x00\x20\x00\x6b\x00\x68\x00\x75\x00\x79\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_29 {
+  meta:
+    info = "po'imat' na konchik"
   strings:
-    $ = "pizdoi nakryt'sja" ascii wide nocase fullword
+    $utf8 = "\x70\x6f\x27\x69\x6d\x61\x74\x27\x20\x6e\x61\x20\x6b\x6f\x6e\x63\x68\x69\x6b" nocase fullword
+    $cp1251 = "\x70\x6f\x27\x69\x6d\x61\x74\x27\x20\x6e\x61\x20\x6b\x6f\x6e\x63\x68\x69\x6b" nocase fullword
+    $wide = "\x70\x00\x6f\x00\x27\x00\x69\x00\x6d\x00\x61\x00\x74\x00\x27\x00\x20\x00\x6e\x00\x61\x00\x20\x00\x6b\x00\x6f\x00\x6e\x00\x63\x00\x68\x00\x69\x00\x6b\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_30 {
+  meta:
+    info = "po'iti posrat"
   strings:
-    $ = "po khuy" ascii wide nocase fullword
+    $utf8 = "\x70\x6f\x27\x69\x74\x69\x20\x70\x6f\x73\x72\x61\x74" nocase fullword
+    $cp1251 = "\x70\x6f\x27\x69\x74\x69\x20\x70\x6f\x73\x72\x61\x74" nocase fullword
+    $wide = "\x70\x00\x6f\x00\x27\x00\x69\x00\x74\x00\x69\x00\x20\x00\x70\x00\x6f\x00\x73\x00\x72\x00\x61\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_31 {
+  meta:
+    info = "podi ku'evo"
   strings:
-    $ = "po'imat' na konchik" ascii wide nocase fullword
+    $utf8 = "\x70\x6f\x64\x69\x20\x6b\x75\x27\x65\x76\x6f" nocase fullword
+    $cp1251 = "\x70\x6f\x64\x69\x20\x6b\x75\x27\x65\x76\x6f" nocase fullword
+    $wide = "\x70\x00\x6f\x00\x64\x00\x69\x00\x20\x00\x6b\x00\x75\x00\x27\x00\x65\x00\x76\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_32 {
+  meta:
+    info = "poeben"
   strings:
-    $ = "po'iti posrat" ascii wide nocase fullword
+    $utf8 = "\x70\x6f\x65\x62\x65\x6e" nocase fullword
+    $cp1251 = "\x70\x6f\x65\x62\x65\x6e" nocase fullword
+    $wide = "\x70\x00\x6f\x00\x65\x00\x62\x00\x65\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_33 {
+  meta:
+    info = "poluchit pizdy"
   strings:
-    $ = "podi ku'evo" ascii wide nocase fullword
+    $utf8 = "\x70\x6f\x6c\x75\x63\x68\x69\x74\x20\x70\x69\x7a\x64\x79" nocase fullword
+    $cp1251 = "\x70\x6f\x6c\x75\x63\x68\x69\x74\x20\x70\x69\x7a\x64\x79" nocase fullword
+    $wide = "\x70\x00\x6f\x00\x6c\x00\x75\x00\x63\x00\x68\x00\x69\x00\x74\x00\x20\x00\x70\x00\x69\x00\x7a\x00\x64\x00\x79\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_34 {
+  meta:
+    info = "pososi moyu konfetku"
   strings:
-    $ = "poeben" ascii wide nocase fullword
+    $utf8 = "\x70\x6f\x73\x6f\x73\x69\x20\x6d\x6f\x79\x75\x20\x6b\x6f\x6e\x66\x65\x74\x6b\x75" nocase fullword
+    $cp1251 = "\x70\x6f\x73\x6f\x73\x69\x20\x6d\x6f\x79\x75\x20\x6b\x6f\x6e\x66\x65\x74\x6b\x75" nocase fullword
+    $wide = "\x70\x00\x6f\x00\x73\x00\x6f\x00\x73\x00\x69\x00\x20\x00\x6d\x00\x6f\x00\x79\x00\x75\x00\x20\x00\x6b\x00\x6f\x00\x6e\x00\x66\x00\x65\x00\x74\x00\x6b\x00\x75\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_35 {
+  meta:
+    info = "prissat"
   strings:
-    $ = "poluchit pizdy" ascii wide nocase fullword
+    $utf8 = "\x70\x72\x69\x73\x73\x61\x74" nocase fullword
+    $cp1251 = "\x70\x72\x69\x73\x73\x61\x74" nocase fullword
+    $wide = "\x70\x00\x72\x00\x69\x00\x73\x00\x73\x00\x61\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_36 {
+  meta:
+    info = "proebat"
   strings:
-    $ = "pososi moyu konfetku" ascii wide nocase fullword
+    $utf8 = "\x70\x72\x6f\x65\x62\x61\x74" nocase fullword
+    $cp1251 = "\x70\x72\x6f\x65\x62\x61\x74" nocase fullword
+    $wide = "\x70\x00\x72\x00\x6f\x00\x65\x00\x62\x00\x61\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_37 {
+  meta:
+    info = "promudobl'adsksya pizdopro'ebina"
   strings:
-    $ = "prissat" ascii wide nocase fullword
+    $utf8 = "\x70\x72\x6f\x6d\x75\x64\x6f\x62\x6c\x27\x61\x64\x73\x6b\x73\x79\x61\x20\x70\x69\x7a\x64\x6f\x70\x72\x6f\x27\x65\x62\x69\x6e\x61" nocase fullword
+    $cp1251 = "\x70\x72\x6f\x6d\x75\x64\x6f\x62\x6c\x27\x61\x64\x73\x6b\x73\x79\x61\x20\x70\x69\x7a\x64\x6f\x70\x72\x6f\x27\x65\x62\x69\x6e\x61" nocase fullword
+    $wide = "\x70\x00\x72\x00\x6f\x00\x6d\x00\x75\x00\x64\x00\x6f\x00\x62\x00\x6c\x00\x27\x00\x61\x00\x64\x00\x73\x00\x6b\x00\x73\x00\x79\x00\x61\x00\x20\x00\x70\x00\x69\x00\x7a\x00\x64\x00\x6f\x00\x70\x00\x72\x00\x6f\x00\x27\x00\x65\x00\x62\x00\x69\x00\x6e\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_38 {
+  meta:
+    info = "propezdoloch"
   strings:
-    $ = "proebat" ascii wide nocase fullword
+    $utf8 = "\x70\x72\x6f\x70\x65\x7a\x64\x6f\x6c\x6f\x63\x68" nocase fullword
+    $cp1251 = "\x70\x72\x6f\x70\x65\x7a\x64\x6f\x6c\x6f\x63\x68" nocase fullword
+    $wide = "\x70\x00\x72\x00\x6f\x00\x70\x00\x65\x00\x7a\x00\x64\x00\x6f\x00\x6c\x00\x6f\x00\x63\x00\x68\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_39 {
+  meta:
+    info = "prosrat"
   strings:
-    $ = "promudobl'adsksya pizdopro'ebina" ascii wide nocase fullword
+    $utf8 = "\x70\x72\x6f\x73\x72\x61\x74" nocase fullword
+    $cp1251 = "\x70\x72\x6f\x73\x72\x61\x74" nocase fullword
+    $wide = "\x70\x00\x72\x00\x6f\x00\x73\x00\x72\x00\x61\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_40 {
+  meta:
+    info = "raspeezdeyi"
   strings:
-    $ = "propezdoloch" ascii wide nocase fullword
+    $utf8 = "\x72\x61\x73\x70\x65\x65\x7a\x64\x65\x79\x69" nocase fullword
+    $cp1251 = "\x72\x61\x73\x70\x65\x65\x7a\x64\x65\x79\x69" nocase fullword
+    $wide = "\x72\x00\x61\x00\x73\x00\x70\x00\x65\x00\x65\x00\x7a\x00\x64\x00\x65\x00\x79\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_41 {
+  meta:
+    info = "raspizdatyi"
   strings:
-    $ = "prosrat" ascii wide nocase fullword
+    $utf8 = "\x72\x61\x73\x70\x69\x7a\x64\x61\x74\x79\x69" nocase fullword
+    $cp1251 = "\x72\x61\x73\x70\x69\x7a\x64\x61\x74\x79\x69" nocase fullword
+    $wide = "\x72\x00\x61\x00\x73\x00\x70\x00\x69\x00\x7a\x00\x64\x00\x61\x00\x74\x00\x79\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_42 {
+  meta:
+    info = "raz'yebuy"
   strings:
-    $ = "raspeezdeyi" ascii wide nocase fullword
+    $utf8 = "\x72\x61\x7a\x27\x79\x65\x62\x75\x79" nocase fullword
+    $cp1251 = "\x72\x61\x7a\x27\x79\x65\x62\x75\x79" nocase fullword
+    $wide = "\x72\x00\x61\x00\x7a\x00\x27\x00\x79\x00\x65\x00\x62\x00\x75\x00\x79\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_43 {
+  meta:
+    info = "raz'yoba"
   strings:
-    $ = "raspizdatyi" ascii wide nocase fullword
+    $utf8 = "\x72\x61\x7a\x27\x79\x6f\x62\x61" nocase fullword
+    $cp1251 = "\x72\x61\x7a\x27\x79\x6f\x62\x61" nocase fullword
+    $wide = "\x72\x00\x61\x00\x7a\x00\x27\x00\x79\x00\x6f\x00\x62\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_44 {
+  meta:
+    info = "s'ebat'sya"
   strings:
-    $ = "raz'yebuy" ascii wide nocase fullword
+    $utf8 = "\x73\x27\x65\x62\x61\x74\x27\x73\x79\x61" nocase fullword
+    $cp1251 = "\x73\x27\x65\x62\x61\x74\x27\x73\x79\x61" nocase fullword
+    $wide = "\x73\x00\x27\x00\x65\x00\x62\x00\x61\x00\x74\x00\x27\x00\x73\x00\x79\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_45 {
+  meta:
+    info = "shalava"
   strings:
-    $ = "raz'yoba" ascii wide nocase fullword
+    $utf8 = "\x73\x68\x61\x6c\x61\x76\x61" nocase fullword
+    $cp1251 = "\x73\x68\x61\x6c\x61\x76\x61" nocase fullword
+    $wide = "\x73\x00\x68\x00\x61\x00\x6c\x00\x61\x00\x76\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_46 {
+  meta:
+    info = "styervo"
   strings:
-    $ = "s'ebat'sya" ascii wide nocase fullword
+    $utf8 = "\x73\x74\x79\x65\x72\x76\x6f" nocase fullword
+    $cp1251 = "\x73\x74\x79\x65\x72\x76\x6f" nocase fullword
+    $wide = "\x73\x00\x74\x00\x79\x00\x65\x00\x72\x00\x76\x00\x6f\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_47 {
+  meta:
+    info = "sukin syn"
   strings:
-    $ = "shalava" ascii wide nocase fullword
+    $utf8 = "\x73\x75\x6b\x69\x6e\x20\x73\x79\x6e" nocase fullword
+    $cp1251 = "\x73\x75\x6b\x69\x6e\x20\x73\x79\x6e" nocase fullword
+    $wide = "\x73\x00\x75\x00\x6b\x00\x69\x00\x6e\x00\x20\x00\x73\x00\x79\x00\x6e\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_48 {
+  meta:
+    info = "svodit posrat"
   strings:
-    $ = "styervo" ascii wide nocase fullword
+    $utf8 = "\x73\x76\x6f\x64\x69\x74\x20\x70\x6f\x73\x72\x61\x74" nocase fullword
+    $cp1251 = "\x73\x76\x6f\x64\x69\x74\x20\x70\x6f\x73\x72\x61\x74" nocase fullword
+    $wide = "\x73\x00\x76\x00\x6f\x00\x64\x00\x69\x00\x74\x00\x20\x00\x70\x00\x6f\x00\x73\x00\x72\x00\x61\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_49 {
+  meta:
+    info = "svoloch"
   strings:
-    $ = "sukin syn" ascii wide nocase fullword
+    $utf8 = "\x73\x76\x6f\x6c\x6f\x63\x68" nocase fullword
+    $cp1251 = "\x73\x76\x6f\x6c\x6f\x63\x68" nocase fullword
+    $wide = "\x73\x00\x76\x00\x6f\x00\x6c\x00\x6f\x00\x63\x00\x68\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_50 {
+  meta:
+    info = "trakhat'sya"
   strings:
-    $ = "svodit posrat" ascii wide nocase fullword
+    $utf8 = "\x74\x72\x61\x6b\x68\x61\x74\x27\x73\x79\x61" nocase fullword
+    $cp1251 = "\x74\x72\x61\x6b\x68\x61\x74\x27\x73\x79\x61" nocase fullword
+    $wide = "\x74\x00\x72\x00\x61\x00\x6b\x00\x68\x00\x61\x00\x74\x00\x27\x00\x73\x00\x79\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_51 {
+  meta:
+    info = "trimandoblydskiy pizdoproyob"
   strings:
-    $ = "svoloch" ascii wide nocase fullword
+    $utf8 = "\x74\x72\x69\x6d\x61\x6e\x64\x6f\x62\x6c\x79\x64\x73\x6b\x69\x79\x20\x70\x69\x7a\x64\x6f\x70\x72\x6f\x79\x6f\x62" nocase fullword
+    $cp1251 = "\x74\x72\x69\x6d\x61\x6e\x64\x6f\x62\x6c\x79\x64\x73\x6b\x69\x79\x20\x70\x69\x7a\x64\x6f\x70\x72\x6f\x79\x6f\x62" nocase fullword
+    $wide = "\x74\x00\x72\x00\x69\x00\x6d\x00\x61\x00\x6e\x00\x64\x00\x6f\x00\x62\x00\x6c\x00\x79\x00\x64\x00\x73\x00\x6b\x00\x69\x00\x79\x00\x20\x00\x70\x00\x69\x00\x7a\x00\x64\x00\x6f\x00\x70\x00\x72\x00\x6f\x00\x79\x00\x6f\x00\x62\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_52 {
+  meta:
+    info = "u'ebitsche"
   strings:
-    $ = "trakhat'sya" ascii wide nocase fullword
+    $utf8 = "\x75\x27\x65\x62\x69\x74\x73\x63\x68\x65" nocase fullword
+    $cp1251 = "\x75\x27\x65\x62\x69\x74\x73\x63\x68\x65" nocase fullword
+    $wide = "\x75\x00\x27\x00\x65\x00\x62\x00\x69\x00\x74\x00\x73\x00\x63\x00\x68\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_53 {
+  meta:
+    info = "ubl'yudok"
   strings:
-    $ = "trimandoblydskiy pizdoproyob" ascii wide nocase fullword
+    $utf8 = "\x75\x62\x6c\x27\x79\x75\x64\x6f\x6b" nocase fullword
+    $cp1251 = "\x75\x62\x6c\x27\x79\x75\x64\x6f\x6b" nocase fullword
+    $wide = "\x75\x00\x62\x00\x6c\x00\x27\x00\x79\x00\x75\x00\x64\x00\x6f\x00\x6b\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_54 {
+  meta:
+    info = "uboy"
   strings:
-    $ = "u'ebitsche" ascii wide nocase fullword
+    $utf8 = "\x75\x62\x6f\x79" nocase fullword
+    $cp1251 = "\x75\x62\x6f\x79" nocase fullword
+    $wide = "\x75\x00\x62\x00\x6f\x00\x79\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_55 {
+  meta:
+    info = "v pizdu"
   strings:
-    $ = "ubl'yudok" ascii wide nocase fullword
+    $utf8 = "\x76\x20\x70\x69\x7a\x64\x75" nocase fullword
+    $cp1251 = "\x76\x20\x70\x69\x7a\x64\x75" nocase fullword
+    $wide = "\x76\x00\x20\x00\x70\x00\x69\x00\x7a\x00\x64\x00\x75\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_56 {
+  meta:
+    info = "vafl'a"
   strings:
-    $ = "uboy" ascii wide nocase fullword
+    $utf8 = "\x76\x61\x66\x6c\x27\x61" nocase fullword
+    $cp1251 = "\x76\x61\x66\x6c\x27\x61" nocase fullword
+    $wide = "\x76\x00\x61\x00\x66\x00\x6c\x00\x27\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_57 {
+  meta:
+    info = "vafli lovit"
   strings:
-    $ = "v pizdu" ascii wide nocase fullword
+    $utf8 = "\x76\x61\x66\x6c\x69\x20\x6c\x6f\x76\x69\x74" nocase fullword
+    $cp1251 = "\x76\x61\x66\x6c\x69\x20\x6c\x6f\x76\x69\x74" nocase fullword
+    $wide = "\x76\x00\x61\x00\x66\x00\x6c\x00\x69\x00\x20\x00\x6c\x00\x6f\x00\x76\x00\x69\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_58 {
+  meta:
+    info = "vyperdysh"
   strings:
-    $ = "vafl'a" ascii wide nocase fullword
+    $utf8 = "\x76\x79\x70\x65\x72\x64\x79\x73\x68" nocase fullword
+    $cp1251 = "\x76\x79\x70\x65\x72\x64\x79\x73\x68" nocase fullword
+    $wide = "\x76\x00\x79\x00\x70\x00\x65\x00\x72\x00\x64\x00\x79\x00\x73\x00\x68\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_59 {
+  meta:
+    info = "vzdrochennyi"
   strings:
-    $ = "vafli lovit" ascii wide nocase fullword
+    $utf8 = "\x76\x7a\x64\x72\x6f\x63\x68\x65\x6e\x6e\x79\x69" nocase fullword
+    $cp1251 = "\x76\x7a\x64\x72\x6f\x63\x68\x65\x6e\x6e\x79\x69" nocase fullword
+    $wide = "\x76\x00\x7a\x00\x64\x00\x72\x00\x6f\x00\x63\x00\x68\x00\x65\x00\x6e\x00\x6e\x00\x79\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_60 {
+  meta:
+    info = "yeb vas"
   strings:
-    $ = "vyperdysh" ascii wide nocase fullword
+    $utf8 = "\x79\x65\x62\x20\x76\x61\x73" nocase fullword
+    $cp1251 = "\x79\x65\x62\x20\x76\x61\x73" nocase fullword
+    $wide = "\x79\x00\x65\x00\x62\x00\x20\x00\x76\x00\x61\x00\x73\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_61 {
+  meta:
+    info = "za'ebat"
   strings:
-    $ = "vzdrochennyi" ascii wide nocase fullword
+    $utf8 = "\x7a\x61\x27\x65\x62\x61\x74" nocase fullword
+    $cp1251 = "\x7a\x61\x27\x65\x62\x61\x74" nocase fullword
+    $wide = "\x7a\x00\x61\x00\x27\x00\x65\x00\x62\x00\x61\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_62 {
+  meta:
+    info = "zaebis"
   strings:
-    $ = "yeb vas" ascii wide nocase fullword
+    $utf8 = "\x7a\x61\x65\x62\x69\x73" nocase fullword
+    $cp1251 = "\x7a\x61\x65\x62\x69\x73" nocase fullword
+    $wide = "\x7a\x00\x61\x00\x65\x00\x62\x00\x69\x00\x73\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_63 {
+  meta:
+    info = "zalupa"
   strings:
-    $ = "za'ebat" ascii wide nocase fullword
+    $utf8 = "\x7a\x61\x6c\x75\x70\x61" nocase fullword
+    $cp1251 = "\x7a\x61\x6c\x75\x70\x61" nocase fullword
+    $wide = "\x7a\x00\x61\x00\x6c\x00\x75\x00\x70\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_64 {
+  meta:
+    info = "zalupat"
   strings:
-    $ = "zaebis" ascii wide nocase fullword
+    $utf8 = "\x7a\x61\x6c\x75\x70\x61\x74" nocase fullword
+    $cp1251 = "\x7a\x61\x6c\x75\x70\x61\x74" nocase fullword
+    $wide = "\x7a\x00\x61\x00\x6c\x00\x75\x00\x70\x00\x61\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_65 {
+  meta:
+    info = "zasranetc"
   strings:
-    $ = "zalupa" ascii wide nocase fullword
+    $utf8 = "\x7a\x61\x73\x72\x61\x6e\x65\x74\x63" nocase fullword
+    $cp1251 = "\x7a\x61\x73\x72\x61\x6e\x65\x74\x63" nocase fullword
+    $wide = "\x7a\x00\x61\x00\x73\x00\x72\x00\x61\x00\x6e\x00\x65\x00\x74\x00\x63\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_66 {
+  meta:
+    info = "zassat"
   strings:
-    $ = "zalupat" ascii wide nocase fullword
+    $utf8 = "\x7a\x61\x73\x73\x61\x74" nocase fullword
+    $cp1251 = "\x7a\x61\x73\x73\x61\x74" nocase fullword
+    $wide = "\x7a\x00\x61\x00\x73\x00\x73\x00\x61\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_67 {
+  meta:
+    info = "zlo'ebuchy"
   strings:
-    $ = "zasranetc" ascii wide nocase fullword
+    $utf8 = "\x7a\x6c\x6f\x27\x65\x62\x75\x63\x68\x79" nocase fullword
+    $cp1251 = "\x7a\x6c\x6f\x27\x65\x62\x75\x63\x68\x79" nocase fullword
+    $wide = "\x7a\x00\x6c\x00\x6f\x00\x27\x00\x65\x00\x62\x00\x75\x00\x63\x00\x68\x00\x79\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_68 {
+  meta:
+    info = "ни за хуй собачу"
   strings:
-    $ = "zassat" ascii wide nocase fullword
+    $utf8 = "\xd0\xbd\xd0\xb8\x20\xd0\xb7\xd0\xb0\x20\xd1\x85\xd1\x83\xd0\xb9\x20\xd1\x81\xd0\xbe\xd0\xb1\xd0\xb0\xd1\x87\xd1\x83" nocase fullword
+    $cp1251 = "\xed\xe8\x20\xe7\xe0\x20\xf5\xf3\xe9\x20\xf1\xee\xe1\xe0\xf7\xf3" nocase fullword
+    $wide = "\x3d\x04\x00\x38\x04\x00\x20\x00\x37\x04\x00\x30\x04\x00\x20\x00\x45\x04\x00\x43\x04\x00\x39\x04\x00\x20\x00\x41\x04\x00\x3e\x04\x00\x31\x04\x00\x30\x04\x00\x47\x04\x00\x43\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_69 {
+  meta:
+    info = "на фиг"
   strings:
-    $ = "zlo'ebuchy" ascii wide nocase fullword
+    $utf8 = "\xd0\xbd\xd0\xb0\x20\xd1\x84\xd0\xb8\xd0\xb3" nocase fullword
+    $cp1251 = "\xed\xe0\x20\xf4\xe8\xe3" nocase fullword
+    $wide = "\x3d\x04\x00\x30\x04\x00\x20\x00\x44\x04\x00\x38\x04\x00\x33\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_70 {
+  meta:
+    info = "на хуй"
   strings:
-    $ = "ни за хуй собачу" ascii wide nocase fullword
+    $utf8 = "\xd0\xbd\xd0\xb0\x20\xd1\x85\xd1\x83\xd0\xb9" nocase fullword
+    $cp1251 = "\xed\xe0\x20\xf5\xf3\xe9" nocase fullword
+    $wide = "\x3d\x04\x00\x30\x04\x00\x20\x00\x45\x04\x00\x43\x04\x00\x39\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_71 {
+  meta:
+    info = "на хуя"
   strings:
-    $ = "на фиг" ascii wide nocase fullword
+    $utf8 = "\xd0\xbd\xd0\xb0\x20\xd1\x85\xd1\x83\xd1\x8f" nocase fullword
+    $cp1251 = "\xed\xe0\x20\xf5\xf3\xff" nocase fullword
+    $wide = "\x3d\x04\x00\x30\x04\x00\x20\x00\x45\x04\x00\x43\x04\x00\x4f\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_72 {
+  meta:
+    info = "ни хуя"
   strings:
-    $ = "на хуй" ascii wide nocase fullword
+    $utf8 = "\xd0\xbd\xd0\xb8\x20\xd1\x85\xd1\x83\xd1\x8f" nocase fullword
+    $cp1251 = "\xed\xe8\x20\xf5\xf3\xff" nocase fullword
+    $wide = "\x3d\x04\x00\x38\x04\x00\x20\x00\x45\x04\x00\x43\x04\x00\x4f\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_73 {
+  meta:
+    info = "ты мне ваньку не валяй"
   strings:
-    $ = "на хуя" ascii wide nocase fullword
+    $utf8 = "\xd1\x82\xd1\x8b\x20\xd0\xbc\xd0\xbd\xd0\xb5\x20\xd0\xb2\xd0\xb0\xd0\xbd\xd1\x8c\xd0\xba\xd1\x83\x20\xd0\xbd\xd0\xb5\x20\xd0\xb2\xd0\xb0\xd0\xbb\xd1\x8f\xd0\xb9" nocase fullword
+    $cp1251 = "\xf2\xfb\x20\xec\xed\xe5\x20\xe2\xe0\xed\xfc\xea\xf3\x20\xed\xe5\x20\xe2\xe0\xeb\xff\xe9" nocase fullword
+    $wide = "\x42\x04\x00\x4b\x04\x00\x20\x00\x3c\x04\x00\x3d\x04\x00\x35\x04\x00\x20\x00\x32\x04\x00\x30\x04\x00\x3d\x04\x00\x4c\x04\x00\x3a\x04\x00\x43\x04\x00\x20\x00\x3d\x04\x00\x35\x04\x00\x20\x00\x32\x04\x00\x30\x04\x00\x3b\x04\x00\x4f\x04\x00\x39\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_74 {
+  meta:
+    info = "на хую вертеть"
   strings:
-    $ = "ни хуя" ascii wide nocase fullword
+    $utf8 = "\xd0\xbd\xd0\xb0\x20\xd1\x85\xd1\x83\xd1\x8e\x20\xd0\xb2\xd0\xb5\xd1\x80\xd1\x82\xd0\xb5\xd1\x82\xd1\x8c" nocase fullword
+    $cp1251 = "\xed\xe0\x20\xf5\xf3\xfe\x20\xe2\xe5\xf0\xf2\xe5\xf2\xfc" nocase fullword
+    $wide = "\x3d\x04\x00\x30\x04\x00\x20\x00\x45\x04\x00\x43\x04\x00\x4e\x04\x00\x20\x00\x32\x04\x00\x35\x04\x00\x40\x04\x00\x42\x04\x00\x35\x04\x00\x42\x04\x00\x4c\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_75 {
+  meta:
+    info = "не ебет"
   strings:
-    $ = "ты мне ваньку не валяй" ascii wide nocase fullword
+    $utf8 = "\xd0\xbd\xd0\xb5\x20\xd0\xb5\xd0\xb1\xd0\xb5\xd1\x82" nocase fullword
+    $cp1251 = "\xed\xe5\x20\xe5\xe1\xe5\xf2" nocase fullword
+    $wide = "\x3d\x04\x00\x35\x04\x00\x20\x00\x35\x04\x00\x31\x04\x00\x35\x04\x00\x42\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_76 {
+  meta:
+    info = "ёб твою мать"
   strings:
-    $ = "на хую вертеть" ascii wide nocase fullword
+    $utf8 = "\xd1\x91\xd0\xb1\x20\xd1\x82\xd0\xb2\xd0\xbe\xd1\x8e\x20\xd0\xbc\xd0\xb0\xd1\x82\xd1\x8c" nocase fullword
+    $cp1251 = "\xb8\xe1\x20\xf2\xe2\xee\xfe\x20\xec\xe0\xf2\xfc" nocase fullword
+    $wide = "\x51\x04\x00\x31\x04\x00\x20\x00\x42\x04\x00\x32\x04\x00\x3e\x04\x00\x4e\x04\x00\x20\x00\x3c\x04\x00\x30\x04\x00\x42\x04\x00\x4c\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_77 {
+  meta:
+    info = "во пизду"
   strings:
-    $ = "не ебет" ascii wide nocase fullword
+    $utf8 = "\xd0\xb2\xd0\xbe\x20\xd0\xbf\xd0\xb8\xd0\xb7\xd0\xb4\xd1\x83" nocase fullword
+    $cp1251 = "\xe2\xee\x20\xef\xe8\xe7\xe4\xf3" nocase fullword
+    $wide = "\x32\x04\x00\x3e\x04\x00\x20\x00\x3f\x04\x00\x38\x04\x00\x37\x04\x00\x34\x04\x00\x43\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_78 {
+  meta:
+    info = "хуй"
   strings:
-    $ = "ёб твою мать" ascii wide nocase fullword
+    $utf8 = "\xd1\x85\xd1\x83\xd0\xb9" nocase fullword
+    $cp1251 = "\xf5\xf3\xe9" nocase fullword
+    $wide = "\x45\x04\x00\x43\x04\x00\x39\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_79 {
+  meta:
+    info = "хер с ней"
   strings:
-    $ = "во пизду" ascii wide nocase fullword
+    $utf8 = "\xd1\x85\xd0\xb5\xd1\x80\x20\xd1\x81\x20\xd0\xbd\xd0\xb5\xd0\xb9" nocase fullword
+    $cp1251 = "\xf5\xe5\xf0\x20\xf1\x20\xed\xe5\xe9" nocase fullword
+    $wide = "\x45\x04\x00\x35\x04\x00\x40\x04\x00\x20\x00\x41\x04\x00\x20\x00\x3d\x04\x00\x35\x04\x00\x39\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_80 {
+  meta:
+    info = "хер с ним"
   strings:
-    $ = "хуй" ascii wide nocase fullword
+    $utf8 = "\xd1\x85\xd0\xb5\xd1\x80\x20\xd1\x81\x20\xd0\xbd\xd0\xb8\xd0\xbc" nocase fullword
+    $cp1251 = "\xf5\xe5\xf0\x20\xf1\x20\xed\xe8\xec" nocase fullword
+    $wide = "\x45\x04\x00\x35\x04\x00\x40\x04\x00\x20\x00\x41\x04\x00\x20\x00\x3d\x04\x00\x38\x04\x00\x3c\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_81 {
+  meta:
+    info = "как два пальца обоссать"
   strings:
-    $ = "хер с ней" ascii wide nocase fullword
+    $utf8 = "\xd0\xba\xd0\xb0\xd0\xba\x20\xd0\xb4\xd0\xb2\xd0\xb0\x20\xd0\xbf\xd0\xb0\xd0\xbb\xd1\x8c\xd1\x86\xd0\xb0\x20\xd0\xbe\xd0\xb1\xd0\xbe\xd1\x81\xd1\x81\xd0\xb0\xd1\x82\xd1\x8c" nocase fullword
+    $cp1251 = "\xea\xe0\xea\x20\xe4\xe2\xe0\x20\xef\xe0\xeb\xfc\xf6\xe0\x20\xee\xe1\xee\xf1\xf1\xe0\xf2\xfc" nocase fullword
+    $wide = "\x3a\x04\x00\x30\x04\x00\x3a\x04\x00\x20\x00\x34\x04\x00\x32\x04\x00\x30\x04\x00\x20\x00\x3f\x04\x00\x30\x04\x00\x3b\x04\x00\x4c\x04\x00\x46\x04\x00\x30\x04\x00\x20\x00\x3e\x04\x00\x31\x04\x00\x3e\x04\x00\x41\x04\x00\x41\x04\x00\x30\x04\x00\x42\x04\x00\x4c\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_82 {
+  meta:
+    info = "хуй пинать"
   strings:
-    $ = "хер с ним" ascii wide nocase fullword
+    $utf8 = "\xd1\x85\xd1\x83\xd0\xb9\x20\xd0\xbf\xd0\xb8\xd0\xbd\xd0\xb0\xd1\x82\xd1\x8c" nocase fullword
+    $cp1251 = "\xf5\xf3\xe9\x20\xef\xe8\xed\xe0\xf2\xfc" nocase fullword
+    $wide = "\x45\x04\x00\x43\x04\x00\x39\x04\x00\x20\x00\x3f\x04\x00\x38\x04\x00\x3d\x04\x00\x30\x04\x00\x42\x04\x00\x4c\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_83 {
+  meta:
+    info = "траxать"
   strings:
-    $ = "как два пальца обоссать" ascii wide nocase fullword
+    $utf8 = "\xd1\x82\xd1\x80\xd0\xb0\x78\xd0\xb0\xd1\x82\xd1\x8c" nocase fullword
+    $cp1251 = "\xf2\xf0\xe0\x78\xe0\xf2\xfc" nocase fullword
+    $wide = "\x42\x04\x00\x40\x04\x00\x30\x04\x00\x78\x00\x30\x04\x00\x42\x04\x00\x4c\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_84 {
+  meta:
+    info = "ебло"
   strings:
-    $ = "хуй пинать" ascii wide nocase fullword
+    $utf8 = "\xd0\xb5\xd0\xb1\xd0\xbb\xd0\xbe" nocase fullword
+    $cp1251 = "\xe5\xe1\xeb\xee" nocase fullword
+    $wide = "\x35\x04\x00\x31\x04\x00\x3b\x04\x00\x3e\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_85 {
+  meta:
+    info = "жопа"
   strings:
-    $ = "траxать" ascii wide nocase fullword
+    $utf8 = "\xd0\xb6\xd0\xbe\xd0\xbf\xd0\xb0" nocase fullword
+    $cp1251 = "\xe6\xee\xef\xe0" nocase fullword
+    $wide = "\x36\x04\x00\x3e\x04\x00\x3f\x04\x00\x30\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_86 {
+  meta:
+    info = "мент"
   strings:
-    $ = "ебло" ascii wide nocase fullword
+    $utf8 = "\xd0\xbc\xd0\xb5\xd0\xbd\xd1\x82" nocase fullword
+    $cp1251 = "\xec\xe5\xed\xf2" nocase fullword
+    $wide = "\x3c\x04\x00\x35\x04\x00\x3d\x04\x00\x42\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_87 {
+  meta:
+    info = "муда"
   strings:
-    $ = "жопа" ascii wide nocase fullword
+    $utf8 = "\xd0\xbc\xd1\x83\xd0\xb4\xd0\xb0" nocase fullword
+    $cp1251 = "\xec\xf3\xe4\xe0" nocase fullword
+    $wide = "\x3c\x04\x00\x43\x04\x00\x34\x04\x00\x30\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_88 {
+  meta:
+    info = "секс"
   strings:
-    $ = "мент" ascii wide nocase fullword
+    $utf8 = "\xd1\x81\xd0\xb5\xd0\xba\xd1\x81" nocase fullword
+    $cp1251 = "\xf1\xe5\xea\xf1" nocase fullword
+    $wide = "\x41\x04\x00\x35\x04\x00\x3a\x04\x00\x41\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_89 {
+  meta:
+    info = "фига"
   strings:
-    $ = "муда" ascii wide nocase fullword
+    $utf8 = "\xd1\x84\xd0\xb8\xd0\xb3\xd0\xb0" nocase fullword
+    $cp1251 = "\xf4\xe8\xe3\xe0" nocase fullword
+    $wide = "\x44\x04\x00\x38\x04\x00\x33\x04\x00\x30\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_90 {
+  meta:
+    info = "хрен"
   strings:
-    $ = "секс" ascii wide nocase fullword
+    $utf8 = "\xd1\x85\xd1\x80\xd0\xb5\xd0\xbd" nocase fullword
+    $cp1251 = "\xf5\xf0\xe5\xed" nocase fullword
+    $wide = "\x45\x04\x00\x40\x04\x00\x35\x04\x00\x3d\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_91 {
+  meta:
+    info = "дать пизды"
   strings:
-    $ = "фига" ascii wide nocase fullword
+    $utf8 = "\xd0\xb4\xd0\xb0\xd1\x82\xd1\x8c\x20\xd0\xbf\xd0\xb8\xd0\xb7\xd0\xb4\xd1\x8b" nocase fullword
+    $cp1251 = "\xe4\xe0\xf2\xfc\x20\xef\xe8\xe7\xe4\xfb" nocase fullword
+    $wide = "\x34\x04\x00\x30\x04\x00\x42\x04\x00\x4c\x04\x00\x20\x00\x3f\x04\x00\x38\x04\x00\x37\x04\x00\x34\x04\x00\x4b\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_92 {
+  meta:
+    info = "хуем груши околачивать"
   strings:
-    $ = "хрен" ascii wide nocase fullword
+    $utf8 = "\xd1\x85\xd1\x83\xd0\xb5\xd0\xbc\x20\xd0\xb3\xd1\x80\xd1\x83\xd1\x88\xd0\xb8\x20\xd0\xbe\xd0\xba\xd0\xbe\xd0\xbb\xd0\xb0\xd1\x87\xd0\xb8\xd0\xb2\xd0\xb0\xd1\x82\xd1\x8c" nocase fullword
+    $cp1251 = "\xf5\xf3\xe5\xec\x20\xe3\xf0\xf3\xf8\xe8\x20\xee\xea\xee\xeb\xe0\xf7\xe8\xe2\xe0\xf2\xfc" nocase fullword
+    $wide = "\x45\x04\x00\x43\x04\x00\x35\x04\x00\x3c\x04\x00\x20\x00\x33\x04\x00\x40\x04\x00\x43\x04\x00\x48\x04\x00\x38\x04\x00\x20\x00\x3e\x04\x00\x3a\x04\x00\x3e\x04\x00\x3b\x04\x00\x30\x04\x00\x47\x04\x00\x38\x04\x00\x32\x04\x00\x30\x04\x00\x42\x04\x00\x4c\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_93 {
+  meta:
+    info = "один ебётся"
   strings:
-    $ = "дать пизды" ascii wide nocase fullword
+    $utf8 = "\xd0\xbe\xd0\xb4\xd0\xb8\xd0\xbd\x20\xd0\xb5\xd0\xb1\xd1\x91\xd1\x82\xd1\x81\xd1\x8f" nocase fullword
+    $cp1251 = "\xee\xe4\xe8\xed\x20\xe5\xe1\xb8\xf2\xf1\xff" nocase fullword
+    $wide = "\x3e\x04\x00\x34\x04\x00\x38\x04\x00\x3d\x04\x00\x20\x00\x35\x04\x00\x31\x04\x00\x51\x04\x00\x42\x04\x00\x41\x04\x00\x4f\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_94 {
+  meta:
+    info = "блядь"
   strings:
-    $ = "хуем груши околачивать" ascii wide nocase fullword
+    $utf8 = "\xd0\xb1\xd0\xbb\xd1\x8f\xd0\xb4\xd1\x8c" nocase fullword
+    $cp1251 = "\xe1\xeb\xff\xe4\xfc" nocase fullword
+    $wide = "\x31\x04\x00\x3b\x04\x00\x4f\x04\x00\x34\x04\x00\x4c\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_95 {
+  meta:
+    info = "бугор"
   strings:
-    $ = "один ебётся" ascii wide nocase fullword
+    $utf8 = "\xd0\xb1\xd1\x83\xd0\xb3\xd0\xbe\xd1\x80" nocase fullword
+    $cp1251 = "\xe1\xf3\xe3\xee\xf0" nocase fullword
+    $wide = "\x31\x04\x00\x43\x04\x00\x33\x04\x00\x3e\x04\x00\x40\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_96 {
+  meta:
+    info = "говно"
   strings:
-    $ = "блядь" ascii wide nocase fullword
+    $utf8 = "\xd0\xb3\xd0\xbe\xd0\xb2\xd0\xbd\xd0\xbe" nocase fullword
+    $cp1251 = "\xe3\xee\xe2\xed\xee" nocase fullword
+    $wide = "\x33\x04\x00\x3e\x04\x00\x32\x04\x00\x3d\x04\x00\x3e\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_97 {
+  meta:
+    info = "голый"
   strings:
-    $ = "бугор" ascii wide nocase fullword
+    $utf8 = "\xd0\xb3\xd0\xbe\xd0\xbb\xd1\x8b\xd0\xb9" nocase fullword
+    $cp1251 = "\xe3\xee\xeb\xfb\xe9" nocase fullword
+    $wide = "\x33\x04\x00\x3e\x04\x00\x3b\x04\x00\x4b\x04\x00\x39\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_98 {
+  meta:
+    info = "ебать"
   strings:
-    $ = "говно" ascii wide nocase fullword
+    $utf8 = "\xd0\xb5\xd0\xb1\xd0\xb0\xd1\x82\xd1\x8c" nocase fullword
+    $cp1251 = "\xe5\xe1\xe0\xf2\xfc" nocase fullword
+    $wide = "\x35\x04\x00\x31\x04\x00\x30\x04\x00\x42\x04\x00\x4c\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_99 {
+  meta:
+    info = "манда"
   strings:
-    $ = "голый" ascii wide nocase fullword
+    $utf8 = "\xd0\xbc\xd0\xb0\xd0\xbd\xd0\xb4\xd0\xb0" nocase fullword
+    $cp1251 = "\xec\xe0\xed\xe4\xe0" nocase fullword
+    $wide = "\x3c\x04\x00\x30\x04\x00\x3d\x04\x00\x34\x04\x00\x30\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_100 {
+  meta:
+    info = "сиски"
   strings:
-    $ = "ебать" ascii wide nocase fullword
+    $utf8 = "\xd1\x81\xd0\xb8\xd1\x81\xd0\xba\xd0\xb8" nocase fullword
+    $cp1251 = "\xf1\xe8\xf1\xea\xe8" nocase fullword
+    $wide = "\x41\x04\x00\x38\x04\x00\x41\x04\x00\x3a\x04\x00\x38\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_101 {
+  meta:
+    info = "срать"
   strings:
-    $ = "манда" ascii wide nocase fullword
+    $utf8 = "\xd1\x81\xd1\x80\xd0\xb0\xd1\x82\xd1\x8c" nocase fullword
+    $cp1251 = "\xf1\xf0\xe0\xf2\xfc" nocase fullword
+    $wide = "\x41\x04\x00\x40\x04\x00\x30\x04\x00\x42\x04\x00\x4c\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_102 {
+  meta:
+    info = "ссать"
   strings:
-    $ = "сиски" ascii wide nocase fullword
+    $utf8 = "\xd1\x81\xd1\x81\xd0\xb0\xd1\x82\xd1\x8c" nocase fullword
+    $cp1251 = "\xf1\xf1\xe0\xf2\xfc" nocase fullword
+    $wide = "\x41\x04\x00\x41\x04\x00\x30\x04\x00\x42\x04\x00\x4c\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_103 {
+  meta:
+    info = "хохол"
   strings:
-    $ = "срать" ascii wide nocase fullword
+    $utf8 = "\xd1\x85\xd0\xbe\xd1\x85\xd0\xbe\xd0\xbb" nocase fullword
+    $cp1251 = "\xf5\xee\xf5\xee\xeb" nocase fullword
+    $wide = "\x45\x04\x00\x3e\x04\x00\x45\x04\x00\x3e\x04\x00\x3b\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_104 {
+  meta:
+    info = "хуило"
   strings:
-    $ = "ссать" ascii wide nocase fullword
+    $utf8 = "\xd1\x85\xd1\x83\xd0\xb8\xd0\xbb\xd0\xbe" nocase fullword
+    $cp1251 = "\xf5\xf3\xe8\xeb\xee" nocase fullword
+    $wide = "\x45\x04\x00\x43\x04\x00\x38\x04\x00\x3b\x04\x00\x3e\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_105 {
+  meta:
+    info = "хуиня"
   strings:
-    $ = "хохол" ascii wide nocase fullword
+    $utf8 = "\xd1\x85\xd1\x83\xd0\xb8\xd0\xbd\xd1\x8f" nocase fullword
+    $cp1251 = "\xf5\xf3\xe8\xed\xff" nocase fullword
+    $wide = "\x45\x04\x00\x43\x04\x00\x38\x04\x00\x3d\x04\x00\x4f\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_106 {
+  meta:
+    info = "хуёво"
   strings:
-    $ = "хуило" ascii wide nocase fullword
+    $utf8 = "\xd1\x85\xd1\x83\xd1\x91\xd0\xb2\xd0\xbe" nocase fullword
+    $cp1251 = "\xf5\xf3\xb8\xe2\xee" nocase fullword
+    $wide = "\x45\x04\x00\x43\x04\x00\x51\x04\x00\x32\x04\x00\x3e\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_107 {
+  meta:
+    info = "ёбарь"
   strings:
-    $ = "хуиня" ascii wide nocase fullword
+    $utf8 = "\xd1\x91\xd0\xb1\xd0\xb0\xd1\x80\xd1\x8c" nocase fullword
+    $cp1251 = "\xb8\xe1\xe0\xf0\xfc" nocase fullword
+    $wide = "\x51\x04\x00\x31\x04\x00\x30\x04\x00\x40\x04\x00\x4c\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_108 {
+  meta:
+    info = "ебать-копать"
   strings:
-    $ = "хуёво" ascii wide nocase fullword
+    $utf8 = "\xd0\xb5\xd0\xb1\xd0\xb0\xd1\x82\xd1\x8c\x2d\xd0\xba\xd0\xbe\xd0\xbf\xd0\xb0\xd1\x82\xd1\x8c" nocase fullword
+    $cp1251 = "\xe5\xe1\xe0\xf2\xfc\x2d\xea\xee\xef\xe0\xf2\xfc" nocase fullword
+    $wide = "\x35\x04\x00\x31\x04\x00\x30\x04\x00\x42\x04\x00\x4c\x04\x00\x2d\x00\x3a\x04\x00\x3e\x04\x00\x3f\x04\x00\x30\x04\x00\x42\x04\x00\x4c\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_109 {
+  meta:
+    info = "бардак"
   strings:
-    $ = "ёбарь" ascii wide nocase fullword
+    $utf8 = "\xd0\xb1\xd0\xb0\xd1\x80\xd0\xb4\xd0\xb0\xd0\xba" nocase fullword
+    $cp1251 = "\xe1\xe0\xf0\xe4\xe0\xea" nocase fullword
+    $wide = "\x31\x04\x00\x30\x04\x00\x40\x04\x00\x34\x04\x00\x30\x04\x00\x3a\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_110 {
+  meta:
+    info = "блядки"
   strings:
-    $ = "ебать-копать" ascii wide nocase fullword
+    $utf8 = "\xd0\xb1\xd0\xbb\xd1\x8f\xd0\xb4\xd0\xba\xd0\xb8" nocase fullword
+    $cp1251 = "\xe1\xeb\xff\xe4\xea\xe8" nocase fullword
+    $wide = "\x31\x04\x00\x3b\x04\x00\x4f\x04\x00\x34\x04\x00\x3a\x04\x00\x38\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_111 {
+  meta:
+    info = "гандон"
   strings:
-    $ = "бардак" ascii wide nocase fullword
+    $utf8 = "\xd0\xb3\xd0\xb0\xd0\xbd\xd0\xb4\xd0\xbe\xd0\xbd" nocase fullword
+    $cp1251 = "\xe3\xe0\xed\xe4\xee\xed" nocase fullword
+    $wide = "\x33\x04\x00\x30\x04\x00\x3d\x04\x00\x34\x04\x00\x3e\x04\x00\x3d\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_112 {
+  meta:
+    info = "говнюк"
   strings:
-    $ = "блядки" ascii wide nocase fullword
+    $utf8 = "\xd0\xb3\xd0\xbe\xd0\xb2\xd0\xbd\xd1\x8e\xd0\xba" nocase fullword
+    $cp1251 = "\xe3\xee\xe2\xed\xfe\xea" nocase fullword
+    $wide = "\x33\x04\x00\x3e\x04\x00\x32\x04\x00\x3d\x04\x00\x4e\x04\x00\x3a\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_113 {
+  meta:
+    info = "дерьмо"
   strings:
-    $ = "гандон" ascii wide nocase fullword
+    $utf8 = "\xd0\xb4\xd0\xb5\xd1\x80\xd1\x8c\xd0\xbc\xd0\xbe" nocase fullword
+    $cp1251 = "\xe4\xe5\xf0\xfc\xec\xee" nocase fullword
+    $wide = "\x34\x04\x00\x35\x04\x00\x40\x04\x00\x4c\x04\x00\x3c\x04\x00\x3e\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_114 {
+  meta:
+    info = "ебнуть"
   strings:
-    $ = "говнюк" ascii wide nocase fullword
+    $utf8 = "\xd0\xb5\xd0\xb1\xd0\xbd\xd1\x83\xd1\x82\xd1\x8c" nocase fullword
+    $cp1251 = "\xe5\xe1\xed\xf3\xf2\xfc" nocase fullword
+    $wide = "\x35\x04\x00\x31\x04\x00\x3d\x04\x00\x43\x04\x00\x42\x04\x00\x4c\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_115 {
+  meta:
+    info = "малофя"
   strings:
-    $ = "дерьмо" ascii wide nocase fullword
+    $utf8 = "\xd0\xbc\xd0\xb0\xd0\xbb\xd0\xbe\xd1\x84\xd1\x8f" nocase fullword
+    $cp1251 = "\xec\xe0\xeb\xee\xf4\xff" nocase fullword
+    $wide = "\x3c\x04\x00\x30\x04\x00\x3b\x04\x00\x3e\x04\x00\x44\x04\x00\x4f\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_116 {
+  meta:
+    info = "мудило"
   strings:
-    $ = "ебнуть" ascii wide nocase fullword
+    $utf8 = "\xd0\xbc\xd1\x83\xd0\xb4\xd0\xb8\xd0\xbb\xd0\xbe" nocase fullword
+    $cp1251 = "\xec\xf3\xe4\xe8\xeb\xee" nocase fullword
+    $wide = "\x3c\x04\x00\x43\x04\x00\x34\x04\x00\x38\x04\x00\x3b\x04\x00\x3e\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_117 {
+  meta:
+    info = "охуеть"
   strings:
-    $ = "малофя" ascii wide nocase fullword
+    $utf8 = "\xd0\xbe\xd1\x85\xd1\x83\xd0\xb5\xd1\x82\xd1\x8c" nocase fullword
+    $cp1251 = "\xee\xf5\xf3\xe5\xf2\xfc" nocase fullword
+    $wide = "\x3e\x04\x00\x45\x04\x00\x43\x04\x00\x35\x04\x00\x42\x04\x00\x4c\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_118 {
+  meta:
+    info = "хапать"
   strings:
-    $ = "мудило" ascii wide nocase fullword
+    $utf8 = "\xd1\x85\xd0\xb0\xd0\xbf\xd0\xb0\xd1\x82\xd1\x8c" nocase fullword
+    $cp1251 = "\xf5\xe0\xef\xe0\xf2\xfc" nocase fullword
+    $wide = "\x45\x04\x00\x30\x04\x00\x3f\x04\x00\x30\x04\x00\x42\x04\x00\x4c\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_119 {
+  meta:
+    info = "хуёвый"
   strings:
-    $ = "охуеть" ascii wide nocase fullword
+    $utf8 = "\xd1\x85\xd1\x83\xd1\x91\xd0\xb2\xd1\x8b\xd0\xb9" nocase fullword
+    $cp1251 = "\xf5\xf3\xb8\xe2\xfb\xe9" nocase fullword
+    $wide = "\x45\x04\x00\x43\x04\x00\x51\x04\x00\x32\x04\x00\x4b\x04\x00\x39\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_120 {
+  meta:
+    info = "лысого в кулаке гонять"
   strings:
-    $ = "хапать" ascii wide nocase fullword
+    $utf8 = "\xd0\xbb\xd1\x8b\xd1\x81\xd0\xbe\xd0\xb3\xd0\xbe\x20\xd0\xb2\x20\xd0\xba\xd1\x83\xd0\xbb\xd0\xb0\xd0\xba\xd0\xb5\x20\xd0\xb3\xd0\xbe\xd0\xbd\xd1\x8f\xd1\x82\xd1\x8c" nocase fullword
+    $cp1251 = "\xeb\xfb\xf1\xee\xe3\xee\x20\xe2\x20\xea\xf3\xeb\xe0\xea\xe5\x20\xe3\xee\xed\xff\xf2\xfc" nocase fullword
+    $wide = "\x3b\x04\x00\x4b\x04\x00\x41\x04\x00\x3e\x04\x00\x33\x04\x00\x3e\x04\x00\x20\x00\x32\x04\x00\x20\x00\x3a\x04\x00\x43\x04\x00\x3b\x04\x00\x30\x04\x00\x3a\x04\x00\x35\x04\x00\x20\x00\x33\x04\x00\x3e\x04\x00\x3d\x04\x00\x4f\x04\x00\x42\x04\x00\x4c\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_121 {
+  meta:
+    info = "играть на кожаной флейте"
   strings:
-    $ = "хуёвый" ascii wide nocase fullword
+    $utf8 = "\xd0\xb8\xd0\xb3\xd1\x80\xd0\xb0\xd1\x82\xd1\x8c\x20\xd0\xbd\xd0\xb0\x20\xd0\xba\xd0\xbe\xd0\xb6\xd0\xb0\xd0\xbd\xd0\xbe\xd0\xb9\x20\xd1\x84\xd0\xbb\xd0\xb5\xd0\xb9\xd1\x82\xd0\xb5" nocase fullword
+    $cp1251 = "\xe8\xe3\xf0\xe0\xf2\xfc\x20\xed\xe0\x20\xea\xee\xe6\xe0\xed\xee\xe9\x20\xf4\xeb\xe5\xe9\xf2\xe5" nocase fullword
+    $wide = "\x38\x04\x00\x33\x04\x00\x40\x04\x00\x30\x04\x00\x42\x04\x00\x4c\x04\x00\x20\x00\x3d\x04\x00\x30\x04\x00\x20\x00\x3a\x04\x00\x3e\x04\x00\x36\x04\x00\x30\x04\x00\x3d\x04\x00\x3e\x04\x00\x39\x04\x00\x20\x00\x44\x04\x00\x3b\x04\x00\x35\x04\x00\x39\x04\x00\x42\x04\x00\x35\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_122 {
+  meta:
+    info = "курите мою трубку"
   strings:
-    $ = "лысого в кулаке гонять" ascii wide nocase fullword
+    $utf8 = "\xd0\xba\xd1\x83\xd1\x80\xd0\xb8\xd1\x82\xd0\xb5\x20\xd0\xbc\xd0\xbe\xd1\x8e\x20\xd1\x82\xd1\x80\xd1\x83\xd0\xb1\xd0\xba\xd1\x83" nocase fullword
+    $cp1251 = "\xea\xf3\xf0\xe8\xf2\xe5\x20\xec\xee\xfe\x20\xf2\xf0\xf3\xe1\xea\xf3" nocase fullword
+    $wide = "\x3a\x04\x00\x43\x04\x00\x40\x04\x00\x38\x04\x00\x42\x04\x00\x35\x04\x00\x20\x00\x3c\x04\x00\x3e\x04\x00\x4e\x04\x00\x20\x00\x42\x04\x00\x40\x04\x00\x43\x04\x00\x31\x04\x00\x3a\x04\x00\x43\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_123 {
+  meta:
+    info = "встать раком"
   strings:
-    $ = "играть на кожаной флейте" ascii wide nocase fullword
+    $utf8 = "\xd0\xb2\xd1\x81\xd1\x82\xd0\xb0\xd1\x82\xd1\x8c\x20\xd1\x80\xd0\xb0\xd0\xba\xd0\xbe\xd0\xbc" nocase fullword
+    $cp1251 = "\xe2\xf1\xf2\xe0\xf2\xfc\x20\xf0\xe0\xea\xee\xec" nocase fullword
+    $wide = "\x32\x04\x00\x41\x04\x00\x42\x04\x00\x30\x04\x00\x42\x04\x00\x4c\x04\x00\x20\x00\x40\x04\x00\x30\x04\x00\x3a\x04\x00\x3e\x04\x00\x3c\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_124 {
+  meta:
+    info = "каждый дрочит как он хочет"
   strings:
-    $ = "курите мою трубку" ascii wide nocase fullword
+    $utf8 = "\xd0\xba\xd0\xb0\xd0\xb6\xd0\xb4\xd1\x8b\xd0\xb9\x20\xd0\xb4\xd1\x80\xd0\xbe\xd1\x87\xd0\xb8\xd1\x82\x20\xd0\xba\xd0\xb0\xd0\xba\x20\xd0\xbe\xd0\xbd\x20\xd1\x85\xd0\xbe\xd1\x87\xd0\xb5\xd1\x82" nocase fullword
+    $cp1251 = "\xea\xe0\xe6\xe4\xfb\xe9\x20\xe4\xf0\xee\xf7\xe8\xf2\x20\xea\xe0\xea\x20\xee\xed\x20\xf5\xee\xf7\xe5\xf2" nocase fullword
+    $wide = "\x3a\x04\x00\x30\x04\x00\x36\x04\x00\x34\x04\x00\x4b\x04\x00\x39\x04\x00\x20\x00\x34\x04\x00\x40\x04\x00\x3e\x04\x00\x47\x04\x00\x38\x04\x00\x42\x04\x00\x20\x00\x3a\x04\x00\x30\x04\x00\x3a\x04\x00\x20\x00\x3e\x04\x00\x3d\x04\x00\x20\x00\x45\x04\x00\x3e\x04\x00\x47\x04\x00\x35\x04\x00\x42\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_125 {
+  meta:
+    info = "хуиней страдать"
   strings:
-    $ = "встать раком" ascii wide nocase fullword
+    $utf8 = "\xd1\x85\xd1\x83\xd0\xb8\xd0\xbd\xd0\xb5\xd0\xb9\x20\xd1\x81\xd1\x82\xd1\x80\xd0\xb0\xd0\xb4\xd0\xb0\xd1\x82\xd1\x8c" nocase fullword
+    $cp1251 = "\xf5\xf3\xe8\xed\xe5\xe9\x20\xf1\xf2\xf0\xe0\xe4\xe0\xf2\xfc" nocase fullword
+    $wide = "\x45\x04\x00\x43\x04\x00\x38\x04\x00\x3d\x04\x00\x35\x04\x00\x39\x04\x00\x20\x00\x41\x04\x00\x42\x04\x00\x40\x04\x00\x30\x04\x00\x34\x04\x00\x30\x04\x00\x42\x04\x00\x4c\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_126 {
+  meta:
+    info = "другой дразнится"
   strings:
-    $ = "каждый дрочит как он хочет" ascii wide nocase fullword
+    $utf8 = "\xd0\xb4\xd1\x80\xd1\x83\xd0\xb3\xd0\xbe\xd0\xb9\x20\xd0\xb4\xd1\x80\xd0\xb0\xd0\xb7\xd0\xbd\xd0\xb8\xd1\x82\xd1\x81\xd1\x8f" nocase fullword
+    $cp1251 = "\xe4\xf0\xf3\xe3\xee\xe9\x20\xe4\xf0\xe0\xe7\xed\xe8\xf2\xf1\xff" nocase fullword
+    $wide = "\x34\x04\x00\x40\x04\x00\x43\x04\x00\x33\x04\x00\x3e\x04\x00\x39\x04\x00\x20\x00\x34\x04\x00\x40\x04\x00\x30\x04\x00\x37\x04\x00\x3d\x04\x00\x38\x04\x00\x42\x04\x00\x41\x04\x00\x4f\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_127 {
+  meta:
+    info = "бздёнок"
   strings:
-    $ = "хуиней страдать" ascii wide nocase fullword
+    $utf8 = "\xd0\xb1\xd0\xb7\xd0\xb4\xd1\x91\xd0\xbd\xd0\xbe\xd0\xba" nocase fullword
+    $cp1251 = "\xe1\xe7\xe4\xb8\xed\xee\xea" nocase fullword
+    $wide = "\x31\x04\x00\x37\x04\x00\x34\x04\x00\x51\x04\x00\x3d\x04\x00\x3e\x04\x00\x3a\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_128 {
+  meta:
+    info = "дрочить"
   strings:
-    $ = "другой дразнится" ascii wide nocase fullword
+    $utf8 = "\xd0\xb4\xd1\x80\xd0\xbe\xd1\x87\xd0\xb8\xd1\x82\xd1\x8c" nocase fullword
+    $cp1251 = "\xe4\xf0\xee\xf7\xe8\xf2\xfc" nocase fullword
+    $wide = "\x34\x04\x00\x40\x04\x00\x3e\x04\x00\x47\x04\x00\x38\x04\x00\x42\x04\x00\x4c\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_129 {
+  meta:
+    info = "жополиз"
   strings:
-    $ = "бздёнок" ascii wide nocase fullword
+    $utf8 = "\xd0\xb6\xd0\xbe\xd0\xbf\xd0\xbe\xd0\xbb\xd0\xb8\xd0\xb7" nocase fullword
+    $cp1251 = "\xe6\xee\xef\xee\xeb\xe8\xe7" nocase fullword
+    $wide = "\x36\x04\x00\x3e\x04\x00\x3f\x04\x00\x3e\x04\x00\x3b\x04\x00\x38\x04\x00\x37\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_130 {
+  meta:
+    info = "наебать"
   strings:
-    $ = "дрочить" ascii wide nocase fullword
+    $utf8 = "\xd0\xbd\xd0\xb0\xd0\xb5\xd0\xb1\xd0\xb0\xd1\x82\xd1\x8c" nocase fullword
+    $cp1251 = "\xed\xe0\xe5\xe1\xe0\xf2\xfc" nocase fullword
+    $wide = "\x3d\x04\x00\x30\x04\x00\x35\x04\x00\x31\x04\x00\x30\x04\x00\x42\x04\x00\x4c\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_131 {
+  meta:
+    info = "опесдол"
   strings:
-    $ = "жополиз" ascii wide nocase fullword
+    $utf8 = "\xd0\xbe\xd0\xbf\xd0\xb5\xd1\x81\xd0\xb4\xd0\xbe\xd0\xbb" nocase fullword
+    $cp1251 = "\xee\xef\xe5\xf1\xe4\xee\xeb" nocase fullword
+    $wide = "\x3e\x04\x00\x3f\x04\x00\x35\x04\x00\x41\x04\x00\x34\x04\x00\x3e\x04\x00\x3b\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_132 {
+  meta:
+    info = "офигеть"
   strings:
-    $ = "наебать" ascii wide nocase fullword
+    $utf8 = "\xd0\xbe\xd1\x84\xd0\xb8\xd0\xb3\xd0\xb5\xd1\x82\xd1\x8c" nocase fullword
+    $cp1251 = "\xee\xf4\xe8\xe3\xe5\xf2\xfc" nocase fullword
+    $wide = "\x3e\x04\x00\x44\x04\x00\x38\x04\x00\x33\x04\x00\x35\x04\x00\x42\x04\x00\x4c\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_133 {
+  meta:
+    info = "хуеплет"
   strings:
-    $ = "опесдол" ascii wide nocase fullword
+    $utf8 = "\xd1\x85\xd1\x83\xd0\xb5\xd0\xbf\xd0\xbb\xd0\xb5\xd1\x82" nocase fullword
+    $cp1251 = "\xf5\xf3\xe5\xef\xeb\xe5\xf2" nocase fullword
+    $wide = "\x45\x04\x00\x43\x04\x00\x35\x04\x00\x3f\x04\x00\x3b\x04\x00\x35\x04\x00\x42\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_134 {
+  meta:
+    info = "хуйнуть"
   strings:
-    $ = "офигеть" ascii wide nocase fullword
+    $utf8 = "\xd1\x85\xd1\x83\xd0\xb9\xd0\xbd\xd1\x83\xd1\x82\xd1\x8c" nocase fullword
+    $cp1251 = "\xf5\xf3\xe9\xed\xf3\xf2\xfc" nocase fullword
+    $wide = "\x45\x04\x00\x43\x04\x00\x39\x04\x00\x3d\x04\x00\x43\x04\x00\x42\x04\x00\x4c\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_135 {
+  meta:
+    info = "половое сношение"
   strings:
-    $ = "хуеплет" ascii wide nocase fullword
+    $utf8 = "\xd0\xbf\xd0\xbe\xd0\xbb\xd0\xbe\xd0\xb2\xd0\xbe\xd0\xb5\x20\xd1\x81\xd0\xbd\xd0\xbe\xd1\x88\xd0\xb5\xd0\xbd\xd0\xb8\xd0\xb5" nocase fullword
+    $cp1251 = "\xef\xee\xeb\xee\xe2\xee\xe5\x20\xf1\xed\xee\xf8\xe5\xed\xe8\xe5" nocase fullword
+    $wide = "\x3f\x04\x00\x3e\x04\x00\x3b\x04\x00\x3e\x04\x00\x32\x04\x00\x3e\x04\x00\x35\x04\x00\x20\x00\x41\x04\x00\x3d\x04\x00\x3e\x04\x00\x48\x04\x00\x35\x04\x00\x3d\x04\x00\x38\x04\x00\x35\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_136 {
+  meta:
+    info = "блядство"
   strings:
-    $ = "хуйнуть" ascii wide nocase fullword
+    $utf8 = "\xd0\xb1\xd0\xbb\xd1\x8f\xd0\xb4\xd1\x81\xd1\x82\xd0\xb2\xd0\xbe" nocase fullword
+    $cp1251 = "\xe1\xeb\xff\xe4\xf1\xf2\xe2\xee" nocase fullword
+    $wide = "\x31\x04\x00\x3b\x04\x00\x4f\x04\x00\x34\x04\x00\x41\x04\x00\x42\x04\x00\x32\x04\x00\x3e\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_137 {
+  meta:
+    info = "мудозмон"
   strings:
-    $ = "половое сношение" ascii wide nocase fullword
+    $utf8 = "\xd0\xbc\xd1\x83\xd0\xb4\xd0\xbe\xd0\xb7\xd0\xbc\xd0\xbe\xd0\xbd" nocase fullword
+    $cp1251 = "\xec\xf3\xe4\xee\xe7\xec\xee\xed" nocase fullword
+    $wide = "\x3c\x04\x00\x43\x04\x00\x34\x04\x00\x3e\x04\x00\x37\x04\x00\x3c\x04\x00\x3e\x04\x00\x3d\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_138 {
+  meta:
+    info = "спиздить"
   strings:
-    $ = "блядство" ascii wide nocase fullword
+    $utf8 = "\xd1\x81\xd0\xbf\xd0\xb8\xd0\xb7\xd0\xb4\xd0\xb8\xd1\x82\xd1\x8c" nocase fullword
+    $cp1251 = "\xf1\xef\xe8\xe7\xe4\xe8\xf2\xfc" nocase fullword
+    $wide = "\x41\x04\x00\x3f\x04\x00\x38\x04\x00\x37\x04\x00\x34\x04\x00\x38\x04\x00\x42\x04\x00\x4c\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_139 {
+  meta:
+    info = "блядовать"
   strings:
-    $ = "мудозмон" ascii wide nocase fullword
+    $utf8 = "\xd0\xb1\xd0\xbb\xd1\x8f\xd0\xb4\xd0\xbe\xd0\xb2\xd0\xb0\xd1\x82\xd1\x8c" nocase fullword
+    $cp1251 = "\xe1\xeb\xff\xe4\xee\xe2\xe0\xf2\xfc" nocase fullword
+    $wide = "\x31\x04\x00\x3b\x04\x00\x4f\x04\x00\x34\x04\x00\x3e\x04\x00\x32\x04\x00\x30\x04\x00\x42\x04\x00\x4c\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_140 {
+  meta:
+    info = "измудохать"
   strings:
-    $ = "спиздить" ascii wide nocase fullword
+    $utf8 = "\xd0\xb8\xd0\xb7\xd0\xbc\xd1\x83\xd0\xb4\xd0\xbe\xd1\x85\xd0\xb0\xd1\x82\xd1\x8c" nocase fullword
+    $cp1251 = "\xe8\xe7\xec\xf3\xe4\xee\xf5\xe0\xf2\xfc" nocase fullword
+    $wide = "\x38\x04\x00\x37\x04\x00\x3c\x04\x00\x43\x04\x00\x34\x04\x00\x3e\x04\x00\x45\x04\x00\x30\x04\x00\x42\x04\x00\x4c\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_141 {
+  meta:
+    info = "мандавошка"
   strings:
-    $ = "блядовать" ascii wide nocase fullword
+    $utf8 = "\xd0\xbc\xd0\xb0\xd0\xbd\xd0\xb4\xd0\xb0\xd0\xb2\xd0\xbe\xd1\x88\xd0\xba\xd0\xb0" nocase fullword
+    $cp1251 = "\xec\xe0\xed\xe4\xe0\xe2\xee\xf8\xea\xe0" nocase fullword
+    $wide = "\x3c\x04\x00\x30\x04\x00\x3d\x04\x00\x34\x04\x00\x30\x04\x00\x32\x04\x00\x3e\x04\x00\x48\x04\x00\x3a\x04\x00\x30\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_142 {
+  meta:
+    info = "наебнуться"
   strings:
-    $ = "измудохать" ascii wide nocase fullword
+    $utf8 = "\xd0\xbd\xd0\xb0\xd0\xb5\xd0\xb1\xd0\xbd\xd1\x83\xd1\x82\xd1\x8c\xd1\x81\xd1\x8f" nocase fullword
+    $cp1251 = "\xed\xe0\xe5\xe1\xed\xf3\xf2\xfc\xf1\xff" nocase fullword
+    $wide = "\x3d\x04\x00\x30\x04\x00\x35\x04\x00\x31\x04\x00\x3d\x04\x00\x43\x04\x00\x42\x04\x00\x4c\x04\x00\x41\x04\x00\x4f\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_143 {
+  meta:
+    info = "невебенный"
   strings:
-    $ = "мандавошка" ascii wide nocase fullword
+    $utf8 = "\xd0\xbd\xd0\xb5\xd0\xb2\xd0\xb5\xd0\xb1\xd0\xb5\xd0\xbd\xd0\xbd\xd1\x8b\xd0\xb9" nocase fullword
+    $cp1251 = "\xed\xe5\xe2\xe5\xe1\xe5\xed\xed\xfb\xe9" nocase fullword
+    $wide = "\x3d\x04\x00\x35\x04\x00\x32\x04\x00\x35\x04\x00\x31\x04\x00\x35\x04\x00\x3d\x04\x00\x3d\x04\x00\x4b\x04\x00\x39\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_144 {
+  meta:
+    info = "обнаженный"
   strings:
-    $ = "наебнуться" ascii wide nocase fullword
+    $utf8 = "\xd0\xbe\xd0\xb1\xd0\xbd\xd0\xb0\xd0\xb6\xd0\xb5\xd0\xbd\xd0\xbd\xd1\x8b\xd0\xb9" nocase fullword
+    $cp1251 = "\xee\xe1\xed\xe0\xe6\xe5\xed\xed\xfb\xe9" nocase fullword
+    $wide = "\x3e\x04\x00\x31\x04\x00\x3d\x04\x00\x30\x04\x00\x36\x04\x00\x35\x04\x00\x3d\x04\x00\x3d\x04\x00\x4b\x04\x00\x39\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_145 {
+  meta:
+    info = "охуйтельно"
   strings:
-    $ = "невебенный" ascii wide nocase fullword
+    $utf8 = "\xd0\xbe\xd1\x85\xd1\x83\xd0\xb9\xd1\x82\xd0\xb5\xd0\xbb\xd1\x8c\xd0\xbd\xd0\xbe" nocase fullword
+    $cp1251 = "\xee\xf5\xf3\xe9\xf2\xe5\xeb\xfc\xed\xee" nocase fullword
+    $wide = "\x3e\x04\x00\x45\x04\x00\x43\x04\x00\x39\x04\x00\x42\x04\x00\x35\x04\x00\x3b\x04\x00\x4c\x04\x00\x3d\x04\x00\x3e\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_146 {
+  meta:
+    info = "обоссаться можно"
   strings:
-    $ = "обнаженный" ascii wide nocase fullword
+    $utf8 = "\xd0\xbe\xd0\xb1\xd0\xbe\xd1\x81\xd1\x81\xd0\xb0\xd1\x82\xd1\x8c\xd1\x81\xd1\x8f\x20\xd0\xbc\xd0\xbe\xd0\xb6\xd0\xbd\xd0\xbe" nocase fullword
+    $cp1251 = "\xee\xe1\xee\xf1\xf1\xe0\xf2\xfc\xf1\xff\x20\xec\xee\xe6\xed\xee" nocase fullword
+    $wide = "\x3e\x04\x00\x31\x04\x00\x3e\x04\x00\x41\x04\x00\x41\x04\x00\x30\x04\x00\x42\x04\x00\x4c\x04\x00\x41\x04\x00\x4f\x04\x00\x20\x00\x3c\x04\x00\x3e\x04\x00\x36\x04\x00\x3d\x04\x00\x3e\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_147 {
+  meta:
+    info = "выёбываться"
   strings:
-    $ = "охуйтельно" ascii wide nocase fullword
+    $utf8 = "\xd0\xb2\xd1\x8b\xd1\x91\xd0\xb1\xd1\x8b\xd0\xb2\xd0\xb0\xd1\x82\xd1\x8c\xd1\x81\xd1\x8f" nocase fullword
+    $cp1251 = "\xe2\xfb\xb8\xe1\xfb\xe2\xe0\xf2\xfc\xf1\xff" nocase fullword
+    $wide = "\x32\x04\x00\x4b\x04\x00\x51\x04\x00\x31\x04\x00\x4b\x04\x00\x32\x04\x00\x30\x04\x00\x42\x04\x00\x4c\x04\x00\x41\x04\x00\x4f\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_148 {
+  meta:
+    info = "наебениться"
   strings:
-    $ = "обоссаться можно" ascii wide nocase fullword
+    $utf8 = "\xd0\xbd\xd0\xb0\xd0\xb5\xd0\xb1\xd0\xb5\xd0\xbd\xd0\xb8\xd1\x82\xd1\x8c\xd1\x81\xd1\x8f" nocase fullword
+    $cp1251 = "\xed\xe0\xe5\xe1\xe5\xed\xe8\xf2\xfc\xf1\xff" nocase fullword
+    $wide = "\x3d\x04\x00\x30\x04\x00\x35\x04\x00\x31\x04\x00\x35\x04\x00\x3d\x04\x00\x38\x04\x00\x42\x04\x00\x4c\x04\x00\x41\x04\x00\x4f\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_149 {
+  meta:
+    info = "нахуячиться"
   strings:
-    $ = "выёбываться" ascii wide nocase fullword
+    $utf8 = "\xd0\xbd\xd0\xb0\xd1\x85\xd1\x83\xd1\x8f\xd1\x87\xd0\xb8\xd1\x82\xd1\x8c\xd1\x81\xd1\x8f" nocase fullword
+    $cp1251 = "\xed\xe0\xf5\xf3\xff\xf7\xe8\xf2\xfc\xf1\xff" nocase fullword
+    $wide = "\x3d\x04\x00\x30\x04\x00\x45\x04\x00\x43\x04\x00\x4f\x04\x00\x47\x04\x00\x38\x04\x00\x42\x04\x00\x4c\x04\x00\x41\x04\x00\x4f\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_150 {
+  meta:
+    info = "ёбаный"
   strings:
-    $ = "наебениться" ascii wide nocase fullword
+    $utf8 = "\xd1\x91\xd0\xb1\xd0\xb0\xd0\xbd\xd1\x8b\xd0\xb9" nocase fullword
+    $cp1251 = "\xb8\xe1\xe0\xed\xfb\xe9" nocase fullword
+    $wide = "\x51\x04\x00\x31\x04\x00\x30\x04\x00\x3d\x04\x00\x4b\x04\x00\x39\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_ru_language_nsfw_151 {
+  meta:
+    info = "блядина"
   strings:
-    $ = "нахуячиться" ascii wide nocase fullword
+    $utf8 = "\xd0\xb1\xd0\xbb\xd1\x8f\xd0\xb4\xd0\xb8\xd0\xbd\xd0\xb0" nocase fullword
+    $cp1251 = "\xe1\xeb\xff\xe4\xe8\xed\xe0" nocase fullword
+    $wide = "\x31\x04\x00\x3b\x04\x00\x4f\x04\x00\x34\x04\x00\x38\x04\x00\x3d\x04\x00\x30\x04\x00" nocase fullword
   condition:
-    1 of them
+    any of them
+}
+rule content_ru_language_nsfw_152 {
+  meta:
+    info = "хуесос"
+  strings:
+    $utf8 = "\xd1\x85\xd1\x83\xd0\xb5\xd1\x81\xd0\xbe\xd1\x81" nocase fullword
+    $cp1251 = "\xf5\xf3\xe5\xf1\xee\xf1" nocase fullword
+    $wide = "\x45\x04\x00\x43\x04\x00\x35\x04\x00\x41\x04\x00\x3e\x04\x00\x41\x04\x00" nocase fullword
+  condition:
+    any of them
+}
+rule content_ru_language_nsfw_153 {
+  meta:
+    info = "пиздец"
+  strings:
+    $utf8 = "\xd0\xbf\xd0\xb8\xd0\xb7\xd0\xb4\xd0\xb5\xd1\x86" nocase fullword
+    $cp1251 = "\xef\xe8\xe7\xe4\xe5\xf6" nocase fullword
+    $wide = "\x3f\x04\x00\x38\x04\x00\x37\x04\x00\x34\x04\x00\x35\x04\x00\x46\x04\x00" nocase fullword
+  condition:
+    any of them
+}
+rule content_ru_language_nsfw_154 {
+  meta:
+    info = "пиздюк"
+  strings:
+    $utf8 = "\xd0\xbf\xd0\xb8\xd0\xb7\xd0\xb4\xd1\x8e\xd0\xba" nocase fullword
+    $cp1251 = "\xef\xe8\xe7\xe4\xfe\xea" nocase fullword
+    $wide = "\x3f\x04\x00\x38\x04\x00\x37\x04\x00\x34\x04\x00\x4e\x04\x00\x3a\x04\x00" nocase fullword
+  condition:
+    any of them
+}
+rule content_ru_language_nsfw_155 {
+  meta:
+    info = "залупа"
+  strings:
+    $utf8 = "\xd0\xb7\xd0\xb0\xd0\xbb\xd1\x83\xd0\xbf\xd0\xb0" nocase fullword
+    $cp1251 = "\xe7\xe0\xeb\xf3\xef\xe0" nocase fullword
+    $wide = "\x37\x04\x00\x30\x04\x00\x3b\x04\x00\x43\x04\x00\x3f\x04\x00\x30\x04\x00" nocase fullword
+  condition:
+    any of them
+}
+rule content_ru_language_nsfw_156 {
+  meta:
+    info = "шлюха"
+  strings:
+    $utf8 = "\xd1\x88\xd0\xbb\xd1\x8e\xd1\x85\xd0\xb0" nocase fullword
+    $cp1251 = "\xf8\xeb\xfe\xf5\xe0" nocase fullword
+    $wide = "\x48\x04\x00\x3b\x04\x00\x4e\x04\x00\x45\x04\x00\x30\x04\x00" nocase fullword
+  condition:
+    any of them
+}
+rule content_ru_language_nsfw_157 {
+  meta:
+    info = "потаскуха"
+  strings:
+    $utf8 = "\xd0\xbf\xd0\xbe\xd1\x82\xd0\xb0\xd1\x81\xd0\xba\xd1\x83\xd1\x85\xd0\xb0" nocase fullword
+    $cp1251 = "\xef\xee\xf2\xe0\xf1\xea\xf3\xf5\xe0" nocase fullword
+    $wide = "\x3f\x04\x00\x3e\x04\x00\x42\x04\x00\x30\x04\x00\x41\x04\x00\x3a\x04\x00\x43\x04\x00\x45\x04\x00\x30\x04\x00" nocase fullword
+  condition:
+    any of them
+}
+rule content_ru_language_nsfw_158 {
+  meta:
+    info = "мудак"
+  strings:
+    $utf8 = "\xd0\xbc\xd1\x83\xd0\xb4\xd0\xb0\xd0\xba" nocase fullword
+    $cp1251 = "\xec\xf3\xe4\xe0\xea" nocase fullword
+    $wide = "\x3c\x04\x00\x43\x04\x00\x34\x04\x00\x30\x04\x00\x3a\x04\x00" nocase fullword
+  condition:
+    any of them
+}
+rule content_ru_language_nsfw_159 {
+  meta:
+    info = "хуйня"
+  strings:
+    $utf8 = "\xd1\x85\xd1\x83\xd0\xb9\xd0\xbd\xd1\x8f" nocase fullword
+    $cp1251 = "\xf5\xf3\xe9\xed\xff" nocase fullword
+    $wide = "\x45\x04\x00\x43\x04\x00\x39\x04\x00\x3d\x04\x00\x4f\x04\x00" nocase fullword
+  condition:
+    any of them
 }

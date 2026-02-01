@@ -1,672 +1,846 @@
-
 rule content_hu_language_nsfw_1 {
+  meta:
+    info = "balfasz"
   strings:
-    $ = "balfasz" ascii wide nocase fullword
+    $utf8 = "\x62\x61\x6c\x66\x61\x73\x7a" nocase fullword
+    $wide = "\x62\x00\x61\x00\x6c\x00\x66\x00\x61\x00\x73\x00\x7a\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_2 {
+  meta:
+    info = "balfaszok"
   strings:
-    $ = "balfaszok" ascii wide nocase fullword
+    $utf8 = "\x62\x61\x6c\x66\x61\x73\x7a\x6f\x6b" nocase fullword
+    $wide = "\x62\x00\x61\x00\x6c\x00\x66\x00\x61\x00\x73\x00\x7a\x00\x6f\x00\x6b\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_3 {
+  meta:
+    info = "balfaszokat"
   strings:
-    $ = "balfaszokat" ascii wide nocase fullword
+    $utf8 = "\x62\x61\x6c\x66\x61\x73\x7a\x6f\x6b\x61\x74" nocase fullword
+    $wide = "\x62\x00\x61\x00\x6c\x00\x66\x00\x61\x00\x73\x00\x7a\x00\x6f\x00\x6b\x00\x61\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_4 {
+  meta:
+    info = "balfaszt"
   strings:
-    $ = "balfaszt" ascii wide nocase fullword
+    $utf8 = "\x62\x61\x6c\x66\x61\x73\x7a\x74" nocase fullword
+    $wide = "\x62\x00\x61\x00\x6c\x00\x66\x00\x61\x00\x73\x00\x7a\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_5 {
+  meta:
+    info = "barmok"
   strings:
-    $ = "barmok" ascii wide nocase fullword
+    $utf8 = "\x62\x61\x72\x6d\x6f\x6b" nocase fullword
+    $wide = "\x62\x00\x61\x00\x72\x00\x6d\x00\x6f\x00\x6b\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_6 {
+  meta:
+    info = "barmokat"
   strings:
-    $ = "barmokat" ascii wide nocase fullword
+    $utf8 = "\x62\x61\x72\x6d\x6f\x6b\x61\x74" nocase fullword
+    $wide = "\x62\x00\x61\x00\x72\x00\x6d\x00\x6f\x00\x6b\x00\x61\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_7 {
+  meta:
+    info = "barmot"
   strings:
-    $ = "barmot" ascii wide nocase fullword
+    $utf8 = "\x62\x61\x72\x6d\x6f\x74" nocase fullword
+    $wide = "\x62\x00\x61\x00\x72\x00\x6d\x00\x6f\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_8 {
+  meta:
+    info = "barom"
   strings:
-    $ = "barom" ascii wide nocase fullword
+    $utf8 = "\x62\x61\x72\x6f\x6d" nocase fullword
+    $wide = "\x62\x00\x61\x00\x72\x00\x6f\x00\x6d\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_9 {
+  meta:
+    info = "baszik"
   strings:
-    $ = "baszik" ascii wide nocase fullword
+    $utf8 = "\x62\x61\x73\x7a\x69\x6b" nocase fullword
+    $wide = "\x62\x00\x61\x00\x73\x00\x7a\x00\x69\x00\x6b\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_10 {
+  meta:
+    info = "bazmeg"
   strings:
-    $ = "bazmeg" ascii wide nocase fullword
+    $utf8 = "\x62\x61\x7a\x6d\x65\x67" nocase fullword
+    $wide = "\x62\x00\x61\x00\x7a\x00\x6d\x00\x65\x00\x67\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_11 {
+  meta:
+    info = "buksza"
   strings:
-    $ = "buksza" ascii wide nocase fullword
+    $utf8 = "\x62\x75\x6b\x73\x7a\x61" nocase fullword
+    $wide = "\x62\x00\x75\x00\x6b\x00\x73\x00\x7a\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_12 {
+  meta:
+    info = "bukszák"
   strings:
-    $ = "bukszák" ascii wide nocase fullword
+    $utf8 = "\x62\x75\x6b\x73\x7a\xc3\xa1\x6b" nocase fullword
+    $wide = "\x62\x00\x75\x00\x6b\x00\x73\x00\x7a\x00\xe1\x00\x6b\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_13 {
+  meta:
+    info = "bukszákat"
   strings:
-    $ = "bukszákat" ascii wide nocase fullword
+    $utf8 = "\x62\x75\x6b\x73\x7a\xc3\xa1\x6b\x61\x74" nocase fullword
+    $wide = "\x62\x00\x75\x00\x6b\x00\x73\x00\x7a\x00\xe1\x00\x6b\x00\x61\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_14 {
+  meta:
+    info = "bukszát"
   strings:
-    $ = "bukszát" ascii wide nocase fullword
+    $utf8 = "\x62\x75\x6b\x73\x7a\xc3\xa1\x74" nocase fullword
+    $wide = "\x62\x00\x75\x00\x6b\x00\x73\x00\x7a\x00\xe1\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_15 {
+  meta:
+    info = "búr"
   strings:
-    $ = "búr" ascii wide nocase fullword
+    $utf8 = "\x62\xc3\xba\x72" nocase fullword
+    $wide = "\x62\x00\xfa\x00\x72\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_16 {
+  meta:
+    info = "búrok"
   strings:
-    $ = "búrok" ascii wide nocase fullword
+    $utf8 = "\x62\xc3\xba\x72\x6f\x6b" nocase fullword
+    $wide = "\x62\x00\xfa\x00\x72\x00\x6f\x00\x6b\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_17 {
+  meta:
+    info = "csöcs"
   strings:
-    $ = "csöcs" ascii wide nocase fullword
+    $utf8 = "\x63\x73\xc3\xb6\x63\x73" nocase fullword
+    $wide = "\x63\x00\x73\x00\xf6\x00\x63\x00\x73\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_18 {
+  meta:
+    info = "csöcsök"
   strings:
-    $ = "csöcsök" ascii wide nocase fullword
+    $utf8 = "\x63\x73\xc3\xb6\x63\x73\xc3\xb6\x6b" nocase fullword
+    $wide = "\x63\x00\x73\x00\xf6\x00\x63\x00\x73\x00\xf6\x00\x6b\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_19 {
+  meta:
+    info = "csöcsöket"
   strings:
-    $ = "csöcsöket" ascii wide nocase fullword
+    $utf8 = "\x63\x73\xc3\xb6\x63\x73\xc3\xb6\x6b\x65\x74" nocase fullword
+    $wide = "\x63\x00\x73\x00\xf6\x00\x63\x00\x73\x00\xf6\x00\x6b\x00\x65\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_20 {
+  meta:
+    info = "csöcsöt"
   strings:
-    $ = "csöcsöt" ascii wide nocase fullword
+    $utf8 = "\x63\x73\xc3\xb6\x63\x73\xc3\xb6\x74" nocase fullword
+    $wide = "\x63\x00\x73\x00\xf6\x00\x63\x00\x73\x00\xf6\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_21 {
+  meta:
+    info = "fasz"
   strings:
-    $ = "fasz" ascii wide nocase fullword
+    $utf8 = "\x66\x61\x73\x7a" nocase fullword
+    $wide = "\x66\x00\x61\x00\x73\x00\x7a\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_22 {
+  meta:
+    info = "faszfej"
   strings:
-    $ = "faszfej" ascii wide nocase fullword
+    $utf8 = "\x66\x61\x73\x7a\x66\x65\x6a" nocase fullword
+    $wide = "\x66\x00\x61\x00\x73\x00\x7a\x00\x66\x00\x65\x00\x6a\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_23 {
+  meta:
+    info = "faszfejek"
   strings:
-    $ = "faszfejek" ascii wide nocase fullword
+    $utf8 = "\x66\x61\x73\x7a\x66\x65\x6a\x65\x6b" nocase fullword
+    $wide = "\x66\x00\x61\x00\x73\x00\x7a\x00\x66\x00\x65\x00\x6a\x00\x65\x00\x6b\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_24 {
+  meta:
+    info = "faszfejeket"
   strings:
-    $ = "faszfejeket" ascii wide nocase fullword
+    $utf8 = "\x66\x61\x73\x7a\x66\x65\x6a\x65\x6b\x65\x74" nocase fullword
+    $wide = "\x66\x00\x61\x00\x73\x00\x7a\x00\x66\x00\x65\x00\x6a\x00\x65\x00\x6b\x00\x65\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_25 {
+  meta:
+    info = "faszfejet"
   strings:
-    $ = "faszfejet" ascii wide nocase fullword
+    $utf8 = "\x66\x61\x73\x7a\x66\x65\x6a\x65\x74" nocase fullword
+    $wide = "\x66\x00\x61\x00\x73\x00\x7a\x00\x66\x00\x65\x00\x6a\x00\x65\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_26 {
+  meta:
+    info = "faszok"
   strings:
-    $ = "faszok" ascii wide nocase fullword
+    $utf8 = "\x66\x61\x73\x7a\x6f\x6b" nocase fullword
+    $wide = "\x66\x00\x61\x00\x73\x00\x7a\x00\x6f\x00\x6b\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_27 {
+  meta:
+    info = "faszokat"
   strings:
-    $ = "faszokat" ascii wide nocase fullword
+    $utf8 = "\x66\x61\x73\x7a\x6f\x6b\x61\x74" nocase fullword
+    $wide = "\x66\x00\x61\x00\x73\x00\x7a\x00\x6f\x00\x6b\x00\x61\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_28 {
+  meta:
+    info = "faszt"
   strings:
-    $ = "faszt" ascii wide nocase fullword
+    $utf8 = "\x66\x61\x73\x7a\x74" nocase fullword
+    $wide = "\x66\x00\x61\x00\x73\x00\x7a\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
-rule content_hu_language_nsfw_29 {
-  strings:
-    $ = "fing" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_hu_language_nsfw_30 {
+  meta:
+    info = "fingok"
   strings:
-    $ = "fingok" ascii wide nocase fullword
+    $utf8 = "\x66\x69\x6e\x67\x6f\x6b" nocase fullword
+    $wide = "\x66\x00\x69\x00\x6e\x00\x67\x00\x6f\x00\x6b\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_31 {
+  meta:
+    info = "fingokat"
   strings:
-    $ = "fingokat" ascii wide nocase fullword
+    $utf8 = "\x66\x69\x6e\x67\x6f\x6b\x61\x74" nocase fullword
+    $wide = "\x66\x00\x69\x00\x6e\x00\x67\x00\x6f\x00\x6b\x00\x61\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_32 {
+  meta:
+    info = "fingot"
   strings:
-    $ = "fingot" ascii wide nocase fullword
+    $utf8 = "\x66\x69\x6e\x67\x6f\x74" nocase fullword
+    $wide = "\x66\x00\x69\x00\x6e\x00\x67\x00\x6f\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_33 {
+  meta:
+    info = "franc"
   strings:
-    $ = "franc" ascii wide nocase fullword
+    $utf8 = "\x66\x72\x61\x6e\x63" nocase fullword
+    $wide = "\x66\x00\x72\x00\x61\x00\x6e\x00\x63\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_34 {
+  meta:
+    info = "francok"
   strings:
-    $ = "francok" ascii wide nocase fullword
+    $utf8 = "\x66\x72\x61\x6e\x63\x6f\x6b" nocase fullword
+    $wide = "\x66\x00\x72\x00\x61\x00\x6e\x00\x63\x00\x6f\x00\x6b\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_35 {
+  meta:
+    info = "francokat"
   strings:
-    $ = "francokat" ascii wide nocase fullword
+    $utf8 = "\x66\x72\x61\x6e\x63\x6f\x6b\x61\x74" nocase fullword
+    $wide = "\x66\x00\x72\x00\x61\x00\x6e\x00\x63\x00\x6f\x00\x6b\x00\x61\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_36 {
+  meta:
+    info = "francot"
   strings:
-    $ = "francot" ascii wide nocase fullword
+    $utf8 = "\x66\x72\x61\x6e\x63\x6f\x74" nocase fullword
+    $wide = "\x66\x00\x72\x00\x61\x00\x6e\x00\x63\x00\x6f\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_37 {
+  meta:
+    info = "geci"
   strings:
-    $ = "geci" ascii wide nocase fullword
+    $utf8 = "\x67\x65\x63\x69" nocase fullword
+    $wide = "\x67\x00\x65\x00\x63\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_38 {
+  meta:
+    info = "gecibb"
   strings:
-    $ = "gecibb" ascii wide nocase fullword
+    $utf8 = "\x67\x65\x63\x69\x62\x62" nocase fullword
+    $wide = "\x67\x00\x65\x00\x63\x00\x69\x00\x62\x00\x62\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_39 {
+  meta:
+    info = "gecik"
   strings:
-    $ = "gecik" ascii wide nocase fullword
+    $utf8 = "\x67\x65\x63\x69\x6b" nocase fullword
+    $wide = "\x67\x00\x65\x00\x63\x00\x69\x00\x6b\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_40 {
+  meta:
+    info = "geciket"
   strings:
-    $ = "geciket" ascii wide nocase fullword
+    $utf8 = "\x67\x65\x63\x69\x6b\x65\x74" nocase fullword
+    $wide = "\x67\x00\x65\x00\x63\x00\x69\x00\x6b\x00\x65\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_41 {
+  meta:
+    info = "gecit"
   strings:
-    $ = "gecit" ascii wide nocase fullword
+    $utf8 = "\x67\x65\x63\x69\x74" nocase fullword
+    $wide = "\x67\x00\x65\x00\x63\x00\x69\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_42 {
+  meta:
+    info = "kibaszott"
   strings:
-    $ = "kibaszott" ascii wide nocase fullword
+    $utf8 = "\x6b\x69\x62\x61\x73\x7a\x6f\x74\x74" nocase fullword
+    $wide = "\x6b\x00\x69\x00\x62\x00\x61\x00\x73\x00\x7a\x00\x6f\x00\x74\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_43 {
+  meta:
+    info = "kibaszottabb"
   strings:
-    $ = "kibaszottabb" ascii wide nocase fullword
+    $utf8 = "\x6b\x69\x62\x61\x73\x7a\x6f\x74\x74\x61\x62\x62" nocase fullword
+    $wide = "\x6b\x00\x69\x00\x62\x00\x61\x00\x73\x00\x7a\x00\x6f\x00\x74\x00\x74\x00\x61\x00\x62\x00\x62\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_44 {
+  meta:
+    info = "kurafi"
   strings:
-    $ = "kurafi" ascii wide nocase fullword
+    $utf8 = "\x6b\x75\x72\x61\x66\x69" nocase fullword
+    $wide = "\x6b\x00\x75\x00\x72\x00\x61\x00\x66\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_45 {
+  meta:
+    info = "kurafik"
   strings:
-    $ = "kurafik" ascii wide nocase fullword
+    $utf8 = "\x6b\x75\x72\x61\x66\x69\x6b" nocase fullword
+    $wide = "\x6b\x00\x75\x00\x72\x00\x61\x00\x66\x00\x69\x00\x6b\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_46 {
+  meta:
+    info = "kurafikat"
   strings:
-    $ = "kurafikat" ascii wide nocase fullword
+    $utf8 = "\x6b\x75\x72\x61\x66\x69\x6b\x61\x74" nocase fullword
+    $wide = "\x6b\x00\x75\x00\x72\x00\x61\x00\x66\x00\x69\x00\x6b\x00\x61\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_47 {
+  meta:
+    info = "kurafit"
   strings:
-    $ = "kurafit" ascii wide nocase fullword
+    $utf8 = "\x6b\x75\x72\x61\x66\x69\x74" nocase fullword
+    $wide = "\x6b\x00\x75\x00\x72\x00\x61\x00\x66\x00\x69\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_48 {
+  meta:
+    info = "kurva"
   strings:
-    $ = "kurva" ascii wide nocase fullword
+    $utf8 = "\x6b\x75\x72\x76\x61" nocase fullword
+    $wide = "\x6b\x00\x75\x00\x72\x00\x76\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_49 {
+  meta:
+    info = "kurvák"
   strings:
-    $ = "kurvák" ascii wide nocase fullword
+    $utf8 = "\x6b\x75\x72\x76\xc3\xa1\x6b" nocase fullword
+    $wide = "\x6b\x00\x75\x00\x72\x00\x76\x00\xe1\x00\x6b\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_50 {
+  meta:
+    info = "kurvákat"
   strings:
-    $ = "kurvákat" ascii wide nocase fullword
+    $utf8 = "\x6b\x75\x72\x76\xc3\xa1\x6b\x61\x74" nocase fullword
+    $wide = "\x6b\x00\x75\x00\x72\x00\x76\x00\xe1\x00\x6b\x00\x61\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_51 {
+  meta:
+    info = "kurvát"
   strings:
-    $ = "kurvát" ascii wide nocase fullword
+    $utf8 = "\x6b\x75\x72\x76\xc3\xa1\x74" nocase fullword
+    $wide = "\x6b\x00\x75\x00\x72\x00\x76\x00\xe1\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_52 {
+  meta:
+    info = "kúr"
   strings:
-    $ = "kúr" ascii wide nocase fullword
+    $utf8 = "\x6b\xc3\xba\x72" nocase fullword
+    $wide = "\x6b\x00\xfa\x00\x72\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_53 {
+  meta:
+    info = "leggecibb"
   strings:
-    $ = "leggecibb" ascii wide nocase fullword
+    $utf8 = "\x6c\x65\x67\x67\x65\x63\x69\x62\x62" nocase fullword
+    $wide = "\x6c\x00\x65\x00\x67\x00\x67\x00\x65\x00\x63\x00\x69\x00\x62\x00\x62\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_54 {
+  meta:
+    info = "legkibaszottabb"
   strings:
-    $ = "legkibaszottabb" ascii wide nocase fullword
+    $utf8 = "\x6c\x65\x67\x6b\x69\x62\x61\x73\x7a\x6f\x74\x74\x61\x62\x62" nocase fullword
+    $wide = "\x6c\x00\x65\x00\x67\x00\x6b\x00\x69\x00\x62\x00\x61\x00\x73\x00\x7a\x00\x6f\x00\x74\x00\x74\x00\x61\x00\x62\x00\x62\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_55 {
+  meta:
+    info = "legszarabb"
   strings:
-    $ = "legszarabb" ascii wide nocase fullword
+    $utf8 = "\x6c\x65\x67\x73\x7a\x61\x72\x61\x62\x62" nocase fullword
+    $wide = "\x6c\x00\x65\x00\x67\x00\x73\x00\x7a\x00\x61\x00\x72\x00\x61\x00\x62\x00\x62\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_56 {
+  meta:
+    info = "marha"
   strings:
-    $ = "marha" ascii wide nocase fullword
+    $utf8 = "\x6d\x61\x72\x68\x61" nocase fullword
+    $wide = "\x6d\x00\x61\x00\x72\x00\x68\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_57 {
+  meta:
+    info = "marhák"
   strings:
-    $ = "marhák" ascii wide nocase fullword
+    $utf8 = "\x6d\x61\x72\x68\xc3\xa1\x6b" nocase fullword
+    $wide = "\x6d\x00\x61\x00\x72\x00\x68\x00\xe1\x00\x6b\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_58 {
+  meta:
+    info = "marhákat"
   strings:
-    $ = "marhákat" ascii wide nocase fullword
+    $utf8 = "\x6d\x61\x72\x68\xc3\xa1\x6b\x61\x74" nocase fullword
+    $wide = "\x6d\x00\x61\x00\x72\x00\x68\x00\xe1\x00\x6b\x00\x61\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_59 {
+  meta:
+    info = "marhát"
   strings:
-    $ = "marhát" ascii wide nocase fullword
+    $utf8 = "\x6d\x61\x72\x68\xc3\xa1\x74" nocase fullword
+    $wide = "\x6d\x00\x61\x00\x72\x00\x68\x00\xe1\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_60 {
+  meta:
+    info = "megdöglik"
   strings:
-    $ = "megdöglik" ascii wide nocase fullword
+    $utf8 = "\x6d\x65\x67\x64\xc3\xb6\x67\x6c\x69\x6b" nocase fullword
+    $wide = "\x6d\x00\x65\x00\x67\x00\x64\x00\xf6\x00\x67\x00\x6c\x00\x69\x00\x6b\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_61 {
+  meta:
+    info = "pele"
   strings:
-    $ = "pele" ascii wide nocase fullword
+    $utf8 = "\x70\x65\x6c\x65" nocase fullword
+    $wide = "\x70\x00\x65\x00\x6c\x00\x65\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_62 {
+  meta:
+    info = "pelék"
   strings:
-    $ = "pelék" ascii wide nocase fullword
+    $utf8 = "\x70\x65\x6c\xc3\xa9\x6b" nocase fullword
+    $wide = "\x70\x00\x65\x00\x6c\x00\xe9\x00\x6b\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_63 {
+  meta:
+    info = "picsa"
   strings:
-    $ = "picsa" ascii wide nocase fullword
+    $utf8 = "\x70\x69\x63\x73\x61" nocase fullword
+    $wide = "\x70\x00\x69\x00\x63\x00\x73\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_64 {
+  meta:
+    info = "picsákat"
   strings:
-    $ = "picsákat" ascii wide nocase fullword
+    $utf8 = "\x70\x69\x63\x73\xc3\xa1\x6b\x61\x74" nocase fullword
+    $wide = "\x70\x00\x69\x00\x63\x00\x73\x00\xe1\x00\x6b\x00\x61\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_65 {
+  meta:
+    info = "picsát"
   strings:
-    $ = "picsát" ascii wide nocase fullword
+    $utf8 = "\x70\x69\x63\x73\xc3\xa1\x74" nocase fullword
+    $wide = "\x70\x00\x69\x00\x63\x00\x73\x00\xe1\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_66 {
+  meta:
+    info = "pina"
   strings:
-    $ = "pina" ascii wide nocase fullword
+    $utf8 = "\x70\x69\x6e\x61" nocase fullword
+    $wide = "\x70\x00\x69\x00\x6e\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_67 {
+  meta:
+    info = "pinák"
   strings:
-    $ = "pinák" ascii wide nocase fullword
+    $utf8 = "\x70\x69\x6e\xc3\xa1\x6b" nocase fullword
+    $wide = "\x70\x00\x69\x00\x6e\x00\xe1\x00\x6b\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_68 {
+  meta:
+    info = "pinákat"
   strings:
-    $ = "pinákat" ascii wide nocase fullword
+    $utf8 = "\x70\x69\x6e\xc3\xa1\x6b\x61\x74" nocase fullword
+    $wide = "\x70\x00\x69\x00\x6e\x00\xe1\x00\x6b\x00\x61\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_69 {
+  meta:
+    info = "pinát"
   strings:
-    $ = "pinát" ascii wide nocase fullword
+    $utf8 = "\x70\x69\x6e\xc3\xa1\x74" nocase fullword
+    $wide = "\x70\x00\x69\x00\x6e\x00\xe1\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
-rule content_hu_language_nsfw_70 {
-  strings:
-    $ = "pofa" ascii wide nocase fullword
-  condition:
-    1 of them
-}
-
 rule content_hu_language_nsfw_71 {
+  meta:
+    info = "pofákat"
   strings:
-    $ = "pofákat" ascii wide nocase fullword
+    $utf8 = "\x70\x6f\x66\xc3\xa1\x6b\x61\x74" nocase fullword
+    $wide = "\x70\x00\x6f\x00\x66\x00\xe1\x00\x6b\x00\x61\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_72 {
+  meta:
+    info = "pofát"
   strings:
-    $ = "pofát" ascii wide nocase fullword
+    $utf8 = "\x70\x6f\x66\xc3\xa1\x74" nocase fullword
+    $wide = "\x70\x00\x6f\x00\x66\x00\xe1\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_73 {
+  meta:
+    info = "punci"
   strings:
-    $ = "punci" ascii wide nocase fullword
+    $utf8 = "\x70\x75\x6e\x63\x69" nocase fullword
+    $wide = "\x70\x00\x75\x00\x6e\x00\x63\x00\x69\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_74 {
+  meta:
+    info = "puncik"
   strings:
-    $ = "puncik" ascii wide nocase fullword
+    $utf8 = "\x70\x75\x6e\x63\x69\x6b" nocase fullword
+    $wide = "\x70\x00\x75\x00\x6e\x00\x63\x00\x69\x00\x6b\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_75 {
+  meta:
+    info = "pöcs"
   strings:
-    $ = "pöcs" ascii wide nocase fullword
+    $utf8 = "\x70\xc3\xb6\x63\x73" nocase fullword
+    $wide = "\x70\x00\xf6\x00\x63\x00\x73\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_76 {
+  meta:
+    info = "pöcsök"
   strings:
-    $ = "pöcsök" ascii wide nocase fullword
+    $utf8 = "\x70\xc3\xb6\x63\x73\xc3\xb6\x6b" nocase fullword
+    $wide = "\x70\x00\xf6\x00\x63\x00\x73\x00\xf6\x00\x6b\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_77 {
+  meta:
+    info = "pöcsöket"
   strings:
-    $ = "pöcsöket" ascii wide nocase fullword
+    $utf8 = "\x70\xc3\xb6\x63\x73\xc3\xb6\x6b\x65\x74" nocase fullword
+    $wide = "\x70\x00\xf6\x00\x63\x00\x73\x00\xf6\x00\x6b\x00\x65\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_78 {
+  meta:
+    info = "pöcsöt"
   strings:
-    $ = "pöcsöt" ascii wide nocase fullword
+    $utf8 = "\x70\xc3\xb6\x63\x73\xc3\xb6\x74" nocase fullword
+    $wide = "\x70\x00\xf6\x00\x63\x00\x73\x00\xf6\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_79 {
+  meta:
+    info = "segg"
   strings:
-    $ = "segg" ascii wide nocase fullword
+    $utf8 = "\x73\x65\x67\x67" nocase fullword
+    $wide = "\x73\x00\x65\x00\x67\x00\x67\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_80 {
+  meta:
+    info = "seggek"
   strings:
-    $ = "seggek" ascii wide nocase fullword
+    $utf8 = "\x73\x65\x67\x67\x65\x6b" nocase fullword
+    $wide = "\x73\x00\x65\x00\x67\x00\x67\x00\x65\x00\x6b\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_81 {
+  meta:
+    info = "seggeket"
   strings:
-    $ = "seggeket" ascii wide nocase fullword
+    $utf8 = "\x73\x65\x67\x67\x65\x6b\x65\x74" nocase fullword
+    $wide = "\x73\x00\x65\x00\x67\x00\x67\x00\x65\x00\x6b\x00\x65\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_82 {
+  meta:
+    info = "segget"
   strings:
-    $ = "segget" ascii wide nocase fullword
+    $utf8 = "\x73\x65\x67\x67\x65\x74" nocase fullword
+    $wide = "\x73\x00\x65\x00\x67\x00\x67\x00\x65\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_83 {
+  meta:
+    info = "seggfej"
   strings:
-    $ = "seggfej" ascii wide nocase fullword
+    $utf8 = "\x73\x65\x67\x67\x66\x65\x6a" nocase fullword
+    $wide = "\x73\x00\x65\x00\x67\x00\x67\x00\x66\x00\x65\x00\x6a\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_84 {
+  meta:
+    info = "seggfejek"
   strings:
-    $ = "seggfejek" ascii wide nocase fullword
+    $utf8 = "\x73\x65\x67\x67\x66\x65\x6a\x65\x6b" nocase fullword
+    $wide = "\x73\x00\x65\x00\x67\x00\x67\x00\x66\x00\x65\x00\x6a\x00\x65\x00\x6b\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_85 {
+  meta:
+    info = "seggfejeket"
   strings:
-    $ = "seggfejeket" ascii wide nocase fullword
+    $utf8 = "\x73\x65\x67\x67\x66\x65\x6a\x65\x6b\x65\x74" nocase fullword
+    $wide = "\x73\x00\x65\x00\x67\x00\x67\x00\x66\x00\x65\x00\x6a\x00\x65\x00\x6b\x00\x65\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_86 {
+  meta:
+    info = "seggfejet"
   strings:
-    $ = "seggfejet" ascii wide nocase fullword
+    $utf8 = "\x73\x65\x67\x67\x66\x65\x6a\x65\x74" nocase fullword
+    $wide = "\x73\x00\x65\x00\x67\x00\x67\x00\x66\x00\x65\x00\x6a\x00\x65\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_87 {
+  meta:
+    info = "szajha"
   strings:
-    $ = "szajha" ascii wide nocase fullword
+    $utf8 = "\x73\x7a\x61\x6a\x68\x61" nocase fullword
+    $wide = "\x73\x00\x7a\x00\x61\x00\x6a\x00\x68\x00\x61\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_88 {
+  meta:
+    info = "szajhák"
   strings:
-    $ = "szajhák" ascii wide nocase fullword
+    $utf8 = "\x73\x7a\x61\x6a\x68\xc3\xa1\x6b" nocase fullword
+    $wide = "\x73\x00\x7a\x00\x61\x00\x6a\x00\x68\x00\xe1\x00\x6b\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_89 {
+  meta:
+    info = "szajhákat"
   strings:
-    $ = "szajhákat" ascii wide nocase fullword
+    $utf8 = "\x73\x7a\x61\x6a\x68\xc3\xa1\x6b\x61\x74" nocase fullword
+    $wide = "\x73\x00\x7a\x00\x61\x00\x6a\x00\x68\x00\xe1\x00\x6b\x00\x61\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_90 {
+  meta:
+    info = "szajhát"
   strings:
-    $ = "szajhát" ascii wide nocase fullword
+    $utf8 = "\x73\x7a\x61\x6a\x68\xc3\xa1\x74" nocase fullword
+    $wide = "\x73\x00\x7a\x00\x61\x00\x6a\x00\x68\x00\xe1\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_91 {
+  meta:
+    info = "szar"
   strings:
-    $ = "szar" ascii wide nocase fullword
+    $utf8 = "\x73\x7a\x61\x72" nocase fullword
+    $wide = "\x73\x00\x7a\x00\x61\x00\x72\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_92 {
+  meta:
+    info = "szarabb"
   strings:
-    $ = "szarabb" ascii wide nocase fullword
+    $utf8 = "\x73\x7a\x61\x72\x61\x62\x62" nocase fullword
+    $wide = "\x73\x00\x7a\x00\x61\x00\x72\x00\x61\x00\x62\x00\x62\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_93 {
+  meta:
+    info = "szarik"
   strings:
-    $ = "szarik" ascii wide nocase fullword
+    $utf8 = "\x73\x7a\x61\x72\x69\x6b" nocase fullword
+    $wide = "\x73\x00\x7a\x00\x61\x00\x72\x00\x69\x00\x6b\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_94 {
+  meta:
+    info = "szarok"
   strings:
-    $ = "szarok" ascii wide nocase fullword
+    $utf8 = "\x73\x7a\x61\x72\x6f\x6b" nocase fullword
+    $wide = "\x73\x00\x7a\x00\x61\x00\x72\x00\x6f\x00\x6b\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_95 {
+  meta:
+    info = "szarokat"
   strings:
-    $ = "szarokat" ascii wide nocase fullword
+    $utf8 = "\x73\x7a\x61\x72\x6f\x6b\x61\x74" nocase fullword
+    $wide = "\x73\x00\x7a\x00\x61\x00\x72\x00\x6f\x00\x6b\x00\x61\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
-
 rule content_hu_language_nsfw_96 {
+  meta:
+    info = "szart"
   strings:
-    $ = "szart" ascii wide nocase fullword
+    $utf8 = "\x73\x7a\x61\x72\x74" nocase fullword
+    $wide = "\x73\x00\x7a\x00\x61\x00\x72\x00\x74\x00" nocase fullword
   condition:
-    1 of them
+    any of them
 }
