@@ -41,28 +41,40 @@ test: build ## Run suite of tests against compiled YARA database
 		echo "\n--- Tests Failed ---"; \
 		exit 1; \
 	fi; \
-	echo "\n--- Test Complete ---"
 
 	@echo "Running detection tests against negative samples..."
-		@failed=0; \
-  	for file in src/test/negative/*.txt; do \
-  		echo "\n--- Testing $$file ---"; \
-  		output=$$(yara -C dist/language-nsfw.db "$$file" 2>&1); \
-  		exit_code=$$?; \
-  		echo "$$output"; \
-  		if [ $$ouput ]; then \
-  			echo "ERROR: YARA found a match"; \
-  			failed=1; \
-  		elif [ $$exit_code -ne 0 ]; then \
-  			echo "ERROR: YARA failed with exit code $$exit_code"; \
-  			failed=1; \
-  		fi; \
-  	done; \
-  	if [ $$failed -eq 1 ]; then \
-  		echo "\n--- Tests Failed ---"; \
-  		exit 1; \
-  	fi; \
-  	echo "\n--- Test Complete ---"
+	@failed=0; \
+	for file in src/test/negative/corpus_*.txt; do \
+		echo "\n--- Testing $$file ---"; \
+		lang=$$(basename "$$file" .txt | sed 's/corpus_//'); \
+		rule_file="src/$${lang}-language-nsfw.yara"; \
+		if [ ! -f "$$rule_file" ]; then \
+			echo "WARNING: Rule file $$rule_file not found, skipping..."; \
+			continue; \
+		fi; \
+		output=$$(yara "$$rule_file" "$$file" 2>&1); \
+		exit_code=$$?; \
+		if echo "$$output" | grep -q "^error:"; then \
+			echo "ERROR: YARA reported errors"; \
+			echo "$$output"; \
+			failed=1; \
+		elif echo "$$output" | grep -qv "^$$"; then \
+			echo "ERROR: YARA found a match (false positive)"; \
+			echo "$$output"; \
+			failed=1; \
+		elif [ $$exit_code -ne 0 ]; then \
+			echo "ERROR: YARA failed with exit code $$exit_code"; \
+			echo "$$output"; \
+			failed=1; \
+		else \
+			echo "PASS: No matches found"; \
+		fi; \
+	done; \
+	if [ $$failed -eq 1 ]; then \
+		echo "\n--- Tests Failed ---"; \
+		exit 1; \
+	fi; \
+	echo "\n--- Test Complete ---"
 
 run: build ## Run YARA against source files
 	yara src/entrypoint.yara src/

@@ -394,17 +394,6 @@ rule content_it_language_nsfw_42 {
   condition:
     any of them
 }
-rule content_it_language_nsfw_43 {
-  meta:
-    info = "culo"
-  strings:
-    $utf8 = "\x63\x75\x6c\x6f" nocase fullword
-    $latin1 = "\x63\x75\x6c\x6f" nocase fullword
-    $cp1252 = "\x63\x75\x6c\x6f" nocase fullword
-    $wide = "\x63\x00\x75\x00\x6c\x00\x6f\x00" nocase fullword
-  condition:
-    any of them
-}
 rule content_it_language_nsfw_44 {
   meta:
     info = "di merda"

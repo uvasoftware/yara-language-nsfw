@@ -263,18 +263,6 @@ rule content_es_language_nsfw_31 {
     any of them
 }
 
-rule content_es_language_nsfw_32 {
-  meta:
-    info = "Maciza"
-  strings:
-    $utf8 = "\x4d\x61\x63\x69\x7a\x61" nocase fullword
-    $latin1 = "\x4d\x61\x63\x69\x7a\x61" nocase fullword
-    $cp1252 = "\x4d\x61\x63\x69\x7a\x61" nocase fullword
-    $wide = "\x4d\x00\x61\x00\x63\x00\x69\x00\x7a\x00\x61\x00" nocase fullword
-  condition:
-    any of them
-}
-
 rule content_es_language_nsfw_33 {
   meta:
     info = "Macizorra"
@@ -440,18 +428,6 @@ rule content_es_language_nsfw_60 {
     $latin1 = "\x56\x65\x72\x67\x61" nocase fullword
     $cp1252 = "\x56\x65\x72\x67\x61" nocase fullword
     $wide = "\x56\x00\x65\x00\x72\x00\x67\x00\x61\x00" nocase fullword
-  condition:
-    any of them
-}
-
-rule content_es_language_nsfw_66 {
-  meta:
-    info = "maldito"
-  strings:
-    $utf8 = "\x6d\x61\x6c\x64\x69\x74\x6f" nocase fullword
-    $latin1 = "\x6d\x61\x6c\x64\x69\x74\x6f" nocase fullword
-    $cp1252 = "\x6d\x61\x6c\x64\x69\x74\x6f" nocase fullword
-    $wide = "\x6d\x00\x61\x00\x6c\x00\x64\x00\x69\x00\x74\x00\x6f\x00" nocase fullword
   condition:
     any of them
 }
