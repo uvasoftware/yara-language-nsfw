@@ -1,1 +1,4 @@
 Tento text obsahuje NSFW slova v češtině: kurva, selhala, prdel, vole, kokot, nemlud, svině, zmrd.
+
+# Test UUID for cs language detection
+2A5B8C3D-4E6F-4A1B-9C2D-3E4F5A6B7C8D

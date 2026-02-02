@@ -133,3 +133,12 @@ rule content_bn_language_nsfw_15 {
   condition:
     any of them
 }
+
+rule content_bn_language_nsfw_test {
+  meta:
+    info = "Test rule for bn language detection - UUID: 7F8E3A12-9D4B-4F2C-B8E1-5A6C9D2E4F7B"
+  strings:
+    $ = "7F8E3A12-9D4B-4F2C-B8E1-5A6C9D2E4F7B" fullword wide ascii nocase
+  condition:
+    any of them
+}

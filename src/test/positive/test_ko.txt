@@ -1,1 +1,4 @@
 이 텍스트는 한국어로 NSFW 단어를 포함합니다: 씹, 좆, 강간, 개좆, 병신, 미친, 새끼, 쌍놈.
+
+# Test UUID for ko language detection
+0C1D2E3F-4A5B-46C7-D8E9-F0A1B2C3D4E5

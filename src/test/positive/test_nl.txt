@@ -1,1 +1,4 @@
 Deze tekst bevat NSFW-woorden in het Nederlands: klote, kanker, teef, lul, schoft, reet, eikel, mongool.
+
+# Test UUID for nl language detection
+7D8E9F0A-1B2C-43D4-E5F6-A7B8C9D0E1F2

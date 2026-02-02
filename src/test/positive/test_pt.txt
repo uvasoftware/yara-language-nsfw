@@ -1,1 +1,4 @@
 Este texto contém palavras NSFW em português: puta, merda, caralho, cu, buceta, foda, filho da puta.
+
+# Test UUID for pt language detection
+4F5A6B7C-8D9E-40F1-A2B3-C4D5E6F7A8B9

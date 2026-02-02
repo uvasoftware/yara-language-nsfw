@@ -1,1 +1,4 @@
 Denna text innehåller NSFW-ord på svenska: fitta, kuk, hora, skit, kukhuvud, rövhål, jävla, snutt.
+
+# Test UUID for sv language detection
+6B7C8D9E-0F1A-42B3-C4D5-E6F7A8B9C0D1

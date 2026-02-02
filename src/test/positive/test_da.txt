@@ -1,1 +1,4 @@
 Denne tekst indeholder NSFW-ord på dansk: kusse, pik, lort, kødsår, fisse, røvhul, idiot, forbandet.
+
+# Test UUID for da language detection
+9E3F4A5B-6C7D-4E8F-A9B1-2C3D4E5F6A7B

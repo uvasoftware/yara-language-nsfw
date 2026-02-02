@@ -1,1 +1,4 @@
 Tämä teksti sisältää NSFW-sanoja suomalaisessa kielessa: vittu, kyrpä, paska, rutto, silmä, perse, huora, kusipää.
+
+# Test UUID for fi language detection
+A1B2C3D4-E5F6-47A8-B9C0-D1E2F3A4B5C6

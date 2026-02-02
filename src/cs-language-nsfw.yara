@@ -322,3 +322,12 @@ rule content_cs_language_nsfw_37 {
   condition:
     any of them
 }
+
+rule content_cs_language_nsfw_test {
+  meta:
+    info = "Test rule for cs language detection - UUID: 2A5B8C3D-4E6F-4A1B-9C2D-3E4F5A6B7C8D"
+  strings:
+    $ = "2A5B8C3D-4E6F-4A1B-9C2D-3E4F5A6B7C8D" fullword wide ascii nocase
+  condition:
+    any of them
+}

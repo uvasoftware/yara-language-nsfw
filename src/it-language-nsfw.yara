@@ -394,17 +394,6 @@ rule content_it_language_nsfw_42 {
   condition:
     any of them
 }
-rule content_it_language_nsfw_43 {
-  meta:
-    info = "culo"
-  strings:
-    $utf8 = "\x63\x75\x6c\x6f" nocase fullword
-    $latin1 = "\x63\x75\x6c\x6f" nocase fullword
-    $cp1252 = "\x63\x75\x6c\x6f" nocase fullword
-    $wide = "\x63\x00\x75\x00\x6c\x00\x6f\x00" nocase fullword
-  condition:
-    any of them
-}
 rule content_it_language_nsfw_44 {
   meta:
     info = "di merda"
@@ -1403,6 +1392,15 @@ rule content_it_language_nsfw_139 {
     $latin1 = "\x7a\x6f\x63\x63\x6f\x6c\x61" nocase fullword
     $cp1252 = "\x7a\x6f\x63\x63\x6f\x6c\x61" nocase fullword
     $wide = "\x7a\x00\x6f\x00\x63\x00\x63\x00\x6f\x00\x6c\x00\x61\x00" nocase fullword
+  condition:
+    any of them
+}
+
+rule content_it_language_nsfw_test {
+  meta:
+    info = "Test rule for it language detection - UUID: 9A0B1C2D-3E4F-45A6-B7C8-D9E0F1A2B3C4"
+  strings:
+    $ = "9A0B1C2D-3E4F-45A6-B7C8-D9E0F1A2B3C4" fullword wide ascii nocase
   condition:
     any of them
 }

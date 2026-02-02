@@ -817,3 +817,12 @@ rule content_hu_language_nsfw_96 {
   condition:
     any of them
 }
+
+rule content_hu_language_nsfw_test {
+  meta:
+    info = "Test rule for hu language detection - UUID: 3E4F5A6B-7C8D-49E0-F1A2-B3C4D5E6F7A8"
+  strings:
+    $ = "3E4F5A6B-7C8D-49E0-F1A2-B3C4D5E6F7A8" fullword wide ascii nocase
+  condition:
+    any of them
+}

@@ -1568,3 +1568,12 @@ rule content_ru_language_nsfw_159 {
   condition:
     any of them
 }
+
+rule content_ru_language_nsfw_test {
+  meta:
+    info = "Test rule for ru language detection - UUID: 1A2B3C4D-5E6F-47A8-B9C0-D1E2F3A4B5C6"
+  strings:
+    $ = "1A2B3C4D-5E6F-47A8-B9C0-D1E2F3A4B5C6" fullword wide ascii nocase
+  condition:
+    any of them
+}

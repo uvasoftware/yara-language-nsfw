@@ -1,1 +1,4 @@
 Bu metin Türkçe'de NSFW kelimeleri içerir: amcık, siktir, bok, gıcık, pislik, orospu, ibne, piç.
+
+# Test UUID for tr language detection
+8D9E0F1A-2B3C-44D5-E6F7-A8B9C0D1E2F3

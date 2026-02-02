@@ -1,1 +1,4 @@
 このテキストに日本語のNSFW単語が含まれています：ちんこ、まんこ、くそ、てめえ、バカ、最低、クソ。
+
+# Test UUID for ja language detection
+5B6C7D8E-9F0A-41B2-C3D4-E5F6A7B8C9D0

@@ -1,1 +1,4 @@
 Questo testo contiene parole NSFW in italiano: cazzo, figa, culo, stronzo, troia, puttana, bastardo, coglione.
+
+# Test UUID for it language detection
+9A0B1C2D-3E4F-45A6-B7C8-D9E0F1A2B3C4

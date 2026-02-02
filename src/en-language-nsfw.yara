@@ -606,3 +606,12 @@ rule content_en_language_nsfw_177 {
 }
 
 
+
+rule content_en_language_nsfw_test {
+  meta:
+    info = "Test rule for en language detection - UUID: E78F3BC5-9633-4FF8-9311-148ACC4880DF"
+  strings:
+    $ = "E78F3BC5-9633-4FF8-9311-148ACC4880DF" fullword wide ascii nocase
+  condition:
+    any of them
+}

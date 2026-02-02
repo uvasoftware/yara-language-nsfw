@@ -1267,3 +1267,12 @@ rule content_tr_language_nsfw_141 {
   condition:
     any of them
 }
+
+rule content_tr_language_nsfw_test {
+  meta:
+    info = "Test rule for tr language detection - UUID: 8D9E0F1A-2B3C-44D5-E6F7-A8B9C0D1E2F3"
+  strings:
+    $ = "8D9E0F1A-2B3C-44D5-E6F7-A8B9C0D1E2F3" fullword wide ascii nocase
+  condition:
+    any of them
+}

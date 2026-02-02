@@ -97,3 +97,12 @@ rule content_en_racial_language_nsfw_racial_11 {
   condition:
     any of them
 }
+
+rule content_en_racial_language_nsfw_test {
+  meta:
+    info = "Test rule for en-racial language detection - UUID: 1B2C3D4E-5F6A-4B7C-8D9E-0F1A2B3C4D5E"
+  strings:
+    $ = "1B2C3D4E-5F6A-4B7C-8D9E-0F1A2B3C4D5E" fullword wide ascii nocase
+  condition:
+    any of them
+}

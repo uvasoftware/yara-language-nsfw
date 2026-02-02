@@ -331,3 +331,12 @@ rule content_eo_language_nsfw_37 {
   condition:
     any of them
 }
+
+rule content_eo_language_nsfw_test {
+  meta:
+    info = "Test rule for eo language detection - UUID: 6F7A8B9C-0D1E-4F2A-3B4C-5D6E7F8A9B0C"
+  strings:
+    $ = "6F7A8B9C-0D1E-4F2A-3B4C-5D6E7F8A9B0C" fullword wide ascii nocase
+  condition:
+    any of them
+}

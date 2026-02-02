@@ -1,1 +1,4 @@
 Ez a szöveg NSFW szavakat tartalmaz magyarországi nyelvben: kurva, picsás, seggfej, fasz, pina, szart, taknya, szajha.
+
+# Test UUID for hu language detection
+3E4F5A6B-7C8D-49E0-F1A2-B3C4D5E6F7A8

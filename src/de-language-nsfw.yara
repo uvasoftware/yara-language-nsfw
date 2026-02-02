@@ -404,3 +404,12 @@ rule content_de_language_nsfw_53 {
   condition:
     any of them
 }
+
+rule content_de_language_nsfw_test {
+  meta:
+    info = "Test rule for de language detection - UUID: 38555D30-84DD-4A1E-808C-E1B1F6C9915E"
+  strings:
+    $ = "38555D30-84DD-4A1E-808C-E1B1F6C9915E" fullword wide ascii nocase
+  condition:
+    any of them
+}
