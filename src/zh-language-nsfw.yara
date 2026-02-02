@@ -1000,16 +1000,6 @@ rule content_zh_language_nsfw_97 {
     any of them
 }
 
-rule content_zh_language_nsfw_98 {
-  meta:
-    info = "月经"
-  strings:
-    $utf8 = "\xe6\x9c\x88\xe7\xbb\x8f" nocase fullword
-    $gbk = "\xd4\xc2\xbe\xad" nocase fullword
-    $wide = "\x08\x67\x00\xcf\x7e\x00" nocase fullword
-  condition:
-    any of them
-}
 
 rule content_zh_language_nsfw_99 {
   meta:

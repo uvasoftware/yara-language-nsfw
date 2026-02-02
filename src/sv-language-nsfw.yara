@@ -30,6 +30,8 @@ rule content_sv_language_nsfw_4 {
     info = "dra åt helvete"
   strings:
     $utf8 = "\x64\x72\x61\x20\xc3\xa5\x74\x20\x68\x65\x6c\x76\x65\x74\x65" nocase fullword
+    $latin1 = "\x64\x72\x61\x20\xe5\x74\x20\x68\x65\x6c\x76\x65\x74\x65" nocase fullword
+    $cp1252 = "\x64\x72\x61\x20\xe5\x74\x20\x68\x65\x6c\x76\x65\x74\x65" nocase fullword
     $wide = "\x64\x00\x72\x00\x61\x00\x20\x00\xe5\x00\x74\x00\x20\x00\x68\x00\x65\x00\x6c\x00\x76\x00\x65\x00\x74\x00\x65\x00" nocase fullword
   condition:
     any of them
@@ -57,6 +59,8 @@ rule content_sv_language_nsfw_8 {
     info = "för helvete"
   strings:
     $utf8 = "\x66\xc3\xb6\x72\x20\x68\x65\x6c\x76\x65\x74\x65" nocase fullword
+    $latin1 = "\x66\xf6\x72\x20\x68\x65\x6c\x76\x65\x74\x65" nocase fullword
+    $cp1252 = "\x66\xf6\x72\x20\x68\x65\x6c\x76\x65\x74\x65" nocase fullword
     $wide = "\x66\x00\xf6\x00\x72\x00\x20\x00\x68\x00\x65\x00\x6c\x00\x76\x00\x65\x00\x74\x00\x65\x00" nocase fullword
   condition:
     any of them
@@ -75,6 +79,8 @@ rule content_sv_language_nsfw_11 {
     info = "jävlar"
   strings:
     $utf8 = "\x6a\xc3\xa4\x76\x6c\x61\x72" nocase fullword
+    $latin1 = "\x6a\xe4\x76\x6c\x61\x72" nocase fullword
+    $cp1252 = "\x6a\xe4\x76\x6c\x61\x72" nocase fullword
     $wide = "\x6a\x00\xe4\x00\x76\x00\x6c\x00\x61\x00\x72\x00" nocase fullword
   condition:
     any of them
@@ -102,6 +108,8 @@ rule content_sv_language_nsfw_14 {
     info = "kuksås"
   strings:
     $utf8 = "\x6b\x75\x6b\x73\xc3\xa5\x73" nocase fullword
+    $latin1 = "\x6b\x75\x6b\x73\xe5\x73" nocase fullword
+    $cp1252 = "\x6b\x75\x6b\x73\xe5\x73" nocase fullword
     $wide = "\x6b\x00\x75\x00\x6b\x00\x73\x00\xe5\x00\x73\x00" nocase fullword
   condition:
     any of them
@@ -111,6 +119,8 @@ rule content_sv_language_nsfw_15 {
     info = "kötthuvud"
   strings:
     $utf8 = "\x6b\xc3\xb6\x74\x74\x68\x75\x76\x75\x64" nocase fullword
+    $latin1 = "\x6b\xf6\x74\x74\x68\x75\x76\x75\x64" nocase fullword
+    $cp1252 = "\x6b\xf6\x74\x74\x68\x75\x76\x75\x64" nocase fullword
     $wide = "\x6b\x00\xf6\x00\x74\x00\x74\x00\x68\x00\x75\x00\x76\x00\x75\x00\x64\x00" nocase fullword
   condition:
     any of them
@@ -120,6 +130,8 @@ rule content_sv_language_nsfw_16 {
     info = "köttnacke"
   strings:
     $utf8 = "\x6b\xc3\xb6\x74\x74\x6e\x61\x63\x6b\x65" nocase fullword
+    $latin1 = "\x6b\xf6\x74\x74\x6e\x61\x63\x6b\x65" nocase fullword
+    $cp1252 = "\x6b\xf6\x74\x74\x6e\x61\x63\x6b\x65" nocase fullword
     $wide = "\x6b\x00\xf6\x00\x74\x00\x74\x00\x6e\x00\x61\x00\x63\x00\x6b\x00\x65\x00" nocase fullword
   condition:
     any of them
@@ -201,6 +213,8 @@ rule content_sv_language_nsfw_28 {
     info = "pök"
   strings:
     $utf8 = "\x70\xc3\xb6\x6b" nocase fullword
+    $latin1 = "\x70\xf6\x6b" nocase fullword
+    $cp1252 = "\x70\xf6\x6b" nocase fullword
     $wide = "\x70\x00\xf6\x00\x6b\x00" nocase fullword
   condition:
     any of them
@@ -219,6 +233,8 @@ rule content_sv_language_nsfw_30 {
     info = "röv"
   strings:
     $utf8 = "\x72\xc3\xb6\x76" nocase fullword
+    $latin1 = "\x72\xf6\x76" nocase fullword
+    $cp1252 = "\x72\xf6\x76" nocase fullword
     $wide = "\x72\x00\xf6\x00\x76\x00" nocase fullword
   condition:
     any of them
@@ -228,6 +244,8 @@ rule content_sv_language_nsfw_31 {
     info = "rövhål"
   strings:
     $utf8 = "\x72\xc3\xb6\x76\x68\xc3\xa5\x6c" nocase fullword
+    $latin1 = "\x72\xf6\x76\x68\xe5\x6c" nocase fullword
+    $cp1252 = "\x72\xf6\x76\x68\xe5\x6c" nocase fullword
     $wide = "\x72\x00\xf6\x00\x76\x00\x68\x00\xe5\x00\x6c\x00" nocase fullword
   condition:
     any of them
@@ -237,16 +255,9 @@ rule content_sv_language_nsfw_32 {
     info = "rövknulla"
   strings:
     $utf8 = "\x72\xc3\xb6\x76\x6b\x6e\x75\x6c\x6c\x61" nocase fullword
+    $latin1 = "\x72\xf6\x76\x6b\x6e\x75\x6c\x6c\x61" nocase fullword
+    $cp1252 = "\x72\xf6\x76\x6b\x6e\x75\x6c\x6c\x61" nocase fullword
     $wide = "\x72\x00\xf6\x00\x76\x00\x6b\x00\x6e\x00\x75\x00\x6c\x00\x6c\x00\x61\x00" nocase fullword
-  condition:
-    any of them
-}
-rule content_sv_language_nsfw_33 {
-  meta:
-    info = "satan"
-  strings:
-    $utf8 = "\x73\x61\x74\x61\x6e" nocase fullword
-    $wide = "\x73\x00\x61\x00\x74\x00\x61\x00\x6e\x00" nocase fullword
   condition:
     any of them
 }
@@ -273,6 +284,8 @@ rule content_sv_language_nsfw_36 {
     info = "skäggbiff"
   strings:
     $utf8 = "\x73\x6b\xc3\xa4\x67\x67\x62\x69\x66\x66" nocase fullword
+    $latin1 = "\x73\x6b\xe4\x67\x67\x62\x69\x66\x66" nocase fullword
+    $cp1252 = "\x73\x6b\xe4\x67\x67\x62\x69\x66\x66" nocase fullword
     $wide = "\x73\x00\x6b\x00\xe4\x00\x67\x00\x67\x00\x62\x00\x69\x00\x66\x00\x66\x00" nocase fullword
   condition:
     any of them
@@ -309,6 +322,8 @@ rule content_sv_language_nsfw_41 {
     info = "sätta på"
   strings:
     $utf8 = "\x73\xc3\xa4\x74\x74\x61\x20\x70\xc3\xa5" nocase fullword
+    $latin1 = "\x73\xe4\x74\x74\x61\x20\x70\xe5" nocase fullword
+    $cp1252 = "\x73\xe4\x74\x74\x61\x20\x70\xe5" nocase fullword
     $wide = "\x73\x00\xe4\x00\x74\x00\x74\x00\x61\x00\x20\x00\x70\x00\xe5\x00" nocase fullword
   condition:
     any of them

@@ -407,17 +407,6 @@ rule content_es_language_nsfw_54 {
     any of them
 }
 
-rule content_es_language_nsfw_55 {
-  meta:
-    info = "Sádico"
-  strings:
-    $utf8 = "\x53\xc3\xa1\x64\x69\x63\x6f" nocase fullword
-    $latin1 = "\x53\xe1\x64\x69\x63\x6f" nocase fullword
-    $cp1252 = "\x53\xe1\x64\x69\x63\x6f" nocase fullword
-    $wide = "\x53\x00\xe1\x00\x64\x00\x69\x00\x63\x00\x6f\x00" nocase fullword
-  condition:
-    any of them
-}
 
 rule content_es_language_nsfw_56 {
   meta:

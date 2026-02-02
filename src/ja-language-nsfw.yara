@@ -109,27 +109,7 @@ rule content_ja_language_nsfw_11 {
     any of them
 }
 
-rule content_ja_language_nsfw_12 {
-  meta:
-    info = "グロ"
-  strings:
-    $utf8 = "\xe3\x82\xb0\xe3\x83\xad" nocase fullword
-    $sjis = "\x83\x4f\x83\x8d" nocase fullword
-    $wide = "\xb0\x30\x00\xed\x30\x00" nocase fullword
-  condition:
-    any of them
-}
 
-rule content_ja_language_nsfw_13 {
-  meta:
-    info = "デブ"
-  strings:
-    $utf8 = "\xe3\x83\x87\xe3\x83\x96" nocase fullword
-    $sjis = "\x83\x66\x83\x75" nocase fullword
-    $wide = "\xc7\x30\x00\xd6\x30\x00" nocase fullword
-  condition:
-    any of them
-}
 
 rule content_ja_language_nsfw_14 {
   meta:
@@ -901,16 +881,6 @@ rule content_ja_language_nsfw_86 {
     any of them
 }
 
-rule content_ja_language_nsfw_87 {
-  meta:
-    info = "おしっこ"
-  strings:
-    $utf8 = "\xe3\x81\x8a\xe3\x81\x97\xe3\x81\xa3\xe3\x81\x93" nocase fullword
-    $sjis = "\x82\xa8\x82\xb5\x82\xc1\x82\xb1" nocase fullword
-    $wide = "\x4a\x30\x00\x57\x30\x00\x63\x30\x00\x53\x30\x00" nocase fullword
-  condition:
-    any of them
-}
 
 rule content_ja_language_nsfw_88 {
   meta:

@@ -322,15 +322,6 @@ rule content_hi_language_nsfw_36 {
   condition:
     any of them
 }
-rule content_hi_language_nsfw_37 {
-  meta:
-    info = "gaand"
-  strings:
-    $utf8 = "\x67\x61\x61\x6e\x64" nocase fullword
-    $wide = "\x67\x00\x61\x00\x61\x00\x6e\x00\x64\x00" nocase fullword
-  condition:
-    any of them
-}
 rule content_hi_language_nsfw_38 {
   meta:
     info = "gaandfat"
@@ -403,15 +394,6 @@ rule content_hi_language_nsfw_45 {
   condition:
     any of them
 }
-rule content_hi_language_nsfw_46 {
-  meta:
-    info = "harami"
-  strings:
-    $utf8 = "\x68\x61\x72\x61\x6d\x69" nocase fullword
-    $wide = "\x68\x00\x61\x00\x72\x00\x61\x00\x6d\x00\x69\x00" nocase fullword
-  condition:
-    any of them
-}
 rule content_hi_language_nsfw_47 {
   meta:
     info = "haramzade"
@@ -454,15 +436,6 @@ rule content_hi_language_nsfw_51 {
   strings:
     $utf8 = "\x68\x69\x6a\x72\x61" nocase fullword
     $wide = "\x68\x00\x69\x00\x6a\x00\x72\x00\x61\x00" nocase fullword
-  condition:
-    any of them
-}
-rule content_hi_language_nsfw_52 {
-  meta:
-    info = "jhant"
-  strings:
-    $utf8 = "\x6a\x68\x61\x6e\x74" nocase fullword
-    $wide = "\x6a\x00\x68\x00\x61\x00\x6e\x00\x74\x00" nocase fullword
   condition:
     any of them
 }
@@ -517,15 +490,6 @@ rule content_hi_language_nsfw_58 {
   strings:
     $utf8 = "\x6b\x61\x6e\x6a\x61\x72" nocase fullword
     $wide = "\x6b\x00\x61\x00\x6e\x00\x6a\x00\x61\x00\x72\x00" nocase fullword
-  condition:
-    any of them
-}
-rule content_hi_language_nsfw_59 {
-  meta:
-    info = "kutta"
-  strings:
-    $utf8 = "\x6b\x75\x74\x74\x61" nocase fullword
-    $wide = "\x6b\x00\x75\x00\x74\x00\x74\x00\x61\x00" nocase fullword
   condition:
     any of them
 }

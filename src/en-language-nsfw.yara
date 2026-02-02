@@ -51,17 +51,6 @@ rule content_en_language_nsfw_26 {
   condition:
     any of them
 }
-rule content_en_language_nsfw_27 {
-  meta:
-    info = "bullshit"
-  strings:
-    $ascii1 = "\x62\x75\x6c\x6c\x73\x68\x69\x74" nocase fullword  // bullshit in ASCII/UTF-8
-    $wide1 = "\x62\x00\x75\x00\x6c\x00\x6c\x00\x73\x00\x68\x00\x69\x00\x74\x00" nocase fullword  // bullshit in UTF-16LE
-    $ascii2 = "\x62\x75\x6c\x6c\x20\x73\x68\x69\x74" nocase fullword  // bull shit in ASCII/UTF-8
-    $wide2 = "\x62\x00\x75\x00\x6c\x00\x6c\x00\x20\x00\x73\x00\x68\x00\x69\x00\x74\x00" nocase fullword  // bull shit in UTF-16LE
-  condition:
-    any of them
-}
 rule content_en_language_nsfw_34 {
   meta:
     info = "camgirl"
@@ -95,17 +84,6 @@ rule content_en_language_nsfw_41 {
   strings:
     $ascii = "\x63\x6c\x75\x73\x74\x65\x72\x66\x75\x63\x6b" nocase fullword  // clusterfuck in ASCII/UTF-8
     $wide = "\x63\x00\x6c\x00\x75\x00\x73\x00\x74\x00\x65\x00\x72\x00\x66\x00\x75\x00\x63\x00\x6b\x00" nocase fullword  // clusterfuck in UTF-16LE
-  condition:
-    any of them
-}
-rule content_en_language_nsfw_44 {
-  meta:
-    info = "coprolagnia"
-  strings:
-    $ascii1 = "\x63\x6f\x70\x72\x6f\x6c\x61\x67\x6e\x69\x61" nocase fullword  // coprolagnia in ASCII/UTF-8
-    $wide1 = "\x63\x00\x6f\x00\x70\x00\x72\x00\x6f\x00\x6c\x00\x61\x00\x67\x00\x6e\x00\x69\x00\x61\x00" nocase fullword  // coprolagnia in UTF-16LE
-    $ascii2 = "\x63\x6f\x70\x72\x6f\x70\x68\x69\x6c\x69\x61" nocase fullword  // coprophilia in ASCII/UTF-8
-    $wide2 = "\x63\x00\x6f\x00\x70\x00\x72\x00\x6f\x00\x70\x00\x68\x00\x69\x00\x6c\x00\x69\x00\x61\x00" nocase fullword  // coprophilia in UTF-16LE
   condition:
     any of them
 }
@@ -363,17 +341,6 @@ rule content_en_language_nsfw_101 {
   strings:
     $ascii = "\x6f\x6e\x65\x20\x63\x75\x70\x20\x74\x77\x6f\x20\x67\x69\x72\x6c\x73" nocase fullword  // one cup two girls in ASCII/UTF-8
     $wide = "\x6f\x00\x6e\x00\x65\x00\x20\x00\x63\x00\x75\x00\x70\x00\x20\x00\x74\x00\x77\x00\x6f\x00\x20\x00\x67\x00\x69\x00\x72\x00\x6c\x00\x73\x00" nocase fullword  // one cup two girls in UTF-16LE
-  condition:
-    any of them
-}
-rule content_en_language_nsfw_103 {
-  meta:
-    info = "piece of shit"
-  strings:
-    $ascii1 = "\x70\x69\x65\x63\x65\x20\x6f\x66\x20\x73\x68\x69\x74" nocase fullword  // piece of shit in ASCII/UTF-8
-    $wide1 = "\x70\x00\x69\x00\x65\x00\x63\x00\x65\x00\x20\x00\x6f\x00\x66\x00\x20\x00\x73\x00\x68\x00\x69\x00\x74\x00" nocase fullword  // piece of shit in UTF-16LE
-    $ascii2 = "\x70\x69\x65\x63\x65\x73\x20\x6f\x66\x20\x73\x68\x69\x74" nocase fullword  // pieces of shit in ASCII/UTF-8
-    $wide2 = "\x70\x00\x69\x00\x65\x00\x63\x00\x65\x00\x73\x00\x20\x00\x6f\x00\x66\x00\x20\x00\x73\x00\x68\x00\x69\x00\x74\x00" nocase fullword  // pieces of shit in UTF-16LE
   condition:
     any of them
 }
