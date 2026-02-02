@@ -130,28 +130,6 @@ rule content_fr_language_nsfw_13 {
   condition:
     any of them
 }
-rule content_fr_language_nsfw_14 {
-  meta:
-    info = "chiasse"
-  strings:
-    $utf8 = "\x63\x68\x69\x61\x73\x73\x65" nocase fullword
-    $latin1 = "\x63\x68\x69\x61\x73\x73\x65" nocase fullword
-    $cp1252 = "\x63\x68\x69\x61\x73\x73\x65" nocase fullword
-    $wide = "\x63\x00\x68\x00\x69\x00\x61\x00\x73\x00\x73\x00\x65\x00" nocase fullword
-  condition:
-    any of them
-}
-rule content_fr_language_nsfw_15 {
-  meta:
-    info = "chier"
-  strings:
-    $utf8 = "\x63\x68\x69\x65\x72" nocase fullword
-    $latin1 = "\x63\x68\x69\x65\x72" nocase fullword
-    $cp1252 = "\x63\x68\x69\x65\x72" nocase fullword
-    $wide = "\x63\x00\x68\x00\x69\x00\x65\x00\x72\x00" nocase fullword
-  condition:
-    any of them
-}
 rule content_fr_language_nsfw_16 {
   meta:
     info = "chiottes"
@@ -405,28 +383,6 @@ rule content_fr_language_nsfw_44 {
   condition:
     any of them
 }
-rule content_fr_language_nsfw_46 {
-  meta:
-    info = "merdeuse"
-  strings:
-    $utf8 = "\x6d\x65\x72\x64\x65\x75\x73\x65" nocase fullword
-    $latin1 = "\x6d\x65\x72\x64\x65\x75\x73\x65" nocase fullword
-    $cp1252 = "\x6d\x65\x72\x64\x65\x75\x73\x65" nocase fullword
-    $wide = "\x6d\x00\x65\x00\x72\x00\x64\x00\x65\x00\x75\x00\x73\x00\x65\x00" nocase fullword
-  condition:
-    any of them
-}
-rule content_fr_language_nsfw_47 {
-  meta:
-    info = "merdeux"
-  strings:
-    $utf8 = "\x6d\x65\x72\x64\x65\x75\x78" nocase fullword
-    $latin1 = "\x6d\x65\x72\x64\x65\x75\x78" nocase fullword
-    $cp1252 = "\x6d\x65\x72\x64\x65\x75\x78" nocase fullword
-    $wide = "\x6d\x00\x65\x00\x72\x00\x64\x00\x65\x00\x75\x00\x78\x00" nocase fullword
-  condition:
-    any of them
-}
 rule content_fr_language_nsfw_48 {
   meta:
     info = "ménage à trois"
@@ -537,17 +493,6 @@ rule content_fr_language_nsfw_58 {
   condition:
     any of them
 }
-rule content_fr_language_nsfw_60 {
-  meta:
-    info = "sac à merde"
-  strings:
-    $utf8 = "\x73\x61\x63\x20\xc3\xa0\x20\x6d\x65\x72\x64\x65" nocase fullword
-    $latin1 = "\x73\x61\x63\x20\xe0\x20\x6d\x65\x72\x64\x65" nocase fullword
-    $cp1252 = "\x73\x61\x63\x20\xe0\x20\x6d\x65\x72\x64\x65" nocase fullword
-    $wide = "\x73\x00\x61\x00\x63\x00\x20\x00\xe0\x00\x20\x00\x6d\x00\x65\x00\x72\x00\x64\x00\x65\x00" nocase fullword
-  condition:
-    any of them
-}
 rule content_fr_language_nsfw_61 {
   meta:
     info = "salaud"
@@ -611,17 +556,6 @@ rule content_fr_language_nsfw_67 {
     $latin1 = "\x7a\x69\x67\x6f\x75\x6e\x65\x74\x74\x65" nocase fullword
     $cp1252 = "\x7a\x69\x67\x6f\x75\x6e\x65\x74\x74\x65" nocase fullword
     $wide = "\x7a\x00\x69\x00\x67\x00\x6f\x00\x75\x00\x6e\x00\x65\x00\x74\x00\x74\x00\x65\x00" nocase fullword
-  condition:
-    any of them
-}
-rule content_fr_language_nsfw_68 {
-  meta:
-    info = "étron"
-  strings:
-    $utf8 = "\xc3\xa9\x74\x72\x6f\x6e" nocase fullword
-    $latin1 = "\xe9\x74\x72\x6f\x6e" nocase fullword
-    $cp1252 = "\xe9\x74\x72\x6f\x6e" nocase fullword
-    $wide = "\xe9\x00\x74\x00\x72\x00\x6f\x00\x6e\x00" nocase fullword
   condition:
     any of them
 }

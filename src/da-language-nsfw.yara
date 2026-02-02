@@ -3,6 +3,8 @@ rule content_da_language_nsfw_2 {
     info = "bøsserøv"
   strings:
     $utf8 = "\x62\xc3\xb8\x73\x73\x65\x72\xc3\xb8\x76" nocase fullword
+    $latin1 = "\x62\xf8\x73\x73\x65\x72\xf8\x76" nocase fullword
+    $cp1252 = "\x62\xf8\x73\x73\x65\x72\xf8\x76" nocase fullword
     $wide = "\x62\x00\xf8\x00\x73\x00\x73\x00\x65\x00\x72\x00\xf8\x00\x76\x00" nocase fullword
   condition:
     any of them
@@ -21,6 +23,8 @@ rule content_da_language_nsfw_5 {
     info = "fissehår"
   strings:
     $utf8 = "\x66\x69\x73\x73\x65\x68\xc3\xa5\x72" nocase fullword
+    $latin1 = "\x66\x69\x73\x73\x65\x68\xe5\x72" nocase fullword
+    $cp1252 = "\x66\x69\x73\x73\x65\x68\xe5\x72" nocase fullword
     $wide = "\x66\x00\x69\x00\x73\x00\x73\x00\x65\x00\x68\x00\xe5\x00\x72\x00" nocase fullword
   condition:
     any of them
@@ -66,6 +70,8 @@ rule content_da_language_nsfw_12 {
     info = "pikhår"
   strings:
     $utf8 = "\x70\x69\x6b\x68\xc3\xa5\x72" nocase fullword
+    $latin1 = "\x70\x69\x6b\x68\xe5\x72" nocase fullword
+    $cp1252 = "\x70\x69\x6b\x68\xe5\x72" nocase fullword
     $wide = "\x70\x00\x69\x00\x6b\x00\x68\x00\xe5\x00\x72\x00" nocase fullword
   condition:
     any of them
@@ -93,6 +99,8 @@ rule content_da_language_nsfw_16 {
     info = "røv"
   strings:
     $utf8 = "\x72\xc3\xb8\x76" nocase fullword
+    $latin1 = "\x72\xf8\x76" nocase fullword
+    $cp1252 = "\x72\xf8\x76" nocase fullword
     $wide = "\x72\x00\xf8\x00\x76\x00" nocase fullword
   condition:
     any of them
@@ -102,6 +110,8 @@ rule content_da_language_nsfw_17 {
     info = "røvhul"
   strings:
     $utf8 = "\x72\xc3\xb8\x76\x68\x75\x6c" nocase fullword
+    $latin1 = "\x72\xf8\x76\x68\x75\x6c" nocase fullword
+    $cp1252 = "\x72\xf8\x76\x68\x75\x6c" nocase fullword
     $wide = "\x72\x00\xf8\x00\x76\x00\x68\x00\x75\x00\x6c\x00" nocase fullword
   condition:
     any of them
@@ -111,6 +121,8 @@ rule content_da_language_nsfw_18 {
     info = "røvskæg"
   strings:
     $utf8 = "\x72\xc3\xb8\x76\x73\x6b\xc3\xa6\x67" nocase fullword
+    $latin1 = "\x72\xf8\x76\x73\x6b\xe6\x67" nocase fullword
+    $cp1252 = "\x72\xf8\x76\x73\x6b\xe6\x67" nocase fullword
     $wide = "\x72\x00\xf8\x00\x76\x00\x73\x00\x6b\x00\xe6\x00\x67\x00" nocase fullword
   condition:
     any of them
@@ -120,6 +132,8 @@ rule content_da_language_nsfw_19 {
     info = "røvspræke"
   strings:
     $utf8 = "\x72\xc3\xb8\x76\x73\x70\x72\xc3\xa6\x6b\x65" nocase fullword
+    $latin1 = "\x72\xf8\x76\x73\x70\x72\xe6\x6b\x65" nocase fullword
+    $cp1252 = "\x72\xf8\x76\x73\x70\x72\xe6\x6b\x65" nocase fullword
     $wide = "\x72\x00\xf8\x00\x76\x00\x73\x00\x70\x00\x72\x00\xe6\x00\x6b\x00\x65\x00" nocase fullword
   condition:
     any of them

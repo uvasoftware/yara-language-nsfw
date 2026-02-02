@@ -106,30 +106,12 @@ rule content_ko_language_nsfw_12 {
   condition:
     any of them
 }
-rule content_ko_language_nsfw_13 {
-  meta:
-    info = "미친"
-  strings:
-    $utf8 = "\xeb\xaf\xb8\xec\xb9\x9c" nocase fullword
-    $wide = "\xf8\xbb\x5c\xce" nocase fullword
-  condition:
-    any of them
-}
 rule content_ko_language_nsfw_14 {
   meta:
     info = "변태"
   strings:
     $utf8 = "\xeb\xb3\x80\xed\x83\x9c" nocase fullword
     $wide = "\xc0\xbc\xdc\xd0" nocase fullword
-  condition:
-    any of them
-}
-rule content_ko_language_nsfw_15 {
-  meta:
-    info = "병신"
-  strings:
-    $utf8 = "\xeb\xb3\x91\xec\x8b\xa0" nocase fullword
-    $wide = "\xd1\xbc\xe0\xc2" nocase fullword
   condition:
     any of them
 }
@@ -274,15 +256,6 @@ rule content_ko_language_nsfw_31 {
   strings:
     $utf8 = "\xec\x97\x84\xec\xb0\xbd" nocase fullword
     $wide = "\xc4\xc5\x3d\xcc" nocase fullword
-  condition:
-    any of them
-}
-rule content_ko_language_nsfw_32 {
-  meta:
-    info = "에로"
-  strings:
-    $utf8 = "\xec\x97\x90\xeb\xa1\x9c" nocase fullword
-    $wide = "\xd0\xc5\x5c\xb8" nocase fullword
   condition:
     any of them
 }

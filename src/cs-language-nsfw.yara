@@ -70,15 +70,6 @@ rule content_cs_language_nsfw_8 {
   condition:
     any of them
 }
-rule content_cs_language_nsfw_9 {
-  meta:
-    info = "hajzl"
-  strings:
-    $utf8 = "\x68\x61\x6a\x7a\x6c" nocase fullword
-    $wide = "\x68\x00\x61\x00\x6a\x00\x7a\x00\x6c\x00" nocase fullword
-  condition:
-    any of them
-}
 rule content_cs_language_nsfw_10 {
   meta:
     info = "hovno"

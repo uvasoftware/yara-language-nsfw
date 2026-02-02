@@ -948,16 +948,6 @@ rule content_ru_language_nsfw_95 {
   condition:
     any of them
 }
-rule content_ru_language_nsfw_96 {
-  meta:
-    info = "говно"
-  strings:
-    $utf8 = "\xd0\xb3\xd0\xbe\xd0\xb2\xd0\xbd\xd0\xbe" nocase fullword
-    $cp1251 = "\xe3\xee\xe2\xed\xee" nocase fullword
-    $wide = "\x33\x04\x00\x3e\x04\x00\x32\x04\x00\x3d\x04\x00\x3e\x04\x00" nocase fullword
-  condition:
-    any of them
-}
 rule content_ru_language_nsfw_97 {
   meta:
     info = "голый"
@@ -1115,16 +1105,6 @@ rule content_ru_language_nsfw_112 {
     $utf8 = "\xd0\xb3\xd0\xbe\xd0\xb2\xd0\xbd\xd1\x8e\xd0\xba" nocase fullword
     $cp1251 = "\xe3\xee\xe2\xed\xfe\xea" nocase fullword
     $wide = "\x33\x04\x00\x3e\x04\x00\x32\x04\x00\x3d\x04\x00\x4e\x04\x00\x3a\x04\x00" nocase fullword
-  condition:
-    any of them
-}
-rule content_ru_language_nsfw_113 {
-  meta:
-    info = "дерьмо"
-  strings:
-    $utf8 = "\xd0\xb4\xd0\xb5\xd1\x80\xd1\x8c\xd0\xbc\xd0\xbe" nocase fullword
-    $cp1251 = "\xe4\xe5\xf0\xfc\xec\xee" nocase fullword
-    $wide = "\x34\x04\x00\x35\x04\x00\x40\x04\x00\x4c\x04\x00\x3c\x04\x00\x3e\x04\x00" nocase fullword
   condition:
     any of them
 }

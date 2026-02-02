@@ -52,15 +52,6 @@ rule content_pl_language_nsfw_6 {
   condition:
     any of them
 }
-rule content_pl_language_nsfw_8 {
-  meta:
-    info = "debil"
-  strings:
-    $utf8 = "\x64\x65\x62\x69\x6c" nocase fullword
-    $wide = "\x64\x00\x65\x00\x62\x00\x69\x00\x6c\x00" nocase fullword
-  condition:
-    any of them
-}
 rule content_pl_language_nsfw_9 {
   meta:
     info = "dmuchać"
@@ -121,24 +112,6 @@ rule content_pl_language_nsfw_15 {
   strings:
     $utf8 = "\x66\x69\x75\x74" nocase fullword
     $wide = "\x66\x00\x69\x00\x75\x00\x74\x00" nocase fullword
-  condition:
-    any of them
-}
-rule content_pl_language_nsfw_16 {
-  meta:
-    info = "gówno"
-  strings:
-    $utf8 = "\x67\xc3\xb3\x77\x6e\x6f" nocase fullword
-    $wide = "\x67\x00\xf3\x00\x77\x00\x6e\x00\x6f\x00" nocase fullword
-  condition:
-    any of them
-}
-rule content_pl_language_nsfw_17 {
-  meta:
-    info = "gówno prawda"
-  strings:
-    $utf8 = "\x67\xc3\xb3\x77\x6e\x6f\x20\x70\x72\x61\x77\x64\x61" nocase fullword
-    $wide = "\x67\x00\xf3\x00\x77\x00\x6e\x00\x6f\x00\x20\x00\x70\x00\x72\x00\x61\x00\x77\x00\x64\x00\x61\x00" nocase fullword
   condition:
     any of them
 }
@@ -373,24 +346,6 @@ rule content_pl_language_nsfw_47 {
   strings:
     $utf8 = "\x73\x6b\x75\x72\x77\x79\x73\x79\x6e" nocase fullword
     $wide = "\x73\x00\x6b\x00\x75\x00\x72\x00\x77\x00\x79\x00\x73\x00\x79\x00\x6e\x00" nocase fullword
-  condition:
-    any of them
-}
-rule content_pl_language_nsfw_48 {
-  meta:
-    info = "sraczka"
-  strings:
-    $utf8 = "\x73\x72\x61\x63\x7a\x6b\x61" nocase fullword
-    $wide = "\x73\x00\x72\x00\x61\x00\x63\x00\x7a\x00\x6b\x00\x61\x00" nocase fullword
-  condition:
-    any of them
-}
-rule content_pl_language_nsfw_49 {
-  meta:
-    info = "srać"
-  strings:
-    $utf8 = "\x73\x72\x61\xc4\x87" nocase fullword
-    $wide = "\x73\x00\x72\x00\x61\x00\x07\x01" nocase fullword
   condition:
     any of them
 }

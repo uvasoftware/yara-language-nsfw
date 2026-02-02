@@ -61,15 +61,6 @@ rule content_hu_language_nsfw_7 {
   condition:
     any of them
 }
-rule content_hu_language_nsfw_8 {
-  meta:
-    info = "barom"
-  strings:
-    $utf8 = "\x62\x61\x72\x6f\x6d" nocase fullword
-    $wide = "\x62\x00\x61\x00\x72\x00\x6f\x00\x6d\x00" nocase fullword
-  condition:
-    any of them
-}
 rule content_hu_language_nsfw_9 {
   meta:
     info = "baszik"
@@ -484,15 +475,6 @@ rule content_hu_language_nsfw_55 {
   condition:
     any of them
 }
-rule content_hu_language_nsfw_56 {
-  meta:
-    info = "marha"
-  strings:
-    $utf8 = "\x6d\x61\x72\x68\x61" nocase fullword
-    $wide = "\x6d\x00\x61\x00\x72\x00\x68\x00\x61\x00" nocase fullword
-  condition:
-    any of them
-}
 rule content_hu_language_nsfw_57 {
   meta:
     info = "marhák"
@@ -787,15 +769,6 @@ rule content_hu_language_nsfw_90 {
   strings:
     $utf8 = "\x73\x7a\x61\x6a\x68\xc3\xa1\x74" nocase fullword
     $wide = "\x73\x00\x7a\x00\x61\x00\x6a\x00\x68\x00\xe1\x00\x74\x00" nocase fullword
-  condition:
-    any of them
-}
-rule content_hu_language_nsfw_91 {
-  meta:
-    info = "szar"
-  strings:
-    $utf8 = "\x73\x7a\x61\x72" nocase fullword
-    $wide = "\x73\x00\x7a\x00\x61\x00\x72\x00" nocase fullword
   condition:
     any of them
 }

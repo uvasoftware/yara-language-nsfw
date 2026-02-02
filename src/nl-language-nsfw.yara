@@ -529,15 +529,6 @@ rule content_nl_language_nsfw_59 {
   condition:
     any of them
 }
-rule content_nl_language_nsfw_60 {
-  meta:
-    info = "hufter"
-  strings:
-    $utf8 = "\x68\x75\x66\x74\x65\x72" nocase fullword
-    $wide = "\x68\x00\x75\x00\x66\x00\x74\x00\x65\x00\x72\x00" nocase fullword
-  condition:
-    any of them
-}
 rule content_nl_language_nsfw_61 {
   meta:
     info = "huisdealer"
@@ -790,15 +781,6 @@ rule content_nl_language_nsfw_88 {
   condition:
     any of them
 }
-rule content_nl_language_nsfw_89 {
-  meta:
-    info = "naaien"
-  strings:
-    $utf8 = "\x6e\x61\x61\x69\x65\x6e" nocase fullword
-    $wide = "\x6e\x00\x61\x00\x61\x00\x69\x00\x65\x00\x6e\x00" nocase fullword
-  condition:
-    any of them
-}
 rule content_nl_language_nsfw_90 {
   meta:
     info = "naakt"
@@ -1006,24 +988,6 @@ rule content_nl_language_nsfw_112 {
   condition:
     any of them
 }
-rule content_nl_language_nsfw_113 {
-  meta:
-    info = "poep"
-  strings:
-    $utf8 = "\x70\x6f\x65\x70" nocase fullword
-    $wide = "\x70\x00\x6f\x00\x65\x00\x70\x00" nocase fullword
-  condition:
-    any of them
-}
-rule content_nl_language_nsfw_114 {
-  meta:
-    info = "poepen"
-  strings:
-    $utf8 = "\x70\x6f\x65\x70\x65\x6e" nocase fullword
-    $wide = "\x70\x00\x6f\x00\x65\x00\x70\x00\x65\x00\x6e\x00" nocase fullword
-  condition:
-    any of them
-}
 rule content_nl_language_nsfw_115 {
   meta:
     info = "poot"
@@ -1156,24 +1120,6 @@ rule content_nl_language_nsfw_129 {
   strings:
     $utf8 = "\x73\x63\x68\x61\x74\x6a\x65" nocase fullword
     $wide = "\x73\x00\x63\x00\x68\x00\x61\x00\x74\x00\x6a\x00\x65\x00" nocase fullword
-  condition:
-    any of them
-}
-rule content_nl_language_nsfw_130 {
-  meta:
-    info = "schijt"
-  strings:
-    $utf8 = "\x73\x63\x68\x69\x6a\x74" nocase fullword
-    $wide = "\x73\x00\x63\x00\x68\x00\x69\x00\x6a\x00\x74\x00" nocase fullword
-  condition:
-    any of them
-}
-rule content_nl_language_nsfw_131 {
-  meta:
-    info = "schijten"
-  strings:
-    $utf8 = "\x73\x63\x68\x69\x6a\x74\x65\x6e" nocase fullword
-    $wide = "\x73\x00\x63\x00\x68\x00\x69\x00\x6a\x00\x74\x00\x65\x00\x6e\x00" nocase fullword
   condition:
     any of them
 }
@@ -1435,15 +1381,6 @@ rule content_nl_language_nsfw_160 {
   strings:
     $utf8 = "\x76\x6f\x6f\x72\x20\x6a\x61\x6e\x2d\x6d\x65\x74\x2d\x64\x65\x2d\x6b\x6f\x72\x74\x65\x2d\x61\x63\x68\x74\x65\x72\x6e\x61\x61\x6d" nocase fullword
     $wide = "\x76\x00\x6f\x00\x6f\x00\x72\x00\x20\x00\x6a\x00\x61\x00\x6e\x00\x2d\x00\x6d\x00\x65\x00\x74\x00\x2d\x00\x64\x00\x65\x00\x2d\x00\x6b\x00\x6f\x00\x72\x00\x74\x00\x65\x00\x2d\x00\x61\x00\x63\x00\x68\x00\x74\x00\x65\x00\x72\x00\x6e\x00\x61\x00\x61\x00\x6d\x00" nocase fullword
-  condition:
-    any of them
-}
-rule content_nl_language_nsfw_161 {
-  meta:
-    info = "watje"
-  strings:
-    $utf8 = "\x77\x61\x74\x6a\x65" nocase fullword
-    $wide = "\x77\x00\x61\x00\x74\x00\x6a\x00\x65\x00" nocase fullword
   condition:
     any of them
 }
