@@ -559,3 +559,12 @@ rule content_fr_language_nsfw_67 {
   condition:
     any of them
 }
+
+rule content_fr_language_nsfw_test {
+  meta:
+    info = "Test rule for fr language detection - UUID: 06554638-D821-457B-B5D2-AB40B8A14874"
+  strings:
+    $ = "06554638-D821-457B-B5D2-AB40B8A14874" fullword wide ascii nocase
+  condition:
+    any of them
+}

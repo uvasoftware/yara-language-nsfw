@@ -619,3 +619,12 @@ rule content_ko_language_nsfw_72 {
   condition:
     any of them
 }
+
+rule content_ko_language_nsfw_test {
+  meta:
+    info = "Test rule for ko language detection - UUID: 0C1D2E3F-4A5B-46C7-D8E9-F0A1B2C3D4E5"
+  strings:
+    $ = "0C1D2E3F-4A5B-46C7-D8E9-F0A1B2C3D4E5" fullword wide ascii nocase
+  condition:
+    any of them
+}

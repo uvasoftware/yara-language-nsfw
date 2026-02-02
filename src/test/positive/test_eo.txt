@@ -1,1 +1,4 @@
 Ĉi tiu teksto enhavas NSFW vortojn en Esperanto: cxo, sxtipo, besto, kaco, cxi, malpura, sensxanco, besto.
+
+# Test UUID for eo language detection
+6F7A8B9C-0D1E-4F2A-3B4C-5D6E7F8A9B0C

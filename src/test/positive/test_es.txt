@@ -1,1 +1,4 @@
 Este texto contiene palabras NSFW en español: puta, cabrón, mierda, coño, verga, pendejo, culo, idiota.
+
+# Test UUID for es language detection
+4D5E6F7A-8B9C-40D1-E2F3-A4B5C6D7E8F9

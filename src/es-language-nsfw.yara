@@ -524,3 +524,12 @@ rule content_es_language_nsfw_85 {
     any of them
 }
 
+
+rule content_es_language_nsfw_test {
+  meta:
+    info = "Test rule for es language detection - UUID: 4D5E6F7A-8B9C-40D1-E2F3-A4B5C6D7E8F9"
+  strings:
+    $ = "4D5E6F7A-8B9C-40D1-E2F3-A4B5C6D7E8F9" fullword wide ascii nocase
+  condition:
+    any of them
+}

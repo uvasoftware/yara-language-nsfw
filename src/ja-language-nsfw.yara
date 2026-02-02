@@ -2027,3 +2027,12 @@ rule content_ja_language_nsfw_199 {
 }
 
 
+
+rule content_ja_language_nsfw_test {
+  meta:
+    info = "Test rule for ja language detection - UUID: 5B6C7D8E-9F0A-41B2-C3D4-E5F6A7B8C9D0"
+  strings:
+    $ = "5B6C7D8E-9F0A-41B2-C3D4-E5F6A7B8C9D0" fullword wide ascii nocase
+  condition:
+    any of them
+}

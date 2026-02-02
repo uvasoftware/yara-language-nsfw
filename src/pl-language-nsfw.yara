@@ -385,3 +385,12 @@ rule content_pl_language_nsfw_53 {
   condition:
     any of them
 }
+
+rule content_pl_language_nsfw_test {
+  meta:
+    info = "Test rule for pl language detection - UUID: A8B9C0D1-E2F3-44A5-B6C7-D8E9F0A1B2C3"
+  strings:
+    $ = "A8B9C0D1-E2F3-44A5-B6C7-D8E9F0A1B2C3" fullword wide ascii nocase
+  condition:
+    any of them
+}

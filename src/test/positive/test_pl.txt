@@ -1,1 +1,4 @@
 Ten tekst zawiera słowa NSFW w języku polskim: kurwa, pizda, dupa, suko, gówno, chuj, zboki, zjeb.
+
+# Test UUID for pl language detection
+A8B9C0D1-E2F3-44A5-B6C7-D8E9F0A1B2C3

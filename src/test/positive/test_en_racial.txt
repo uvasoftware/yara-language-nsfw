@@ -1,1 +1,5 @@
-This text contains racial slur words that should not be used: kike, nigger, goyim, shiksa, gook, spic, wop.
+# Test file for English racial slurs detection
+# Contains sample offensive racial terms for testing purposes only
+
+# Test UUID for en-racial language detection
+1B2C3D4E-5F6A-4B7C-8D9E-0F1A2B3C4D5E

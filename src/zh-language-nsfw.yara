@@ -3192,3 +3192,12 @@ rule content_zh_language_nsfw_306 {
 
 
 
+
+rule content_zh_language_nsfw_test {
+  meta:
+    info = "Test rule for zh language detection - UUID: 4E5F6A7B-8C9D-40E1-F2A3-B4C5D6E7F8A9"
+  strings:
+    $ = "4E5F6A7B-8C9D-40E1-F2A3-B4C5D6E7F8A9" fullword wide ascii nocase
+  condition:
+    any of them
+}

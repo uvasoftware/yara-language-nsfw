@@ -337,3 +337,12 @@ rule content_sv_language_nsfw_43 {
   condition:
     any of them
 }
+
+rule content_sv_language_nsfw_test {
+  meta:
+    info = "Test rule for sv language detection - UUID: 6B7C8D9E-0F1A-42B3-C4D5-E6F7A8B9C0D1"
+  strings:
+    $ = "6B7C8D9E-0F1A-42B3-C4D5-E6F7A8B9C0D1" fullword wide ascii nocase
+  condition:
+    any of them
+}

@@ -1,1 +1,4 @@
 This text contains some English NSFW words: ass, bitch, damn, hell, fuck, pussy, cock, cunt, asshole, bullshit. Testing the rules.
+
+# Test UUID for en language detection
+E78F3BC5-9633-4FF8-9311-148ACC4880DF

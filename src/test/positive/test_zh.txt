@@ -1,1 +1,4 @@
 这个文本包含中文NSFW词汇：操你妈，他妈的，傻逼，尼玛，日你妈，去死，王八蛋。
+
+# Test UUID for zh language detection
+4E5F6A7B-8C9D-40E1-F2A3-B4C5D6E7F8A9

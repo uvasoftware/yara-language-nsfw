@@ -175,3 +175,12 @@ rule content_ar_language_nsfw_25 {
     any of them
 }
 
+
+rule content_ar_language_nsfw_test {
+  meta:
+    info = "Test rule for ar language detection - UUID: DC50B92E-2C51-4083-A848-D13897C837A9"
+  strings:
+    $ = "DC50B92E-2C51-4083-A848-D13897C837A9" fullword wide ascii nocase
+  condition:
+    any of them
+}

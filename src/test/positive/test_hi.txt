@@ -1,1 +1,4 @@
 यह पाठ हिंदी में NSFW शब्द शामिल करता है: बेटा, साला, सूअर, गधा, मादरचोद, रंडी, कुत्ता।
+
+# Test UUID for hi language detection
+8C9D0E1F-2A3B-44C5-D6E7-F8A9B0C1D2E3

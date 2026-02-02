@@ -1,1 +1,4 @@
 Этот текст содержит NSFW слова на русском: блядь, сука, хуй, пизда, говно, ебать, жопа.
+
+# Test UUID for ru language detection
+1A2B3C4D-5E6F-47A8-B9C0-D1E2F3A4B5C6

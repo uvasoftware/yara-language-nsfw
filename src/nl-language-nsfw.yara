@@ -1393,3 +1393,12 @@ rule content_nl_language_nsfw_169 {
   condition:
     any of them
 }
+
+rule content_nl_language_nsfw_test {
+  meta:
+    info = "Test rule for nl language detection - UUID: 7D8E9F0A-1B2C-43D4-E5F6-A7B8C9D0E1F2"
+  strings:
+    $ = "7D8E9F0A-1B2C-43D4-E5F6-A7B8C9D0E1F2" fullword wide ascii nocase
+  condition:
+    any of them
+}

@@ -138,3 +138,12 @@ rule content_da_language_nsfw_19 {
   condition:
     any of them
 }
+
+rule content_da_language_nsfw_test {
+  meta:
+    info = "Test rule for da language detection - UUID: 9E3F4A5B-6C7D-4E8F-A9B1-2C3D4E5F6A7B"
+  strings:
+    $ = "9E3F4A5B-6C7D-4E8F-A9B1-2C3D4E5F6A7B" fullword wide ascii nocase
+  condition:
+    any of them
+}

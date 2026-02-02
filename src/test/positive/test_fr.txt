@@ -1,1 +1,4 @@
 Ce texte contient des mots NSFW en français: putain, con, merde, salaud, chatte, bite, cul, connard.
+
+# Test UUID for fr language detection
+06554638-D821-457B-B5D2-AB40B8A14874

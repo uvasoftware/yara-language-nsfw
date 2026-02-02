@@ -1087,3 +1087,12 @@ rule content_fi_language_nsfw_123 {
   condition:
     any of them
 }
+
+rule content_fi_language_nsfw_test {
+  meta:
+    info = "Test rule for fi language detection - UUID: A1B2C3D4-E5F6-47A8-B9C0-D1E2F3A4B5C6"
+  strings:
+    $ = "A1B2C3D4-E5F6-47A8-B9C0-D1E2F3A4B5C6" fullword wide ascii nocase
+  condition:
+    any of them
+}

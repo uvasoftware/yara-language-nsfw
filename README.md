@@ -132,7 +132,7 @@ mkdir -p ./dist
 yarac src/entrypoint.yara ./dist/language-nsfw.db
 ```
 
-#### Running tests 
+#### Running tests
 
 ```
 % make test
@@ -140,6 +140,30 @@ mkdir -p ./dist
 yarac src/entrypoint.yara ./dist/language-nsfw.db
 ...
 ```
+
+## Test Rules
+
+Each language rule file includes a test rule that matches a unique UUID. These test rules enable:
+
+1. **Language-specific validation**: Verify only the intended language rules are active
+2. **Integration testing**: Test that Scanii correctly filters findings by document language
+3. **CI/CD smoke tests**: Quick validation that rules compile and load correctly
+
+### Using Test Rules
+
+Each language has a unique test UUID. For example:
+- English: `E78F3BC5-9633-4FF8-9311-148ACC4880DF`
+- Spanish: `4D5E6F7A-8B9C-40D1-E2F3-A4B5C6D7E8F9`
+- Dutch: `7D8E9F0A-1B2C-43D4-E5F6-A7B8C9D0E1F2`
+
+```bash
+# Test English rule detection
+echo "Test: E78F3BC5-9633-4FF8-9311-148ACC4880DF" > test.txt
+yara src/en-language-nsfw.yara test.txt
+# Output: content_en_language_nsfw_test test.txt
+```
+
+See [TEST_UUIDS.md](TEST_UUIDS.md) for the complete list of test UUIDs for all languages.
 
 ## Credits:
 This codebase started as a fork from [List of Dirty, Naughty, Obscene, and Otherwise Bad Words](https://github.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words) .

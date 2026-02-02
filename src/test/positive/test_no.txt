@@ -1,1 +1,4 @@
 Denne teksten inneholder NSFW-ord på norsk: fitte, kukk, lort, rævva, faen, helvete, idiot, rasshøl.
+
+# Test UUID for no language detection
+2E3F4A5B-6C7D-48E9-F0A1-B2C3D4E5F6A7
